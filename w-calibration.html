@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="ru"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Tabuna Sans — проверка W в Chromium</title>
+<style>body{font:16px system-ui,sans-serif;margin:32px;color:#222}pre{white-space:pre-wrap;font:12px ui-monospace,monospace}#status{font-weight:600}</style>
+<h1>W / Chromium Canvas</h1><p id="status">Загрузка шрифтов…</p><pre id="summary"></pre>
+<script>
+(async()=>{
+ const nonce=Date.now(), files={before:'references/mw-baseline/TabunaSans-before.woff2',after:'dist/TabunaSansVariable.woff2'};
+ const hashes={};
+ for(const [key,path] of Object.entries(files)){
+  const bytes=await (await fetch(`${path}?w-calibration=${nonce}`,{cache:'no-store'})).arrayBuffer();
+  hashes[key]=Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',bytes)),b=>b.toString(16).padStart(2,'0')).join('');
+  const face=new FontFace(`TabunaW${key}`,bytes,{weight:'100 900'}); await face.load(); document.fonts.add(face);
+ }
+ await document.fonts.ready;
+ const validation=await (await fetch(`references/mw-baseline/validation.json?w=${nonce}`,{cache:'no-store'})).json();
+ const controls=validation.strings.filter(c=>!['M','W'].includes(c));
+ const main=[100,400,900].flatMap(weight=>[16,32,64,128].map(size=>({weight,size})));
+ const holdout=[200,300,500,600,700,800].flatMap(weight=>[14,20,24,48,96].map(size=>({weight,size})));
+ function raster(text,size,weight,family){
+  const canvas=document.createElement('canvas'); canvas.width=420;canvas.height=240; const c=canvas.getContext('2d',{willReadFrequently:true});
+  c.fillStyle='#fff';c.fillRect(0,0,canvas.width,canvas.height);c.fillStyle='#000';c.font=`${weight} ${size}px "${family}"`;c.fontKerning='none';c.textBaseline='alphabetic';c.fillText(text,32,176);
+  return {pixels:c.getImageData(0,0,canvas.width,canvas.height).data,advance:c.measureText(text).width};
+ }
+ function compare(text,size,weight){
+  const sys=raster(text,size,weight,'system-ui'), before=raster(text,size,weight,'TabunaWbefore'), after=raster(text,size,weight,'TabunaWafter');
+  let beforeDiff=0,afterDiff=0,beforeErr=0,afterErr=0,beforeAdvance=Math.abs(before.advance-sys.advance),afterAdvance=Math.abs(after.advance-sys.advance), own=0;
+  for(let i=0;i<sys.pixels.length;i+=4){const a=sys.pixels[i],b=before.pixels[i],d=after.pixels[i]; if(a!==b)beforeDiff++;if(a!==d)afterDiff++;beforeErr+=Math.abs(a-b);afterErr+=Math.abs(a-d);if(b!==d)own++;}
+  return {text,size,weight,beforeDiff,afterDiff,beforeErr,afterErr,beforeAdvance,afterAdvance,ownPixelsUnchanged:own===0};
+ }
+ const targetMain=main.map(x=>compare('W',x.size,x.weight));
+ const targetHoldout=holdout.map(x=>compare('W',x.size,x.weight));
+ const controlMain=controls.flatMap(text=>[16,32,64,128].map(size=>compare(text,size,400)));
+ function group(rows){return {total:rows.length,improved:rows.filter(r=>r.afterDiff<r.beforeDiff).length,worse:rows.filter(r=>r.afterDiff>r.beforeDiff).length,unchanged:rows.filter(r=>r.afterDiff===r.beforeDiff).length,beforeDifferentPixels:rows.reduce((a,r)=>a+r.beforeDiff,0),afterDifferentPixels:rows.reduce((a,r)=>a+r.afterDiff,0),beforeAbsoluteError:rows.reduce((a,r)=>a+r.beforeErr,0),afterAbsoluteError:rows.reduce((a,r)=>a+r.afterErr,0),exactAfterPixels:rows.filter(r=>r.afterDiff===0).length,ownPixelsUnchanged:rows.filter(r=>r.ownPixelsUnchanged).length,exactAfterAdvance:rows.filter(r=>r.afterAdvance===0).length};}
+ const report={renderer:'Canvas2D in Chromium; 1×, shared origin and baseline',fontHashes:hashes,main:{target:group(targetMain),controls:group(controlMain)},holdout:{target:group(targetHoldout)}};
+ document.querySelector('#summary').textContent=JSON.stringify(report,null,2); document.querySelector('#status').textContent='Измерения завершены';
+})().catch(e=>{document.querySelector('#status').textContent=e.stack||e});
+</script>

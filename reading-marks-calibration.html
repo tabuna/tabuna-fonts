@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ru">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Проверка диакритики — Tabuna Sans</title>
+<style>body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif}pre{white-space:pre-wrap;overflow-wrap:anywhere}</style>
+<h1>Диакритика и Unicode-запись</h1>
+<p id="status">Измерение…</p>
+<p>Парные изолированные Worker, одинаковый системный эталон. Растры дополнительно проверяются по SHA-256.</p>
+<details><summary>Сводка JSON</summary><pre id="summary"></pre></details>
+<details><summary>Полные измерения JSON</summary><pre id="json"></pre></details>
+<script>
+(async()=>{
+  const holdout=new URLSearchParams(location.search).has('holdout');
+  const cfg=await(await fetch('references/reading-marks-baseline/validation.json',{cache:'no-store'})).json();
+  const selected=holdout?[...cfg.composed,...cfg.unencoded]:cfg.strings;
+  const weights=holdout?[200,300,500,600,700,800]:[100,400,900],sizes=holdout?[14,20,24,48,96]:[16,32,64,128];
+  const run=path=>new Promise((resolve,reject)=>{
+    const worker=new Worker('scripts/canvas-worker.js');
+    worker.onmessage=({data})=>{worker.terminate();data.error?reject(new Error(data.error)):resolve(data)};
+    worker.onerror=e=>{worker.terminate();reject(new Error(e.message))};
+    worker.postMessage({fontURL:new URL(`${path}?v=${Date.now()}`,location.href).href,characters:selected,sizes,weights,hashPixels:true});
+  });
+  const before=await run('references/reading-marks-baseline/TabunaSans-before.woff2');
+  const after=await run('dist/TabunaSansVariable.woff2');
+  const rows=after.records.map((r,i)=>{
+    const b=before.records[i];if(r.text!==b.text||r.size!==b.size||r.weight!==b.weight)throw Error('Different pair order');
+    return {...r,group:cfg.composed.includes(r.text)?'composed':cfg.decomposed.includes(r.text)?'decomposed':cfg.unencoded.includes(r.text)?'unencoded':'control',
+      beforeInkError:b.absoluteInkError,beforeExactAdvance:b.exactAdvance,beforeComplete:b.completeMatch,
+      referenceUnchanged:b.systemAdvance===r.systemAdvance&&b.systemRasterSHA256===r.systemRasterSHA256,
+      ownRasterUnchanged:b.ownRasterSHA256===r.ownRasterSHA256,advanceUnchanged:b.ownAdvance===r.ownAdvance,
+      beforeSelfTestPixels:b.selfTestPixels};
+  });
+  const stats=rs=>({total:rs.length,beforeInkError:rs.reduce((a,r)=>a+r.beforeInkError,0),afterInkError:rs.reduce((a,r)=>a+r.absoluteInkError,0),
+    improved:rs.filter(r=>r.absoluteInkError<r.beforeInkError).length,unchanged:rs.filter(r=>r.absoluteInkError===r.beforeInkError).length,worse:rs.filter(r=>r.absoluteInkError>r.beforeInkError).length,
+    beforeExactAdvance:rs.filter(r=>r.beforeExactAdvance).length,exactAdvance:rs.filter(r=>r.exactAdvance).length,beforeComplete:rs.filter(r=>r.beforeComplete).length,complete:rs.filter(r=>r.completeMatch).length,
+    exactPixel:rs.filter(r=>r.exactPixels).length,ownRasterUnchanged:rs.filter(r=>r.ownRasterUnchanged).length,advanceChanges:rs.filter(r=>!r.advanceUnchanged).length,
+    selfTestPixels:rs.reduce((a,r)=>a+r.selfTestPixels+r.beforeSelfTestPixels,0),referenceChanges:rs.filter(r=>!r.referenceUnchanged).length});
+  const canonical=[];
+  if(!holdout)for(const weight of weights)for(const size of sizes)for(const text of cfg.composed){
+    const a=rows.find(r=>r.weight===weight&&r.size===size&&r.text===text),b=rows.find(r=>r.weight===weight&&r.size===size&&r.text===text.normalize('NFD'));
+    canonical.push({weight,size,text,ownEqual:a.ownAdvance===b.ownAdvance&&a.ownRasterSHA256===b.ownRasterSHA256,systemEqual:a.systemAdvance===b.systemAdvance&&a.systemRasterSHA256===b.systemRasterSHA256});
+  }
+  const summary={holdout,userAgent:after.userAgent,beforeHash:before.fontHash,afterHash:after.fontHash,all:stats(rows),
+    groups:Object.fromEntries(['composed','decomposed','unencoded','control'].map(group=>[group,stats(rows.filter(r=>r.group===group))])),
+    byWeight:weights.map(weight=>({weight,...stats(rows.filter(r=>r.weight===weight&&r.group==='composed'))})),
+    canonical:{total:canonical.length,ownEqual:canonical.filter(r=>r.ownEqual).length,systemEqual:canonical.filter(r=>r.systemEqual).length,misses:canonical.filter(r=>!r.ownEqual||!r.systemEqual)},
+    regressions:rows.filter(r=>r.absoluteInkError>r.beforeInkError),byText:selected.filter(t=>!cfg.controls.includes(t)).map(text=>({text,...stats(rows.filter(r=>r.text===text))}))};
+  document.querySelector('#json').textContent=JSON.stringify({before,after},null,2);document.querySelector('#summary').textContent=JSON.stringify(summary,null,2);
+  document.querySelector('#status').textContent=`Завершено: ${rows.length} пар; улучшено ${summary.all.improved}, ухудшено ${summary.all.worse}.`;
+})().catch(e=>document.querySelector('#status').textContent=e.message);
+</script>
+</html>

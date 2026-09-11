@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="ru">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Соответствие весов — Tabuna Sans</title>
+<style>body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;margin:32px}pre{white-space:pre-wrap}</style>
+<h1>Соответствие нативных и CSS-весов</h1>
+<p id="status">Загрузка…</p>
+<details><summary>Измерения JSON</summary><pre id="json"></pre></details>
+<script>
+const worker=new Worker('scripts/canvas-worker.js');
+worker.onmessage=({data})=>{
+  document.querySelector('#json').textContent=JSON.stringify(data,null,2);
+  document.querySelector('#status').textContent=data.error||`Проверено ${data.records.length} браузерных образцов.`;
+  worker.terminate();
+};
+worker.onerror=event=>{document.querySelector('#status').textContent=event.message;worker.terminate()};
+worker.postMessage({fontURL:new URL(`dist/TabunaSansVariable.woff2?v=${Date.now()}`,location.href).href,
+  nativeWeightReportURL:new URL('proofs/reference-weight-selection.json',location.href).href,
+  characters:['I','H','E','F','L','Н','Е','І','P','Р','D','B','В','в','o','O','о','О'],
+  sizes:[16,32,64,128],weights:[100,200,300,400,500,600,700,800,900]});
+</script>
+</html>

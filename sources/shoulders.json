@@ -1,0 +1,406 @@
+{
+  "method": "Scalar profile fit of original fixed shoulder model; no reference outlines",
+  "weight": 400,
+  "glyphs": {
+    "n": {
+      "text": {
+        "left": 79.1015625,
+        "right": 509.27734375,
+        "bottom": 0.0,
+        "top": 535.64453125,
+        "capTop": 526.3671874999999,
+        "capRight": 164.0625,
+        "leftInner": 164.0625,
+        "rightInner": 424.3183210784314,
+        "outerLeft": {
+          "sideX": 164.0625,
+          "sideY": 441.0138381242201,
+          "crownX": 325.1953125,
+          "crownY": 535.634957107843,
+          "sideHandleX": 0.11756247032762993,
+          "sideHandleY": 0.1499874430500747,
+          "crownHandle": 0.7701380264306383,
+          "rms": 0.4697324185913125
+        },
+        "outerRight": {
+          "sideX": 509.27734375,
+          "sideY": 341.3890907269547,
+          "crownX": 325.1953125,
+          "crownY": 535.634957107843,
+          "sideHandleX": 0.0,
+          "sideHandleY": 0.5605314155286556,
+          "crownHandle": 0.717266749560838,
+          "rms": 0.12405215365852407
+        },
+        "innerLeft": {
+          "sideX": 164.0625,
+          "sideY": 313.0996849334314,
+          "crownX": 301.26953125,
+          "crownY": 460.43964460784304,
+          "sideHandleX": 0.0,
+          "sideHandleY": 0.5893010284131147,
+          "crownHandle": 0.6315401468799724,
+          "rms": 0.06321718370795529
+        },
+        "innerRight": {
+          "sideX": 424.3183210784314,
+          "sideY": 316.6070391991759,
+          "crownX": 301.26953125,
+          "crownY": 460.43964460784304,
+          "sideHandleX": 0.0,
+          "sideHandleY": 0.507409915033244,
+          "crownHandle": 0.845480319255381,
+          "rms": 0.0994069522540272
+        }
+      },
+      "display": {
+        "left": 55.17578125,
+        "right": 474.12109375,
+        "bottom": 0.0,
+        "top": 517.578125,
+        "capTop": 507.8124999999999,
+        "capRight": 140.13480392156862,
+        "leftInner": 140.13480392156862,
+        "rightInner": 389.1620710784314,
+        "outerLeft": {
+          "sideX": 140.13480392156862,
+          "sideY": 433.14442137055545,
+          "crownX": 298.828125,
+          "crownY": 517.5704656862744,
+          "sideHandleX": 0.09051608745683881,
+          "sideHandleY": 0.2541619014808769,
+          "crownHandle": 0.6721783113994333,
+          "rms": 0.17103360877549834
+        },
+        "outerRight": {
+          "sideX": 474.12109375,
+          "sideY": 331.70638484554496,
+          "crownX": 298.828125,
+          "crownY": 517.5704656862744,
+          "sideHandleX": 0.0,
+          "sideHandleY": 0.5030922256890009,
+          "crownHandle": 0.7269024475386374,
+          "rms": 0.1266438178123141
+        },
+        "innerLeft": {
+          "sideX": 140.13480392156862,
+          "sideY": 300.1628521603236,
+          "crownX": 272.4609375,
+          "crownY": 442.3636642156862,
+          "sideHandleX": 0.0,
+          "sideHandleY": 0.5721778060781242,
+          "crownHandle": 0.6302951493516256,
+          "rms": 0.05361181962978261
+        },
+        "innerRight": {
+          "sideX": 389.1620710784314,
+          "sideY": 313.40965986978995,
+          "crownX": 272.4609375,
+          "crownY": 442.3636642156862,
+          "sideHandleX": 0.0,
+          "sideHandleY": 0.5105480101322806,
+          "crownHandle": 0.7930281245722439,
+          "rms": 0.08743308167017183
+        }
+      }
+    },
+    "h": {
+      "text": {
+        "left": 83.984375,
+        "right": 514.16015625,
+        "bottom": 0.0,
+        "top": 735.3515625,
+        "capTop": 735.3515625,
+        "capRight": 168.9453125,
+        "leftInner": 168.9453125,
+        "rightInner": 429.2011335784314,
+        "outerLeft": {
+          "sideX": 168.9453125,
+          "sideY": 441.01717215998036,
+          "crownX": 330.078125,
+          "crownY": 535.6311274509803,
+          "sideHandleX": 0.11762163374118384,
+          "sideHandleY": 0.14998963620258174,
+          "crownHandle": 0.7702277343414203,
+          "rms": 0.46945762256349916
+        },
+        "outerRight": {
+          "sideX": 514.16015625,
+          "sideY": 341.81480215801275,
+          "crownX": 330.078125,
+          "crownY": 535.6311274509803,
+          "sideHandleX": 0.0,
+          "sideHandleY": 0.5938310390003999,
+          "crownHandle": 0.6809236044861637,
+          "rms": 0.05444758949642372
+        },
+        "innerLeft": {
+          "sideX": 168.9453125,
+          "sideY": 313.0996849334314,
+          "crownX": 306.15234375,
+          "crownY": 460.43964460784304,
+          "sideHandleX": 0.0,
+          "sideHandleY": 0.5893010284131147,
+          "crownHandle": 0.6315401468799724,
+          "rms": 0.06321718370795257
+        },
+        "innerRight": {
+          "sideX": 429.2011335784314,
+          "sideY": 316.6070391991759,
+          "crownX": 306.15234375,
+          "crownY": 460.43964460784304,
+          "sideHandleX": 0.0,
+          "sideHandleY": 0.507409915033244,
+          "crownHandle": 0.845480319255381,
+          "rms": 0.09940695225402879
+        }
+      },
+      "display": {
+        "left": 59.5703125,
+        "right": 486.328125,
+        "bottom": 0.0,
+        "top": 704.58984375,
+        "capTop": 704.58984375,
+        "capRight": 144.53125,
+        "leftInner": 144.53125,
+        "rightInner": 401.3671875,
+        "outerLeft": {
+          "sideX": 144.53125,
+          "sideY": 422.10948624210425,
+          "crownX": 304.6875,
+          "crownY": 517.562806372549,
+          "sideHandleX": 0.10849066958024434,
+          "sideHandleY": 0.42718341007332067,
+          "crownHandle": 0.6081540785404262,
+          "rms": 0.0479407649865318
+        },
+        "outerRight": {
+          "sideX": 486.328125,
+          "sideY": 313.93327667804044,
+          "crownX": 304.6875,
+          "crownY": 517.562806372549,
+          "sideHandleX": 0.0,
+          "sideHandleY": 0.5432608071773478,
+          "crownHandle": 0.6317454926307307,
+          "rms": 0.10024189727611102
+        },
+        "innerLeft": {
+          "sideX": 144.53125,
+          "sideY": 298.05018142208075,
+          "crownX": 275.390625,
+          "crownY": 442.3636642156862,
+          "sideHandleX": 0.0,
+          "sideHandleY": 0.5657417969521874,
+          "crownHandle": 0.6151937977826174,
+          "rms": 0.06716357959220838
+        },
+        "innerRight": {
+          "sideX": 401.3671875,
+          "sideY": 296.81441772392134,
+          "crownX": 275.390625,
+          "crownY": 442.3636642156862,
+          "sideHandleX": 0.0,
+          "sideHandleY": 0.6073670628229874,
+          "crownHandle": 0.6482094454837795,
+          "rms": 0.10516187252006338
+        }
+      }
+    },
+    "m": {
+      "text": {
+        "left": 79.1015625,
+        "right": 795.8984375,
+        "bottom": 0.0,
+        "top": 535.64453125,
+        "capTop": 526.3671874999999,
+        "capRight": 164.0625,
+        "leftInner": 164.0625,
+        "middleLeft": 394.53125,
+        "middleRight": 479.4921875,
+        "rightInner": 710.9375,
+        "outerLeft": {
+          "sideX": 164.0625,
+          "sideY": 439.60607540778324,
+          "crownX": 313.96484375,
+          "crownY": 535.634957107843,
+          "sideHandleX": 0.11648184208704634,
+          "sideHandleY": 0.14981787151079615,
+          "crownHandle": 0.7639681880945453,
+          "rms": 0.6214370781589872
+        },
+        "outerRight": {
+          "sideX": 463.37890625,
+          "sideY": 443.3555453431371,
+          "crownX": 313.96484375,
+          "crownY": 535.634957107843,
+          "sideHandleX": 0.12378980969703549,
+          "sideHandleY": 0.21894361199124646,
+          "crownHandle": 0.6874113944857538,
+          "rms": 0.8225678195819643
+        },
+        "outerLeft2": {
+          "sideX": 463.37890625,
+          "sideY": 443.3555453431371,
+          "crownX": 628.41796875,
+          "crownY": 535.634957107843,
+          "sideHandleX": 0.13319182019218062,
+          "sideHandleY": 0.2809619371982369,
+          "crownHandle": 0.6311079109278388,
+          "rms": 0.8417528930532865
+        },
+        "outerRight2": {
+          "sideX": 795.8984375,
+          "sideY": 364.20093797191447,
+          "crownX": 628.41796875,
+          "crownY": 535.634957107843,
+          "sideHandleX": 0.0,
+          "sideHandleY": 0.6207640503881369,
+          "crownHandle": 0.6576569511341066,
+          "rms": 0.0492404571272129
+        },
+        "innerLeft": {
+          "sideX": 164.0625,
+          "sideY": 328.30557218046624,
+          "crownX": 285.15625,
+          "crownY": 460.4358149509803,
+          "sideHandleX": 0.0,
+          "sideHandleY": 0.5119047818975028,
+          "crownHandle": 0.5939319020625413,
+          "rms": 0.12722034484099956
+        },
+        "innerRight": {
+          "sideX": 394.53125,
+          "sideY": 358.7178946793954,
+          "crownX": 285.15625,
+          "crownY": 460.4358149509803,
+          "sideHandleX": 0.0,
+          "sideHandleY": 0.5598691337792032,
+          "crownHandle": 0.64299812344386,
+          "rms": 0.08893742134552364
+        },
+        "innerLeft2": {
+          "sideX": 479.4921875,
+          "sideY": 340.8961566274229,
+          "crownX": 601.5625,
+          "crownY": 460.43964460784304,
+          "sideHandleX": 0.0,
+          "sideHandleY": 0.4649098192668279,
+          "crownHandle": 0.6624480536819564,
+          "rms": 0.154301653017179
+        },
+        "innerRight2": {
+          "sideX": 710.9375,
+          "sideY": 343.77119751268594,
+          "crownX": 601.5625,
+          "crownY": 460.43964460784304,
+          "sideHandleX": 0.0,
+          "sideHandleY": 0.4645202575389459,
+          "crownHandle": 0.8499945241501965,
+          "rms": 0.05450617934072667
+        }
+      },
+      "display": {
+        "left": 55.17578125,
+        "right": 750.48828125,
+        "bottom": 0.0,
+        "top": 517.578125,
+        "capTop": 507.8124999999999,
+        "capRight": 140.13480392156862,
+        "leftInner": 140.13480392156862,
+        "middleLeft": 360.3515625,
+        "middleRight": 445.3125,
+        "rightInner": 665.5292585784314,
+        "outerLeft": {
+          "sideX": 140.13480392156862,
+          "sideY": 428.3468743223896,
+          "crownX": 281.25,
+          "crownY": 517.5589767156862,
+          "sideHandleX": 0.08754775886681948,
+          "sideHandleY": 0.37978004084434375,
+          "crownHandle": 0.6037864399230728,
+          "rms": 0.05806841143341876
+        },
+        "outerRight": {
+          "sideX": 424.8046875,
+          "sideY": 419.9180453431371,
+          "crownX": 281.25,
+          "crownY": 517.5589767156862,
+          "sideHandleX": 0.07556836487936514,
+          "sideHandleY": 0.2674284426372776,
+          "crownHandle": 0.6994703522009926,
+          "rms": 0.3094476172944178
+        },
+        "outerLeft2": {
+          "sideX": 424.8046875,
+          "sideY": 419.9180453431371,
+          "crownX": 584.9609375,
+          "crownY": 517.562806372549,
+          "sideHandleX": 0.09279958076500455,
+          "sideHandleY": 0.2976322783333985,
+          "crownHandle": 0.6322924780394632,
+          "rms": 0.3423604235106535
+        },
+        "outerRight2": {
+          "sideX": 750.48828125,
+          "sideY": 352.759764686861,
+          "crownX": 584.9609375,
+          "crownY": 517.562806372549,
+          "sideHandleX": 0.0,
+          "sideHandleY": 0.5592161711111446,
+          "crownHandle": 0.6394757855156108,
+          "rms": 0.0770665874132032
+        },
+        "innerLeft": {
+          "sideX": 140.13480392156862,
+          "sideY": 321.5845985585321,
+          "crownX": 256.34765625,
+          "crownY": 442.3751531862744,
+          "sideHandleX": 0.0,
+          "sideHandleY": 0.49587124308661407,
+          "crownHandle": 0.6212473501266116,
+          "rms": 0.1405387817270509
+        },
+        "innerRight": {
+          "sideX": 360.3515625,
+          "sideY": 342.1999239093164,
+          "crownX": 256.34765625,
+          "crownY": 442.3751531862744,
+          "sideHandleX": 0.0,
+          "sideHandleY": 0.5150807197780045,
+          "crownHandle": 0.6695727088406298,
+          "rms": 0.1061939830348729
+        },
+        "innerLeft2": {
+          "sideX": 445.3125,
+          "sideY": 324.63496865323765,
+          "crownX": 560.05859375,
+          "crownY": 442.37132352941165,
+          "sideHandleX": 0.0,
+          "sideHandleY": 0.5222122562089766,
+          "crownHandle": 0.6288256898522928,
+          "rms": 0.11411340047784768
+        },
+        "innerRight2": {
+          "sideX": 665.5292585784314,
+          "sideY": 330.5839591278648,
+          "crownX": 560.05859375,
+          "crownY": 442.37132352941165,
+          "sideHandleX": 0.0,
+          "sideHandleY": 0.5880751215778061,
+          "crownHandle": 0.6748135653946727,
+          "rms": 0.12876522814146532
+        }
+      }
+    }
+  },
+  "runs": [
+    {
+      "report": "references/shoulders-baseline/text/render-settings.json",
+      "sha256": "03e0acec3984b812a1a03fd43cdf77c5e747e2bd189193b748d9c86d7b18c1ae"
+    },
+    {
+      "report": "references/shoulders-baseline/display/render-settings.json",
+      "sha256": "58ad1cd5939c5950215c2d07574d0ce5561913c7b3f16a12d6a759501bfeaefd"
+    }
+  ]
+}

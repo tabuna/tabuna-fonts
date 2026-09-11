@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ru">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Проверка a/а — Tabuna Sans</title>
+<style>body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif}pre{white-space:pre-wrap;overflow-wrap:anywhere}</style>
+<h1>Парное сравнение a/а</h1>
+<p id="status">Измерение…</p>
+<p>Два независимых Worker: прежняя и текущая сборки, один системный эталон.</p>
+<details><summary>Сводка JSON</summary><pre id="summary"></pre></details>
+<details><summary>Полные измерения JSON</summary><pre id="json"></pre></details>
+<script>
+(async()=>{
+  const characters=[...'aаnhmIHEFLЕІПпШшЦцЩщТтНнЬьЪъЫыPРDBВвoOоО'];
+  const run=path=>new Promise((resolve,reject)=>{
+    const worker=new Worker('scripts/canvas-worker.js');
+    worker.onmessage=({data})=>{worker.terminate();data.error?reject(new Error(data.error)):resolve(data)};
+    worker.onerror=e=>{worker.terminate();reject(new Error(e.message))};
+    worker.postMessage({fontURL:new URL(`${path}?v=${Date.now()}`,location.href).href,characters,sizes:[16,32,64,128],weights:[100,400,900]});
+  });
+  const before=await run('references/lower-a-baseline/TabunaSans-before.woff2');
+  const after=await run('dist/TabunaSansVariable.woff2');
+  if(before.records.length!==after.records.length)throw new Error('Разные наборы сравнений');
+  const rows=after.records.map((r,i)=>{
+    const b=before.records[i];
+    if(r.text!==b.text||r.size!==b.size||r.weight!==b.weight)throw new Error('Разный порядок сравнений');
+    return {...r,beforeInkError:b.absoluteInkError,beforeDifferentPixels:b.differentPixels,beforeExactAdvance:b.exactAdvance,
+      beforeComplete:b.completeMatch,referenceWidthUnchanged:b.systemAdvance===r.systemAdvance,beforeSelfTestPixels:b.selfTestPixels};
+  });
+  const stats=rs=>({total:rs.length,beforeInkError:rs.reduce((a,r)=>a+r.beforeInkError,0),afterInkError:rs.reduce((a,r)=>a+r.absoluteInkError,0),
+    improved:rs.filter(r=>r.absoluteInkError<r.beforeInkError).length,unchanged:rs.filter(r=>r.absoluteInkError===r.beforeInkError).length,worse:rs.filter(r=>r.absoluteInkError>r.beforeInkError).length,
+    beforeExactAdvance:rs.filter(r=>r.beforeExactAdvance).length,exactAdvance:rs.filter(r=>r.exactAdvance).length,beforeComplete:rs.filter(r=>r.beforeComplete).length,complete:rs.filter(r=>r.completeMatch).length,
+    selfTestPixels:rs.reduce((a,r)=>a+r.selfTestPixels+r.beforeSelfTestPixels,0),referenceWidthChanges:rs.filter(r=>!r.referenceWidthUnchanged).length});
+  const summary={userAgent:after.userAgent,beforeHash:before.fontHash,afterHash:after.fontHash,
+    all:stats(rows),lowerAByWeight:[100,400,900].map(weight=>({weight,...stats(rows.filter(r=>r.weight===weight&&'aа'.includes(r.text)))})),
+    controls:stats(rows.filter(r=>!'aа'.includes(r.text))),lowerA:rows.filter(r=>'aа'.includes(r.text))};
+  document.querySelector('#json').textContent=JSON.stringify({before,after},null,2);
+  document.querySelector('#summary').textContent=JSON.stringify(summary,null,2);
+  document.querySelector('#status').textContent=`Завершено: ${rows.length} парных сравнений; ${summary.all.exactAdvance} точных ширин, ${summary.all.complete} полных совпадений.`;
+})().catch(error=>document.querySelector('#status').textContent=error.message);
+</script>
+</html>

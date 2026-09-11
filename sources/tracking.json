@@ -1,0 +1,336 @@
+{
+  "purpose": "Measured normal tracking for the current original I construction",
+  "axisRange": [
+    9,
+    14,
+    128
+  ],
+  "basisSHA256": "3d86f65454b706204b268b806a0c4793944321f5ebe081795c0ed41934a314ca",
+  "referenceFont": ".SFNS-Regular",
+  "os": "Version 26.5.2 (Build 25F84)",
+  "weight": 400,
+  "unitsPerEm": 2048,
+  "records": [
+    {
+      "pointSize": 9,
+      "fontUnits": 78,
+      "measuredFontUnits": 78.0,
+      "roundingErrorFontUnits": 0.0,
+      "ownAdvance": 2.232421875,
+      "referenceAdvance": 2.5751953125,
+      "ownInkBounds": [
+        0.80859375,
+        0,
+        0.791015625,
+        6.34130859375
+      ],
+      "referenceInkBounds": [
+        0.80859375,
+        0,
+        0.791015625,
+        6.34130859375
+      ]
+    },
+    {
+      "pointSize": 12,
+      "fontUnits": 40,
+      "measuredFontUnits": 40.0,
+      "roundingErrorFontUnits": 0.0,
+      "ownAdvance": 2.9765625,
+      "referenceAdvance": 3.2109375,
+      "ownInkBounds": [
+        1.078125,
+        0,
+        1.0546875,
+        8.455078125
+      ],
+      "referenceInkBounds": [
+        1.078125,
+        0,
+        1.0546875,
+        8.455078125
+      ]
+    },
+    {
+      "pointSize": 14,
+      "fontUnits": 18,
+      "measuredFontUnits": 18.0,
+      "roundingErrorFontUnits": 0.0,
+      "ownAdvance": 3.47265625,
+      "referenceAdvance": 3.595703125,
+      "ownInkBounds": [
+        1.2578125,
+        0,
+        1.23046875,
+        9.8642578125
+      ],
+      "referenceInkBounds": [
+        1.2578125,
+        0,
+        1.23046875,
+        9.8642578125
+      ]
+    },
+    {
+      "pointSize": 16,
+      "fontUnits": 0,
+      "measuredFontUnits": 0.0,
+      "roundingErrorFontUnits": 0.0,
+      "ownAdvance": 3.96875,
+      "referenceAdvance": 3.96875,
+      "ownInkBounds": [
+        1.4375,
+        0,
+        1.40625,
+        11.2734375
+      ],
+      "referenceInkBounds": [
+        1.4375,
+        0,
+        1.40625,
+        11.2734375
+      ]
+    },
+    {
+      "pointSize": 18,
+      "fontUnits": -12,
+      "measuredFontUnits": -12.100015568387688,
+      "roundingErrorFontUnits": 0.10001556838768799,
+      "ownAdvance": 4.448131793478261,
+      "referenceAdvance": 4.3417840003967285,
+      "ownInkBounds": [
+        1.5908203125,
+        0,
+        1.5908203125,
+        12.6826171875
+      ],
+      "referenceInkBounds": [
+        1.599609375,
+        0,
+        1.58203125,
+        12.6826171875
+      ]
+    },
+    {
+      "pointSize": 20,
+      "fontUnits": -17,
+      "measuredFontUnits": -17.194556159420337,
+      "roundingErrorFontUnits": 0.19455615942033688,
+      "ownAdvance": 4.867164855072464,
+      "referenceAdvance": 4.699249267578125,
+      "ownInkBounds": [
+        1.689453125,
+        0,
+        1.767578125,
+        14.091796875
+      ],
+      "referenceInkBounds": [
+        1.689453125,
+        0,
+        1.767578125,
+        14.091796875
+      ]
+    },
+    {
+      "pointSize": 24,
+      "fontUnits": 8,
+      "measuredFontUnits": 7.513531759510897,
+      "roundingErrorFontUnits": 0.48646824048910275,
+      "ownAdvance": 5.56039402173913,
+      "referenceAdvance": 5.648443222045898,
+      "ownInkBounds": [
+        1.734375,
+        0,
+        2.12109375,
+        16.91015625
+      ],
+      "referenceInkBounds": [
+        1.734375,
+        0,
+        2.109375,
+        16.91015625
+      ]
+    },
+    {
+      "pointSize": 28,
+      "fontUnits": 21,
+      "measuredFontUnits": 21.0,
+      "roundingErrorFontUnits": 0.0,
+      "ownAdvance": 6.384765625,
+      "referenceAdvance": 6.671875,
+      "ownInkBounds": [
+        1.9140625,
+        0,
+        2.4609375,
+        19.728515625
+      ],
+      "referenceInkBounds": [
+        1.9140625,
+        0,
+        2.4609375,
+        19.728515625
+      ]
+    },
+    {
+      "pointSize": 32,
+      "fontUnits": 19,
+      "measuredFontUnits": 19.0,
+      "roundingErrorFontUnits": 0.0,
+      "ownAdvance": 7.296875,
+      "referenceAdvance": 7.59375,
+      "ownInkBounds": [
+        2.1875,
+        0,
+        2.8125,
+        22.546875
+      ],
+      "referenceInkBounds": [
+        2.1875,
+        0,
+        2.8125,
+        22.546875
+      ]
+    },
+    {
+      "pointSize": 40,
+      "fontUnits": 12,
+      "measuredFontUnits": 12.0,
+      "roundingErrorFontUnits": 0.0,
+      "ownAdvance": 9.12109375,
+      "referenceAdvance": 9.35546875,
+      "ownInkBounds": [
+        2.734375,
+        0,
+        3.515625,
+        28.18359375
+      ],
+      "referenceInkBounds": [
+        2.734375,
+        0,
+        3.515625,
+        28.18359375
+      ]
+    },
+    {
+      "pointSize": 48,
+      "fontUnits": 8,
+      "measuredFontUnits": 8.0,
+      "roundingErrorFontUnits": 0.0,
+      "ownAdvance": 10.9453125,
+      "referenceAdvance": 11.1328125,
+      "ownInkBounds": [
+        3.28125,
+        0,
+        4.21875,
+        33.8203125
+      ],
+      "referenceInkBounds": [
+        3.28125,
+        0,
+        4.21875,
+        33.8203125
+      ]
+    },
+    {
+      "pointSize": 56,
+      "fontUnits": 4,
+      "measuredFontUnits": 4.0,
+      "roundingErrorFontUnits": 0.0,
+      "ownAdvance": 12.76953125,
+      "referenceAdvance": 12.87890625,
+      "ownInkBounds": [
+        3.828125,
+        0,
+        4.921875,
+        39.45703125
+      ],
+      "referenceInkBounds": [
+        3.828125,
+        0,
+        4.921875,
+        39.45703125
+      ]
+    },
+    {
+      "pointSize": 64,
+      "fontUnits": 0,
+      "measuredFontUnits": 0.0,
+      "roundingErrorFontUnits": 0.0,
+      "ownAdvance": 14.59375,
+      "referenceAdvance": 14.59375,
+      "ownInkBounds": [
+        4.375,
+        0,
+        5.625,
+        45.09375
+      ],
+      "referenceInkBounds": [
+        4.375,
+        0,
+        5.625,
+        45.09375
+      ]
+    },
+    {
+      "pointSize": 72,
+      "fontUnits": -4,
+      "measuredFontUnits": -4.0,
+      "roundingErrorFontUnits": 0.0,
+      "ownAdvance": 16.41796875,
+      "referenceAdvance": 16.27734375,
+      "ownInkBounds": [
+        4.921875,
+        0,
+        6.328125,
+        50.73046875
+      ],
+      "referenceInkBounds": [
+        4.921875,
+        0,
+        6.328125,
+        50.73046875
+      ]
+    },
+    {
+      "pointSize": 96,
+      "fontUnits": -7,
+      "measuredFontUnits": -7.0,
+      "roundingErrorFontUnits": 0.0,
+      "ownAdvance": 21.890625,
+      "referenceAdvance": 21.5625,
+      "ownInkBounds": [
+        6.5625,
+        0,
+        8.4375,
+        67.640625
+      ],
+      "referenceInkBounds": [
+        6.5625,
+        0,
+        8.4375,
+        67.640625
+      ]
+    },
+    {
+      "pointSize": 128,
+      "fontUnits": -7,
+      "measuredFontUnits": -7.0,
+      "roundingErrorFontUnits": 0.0,
+      "ownAdvance": 29.1875,
+      "referenceAdvance": 28.75,
+      "ownInkBounds": [
+        8.75,
+        0,
+        11.25,
+        90.1875
+      ],
+      "referenceInkBounds": [
+        8.75,
+        0,
+        11.25,
+        90.1875
+      ]
+    }
+  ],
+  "note": "Recalibrate after changing the base advances of I. Rounded values are not evidence of exact matching."
+}

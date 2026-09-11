@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="ru">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Tabuna Sans — сравнение по пикселям</title><link rel="stylesheet" href="demo.css"><link rel="stylesheet" href="comparison.css"><script src="comparison.js" defer></script></head>
+<body>
+  <header class="masthead container"><a class="wordmark" href="index.html">tabuna / type</a><nav><a href="index.html#specimen">Образец текста</a><a href="REVIEW.md">Проверки</a></nav></header>
+  <main class="container compare-main">
+    <p class="eyebrow">Контроль рисунка / Regular 400</p>
+    <h1>Сравнение по пикселям</h1>
+    <p class="compare-intro">Одинаковый размер, общая базовая линия и один рендерер. Сравнение исходных пикселей без подгонки изображений.</p>
+    <div class="compare-controls">
+      <label>Символ <select id="character" aria-label="Символ"></select></label>
+      <label>Размер <select id="point-size"><option value="16">16 pt</option><option value="32">32 pt</option><option value="64" selected>64 pt</option><option value="128">128 pt</option></select></label>
+      <label>Увеличение <select id="zoom"><option value="1" selected>100%</option><option value="2">200%</option><option value="4">400%</option></select></label>
+      <button id="previous" type="button" aria-label="Предыдущий символ">←</button><button id="next" type="button" aria-label="Следующий символ">→</button>
+    </div>
+    <p id="comparison-status" role="status">Загрузка изображений…</p>
+    <div class="pixel-panels">
+      <figure><figcaption>01 / Tabuna Sans <a id="own-download" download>PNG ↗</a></figcaption><div class="pixel-scroll"><img id="own-image" alt="Символ в Tabuna Sans"></div></figure>
+      <figure><figcaption>02 / Системный Apple <a id="system-download" download>PNG ↗</a></figcaption><div class="pixel-scroll"><img id="system-image" alt="Тот же символ в системном шрифте"></div></figure>
+      <figure><figcaption>03 / Разница <a id="diff-download" download>PNG ↗</a></figcaption><div class="pixel-scroll"><img id="diff-image" alt="Наложение двух изображений"></div></figure>
+    </div>
+    <div class="difference-legend"><span><i class="ink shared"></i>Общие штрихи</span><span><i class="ink ours"></i>Только Tabuna</span><span><i class="ink reference"></i>Только системный</span></div>
+    <dl class="pixel-metrics"><div><dt>Совпадение пиксель в пиксель</dt><dd id="exact">—</dd></div><div><dt>Различающихся пикселей</dt><dd id="pixel-count">—</dd></div><div><dt>Пересечение штрихов</dt><dd id="overlap">—</dd></div><div><dt>Разница ширины набора</dt><dd id="advance">—</dd></div></dl>
+    <p class="compare-note">Для полного совпадения нужны ноль отличающихся пикселей и одинаковая ширина набора, без подстановки запасного шрифта. Процент пересечения учитывает площадь и насыщенность штрихов; белый фон не повышает результат.</p>
+    <details><summary>Условия измерения</summary><p id="protocol"></p><p>Это снимки нативного CoreText на macOS, а не обещание такого же сглаживания в каждом браузере. Системный шрифт только отрисовывается: его контуры и файлы не копируются в Tabuna Sans.</p><a id="report-link">Открыть исходный отчёт JSON</a></details>
+  </main>
+  <footer class="container"><span>Tabuna Sans · Контроль рисунка</span><a href="index.html">Вернуться к стенду ↗</a></footer>
+</body></html>

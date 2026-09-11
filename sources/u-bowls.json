@@ -1,0 +1,535 @@
+{
+  "method": "Authored four-cubic U/u bowls and straight stems; separate PNG fields; no reference vectors",
+  "glyphs": {
+    "U": {
+      "100": {
+        "text": {
+          "parameters": {
+            "outerLeftY": 0.3597857241358829,
+            "outerBottomX": 0.49955371274842575,
+            "outerRightY": 0.35937170759573184,
+            "innerLeftX": 0.0706031584409007,
+            "innerLeftY": 0.35521604112740024,
+            "innerBottomX": 0.4983684828373513,
+            "innerBottomY": 0.04786519513568907,
+            "innerRightX": 0.9311773175873637,
+            "innerRightY": 0.36395314531436374
+          },
+          "handles": [
+            0.6569673449242609,
+            0.565483111728066,
+            0.552942381765077,
+            0.6710584599743203,
+            0.6756127035280174,
+            0.5675514419585095,
+            0.5544860107292693,
+            0.661746925428218
+          ],
+          "bounds": [
+            90.8203125,
+            -11.71875,
+            616.2109375,
+            704.58984375
+          ]
+        },
+        "display": {
+          "parameters": {
+            "outerLeftY": 0.35847312564873635,
+            "outerBottomX": 0.49992134871529553,
+            "outerRightY": 0.36117472033262144,
+            "innerLeftX": 0.06968503215296516,
+            "innerLeftY": 0.3598325427073753,
+            "innerBottomX": 0.4962918013267549,
+            "innerBottomY": 0.04742408978690346,
+            "innerRightX": 0.9302983615458394,
+            "innerRightY": 0.3612786829958702
+          },
+          "handles": [
+            0.6472831883997762,
+            0.5766748398104986,
+            0.5746416692400426,
+            0.6549659388465932,
+            0.6756947840322336,
+            0.5640475854506461,
+            0.5348519477411371,
+            0.6824944261822475
+          ],
+          "bounds": [
+            62.01171875,
+            -10.25390625,
+            587.40234375,
+            704.58984375
+          ]
+        }
+      },
+      "400": {
+        "text": {
+          "parameters": {
+            "outerLeftY": 0.36227115888895567,
+            "outerBottomX": 0.5016248585030665,
+            "outerRightY": 0.3640791768503223,
+            "innerLeftX": 0.1570957804070096,
+            "innerLeftY": 0.3687990340971948,
+            "innerBottomX": 0.5013456791605274,
+            "innerBottomY": 0.11208751330412886,
+            "innerRightX": 0.8429284346037899,
+            "innerRightY": 0.36718199002230334
+          },
+          "handles": [
+            0.6550899479572592,
+            0.5678797196244971,
+            0.5522233279478435,
+            0.6729504299092723,
+            0.6499197557845203,
+            0.5694490131616656,
+            0.5302080722631329,
+            0.6921211683239236
+          ],
+          "bounds": [
+            88.8671875,
+            -16.6015625,
+            648.4375,
+            704.58984375
+          ]
+        },
+        "display": {
+          "parameters": {
+            "outerLeftY": 0.3647409054655208,
+            "outerBottomX": 0.5016500837740646,
+            "outerRightY": 0.36589150123025366,
+            "innerLeftX": 0.15707259992223754,
+            "innerLeftY": 0.37008568058476443,
+            "innerBottomX": 0.497367788802613,
+            "innerBottomY": 0.11289767582131574,
+            "innerRightX": 0.8429592583664861,
+            "innerRightY": 0.37382716619352363
+          },
+          "handles": [
+            0.6550792944444164,
+            0.5679345802710252,
+            0.5524305977958712,
+            0.6711801713023354,
+            0.69133760598051,
+            0.5499601998778227,
+            0.5451933484854133,
+            0.6658201847402428
+          ],
+          "bounds": [
+            68.359375,
+            -11.71875,
+            627.9296875,
+            704.58984375
+          ]
+        }
+      },
+      "900": {
+        "text": {
+          "parameters": {
+            "outerLeftY": 0.3697793935876039,
+            "outerBottomX": 0.5036346867711446,
+            "outerRightY": 0.3641688357582519,
+            "innerLeftX": 0.30670368481877236,
+            "innerLeftY": 0.38928856891118946,
+            "innerBottomX": 0.5017198079397447,
+            "innerBottomY": 0.21314596199189287,
+            "innerRightX": 0.6933100602110258,
+            "innerRightY": 0.38678535132419034
+          },
+          "handles": [
+            0.6620327593819056,
+            0.5634734955794517,
+            0.5582184683576639,
+            0.6450848616033188,
+            0.7104694220866574,
+            0.5560347589083535,
+            0.5492374035795043,
+            0.7245785302368153
+          ],
+          "bounds": [
+            82.03125,
+            -19.04296875,
+            693.359375,
+            704.58984375
+          ]
+        },
+        "display": {
+          "parameters": {
+            "outerLeftY": 0.3705976341858254,
+            "outerBottomX": 0.49995870800811926,
+            "outerRightY": 0.36913106828402265,
+            "innerLeftX": 0.3067081443062592,
+            "innerLeftY": 0.3920961593118195,
+            "innerBottomX": 0.496659249787444,
+            "innerBottomY": 0.2153820138343821,
+            "innerRightX": 0.693314194730355,
+            "innerRightY": 0.3915539630580665
+          },
+          "handles": [
+            0.6499086778110539,
+            0.5620215458270242,
+            0.5722772597242122,
+            0.6394330260571902,
+            0.7136443135961523,
+            0.57750099743465,
+            0.5175869994388002,
+            0.7300733610856812
+          ],
+          "bounds": [
+            51.7578125,
+            -12.6953125,
+            663.0859375,
+            704.58984375
+          ]
+        }
+      }
+    },
+    "u": {
+      "100": {
+        "text": {
+          "parameters": {
+            "outerLeftY": 0.3599230493846862,
+            "outerBottomX": 0.46326598858331636,
+            "outerRightY": 0.22126594199848787,
+            "innerLeftX": 0.08811121212951374,
+            "innerLeftY": 0.37618392270791184,
+            "innerBottomX": 0.4748597866480529,
+            "innerBottomY": 0.06096131672140603,
+            "innerRightX": 0.9119423568531502,
+            "innerRightY": 0.4126915116411665,
+            "capLeft": 0.9118917876087715,
+            "joinX": 0.9035714387914765,
+            "capBottomY": 0.015539305301645339
+          },
+          "handles": [
+            0.6206962197631827,
+            0.5946249078155408,
+            0.5261164579223322,
+            0.5577936135053101,
+            0.6469863625154036,
+            0.5460888316603795,
+            0.5475912506744701,
+            0.6787199786453537,
+            0.12239390164646873
+          ],
+          "bounds": [
+            83.0078125,
+            -8.30078125,
+            493.1640625,
+            525.87890625
+          ]
+        },
+        "display": {
+          "parameters": {
+            "outerLeftY": 0.3826620412094379,
+            "outerBottomX": 0.4610529061146527,
+            "outerRightY": 0.2228125029366629,
+            "innerLeftX": 0.09085409614856041,
+            "innerLeftY": 0.39097497043001284,
+            "innerBottomX": 0.48767520782362733,
+            "innerBottomY": 0.06389652248408591,
+            "innerRightX": 0.9090954703739361,
+            "innerRightY": 0.4093398960129729,
+            "capLeft": 0.9090757566312456,
+            "joinX": 0.9069241329192976,
+            "capBottomY": 0.01608325449385052
+          },
+          "handles": [
+            0.6282646255804046,
+            0.6095386822086829,
+            0.5010982006856033,
+            0.5776100603273783,
+            0.6361116086642915,
+            0.5398785477330647,
+            0.5689335142317125,
+            0.7125969804023814,
+            0.13806474909568242
+          ],
+          "bounds": [
+            52.734375,
+            -8.30078125,
+            450.1953125,
+            507.8125
+          ]
+        }
+      },
+      "400": {
+        "text": {
+          "parameters": {
+            "outerLeftY": 0.3614674543073095,
+            "outerBottomX": 0.4141995165507177,
+            "outerRightY": 0.16408740201166575,
+            "innerLeftX": 0.19749756860760173,
+            "innerLeftY": 0.40315454641827186,
+            "innerBottomX": 0.4742537770334019,
+            "innerBottomY": 0.14048493653045824,
+            "innerRightX": 0.8035637243218243,
+            "innerRightY": 0.42488881487550617,
+            "capLeft": 0.8034951834103832,
+            "joinX": 0.7845459880085225,
+            "capBottomY": 0.01731996353691887
+          },
+          "handles": [
+            0.6834003228579713,
+            0.5986886093041658,
+            0.5288807955532102,
+            0.6233999548110335,
+            0.7239348836723171,
+            0.5485626794131812,
+            0.552640686339686,
+            0.8215686977968476,
+            0.1674262941174983
+          ],
+          "bounds": [
+            74.21875,
+            -9.27734375,
+            504.39453125,
+            526.3671875
+          ]
+        },
+        "display": {
+          "parameters": {
+            "outerLeftY": 0.36063654330215217,
+            "outerBottomX": 0.41129975463381035,
+            "outerRightY": 0.1575714470947819,
+            "innerLeftX": 0.20279388568867882,
+            "innerLeftY": 0.39433355690546584,
+            "innerBottomX": 0.4759152003175852,
+            "innerBottomY": 0.1454801599085931,
+            "innerRightX": 0.7972340024605303,
+            "innerRightY": 0.42925835047999544,
+            "capLeft": 0.7971392200775262,
+            "joinX": 0.7922802167726783,
+            "capBottomY": 0.018867924528301886
+          },
+          "handles": [
+            0.6298977875790976,
+            0.5966371570704182,
+            0.519352078723209,
+            0.5808334085675306,
+            0.6639863229125625,
+            0.5736575564880873,
+            0.5394848752183783,
+            0.7592917776421494,
+            0.1866232208081381
+          ],
+          "bounds": [
+            52.734375,
+            -9.765625,
+            471.6796875,
+            507.8125
+          ]
+        }
+      },
+      "900": {
+        "text": {
+          "parameters": {
+            "outerLeftY": 0.36800403719489566,
+            "outerBottomX": 0.34339989514878977,
+            "outerRightY": 0.17669510178499254,
+            "innerLeftX": 0.34223884429858825,
+            "innerLeftY": 0.4427178218090118,
+            "innerBottomX": 0.49528504430132275,
+            "innerBottomY": 0.26335777838746094,
+            "innerRightX": 0.6577578513189976,
+            "innerRightY": 0.4435398897204079,
+            "capLeft": 0.6577289526612465,
+            "joinX": 0.639840806553949,
+            "capBottomY": 0.0236013986013986
+          },
+          "handles": [
+            0.6693472341169352,
+            0.6099168503947294,
+            0.512925564822647,
+            0.5796735222998199,
+            0.7104730234125125,
+            0.5202958639314984,
+            0.5381733029098058,
+            0.7860514346407391,
+            0.13924307904426272
+          ],
+          "bounds": [
+            61.03515625,
+            -13.18359375,
+            590.33203125,
+            545.41015625
+          ]
+        },
+        "display": {
+          "parameters": {
+            "outerLeftY": 0.3666898195472881,
+            "outerBottomX": 0.3401782772186834,
+            "outerRightY": 0.19594367896400117,
+            "innerLeftX": 0.34072406405263417,
+            "innerLeftY": 0.4488730135108803,
+            "innerBottomX": 0.49608366054726494,
+            "innerBottomY": 0.2693046345227797,
+            "innerRightX": 0.6575522710869485,
+            "innerRightY": 0.44696712268457267,
+            "capLeft": 0.6574436713363797,
+            "joinX": 0.6509631660831837,
+            "capBottomY": 0.02146690518783542
+          },
+          "handles": [
+            0.6700990557819427,
+            0.5711846649090494,
+            0.5459026671609597,
+            0.5905163526812026,
+            0.692326264724422,
+            0.5253227885323097,
+            0.5778229495499523,
+            0.71658755523669,
+            0.15103460573468172
+          ],
+          "bounds": [
+            38.0859375,
+            -11.71875,
+            568.359375,
+            534.1796875
+          ]
+        }
+      }
+    }
+  },
+  "runs": [
+    {
+      "report": "references/u-bowls-baseline/100-16/render-settings.json",
+      "sha256": "d3be9b00f14a399100da751cfe87e59b0862cab8b7e9c1b934f8ef6403024024",
+      "os": "Version 26.5.2 (Build 25F84)"
+    },
+    {
+      "report": "references/u-bowls-baseline/100-64/render-settings.json",
+      "sha256": "e5b96b4fc85b01e885e259b905f8717218ddad6b014f71fe29512662a550ca6c",
+      "os": "Version 26.5.2 (Build 25F84)"
+    },
+    {
+      "report": "references/u-bowls-baseline/400-16/render-settings.json",
+      "sha256": "bcb5a2092063cb3766739bfca556dd2b2baa28dabd3b51e867985adb3bc82ef7",
+      "os": "Version 26.5.2 (Build 25F84)"
+    },
+    {
+      "report": "references/u-bowls-baseline/400-64/render-settings.json",
+      "sha256": "9bae4b0c3d4cc25f74c34937c7819224985404058472f9a9c9fc3e8ed553716d",
+      "os": "Version 26.5.2 (Build 25F84)"
+    },
+    {
+      "report": "references/u-bowls-baseline/900-16/render-settings.json",
+      "sha256": "c3dbc2a7b2e2bbe4ce235904961eee99ec63d1437ca7ced7a72dfe53c0e0a406",
+      "os": "Version 26.5.2 (Build 25F84)"
+    },
+    {
+      "report": "references/u-bowls-baseline/900-64/render-settings.json",
+      "sha256": "339bc109e24f174569e1877a066350570f2731d7ef0b82598e9d5ee0a37a231f",
+      "os": "Version 26.5.2 (Build 25F84)"
+    }
+  ],
+  "diagnostics": [
+    {
+      "character": "U",
+      "weight": 100,
+      "size": 16,
+      "rmsPixels": 0.1590050978666373,
+      "evaluations": 44,
+      "optimizerSuccess": true,
+      "preview": "build/u-bowls-fit-U-100-16.png"
+    },
+    {
+      "character": "u",
+      "weight": 100,
+      "size": 16,
+      "rmsPixels": 0.18522060667340937,
+      "evaluations": 60,
+      "optimizerSuccess": true,
+      "preview": "build/u-bowls-fit-u-100-16.png"
+    },
+    {
+      "character": "U",
+      "weight": 100,
+      "size": 64,
+      "rmsPixels": 0.2667345196101542,
+      "evaluations": 69,
+      "optimizerSuccess": true,
+      "preview": "build/u-bowls-fit-U-100-64.png"
+    },
+    {
+      "character": "u",
+      "weight": 100,
+      "size": 64,
+      "rmsPixels": 0.24368543210390942,
+      "evaluations": 49,
+      "optimizerSuccess": true,
+      "preview": "build/u-bowls-fit-u-100-64.png"
+    },
+    {
+      "character": "U",
+      "weight": 400,
+      "size": 16,
+      "rmsPixels": 0.1722239308275104,
+      "evaluations": 59,
+      "optimizerSuccess": true,
+      "preview": "build/u-bowls-fit-U-400-16.png"
+    },
+    {
+      "character": "u",
+      "weight": 400,
+      "size": 16,
+      "rmsPixels": 0.2817649830670012,
+      "evaluations": 32,
+      "optimizerSuccess": true,
+      "preview": "build/u-bowls-fit-u-400-16.png"
+    },
+    {
+      "character": "U",
+      "weight": 400,
+      "size": 64,
+      "rmsPixels": 0.17039152783613268,
+      "evaluations": 49,
+      "optimizerSuccess": true,
+      "preview": "build/u-bowls-fit-U-400-64.png"
+    },
+    {
+      "character": "u",
+      "weight": 400,
+      "size": 64,
+      "rmsPixels": 0.23363151866740603,
+      "evaluations": 42,
+      "optimizerSuccess": true,
+      "preview": "build/u-bowls-fit-u-400-64.png"
+    },
+    {
+      "character": "U",
+      "weight": 900,
+      "size": 16,
+      "rmsPixels": 0.13627021084208088,
+      "evaluations": 194,
+      "optimizerSuccess": true,
+      "preview": "build/u-bowls-fit-U-900-16.png"
+    },
+    {
+      "character": "u",
+      "weight": 900,
+      "size": 16,
+      "rmsPixels": 0.2632045295906029,
+      "evaluations": 52,
+      "optimizerSuccess": true,
+      "preview": "build/u-bowls-fit-u-900-16.png"
+    },
+    {
+      "character": "U",
+      "weight": 900,
+      "size": 64,
+      "rmsPixels": 0.15691683770376566,
+      "evaluations": 41,
+      "optimizerSuccess": true,
+      "preview": "build/u-bowls-fit-U-900-64.png"
+    },
+    {
+      "character": "u",
+      "weight": 900,
+      "size": 64,
+      "rmsPixels": 0.24752880869913366,
+      "evaluations": 54,
+      "optimizerSuccess": true,
+      "preview": "build/u-bowls-fit-u-900-64.png"
+    }
+  ]
+}

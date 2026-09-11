@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="ru">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Проверка системной ширины — Tabuna Sans</title>
+<style>
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;margin:32px;color:#222;background:#fff}h1{font-size:24px}table{border-collapse:collapse}td,th{padding:8px 14px;border-bottom:1px solid #ddd;text-align:left;font-variant-numeric:tabular-nums}.measure{display:inline-block;white-space:pre;font-weight:400;font-optical-sizing:auto;font-kerning:normal;letter-spacing:normal}#samples{position:absolute;left:0;top:0;visibility:hidden;pointer-events:none}pre{white-space:pre-wrap;font-size:12px}
+</style>
+<h1>Ширина набора в браузере</h1>
+<p>Системный шрифт устройства, веб-шрифт Tabuna и версия после стандартного санитайзера.</p>
+<p id="status">Загрузка шрифтов…</p>
+<details><summary>Измерения ширины</summary><table><thead><tr><th>Размер</th><th>Текст</th><th>Системный</th><th>Tabuna</th><th>После OTS</th></tr></thead><tbody id="results"></tbody></table></details>
+<details><summary>Измерения JSON</summary><pre id="json"></pre></details><div id="samples" aria-hidden="true"></div>
+<h2>Пиксели в Canvas браузера</h2>
+<p>Одинаковые начало строки, базовая линия и масштаб. Ненулевые различия считаются несовпадением.</p>
+<p id="pixel-status">Ожидание шрифтов…</p>
+<details><summary>Попиксельные измерения JSON</summary><pre id="pixel-json"></pre></details>
+<div id="pixel-samples"></div>
+<h2>Независимая проверка Canvas</h2>
+<p>Отдельный поток без предварительного рендера DOM. Смешанный сценарий выше проверяется отдельно.</p>
+<p id="worker-status">Ожидание шрифтов…</p>
+<details><summary>Измерения Worker JSON</summary><pre id="worker-json"></pre></details>
+<script>
+(async()=>{
+  const nonce=Date.now();
+  const candidate=new URLSearchParams(location.search).get('candidate')==='optical-widths';
+  const files=candidate?[['TabunaProbe','build/optical-widths-candidate.woff2'],['TabunaSanitized','build/optical-widths-candidate-sanitized.ttf']]:[['TabunaProbe','dist/TabunaSansVariable.woff2'],['TabunaSanitized','build/TabunaSans-sanitized.ttf']];
+  const fontHashes={};
+  for(const [family,path] of files){
+    const response=await fetch(`${path}?calibration=${nonce}`,{cache:'no-store'});
+    if(!response.ok)throw new Error(`Не удалось загрузить ${path}: ${response.status}`);
+    const bytes=await response.arrayBuffer();
+    fontHashes[family]=Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',bytes)),b=>b.toString(16).padStart(2,'0')).join('');
+    const face=new FontFace(family,bytes,{weight:'100 900'});
+    await face.load();document.fonts.add(face);
+  }
+  await Promise.all([document.fonts.load('400 32px TabunaProbe','I'),document.fonts.load('400 32px TabunaSanitized','I')]);
+  const rows=[];
+  const validation=await (await fetch('sources/text-validation.json',{cache:'no-store'})).json();
+  const controlCharacters=['I','H','E','F','L','Н','Е','І','P','Р','D','B','В','в','o','O','о','О'];
+  const texts=[...controlCharacters,'IIII','I I','HEFL','НЕІ',...validation.strings];
+  for(const size of [9,12,14,16,18,20,24,28,32,48,64,96,128]){
+    for(const text of texts){
+      const row={size,text};
+      for(const [key,family] of [['system','system-ui'],['tabuna','TabunaProbe'],['sanitized','TabunaSanitized']]){
+        const el=document.createElement('span');el.className='measure';el.textContent=text;el.style.fontSize=`${size}px`;el.style.fontFamily=family;document.querySelector('#samples').append(el);
+        const range=document.createRange();range.selectNodeContents(el);row[key]=range.getBoundingClientRect().width;
+      }
+      rows.push(row);const tr=document.createElement('tr');
+      for(const value of [size,text,row.system,row.tabuna,row.sanitized]){const td=document.createElement('td');td.textContent=String(value);tr.append(td)}
+      document.querySelector('#results').append(tr);
+    }
+  }
+  const data={userAgent:navigator.userAgent,devicePixelRatio,fontHashes,fontsLoaded:document.fonts.check('32px TabunaProbe')&&document.fonts.check('32px TabunaSanitized'),rows};
+  document.querySelector('#json').textContent=JSON.stringify(data,null,2);document.querySelector('#status').textContent='Измерения завершены';
+  const pixelRows=[];
+  function raster(text,size,family){
+    const canvas=document.createElement('canvas');canvas.width=320;canvas.height=220;canvas.style.width='320px';canvas.style.height='220px';
+    const context=canvas.getContext('2d',{willReadFrequently:true});
+    context.fillStyle='#fff';context.fillRect(0,0,canvas.width,canvas.height);
+    context.fillStyle='#000';context.font=`400 ${size}px ${family}`;context.fontKerning='normal';context.textBaseline='alphabetic';
+    context.fillText(text,32,160);
+    return {canvas,advance:context.measureText(text).width,pixels:context.getImageData(0,0,canvas.width,canvas.height).data};
+  }
+  for(const size of [16,32,64,128]){
+    for(const text of controlCharacters){
+      const own=raster(text,size,'TabunaProbe'),system=raster(text,size,'system-ui'),repeat=raster(text,size,'system-ui');
+      let differentPixels=0,selfTestPixels=0,absoluteInkError=0;
+      for(let i=0;i<own.pixels.length;i+=4){
+        const difference=Math.abs(own.pixels[i]-system.pixels[i]);
+        if(difference)differentPixels++;absoluteInkError+=difference;
+        if(system.pixels[i]!==repeat.pixels[i])selfTestPixels++;
+      }
+      pixelRows.push({size,text,differentPixels,absoluteInkError,selfTestPixels,ownAdvance:own.advance,systemAdvance:system.advance,
+        exactPixels:differentPixels===0,completeMatch:differentPixels===0&&own.advance===system.advance&&selfTestPixels===0});
+      if(size===64){
+        const pair=document.createElement('figure'),caption=document.createElement('figcaption');
+        caption.textContent=`${text}, 64 px — Tabuna / системный; различаются ${differentPixels} пикселей`;
+        pair.append(caption,own.canvas,system.canvas);document.querySelector('#pixel-samples').append(pair);
+      }
+    }
+  }
+  const pixelReport={userAgent:navigator.userAgent,fontHashes,scale:1,canvas:[320,220],origin:[32,160],weight:400,
+    renderer:'Canvas2D in actual Chromium; no image registration',records:pixelRows,
+    exactPixelCount:pixelRows.filter(r=>r.exactPixels).length,completeCount:pixelRows.filter(r=>r.completeMatch).length};
+  document.querySelector('#pixel-json').textContent=JSON.stringify(pixelReport,null,2);
+  document.querySelector('#pixel-status').textContent=`Пиксели совпали: ${pixelReport.exactPixelCount} из ${pixelRows.length}. Пиксели и ширина: ${pixelReport.completeCount}.`;
+  const worker=new Worker('scripts/canvas-worker.js');
+  worker.onmessage=({data})=>{
+    document.querySelector('#worker-json').textContent=JSON.stringify(data,null,2);
+    document.querySelector('#worker-status').textContent=data.error||`Пиксели: ${data.exactPixelCount}/${data.records.length}; ширины: ${data.exactAdvanceCount}; пиксели и ширины: ${data.completeCount}.`;
+    worker.terminate();
+  };
+  worker.onerror=event=>{document.querySelector('#worker-status').textContent=event.message;worker.terminate()};
+  const workerCharacters=[...new Set([...controlCharacters,...'ПпШшЦцЩщТтНнЬьЪъЫыnhmaаeеcCсС'])];
+  worker.postMessage({fontURL:new URL(`${files[0][1]}?v=${nonce}`,location.href).href,characters:workerCharacters,sizes:[16,32,64,128],weights:[100,400,900]});
+})().catch(error=>document.querySelector('#status').textContent=error.message);
+</script>
+</html>

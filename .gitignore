@@ -1,0 +1,36 @@
+# Local Python environments and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.cache/
+
+# Generated intermediate font sources; recreated by scripts/build.py
+/build/
+/sources/*.ufo/
+/sources/*.designspace
+
+# Local reference measurements, third-party downloads, and rendered proofs
+/references/
+/proofs/
+
+# Editor, operating system, and temporary files
+.DS_Store
+._*
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+*.tmp
+*.log
+
+# Local credentials and configuration
+.env
+.env.*
+!.env.example
+
+# Keep release fonts and web assets in /dist/ under version control.

@@ -1,0 +1,371 @@
+{
+  "method": "Original ellipse, counter and stem fitted to native PNG distance fields; no reference vectors",
+  "glyphs": {
+    "Ф": {
+      "100": {
+        "text": {
+          "parameters": [
+            0.0,
+            0.0,
+            0.0576310746998154,
+            0.11892052627845273,
+            0.04190024840202132,
+            -2.928693602146798e-48,
+            1.0000000000000002
+          ],
+          "bounds": [
+            58.59375,
+            -6.34765625,
+            678.7109375,
+            717.28515625
+          ],
+          "advance": 776.4033079147339,
+          "diagnostic": {
+            "character": "Ф",
+            "weight": 100,
+            "size": 16,
+            "cost": 145.04804422870038,
+            "evaluations": 14,
+            "success": true
+          }
+        },
+        "display": {
+          "parameters": [
+            0.0,
+            0.0,
+            0.05644722584442192,
+            0.09499308097538685,
+            0.05704760881550109,
+            -3.6017709039997407e-28,
+            1.0000000000000002
+          ],
+          "bounds": [
+            32.71484375,
+            -1.46484375,
+            678.22265625,
+            707.51953125
+          ],
+          "advance": 747.0694780349731,
+          "diagnostic": {
+            "character": "Ф",
+            "weight": 100,
+            "size": 64,
+            "cost": 1040.696226389508,
+            "evaluations": 10,
+            "success": true
+          }
+        }
+      },
+      "400": {
+        "text": {
+          "parameters": [
+            0.0,
+            0.0,
+            0.14277272734140145,
+            0.057540967311221713,
+            0.1329832352979822,
+            -1.80682020507001e-23,
+            1.0000000000000002
+          ],
+          "bounds": [
+            60.05859375,
+            -9.765625,
+            709.47265625,
+            724.12109375
+          ],
+          "advance": 810.546875,
+          "diagnostic": {
+            "character": "Ф",
+            "weight": 400,
+            "size": 16,
+            "cost": 141.88013281068737,
+            "evaluations": 10,
+            "success": true
+          }
+        },
+        "display": {
+          "parameters": [
+            0.0,
+            0.0,
+            0.14000964722046474,
+            0.06504299648212328,
+            0.12152201186509656,
+            -0.0018618363818744,
+            1.004021307051042
+          ],
+          "bounds": [
+            41.9921875,
+            -4.8828125,
+            708.984375,
+            714.35546875
+          ],
+          "advance": 795.8984375,
+          "diagnostic": {
+            "character": "Ф",
+            "weight": 400,
+            "size": 64,
+            "cost": 1081.016014103155,
+            "evaluations": 12,
+            "success": true
+          }
+        }
+      },
+      "900": {
+        "text": {
+          "parameters": [
+            0.0,
+            0.0,
+            0.015000000000000001,
+            0.046449692660149144,
+            0.19831988951332866,
+            -1.6475150636926205e-23,
+            1.0000000000000002
+          ],
+          "bounds": [
+            56.15234375,
+            -18.06640625,
+            850.09765625,
+            740.72265625
+          ],
+          "advance": 943.1933760643005,
+          "diagnostic": {
+            "character": "Ф",
+            "weight": 900,
+            "size": 16,
+            "cost": 165.81757008317604,
+            "evaluations": 11,
+            "success": true
+          }
+        },
+        "display": {
+          "parameters": [
+            0.0,
+            0.0,
+            0.015000000000000001,
+            0.03255559330687503,
+            0.19999999999999998,
+            -1.2983737677429987e-20,
+            1.0000000000000002
+          ],
+          "bounds": [
+            29.296875,
+            -9.27734375,
+            851.5625,
+            723.14453125
+          ],
+          "advance": 913.4899377822876,
+          "diagnostic": {
+            "character": "Ф",
+            "weight": 900,
+            "size": 64,
+            "cost": 1171.2400040551163,
+            "evaluations": 11,
+            "success": true
+          }
+        }
+      }
+    },
+    "ф": {
+      "100": {
+        "text": {
+          "parameters": [
+            0.0,
+            0.0,
+            0.05925716889564245,
+            0.18542559073683304,
+            0.040707461821687545,
+            -0.19000000000000003,
+            1.0300000000000002
+          ],
+          "bounds": [
+            64.94140625,
+            -172.36328125,
+            599.609375,
+            888.671875
+          ],
+          "advance": 709.9350690841675,
+          "diagnostic": {
+            "character": "ф",
+            "weight": 100,
+            "size": 16,
+            "cost": 1087.6802626430854,
+            "evaluations": 12,
+            "success": true
+          }
+        },
+        "display": {
+          "parameters": [
+            0.0,
+            0.0,
+            0.06553062566453734,
+            0.18422158999683352,
+            0.0661621191212097,
+            -0.19000000000000003,
+            1.0300000000000002
+          ],
+          "bounds": [
+            35.15625,
+            -166.50390625,
+            580.56640625,
+            850.09765625
+          ],
+          "advance": 653.8631916046143,
+          "diagnostic": {
+            "character": "ф",
+            "weight": 100,
+            "size": 64,
+            "cost": 6393.325725307109,
+            "evaluations": 22,
+            "success": true
+          }
+        }
+      },
+      "400": {
+        "text": {
+          "parameters": [
+            0.0,
+            0.0,
+            0.15417489800469658,
+            0.1677638858929792,
+            0.09594057000747586,
+            -0.19000000000000003,
+            1.0300000000000002
+          ],
+          "bounds": [
+            57.6171875,
+            -175.78125,
+            624.51171875,
+            880.37109375
+          ],
+          "advance": 720.21484375,
+          "diagnostic": {
+            "character": "ф",
+            "weight": 400,
+            "size": 16,
+            "cost": 1059.9941319250092,
+            "evaluations": 16,
+            "success": true
+          }
+        },
+        "display": {
+          "parameters": [
+            0.0,
+            0.0,
+            0.15427345713981813,
+            0.16366318910624766,
+            0.14146149980721923,
+            -0.19000000000000003,
+            1.0300000000000002
+          ],
+          "bounds": [
+            35.15625,
+            -169.43359375,
+            606.93359375,
+            844.23828125
+          ],
+          "advance": 680.6640625,
+          "diagnostic": {
+            "character": "ф",
+            "weight": 400,
+            "size": 64,
+            "cost": 5465.660086183039,
+            "evaluations": 18,
+            "success": true
+          }
+        }
+      },
+      "900": {
+        "text": {
+          "parameters": [
+            0.0,
+            0.0,
+            0.015000000000038696,
+            0.14893025022930206,
+            0.1999999999999729,
+            -0.19000000000000003,
+            1.0300000000000002
+          ],
+          "bounds": [
+            43.9453125,
+            -180.17578125,
+            781.73828125,
+            895.01953125
+          ],
+          "advance": 850.0131368637085,
+          "diagnostic": {
+            "character": "ф",
+            "weight": 900,
+            "size": 16,
+            "cost": 874.4298768557687,
+            "evaluations": 9,
+            "success": true
+          }
+        },
+        "display": {
+          "parameters": [
+            0.0,
+            0.0,
+            0.015000000000000001,
+            0.1458368653024502,
+            0.19999999999999998,
+            -0.19000000000000003,
+            1.0300000000000002
+          ],
+          "bounds": [
+            29.296875,
+            -171.875,
+            772.4609375,
+            871.09375
+          ],
+          "advance": 834.4689011573792,
+          "diagnostic": {
+            "character": "ф",
+            "weight": 900,
+            "size": 64,
+            "cost": 5804.741051671108,
+            "evaluations": 10,
+            "success": true
+          }
+        }
+      }
+    }
+  },
+  "runs": [
+    {
+      "report": "references/weight-metrics-baseline/100-16/render-settings.json",
+      "sha256": "a857a159955fae57ea220e2c3b78313eaac1012d09ca929f287d2e62472f5bad",
+      "weight": 100,
+      "pointSize": 16
+    },
+    {
+      "report": "references/weight-metrics-baseline/100-64/render-settings.json",
+      "sha256": "3edcf9cbf8854dba84a95c891bf49f3570ce4e8f62b25e842eb10dd11c72423e",
+      "weight": 100,
+      "pointSize": 64
+    },
+    {
+      "report": "references/phi-baseline/400-16/render-settings.json",
+      "sha256": "d67098bbcd6fac14103fe338b90235daf3aeec158fa92743dd3409a80ef03955",
+      "weight": 400,
+      "pointSize": 16
+    },
+    {
+      "report": "references/phi-baseline/400-64/render-settings.json",
+      "sha256": "64be1701c8bfd90c756f4296f84b0bd178eb0b7b63727128c9b91d0e161082a8",
+      "weight": 400,
+      "pointSize": 64
+    },
+    {
+      "report": "references/weight-metrics-baseline/900-16/render-settings.json",
+      "sha256": "ee1ab3b29393a1c925f6cdcec1f7f1c0c7737c478c6b9cb5e9cee1bddc9ac2ac",
+      "weight": 900,
+      "pointSize": 16
+    },
+    {
+      "report": "references/weight-metrics-baseline/900-64/render-settings.json",
+      "sha256": "b0915b8fcc2347cc358af1b55ae5a56a1bf29161d826320cbc3f4dc3e5660a29",
+      "weight": 900,
+      "pointSize": 64
+    }
+  ]
+}

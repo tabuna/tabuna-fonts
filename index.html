@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>Tabuna Sans — собственный вариативный шрифт</title>
+  <link rel="preload" href="dist/TabunaSansVariable.woff2?v=0.900" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="dist/tabuna.css?v=0.900">
+  <link rel="stylesheet" href="demo.css">
+  <script src="sources/charset.js" defer></script>
+  <script src="demo.js" defer></script>
+</head>
+<body>
+  <header class="masthead container">
+    <a class="wordmark" href="#">tabuna / type</a>
+    <nav aria-label="Разделы"><a href="#specimen">Попробовать</a><a href="comparison.html">По пикселям</a><a href="#glyphs">Глифы</a><a href="#use">Подключение</a></nav>
+    <span class="edition">Original type · 2026</span>
+  </header>
+  <main>
+    <section class="hero container" aria-labelledby="title">
+      <div class="eyebrow"><span class="dot" aria-hidden="true"></span> Создан с нуля · Variable font</div>
+      <h1 id="title" class="tabuna">Tabuna Sans<span class="hero-period">.</span></h1>
+      <div class="hero-bottom">
+        <p class="intro tabuna">Знакомое ощущение.<br>Собственный почерк.</p>
+        <div class="hero-note"><p>Оригинальная гарнитура для текста и интерфейсов. Пятнадцать мастеров, плавная толщина и оптический размер. Латиница и кириллица.</p><a class="download" href="dist/TabunaSansVariable.woff2" download>Скачать WOFF2 <span aria-hidden="true">↗</span></a></div>
+      </div>
+      <dl class="facts"><div><dt>Толщина</dt><dd>100 — 900</dd></div><div><dt>Оптический размер</dt><dd>9 — 128 pt</dd></div><div><dt>Лицензия</dt><dd>Open Font License</dd></div><div><dt>Начертание</dt><dd>Прямое</dd></div></dl>
+    </section>
+    <section id="specimen" class="specimen" aria-labelledby="specimen-title">
+      <div class="container">
+        <div class="section-title"><h2 id="specimen-title">01 / Живой образец</h2><span id="font-status" role="status">Загрузка шрифта…</span></div>
+        <div class="controls">
+          <label>Размер <output id="size-value" for="size">64 px</output><input id="size" type="range" min="12" max="96" step="1" value="64"></label>
+          <label>Толщина <output id="weight-value" for="weight">400</output><input id="weight" type="range" min="100" max="900" step="1" value="400"></label>
+          <label>Оптический размер <output id="optical-value" for="optical">Авто</output><input id="optical" type="range" min="9" max="128" step="1" value="14" disabled></label>
+          <div class="options"><label class="check"><input id="auto-optical" type="checkbox" checked> Автоматически</label><label class="check"><input id="compare" type="checkbox"> Сравнить с системой</label><button id="reset" type="button">Сбросить</button></div>
+        </div>
+        <label class="sample-label" for="sample-text">Tabuna Sans <span>Введите свой текст ↓</span></label>
+        <textarea id="sample-text" class="tabuna" rows="3" spellcheck="false">Ясность в каждой букве.
+Designed to feel familiar.</textarea>
+        <div id="comparison" hidden><p class="sample-label">Системный шрифт <span>На Apple — системная гарнитура Apple</span></p><div id="system-sample"></div></div>
+        <p class="caption">Сходство по характеру с системной типографикой Apple. Все контуры Tabuna Sans нарисованы в этом проекте.</p>
+      </div>
+    </section>
+    <section class="reading container" aria-labelledby="reading-title">
+      <div class="section-title"><h2 id="reading-title">02 / В работе</h2><span>От короткой подписи до большой мысли</span></div>
+      <div class="reading-grid">
+        <article class="tabuna article-sample"><p class="overline">ПРОСТЫЕ ИДЕИ, ТОЧНЫЕ ФОРМЫ</p><h3>Хороший текст<br>начинается с ясности.</h3><p>Шрифт задаёт темп чтения. Он помогает заметить главное, различить похожие символы и спокойно перейти к следующей строке. В мелком тексте важны открытые формы, в заголовке — пропорции и ритм.</p><p>Хорошая типографика работает и в привычных деталях: названиях разделов, длинных абзацах, датах и числах. Её задача — сделать содержание понятным.</p><p class="small">16 px / Regular 400 / Optical size auto</p></article>
+        <div class="detail-samples">
+          <div class="tabuna metric-sample"><span>Баланс символов</span><p>Аа Бб Rr Gg</p><div class="distinction">Il1 · O0 · ДЛ · Йё</div></div>
+          <div class="tabuna table-sample"><table><caption>Табличные цифры</caption><thead><tr><th scope="col">Начертание</th><th scope="col">Значение</th></tr></thead><tbody><tr><td>Regular</td><td>12 480,00 ₽</td></tr><tr><td>Medium</td><td>98 765,43 ₽</td></tr><tr><td>Semibold</td><td>11 111,11 ₽</td></tr></tbody></table></div>
+        </div>
+      </div>
+      <div class="weight-list tabuna" aria-label="Девять весов">
+        <div style="font-weight:100"><span>100 / Thin</span><p>Точность формы</p></div><div style="font-weight:200"><span>200 / ExtraLight</span><p>Точность формы</p></div><div style="font-weight:300"><span>300 / Light</span><p>Точность формы</p></div><div style="font-weight:400"><span>400 / Regular</span><p>Точность формы</p></div><div style="font-weight:500"><span>500 / Medium</span><p>Точность формы</p></div><div style="font-weight:600"><span>600 / SemiBold</span><p>Точность формы</p></div><div style="font-weight:700"><span>700 / Bold</span><p>Точность формы</p></div><div style="font-weight:800"><span>800 / ExtraBold</span><p>Точность формы</p></div><div style="font-weight:900"><span>900 / Black</span><p>Точность формы</p></div>
+      </div>
+    </section>
+    <section id="glyphs" class="glyph-section container" aria-labelledby="glyph-title">
+      <div class="section-title"><h2 id="glyph-title">03 / Набор символов</h2><span id="glyph-count">Латиница, кириллица, знаки</span></div>
+      <label class="filter-label" for="glyph-filter">Показать <select id="glyph-filter"><option value="basic">Основные буквы</option><option value="latin">Расширенная латиница</option><option value="cyrillic">Кириллица</option><option value="signs">Цифры и знаки</option><option value="all">Весь набор</option></select></label>
+      <div id="glyph-grid" class="glyph-grid tabuna"></div>
+      <noscript>АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ · ABCDEFGHIJKLMNOPQRSTUVWXYZ · 0123456789</noscript>
+    </section>
+    <section id="use" class="use-section container" aria-labelledby="use-title">
+      <div class="section-title"><h2 id="use-title">04 / Подключение</h2><span>Один WOFF2 · Без зависимостей</span></div>
+      <div class="use-grid"><div><h3 class="tabuna">Готов к вашему тексту.</h3><p>Разместите файл рядом со стилями. Вес управляется обычным <code>font-weight</code>, оптический размер — автоматически.</p><div class="links"><a href="dist/TabunaSansVariable.woff2" download>WOFF2 ↗</a><a href="dist/TabunaSansVariable.ttf" download>TTF ↗</a><a href="OFL.txt">Лицензия ↗</a></div></div><pre><code>@font-face {
+  font-family: "Tabuna Sans";
+  src: url("TabunaSansVariable.woff2")
+       format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+.text {
+  font-family: "Tabuna Sans", system-ui, sans-serif;
+  font-optical-sizing: auto;
+}</code></pre></div>
+    </section>
+  </main>
+  <footer class="container"><span>Tabuna Sans · Original variable type</span><a href="README.md">Исходники и документация ↗</a></footer>
+</body>
+</html>

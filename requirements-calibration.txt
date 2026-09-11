@@ -1,0 +1,3 @@
+# Optional numerical fitting dependencies; core build uses requirements.lock.
+numpy==2.5.3
+scipy==1.18.1

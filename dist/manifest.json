@@ -1,0 +1,24 @@
+{
+  "family": "Tabuna Sans",
+  "version": "0.900",
+  "unitsPerEm": 2048,
+  "masters": 15,
+  "axes": {
+    "wght": [
+      100,
+      400,
+      900
+    ],
+    "opsz": [
+      9,
+      14,
+      128
+    ]
+  },
+  "glyphs": 496,
+  "characters": 469,
+  "files": {
+    "TabunaSansVariable.woff2": 140536,
+    "TabunaSansVariable.ttf": 585316
+  }
+}

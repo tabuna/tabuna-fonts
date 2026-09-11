@@ -1,0 +1,42 @@
+{
+  "method": "F2Dot14 integer search on native PNGs of our I",
+  "axisRange": [
+    9,
+    14,
+    128
+  ],
+  "records": [
+    {
+      "pointSize": 18,
+      "normalizedInput": 0.03509521484375,
+      "normalizedOutput": 0.02239990234375,
+      "value": 367,
+      "inputValue": 575,
+      "differentPixels": 24,
+      "absoluteInkError": 24,
+      "centroidDifference": -0.001514363452173484
+    },
+    {
+      "pointSize": 20,
+      "normalizedInput": 0.05267333984375,
+      "normalizedOutput": 0.04217529296875,
+      "value": 691,
+      "inputValue": 863,
+      "differentPixels": 0,
+      "absoluteInkError": 0,
+      "centroidDifference": 0.0
+    },
+    {
+      "pointSize": 24,
+      "normalizedInput": 0.0877685546875,
+      "normalizedOutput": 0.10382080078125,
+      "value": 1701,
+      "inputValue": 1438,
+      "differentPixels": 33,
+      "absoluteInkError": 33,
+      "centroidDifference": -0.0018812871926456864
+    }
+  ],
+  "allPixelExact": false,
+  "note": "This isolates optical mapping for I; it does not prove other glyphs or intermediate sizes match."
+}

@@ -1,0 +1,365 @@
+{
+  "method": "Four independent authored M/W stroke contours fitted to native PNG distance fields; no reference vectors",
+  "glyphs": {
+    "M": {
+      "100": {
+        "text": {
+          "parameters": [
+            0.054639514206616994,
+            0.02500000011282502,
+            0.060814427335456875,
+            0.9388036338046049,
+            -0.0017683243304649748,
+            0.0
+          ],
+          "bounds": [
+            91.30859375,
+            0.0,
+            657.71484375,
+            704.58984375
+          ],
+          "advance": 820.7157850265503,
+          "diagnostic": {
+            "character": "M",
+            "weight": 100,
+            "size": 16,
+            "cost": 19013.218571400594,
+            "evaluations": 16,
+            "success": true,
+            "preview": "build/mw-strokes-fit-M-100-16.png"
+          }
+        },
+        "display": {
+          "parameters": [
+            0.054501360265315914,
+            0.02500000000002654,
+            0.06022352891589545,
+            0.9397394111786366,
+            -0.0018409061562595374,
+            0.0
+          ],
+          "bounds": [
+            62.01171875,
+            0.0,
+            657.2265625,
+            704.58984375
+          ],
+          "advance": 784.5423221588135,
+          "diagnostic": {
+            "character": "M",
+            "weight": 100,
+            "size": 64,
+            "cost": 18755.122995900212,
+            "evaluations": 17,
+            "success": true,
+            "preview": "build/mw-strokes-fit-M-100-64.png"
+          }
+        }
+      },
+      "400": {
+        "text": {
+          "parameters": [
+            0.12602474954475293,
+            0.12213361460591962,
+            0.07236316712403128,
+            0.9277892866909694,
+            0.0013819932271962908,
+            0.0
+          ],
+          "bounds": [
+            89.84375,
+            0.0,
+            694.3359375,
+            704.58984375
+          ],
+          "advance": 854.4921875,
+          "diagnostic": {
+            "character": "M",
+            "weight": 400,
+            "size": 16,
+            "cost": 69462.46635077934,
+            "evaluations": 14,
+            "success": true,
+            "preview": "build/mw-strokes-fit-M-400-16.png"
+          }
+        },
+        "display": {
+          "parameters": [
+            0.12453646077655954,
+            0.11789359507412109,
+            0.07771086902237487,
+            0.9222891316423966,
+            -0.0004286711698870703,
+            0.0
+          ],
+          "bounds": [
+            68.359375,
+            0.0,
+            694.3359375,
+            704.58984375
+          ],
+          "advance": 834.47265625,
+          "diagnostic": {
+            "character": "M",
+            "weight": 400,
+            "size": 64,
+            "cost": 64503.04542192704,
+            "evaluations": 12,
+            "success": true,
+            "preview": "build/mw-strokes-fit-M-400-64.png"
+          }
+        }
+      },
+      "900": {
+        "text": {
+          "parameters": [
+            0.24161704484457877,
+            0.24393876329195088,
+            0.11517120825796852,
+            0.8856333625460074,
+            0.014462996325997506,
+            0.0
+          ],
+          "bounds": [
+            82.51953125,
+            0.0,
+            763.18359375,
+            704.58984375
+          ],
+          "advance": 908.6087048053741,
+          "diagnostic": {
+            "character": "M",
+            "weight": 900,
+            "size": 16,
+            "cost": 328465.6536794955,
+            "evaluations": 16,
+            "success": true,
+            "preview": "build/mw-strokes-fit-M-900-16.png"
+          }
+        },
+        "display": {
+          "parameters": [
+            0.23679613270745203,
+            0.2499999999999691,
+            0.11261848434726567,
+            0.8876091360718681,
+            0.021550664516818304,
+            0.0
+          ],
+          "bounds": [
+            51.7578125,
+            0.0,
+            777.34375,
+            704.58984375
+          ],
+          "advance": 884.5202624797821,
+          "diagnostic": {
+            "character": "M",
+            "weight": 900,
+            "size": 64,
+            "cost": 366988.6168614476,
+            "evaluations": 16,
+            "success": true,
+            "preview": "build/mw-strokes-fit-M-900-64.png"
+          }
+        }
+      }
+    },
+    "W": {
+      "100": {
+        "text": {
+          "parameters": [
+            0.04140724649070097,
+            0.022617253813653135,
+            0.5,
+            0.2550043517226794,
+            0.782
+          ],
+          "bounds": [
+            49.8046875,
+            0.0,
+            837.40234375,
+            704.58984375
+          ],
+          "advance": 917.4028635025024,
+          "diagnostic": {
+            "character": "W",
+            "weight": 100,
+            "size": 16,
+            "cost": 5730.2961822885545,
+            "evaluations": 18,
+            "success": true,
+            "preview": "build/mw-strokes-fit-W-100-16.png"
+          }
+        },
+        "display": {
+          "parameters": [
+            0.04166514321067721,
+            0.02257430647584332,
+            0.5,
+            0.2551421762260225,
+            0.782
+          ],
+          "bounds": [
+            20.01953125,
+            0.0,
+            838.37890625,
+            704.58984375
+          ],
+          "advance": 881.7213773727417,
+          "diagnostic": {
+            "character": "W",
+            "weight": 100,
+            "size": 64,
+            "cost": 5422.130747456574,
+            "evaluations": 15,
+            "success": true,
+            "preview": "build/mw-strokes-fit-W-100-64.png"
+          }
+        }
+      },
+      "400": {
+        "text": {
+          "parameters": [
+            0.09614629450165477,
+            0.04961493971082031,
+            0.5,
+            0.265540430725477,
+            0.782
+          ],
+          "bounds": [
+            43.9453125,
+            0.0,
+            879.8828125,
+            704.58984375
+          ],
+          "advance": 948.2421875,
+          "diagnostic": {
+            "character": "W",
+            "weight": 400,
+            "size": 16,
+            "cost": 45215.022359993745,
+            "evaluations": 12,
+            "success": true,
+            "preview": "build/mw-strokes-fit-W-400-16.png"
+          }
+        },
+        "display": {
+          "parameters": [
+            0.09491843195520579,
+            0.04928794281673518,
+            0.5,
+            0.2656814348228634,
+            0.782
+          ],
+          "bounds": [
+            21.97265625,
+            0.0,
+            879.8828125,
+            704.58984375
+          ],
+          "advance": 927.24609375,
+          "diagnostic": {
+            "character": "W",
+            "weight": 400,
+            "size": 64,
+            "cost": 41144.60074931444,
+            "evaluations": 15,
+            "success": true,
+            "preview": "build/mw-strokes-fit-W-400-64.png"
+          }
+        }
+      },
+      "900": {
+        "text": {
+          "parameters": [
+            0.1903832158702113,
+            0.0978018324604654,
+            0.5,
+            0.2873379455613181,
+            0.782
+          ],
+          "bounds": [
+            41.50390625,
+            0.0,
+            953.61328125,
+            704.58984375
+          ],
+          "advance": 1017.4136757850647,
+          "diagnostic": {
+            "character": "W",
+            "weight": 900,
+            "size": 16,
+            "cost": 254182.4793334259,
+            "evaluations": 10,
+            "success": true,
+            "preview": "build/mw-strokes-fit-W-900-16.png"
+          }
+        },
+        "display": {
+          "parameters": [
+            0.19623686363227738,
+            0.09693685569529602,
+            0.5,
+            0.2920940752796594,
+            0.782
+          ],
+          "bounds": [
+            19.53125,
+            0.0,
+            953.61328125,
+            704.58984375
+          ],
+          "advance": 996.4175820350647,
+          "diagnostic": {
+            "character": "W",
+            "weight": 900,
+            "size": 64,
+            "cost": 272000.3396402902,
+            "evaluations": 10,
+            "success": true,
+            "preview": "build/mw-strokes-fit-W-900-64.png"
+          }
+        }
+      }
+    }
+  },
+  "runs": [
+    {
+      "report": "references/mw-baseline/100-16/render-settings.json",
+      "sha256": "0ed5a7a23aa03b73dfaf50949fdb395f9e87788e11f4b59e771f01fd5e4d2770",
+      "weight": 100,
+      "size": 16
+    },
+    {
+      "report": "references/mw-baseline/100-64/render-settings.json",
+      "sha256": "e65df996f1a59879d8bf510ee87fe17ccbc873d85d926d06b23723316eb14e23",
+      "weight": 100,
+      "size": 64
+    },
+    {
+      "report": "references/mw-baseline/400-16/render-settings.json",
+      "sha256": "a4f9de366392739621a74b0a3b0c5ab484dc4e5584bd76fd56d5063ac5de304b",
+      "weight": 400,
+      "size": 16
+    },
+    {
+      "report": "references/mw-baseline/400-64/render-settings.json",
+      "sha256": "58c434af598331599e442cef1ba04c09f35f1b4b26329071613d430fbe6160a0",
+      "weight": 400,
+      "size": 64
+    },
+    {
+      "report": "references/mw-baseline/900-16/render-settings.json",
+      "sha256": "7bf42d35c0a07a17a776131f386cad3d3989e4353dbeb33c1fd012a51cc33a1e",
+      "weight": 900,
+      "size": 16
+    },
+    {
+      "report": "references/mw-baseline/900-64/render-settings.json",
+      "sha256": "8d7bb77d82957ee9f62bd8bcb2fabf2e04b054f765a9e95da8714531d1dc2533",
+      "weight": 900,
+      "size": 64
+    }
+  ]
+}
