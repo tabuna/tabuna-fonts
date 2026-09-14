@@ -21,7 +21,7 @@ let referenceMode = args.count > 7 ? args[7] : "axis"
 guard ["axis","named"].contains(referenceMode) else {fatalError("Reference mode must be axis or named")}
 let weightNames:[Int:NSFont.Weight]=[100:.ultraLight,200:.thin,300:.light,400:.regular,500:.medium,600:.semibold,700:.bold,800:.heavy,900:.black]
 let characters = args.count > 4 ? args[4] : "аеонДЛЖабвгдёжзийклмпрстуфхцчшщъыьэюяABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
-let wordMode=characters.hasPrefix("@")
+let wordMode=characters.hasPrefix("@") && characters.count > 1
 let entries:[String]
 if wordMode {
     let input=try JSONSerialization.jsonObject(with:Data(contentsOf:URL(fileURLWithPath:String(characters.dropFirst())))) as! [String:Any]

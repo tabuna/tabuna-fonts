@@ -1,0 +1,27 @@
+{
+  "status": "authored coverage scaffolding; raster acceptance pending",
+  "source": "scripts/design.py and scripts/geometry.py in the user's existing worktree",
+  "retained": "Independent polygons, ellipses and offset cubic centerline ribbons",
+  "excluded": [
+    "All refined.core and refined.cyrillic_core overrides",
+    "The sfns_contours coordinate list in the uppercase K branch",
+    "The special uppercase Yu ring branch",
+    "All environment-controlled pilot switches"
+  ],
+  "reference_input_to_generation": false,
+  "reference_measurements": [
+    "bounding box",
+    "advance",
+    "filled area",
+    "accent envelope"
+  ],
+  "limitations": [
+    "Coverage does not establish matching shape or spacing quality",
+    "Skeleton joins need review at all supported weights",
+    "The full 469-character product repertoire and optical axis remain required"
+  ],
+  "authored_sources_sha256": {
+    "scripts/design.py": "903d355bfb3f1b070f06c38371798d3cbe092533cc9aaa8b12a680813a81111f",
+    "scripts/geometry.py": "83f48b589c6044edc8ead57b711efae9a0dd2ddf097955ab57e6816c90c54447"
+  }
+}

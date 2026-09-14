@@ -12,7 +12,9 @@ def build(source,name):
     def blend(key):return a[key]+(b[key]-a[key])*t
     transform=[x+(y-x)*t for x,y in zip(a['transform'],b['transform'])]
     transform[4]/=2.048;transform[5]/=2.048
-    source.comp('colon.case',[(name(':'),tuple(transform))],blend('advance')/2.048)
+    glyph=source.comp('colon.case',[(name(':'),tuple(transform))],blend('advance')/2.048)
+    from round_band_marks import apply
+    apply(glyph,'colon.case',source.d)
 
 def position(font,design,name):
     data=load();node=data['nodes'][str(design.weight)];a,b=node['text'],node['display'];t=design.display
@@ -23,6 +25,10 @@ def position(font,design,name):
             font.kerning[pair]=otRound(value)/2.048
 
 def features(name):
-    data=load()
-    left=' '.join(name(c) for c in data['leftContext']);right=' '.join(name(c) for c in data['rightContext'])
-    return f"@ColonBefore = [{left}];\n@ColonAfter = [{right}];\nfeature calt {{\n  sub @ColonBefore colon' @ColonAfter by colon.case;\n}} calt;\n"
+    data=load();groups=data.get('contextGroups',{'latin':{'left':data['leftContext'],'right':data['rightContext']}})
+    definitions=[];rules=[]
+    for key,group in groups.items():
+        left=' '.join(name(c) for c in group['left']);right=' '.join(name(c) for c in group['right'])
+        definitions.extend([f"@ColonBefore_{key} = [{left}];",f"@ColonAfter_{key} = [{right}];"])
+        rules.append(f"  sub @ColonBefore_{key} colon' @ColonAfter_{key} by colon.case;")
+    return '\n'.join(definitions+['feature calt {']+rules+['} calt;',''])

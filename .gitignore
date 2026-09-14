@@ -34,3 +34,8 @@ __pycache__/
 !.env.example
 
 # Keep release fonts and web assets in /dist/ under version control.
+
+# Local third-party evaluation assets and editor recovery files
+/vendor/
+*.bak
+*.orig

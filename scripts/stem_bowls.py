@@ -1,9 +1,9 @@
 """Authored lower-case stem and bowl construction: b/d/p/q/Cyrillic р."""
+from parameters import at_location
 from pathlib import Path
 from functools import lru_cache
 import json
 from geometry import Drawing
-from rectilinear import mix
 
 NAMES=['joinTopX','joinTopY','joinBottomX','joinBottomY','outerTopX','outerTopY','outerBottomX','outerBottomY','outerRightY',
        'innerLeftX','innerLeftY','innerRightX','innerRightY','innerTopX','innerTopY','innerBottomX','innerBottomY']
@@ -36,10 +36,7 @@ def apply(glyph,key,design):
     ch=chr(int(key[3:],16)) if key.startswith('uni') and len(key)==7 else key
     data=load().get(ch)
     if data is None:return
-    lo,hi=(100,400) if design.weight<=400 else (400,900)
-    a=mix(data[str(lo)]['text'],data[str(lo)]['display'],design.display)
-    b=mix(data[str(hi)]['text'],data[str(hi)]['display'],design.display)
-    p=mix(a,b,(design.weight-lo)/(hi-lo));drawing=Drawing()
+    p=at_location(data, design);drawing=Drawing()
     for start,segments,counter in contours(p['parameters'],p['handles']):drawing.outline(start,segments,counter)
     left,bottom,right,top=p['bounds'];glyph.clearContours()
     transform=(-(right-left),0,0,top-bottom,right,bottom) if ch in 'dq' else (right-left,0,0,top-bottom,left,bottom)

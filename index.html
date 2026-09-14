@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light dark">
   <title>Tabuna Sans — собственный вариативный шрифт</title>
-  <link rel="preload" href="dist/TabunaSansVariable.woff2?v=0.900" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="dist/tabuna.css?v=0.900">
+  <link rel="preload" href="dist/TabunaSansVariable.woff2?v=4209f41541c9" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="dist/tabuna.css?v=857655f876e0">
   <link rel="stylesheet" href="demo.css">
   <script src="sources/charset.js" defer></script>
   <script src="demo.js" defer></script>
@@ -19,11 +19,11 @@
   </header>
   <main>
     <section class="hero container" aria-labelledby="title">
-      <div class="eyebrow"><span class="dot" aria-hidden="true"></span> Создан с нуля · Variable font</div>
+      <div class="eyebrow"><span class="dot" aria-hidden="true"></span> Параметрическая модель · В разработке</div>
       <h1 id="title" class="tabuna">Tabuna Sans<span class="hero-period">.</span></h1>
       <div class="hero-bottom">
         <p class="intro tabuna">Знакомое ощущение.<br>Собственный почерк.</p>
-        <div class="hero-note"><p>Оригинальная гарнитура для текста и интерфейсов. Пятнадцать мастеров, плавная толщина и оптический размер. Латиница и кириллица.</p><a class="download" href="dist/TabunaSansVariable.woff2" download>Скачать WOFF2 <span aria-hidden="true">↗</span></a></div>
+        <div class="hero-note"><p>Компактная параметрическая гарнитура в разработке. 189 символов, латиница и русский алфавит. Плавная толщина и оптический размер.</p><a class="download" href="dist/TabunaSansVariable.woff2" download>Скачать WOFF2 <span aria-hidden="true">↗</span></a></div>
       </div>
       <dl class="facts"><div><dt>Толщина</dt><dd>100 — 900</dd></div><div><dt>Оптический размер</dt><dd>9 — 128 pt</dd></div><div><dt>Лицензия</dt><dd>Open Font License</dd></div><div><dt>Начертание</dt><dd>Прямое</dd></div></dl>
     </section>
@@ -40,7 +40,7 @@
         <textarea id="sample-text" class="tabuna" rows="3" spellcheck="false">Ясность в каждой букве.
 Designed to feel familiar.</textarea>
         <div id="comparison" hidden><p class="sample-label">Системный шрифт <span>На Apple — системная гарнитура Apple</span></p><div id="system-sample"></div></div>
-        <p class="caption">Сходство по характеру с системной типографикой Apple. Все контуры Tabuna Sans нарисованы в этом проекте.</p>
+        <p class="caption">Сходство по характеру с системной типографикой Apple. Собственная модель в разработке; независимость всех старых контуров ещё проверяется.</p>
       </div>
     </section>
     <section class="reading container" aria-labelledby="reading-title">
@@ -58,7 +58,8 @@ Designed to feel familiar.</textarea>
     </section>
     <section id="glyphs" class="glyph-section container" aria-labelledby="glyph-title">
       <div class="section-title"><h2 id="glyph-title">03 / Набор символов</h2><span id="glyph-count">Латиница, кириллица, знаки</span></div>
-      <label class="filter-label" for="glyph-filter">Показать <select id="glyph-filter"><option value="basic">Основные буквы</option><option value="latin">Расширенная латиница</option><option value="cyrillic">Кириллица</option><option value="signs">Цифры и знаки</option><option value="all">Весь набор</option></select></label>
+      <label class="filter-label" for="glyph-filter">Показать <select id="glyph-filter"><option value="all">Весь набор</option><option value="basic">Все буквы</option><option value="latin">Латиница</option><option value="cyrillic">Кириллица</option><option value="signs">Цифры и знаки</option></select></label>
+      <label class="filter-label" for="glyph-weight">Толщина набора <output id="glyph-weight-value" for="glyph-weight">100</output><input id="glyph-weight" type="range" min="100" max="900" step="1" value="100"></label>
       <div id="glyph-grid" class="glyph-grid tabuna"></div>
       <noscript>АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ · ABCDEFGHIJKLMNOPQRSTUVWXYZ · 0123456789</noscript>
     </section>

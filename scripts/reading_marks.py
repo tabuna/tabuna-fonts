@@ -3,7 +3,7 @@ from pathlib import Path
 from functools import lru_cache
 import json
 from geometry import Drawing
-from rectilinear import mix
+from parameters import at_location
 
 DEFAULTS={'\u0302':'circumflex','\u0306':'breve','\u0307':'dotabove'}
 PROFILE_NAMES={'circumflex':'uni0302','breve':'uni0306','dotabove':'uni0307',
@@ -33,10 +33,7 @@ def load():
 
 
 def interpolate(data,design):
-    lo,hi=(100,400) if design.weight<=400 else (400,900)
-    a=mix(data[str(lo)]['text'],data[str(lo)]['display'],design.display)
-    b=mix(data[str(hi)]['text'],data[str(hi)]['display'],design.display)
-    return mix(a,b,(design.weight-lo)/(hi-lo))
+    return at_location(data, design)
 
 
 def draw_profile(glyph,profile,design):

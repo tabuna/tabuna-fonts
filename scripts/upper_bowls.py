@@ -1,9 +1,10 @@
 """Our upper/full-height bowl construction for P, Cyrillic Р, and D."""
+from parameters import at_location
 from pathlib import Path
 from functools import lru_cache
 import json
 from geometry import Drawing
-from bowls import arc,mix
+from bowls import arc
 
 @lru_cache(maxsize=1)
 def load():
@@ -24,8 +25,5 @@ def apply(glyph,key,design):
     ch=chr(int(key[3:],16)) if key.startswith('uni') and len(key)==7 else key
     data=load().get(ch)
     if data is None:return
-    lo,hi=(100,400) if design.weight<=400 else (400,900)
-    a=mix(data[str(lo)]['text'],data[str(lo)]['display'],design.display)
-    b=mix(data[str(hi)]['text'],data[str(hi)]['display'],design.display)
-    p=mix(a,b,(design.weight-lo)/(hi-lo))
+    p=at_location(data, design)
     glyph.clearContours();drawing(p).replay(glyph.getPen());glyph.width=p['advance']

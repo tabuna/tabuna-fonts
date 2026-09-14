@@ -3,17 +3,12 @@ from pathlib import Path
 from functools import lru_cache
 import json
 from geometry import Drawing
+from parameters import mix, at_location
 
 @lru_cache(maxsize=1)
 def load():
     path=Path(__file__).resolve().parents[1]/'sources/rectilinear.json'
     return json.loads(path.read_text())['glyphs'] if path.exists() else {}
-
-
-def mix(a,b,t):
-    if isinstance(a,dict):return {k:mix(a[k],b[k],t) for k in a}
-    if isinstance(a,list):return [mix(x,y,t) for x,y in zip(a,b)]
-    return a+(b-a)*t
 
 
 def outline(ch,p):
@@ -46,11 +41,7 @@ def apply(glyph,key,design):
     ch=chr(int(key[3:],16)) if key.startswith('uni') and len(key)==7 else key
     data=load().get(ch)
     if data is None:return
-    lo,hi=(100,400) if design.weight<=400 else (400,900)
-    weight=(design.weight-lo)/(hi-lo)
-    a=mix(data[str(lo)]['text'],data[str(lo)]['display'],design.display)
-    b=mix(data[str(hi)]['text'],data[str(hi)]['display'],design.display)
-    params=mix(a,b,weight)
+    params=at_location(data, design)
     glyph.clearContours();outline(ch.upper(),params).replay(glyph.getPen())
     # Both calibration sizes have zero portable tracking. Other optical sizes
     # receive the existing common HVAR/gvar tracking field during compilation.

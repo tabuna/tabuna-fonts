@@ -1,0 +1,319 @@
+{
+  "glyphs": {
+    "T": {
+      "100": {
+        "text": {
+          "left": 38.92299107142857,
+          "right": 573.5726033834586,
+          "bottom": 0.0,
+          "top": 704.58984375,
+          "stem_left": 288.00149788533844,
+          "stem_right": 324.4940965695489,
+          "bar_bottom": 671.0122474154135,
+          "optical_bar_reduction": 0
+        },
+        "display": {
+          "left": 9.72891212406015,
+          "right": 541.9554746240601,
+          "bottom": 0.0,
+          "top": 704.58984375,
+          "stem_left": 257.59589403195497,
+          "stem_right": 294.0884927161654,
+          "bar_bottom": 671.0122474154135,
+          "optical_bar_reduction": 0
+        }
+      },
+      "400": {
+        "text": {
+          "left": 45.8984375,
+          "right": 587.890625,
+          "bottom": 0.0,
+          "top": 704.58984375,
+          "stem_left": 272.94921875,
+          "stem_right": 360.83984375,
+          "bar_bottom": 625.48828125,
+          "optical_bar_reduction": 0
+        },
+        "display": {
+          "left": 24.4140625,
+          "right": 556.640625,
+          "bottom": 0.0,
+          "top": 704.58984375,
+          "stem_left": 246.58203125,
+          "stem_right": 334.47265625,
+          "bar_bottom": 625.48828125,
+          "optical_bar_reduction": 0
+        }
+      },
+      "900": {
+        "text": {
+          "left": 44.27083333333333,
+          "right": 633.4635416666667,
+          "bottom": 0.0,
+          "top": 704.58984375,
+          "stem_left": 245.27994791666677,
+          "stem_right": 432.45442708333354,
+          "bar_bottom": 554.6875,
+          "optical_bar_reduction": 0
+        },
+        "display": {
+          "left": 22.379557291666668,
+          "right": 592.8548177083334,
+          "bottom": 0.0,
+          "top": 704.58984375,
+          "stem_left": 214.02994791666674,
+          "stem_right": 401.2044270833335,
+          "bar_bottom": 554.6875,
+          "optical_bar_reduction": 0
+        }
+      }
+    },
+    "Г": {
+      "100": {
+        "text": {
+          "left": 96.19507753759399,
+          "right": 498.0101621240601,
+          "bottom": 0.0,
+          "top": 704.58984375,
+          "stem_left": 96.19507753759399,
+          "stem_right": 132.68767622180448,
+          "bar_bottom": 671.0122474154135,
+          "optical_bar_reduction": 0.5
+        },
+        "display": {
+          "left": 67.00099859022556,
+          "right": 468.81608317669173,
+          "bottom": 0.0,
+          "top": 704.58984375,
+          "stem_left": 67.0009985902256,
+          "stem_right": 103.49359727443608,
+          "bar_bottom": 671.0122474154135,
+          "optical_bar_reduction": 0.5
+        }
+      },
+      "400": {
+        "text": {
+          "left": 94.7265625,
+          "right": 512.6953125,
+          "bottom": 0.0,
+          "top": 704.58984375,
+          "stem_left": 94.7265625,
+          "stem_right": 182.6171875,
+          "bar_bottom": 625.48828125,
+          "optical_bar_reduction": 0
+        },
+        "display": {
+          "left": 73.2421875,
+          "right": 491.2109375,
+          "bottom": 0.0,
+          "top": 704.58984375,
+          "stem_left": 73.2421875,
+          "stem_right": 161.1328125,
+          "bar_bottom": 625.48828125,
+          "optical_bar_reduction": 0
+        }
+      },
+      "900": {
+        "text": {
+          "left": 87.40234375,
+          "right": 565.5924479166666,
+          "bottom": 0.0,
+          "top": 704.58984375,
+          "stem_left": 87.40234375,
+          "stem_right": 274.57682291666674,
+          "bar_bottom": 554.6875,
+          "optical_bar_reduction": 0
+        },
+        "display": {
+          "left": 56.96614583333333,
+          "right": 535.15625,
+          "bottom": 0.0,
+          "top": 704.58984375,
+          "stem_left": 56.96614583333331,
+          "stem_right": 244.140625,
+          "bar_bottom": 554.6875,
+          "optical_bar_reduction": 0
+        }
+      }
+    },
+    "г": {
+      "100": {
+        "text": {
+          "left": 91.9400552161654,
+          "right": 420.7772850093985,
+          "bottom": 0.0,
+          "top": 525.632929981203,
+          "stem_left": 91.94005521616542,
+          "stem_right": 127.70573895676682,
+          "bar_bottom": 494.23607847744364,
+          "optical_bar_reduction": 0
+        },
+        "display": {
+          "left": 61.03882753759399,
+          "right": 378.88789356203006,
+          "bottom": 0.0,
+          "top": 507.8125,
+          "stem_left": 61.03882753759399,
+          "stem_right": 96.80451127819556,
+          "bar_bottom": 476.41564849624064,
+          "optical_bar_reduction": 0
+        }
+      },
+      "400": {
+        "text": {
+          "left": 83.49609375,
+          "right": 420.41015625,
+          "bottom": 0.0,
+          "top": 526.3671875,
+          "stem_left": 83.49609375,
+          "stem_right": 168.45703125,
+          "bar_bottom": 456.0546875,
+          "optical_bar_reduction": 0
+        },
+        "display": {
+          "left": 59.5703125,
+          "right": 386.23046875,
+          "bottom": 0.0,
+          "top": 507.8125,
+          "stem_left": 59.5703125,
+          "stem_right": 144.53125,
+          "bar_bottom": 437.5,
+          "optical_bar_reduction": 0
+        }
+      },
+      "900": {
+        "text": {
+          "left": 70.88216145833334,
+          "right": 467.6106770833333,
+          "bottom": 0.0,
+          "top": 545.0846354166666,
+          "stem_left": 70.88216145833333,
+          "stem_right": 251.8717447916668,
+          "bar_bottom": 412.9231770833333,
+          "optical_bar_reduction": 0
+        },
+        "display": {
+          "left": 45.328776041666664,
+          "right": 435.8723958333333,
+          "bottom": 0.0,
+          "top": 533.8541666666666,
+          "stem_left": 45.32877604166668,
+          "stem_right": 226.318359375,
+          "bar_bottom": 401.6927083333333,
+          "optical_bar_reduction": 0
+        }
+      }
+    }
+  },
+  "measurements": [
+    {
+      "character": "T",
+      "weight": 100,
+      "optical": 17,
+      "upright_spread": 0.0
+    },
+    {
+      "character": "T",
+      "weight": 100,
+      "optical": 28,
+      "upright_spread": 0.0
+    },
+    {
+      "character": "T",
+      "weight": 400,
+      "optical": 17,
+      "upright_spread": 0.0
+    },
+    {
+      "character": "T",
+      "weight": 400,
+      "optical": 28,
+      "upright_spread": 0.0
+    },
+    {
+      "character": "T",
+      "weight": 900,
+      "optical": 17,
+      "upright_spread": 0.0
+    },
+    {
+      "character": "T",
+      "weight": 900,
+      "optical": 28,
+      "upright_spread": 0.0
+    },
+    {
+      "character": "Г",
+      "weight": 100,
+      "optical": 17,
+      "upright_spread": 0.0
+    },
+    {
+      "character": "Г",
+      "weight": 100,
+      "optical": 28,
+      "upright_spread": 0.0
+    },
+    {
+      "character": "Г",
+      "weight": 400,
+      "optical": 17,
+      "upright_spread": 0.0
+    },
+    {
+      "character": "Г",
+      "weight": 400,
+      "optical": 28,
+      "upright_spread": 0.0
+    },
+    {
+      "character": "Г",
+      "weight": 900,
+      "optical": 17,
+      "upright_spread": 0.0
+    },
+    {
+      "character": "Г",
+      "weight": 900,
+      "optical": 28,
+      "upright_spread": 0.0
+    },
+    {
+      "character": "г",
+      "weight": 100,
+      "optical": 17,
+      "upright_spread": 0.0
+    },
+    {
+      "character": "г",
+      "weight": 100,
+      "optical": 28,
+      "upright_spread": 0.0
+    },
+    {
+      "character": "г",
+      "weight": 400,
+      "optical": 17,
+      "upright_spread": 0.0
+    },
+    {
+      "character": "г",
+      "weight": 400,
+      "optical": 28,
+      "upright_spread": 0.0
+    },
+    {
+      "character": "г",
+      "weight": 900,
+      "optical": 17,
+      "upright_spread": 0.0
+    },
+    {
+      "character": "г",
+      "weight": 900,
+      "optical": 28,
+      "upright_spread": 0.0
+    }
+  ],
+  "optical_correction": "Reduce thin Г crossbar by 0.5/1000 em, interpolating to zero at400. Compensates native raster junction coverage; measured base dimensions remain separate."
+}

@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Generate original sources and compile Tabuna Sans. Run from any directory."""
 from pathlib import Path
+import fixed_e_quadratics
 import argparse
 import json
 import os
@@ -42,6 +43,57 @@ import latin_rectangles
 import bowls
 import upper_bowls
 import double_bowls
+import diagonal_bands
+import five_bowl
+import el_stem
+import cap_a
+import y_tail
+import branched_stems
+import ya_bowl
+import math_bands
+import hooked_stems
+import comparison_signs
+import enclosed_symbols
+import de_stem
+import ring_symbols
+import nine_bowl
+import be_bowl
+import be_lower
+import asterisk_rays
+import euro_bowl
+import curly_braces
+import percent_rings
+import sterling_ribbon
+import forked_bands
+import connected_rounds
+import ruble_bowl
+import dollar_s
+import ampersand_ribbons
+import seven_bands
+import guillemets
+import numero
+import at_spiral
+import four_frame
+import che_cup
+import question_hook
+import parenthesis_arcs
+import q_bowl
+import round_band_marks
+import one_stem
+import diagonal_family
+import j_hooks
+import tilde_wave
+import six_bowl
+import r_bowl
+import phi_bowls
+import e_reversed
+import infinity_ribbon
+import eight_bowls
+import top_bars
+import folded_bands
+import z_bands
+import r_shoulder
+import yo_dots
 
 ROOT=Path(__file__).resolve().parents[1]
 SOURCES=ROOT/'sources'
@@ -116,6 +168,55 @@ class Source:
             small=self.f.newGlyph('three.small')
             g.draw(small.getPen());small.width=g.width
         bowl_curves.apply(g,key,self.d)
+        diagonal_bands.apply(g,key,self.d)
+        five_bowl.apply(g,key,self.d)
+        el_stem.apply(g,key,self.d)
+        cap_a.apply(g,key,self.d)
+        y_tail.apply(g,key,self.d)
+        branched_stems.apply(g,key,self.d)
+        ya_bowl.apply(g,key,self.d)
+        math_bands.apply(g,key,self.d)
+        hooked_stems.apply(g,key,self.d)
+        comparison_signs.apply(g,key,self.d)
+        de_stem.apply(g,key,self.d)
+        ring_symbols.apply(g,key,self.d)
+        nine_bowl.apply(g,key,self.d)
+        be_bowl.apply(g,key,self.d)
+        be_lower.apply(g,key,self.d)
+        asterisk_rays.apply(g,key,self.d)
+        euro_bowl.apply(g,key,self.d)
+        curly_braces.apply(g,key,self.d)
+        percent_rings.apply(g,key,self.d)
+        sterling_ribbon.apply(g,key,self.d)
+        forked_bands.apply(g,key,self.d)
+        connected_rounds.apply(g,key,self.d)
+        ruble_bowl.apply(g,key,self.d)
+        dollar_s.apply(g,key,self.d)
+        ampersand_ribbons.apply(g,key,self.d)
+        seven_bands.apply(g,key,self.d)
+        guillemets.apply(g,key,self.d)
+        at_spiral.apply(g,key,self.d)
+        four_frame.apply(g,key,self.d)
+        che_cup.apply(g,key,self.d)
+        question_hook.apply(g,key,self.d)
+        parenthesis_arcs.apply(g,key,self.d)
+        q_bowl.apply(g,key,self.d)
+        round_band_marks.apply(g,key,self.d)
+        one_stem.apply(g,key,self.d)
+        diagonal_family.apply(g,key,self.d)
+        j_hooks.apply(g,key,self.d)
+        tilde_wave.apply(g,key,self.d)
+        six_bowl.apply(g,key,self.d)
+        if not getattr(self,"enclosed_letter",False):
+            r_bowl.apply(g,key,self.d)
+        phi_bowls.apply(g,key,self.d)
+        e_reversed.apply(g,key,self.d)
+        infinity_ribbon.apply(g,key,self.d)
+        eight_bowls.apply(g,key,self.d)
+        top_bars.apply(g,key,self.d)
+        folded_bands.apply(g,key,self.d)
+        z_bands.apply(g,key,self.d)
+        r_shoulder.apply(g,key,self.d)
         return g
 
     def comp(self,key,components,width,unicode=None):
@@ -195,7 +296,7 @@ class Source:
                 below=ord(accent)>=0x0326
                 components.append((name(accent),(1,0,0,1,x,0 if below else top)))
                 if not below:top+=185
-            g=self.comp(key,components,b.width,ord(ch));reading_marks.attach(self,ch,g);self.anchors(g,ch);return g
+            g=self.comp(key,components,b.width,ord(ch));reading_marks.attach(self,ch,g);yo_dots.apply(g,ch,self.d);self.anchors(g,ch);return g
         if ch.isascii() and ch.isalnum():
             g=self.raw_latin(ch,ch)
         elif ('\u0400'<=ch<='\u045f' or ch in 'Ґґ') and ch not in 'ЁёЙйЃѓЇїЌќЍѝЎўЀѐ':
@@ -252,9 +353,15 @@ class Source:
             b=self.ensure('n');a=self.ensure('’')
             g=self.comp(key,[(name('’'),(.7,0,0,.7,0,235)),(name('n'),(1,0,0,1,a.width*.75,0))],b.width+a.width*.75,ord(ch))
         elif ch in '©®':
-            b=self.ensure('C' if ch=='©' else 'R');drawing=Drawing();drawing.ring(0,-5,750,745,s*.65)
-            g=self.draw(key,drawing,750,ord(ch))
-            g.components.append(Component(b.name,(.57,0,0,.57,(g.width-b.width*.57)/2,165)))
+            base=self.ensure('C' if ch=='©' else 'R')
+            g=self.f.newGlyph(key);g.unicodes=[ord(ch)]
+            def letter_at_weight(weight):
+                source=Source(400,self.d.optical)
+                source.d=Design(weight,self.d.optical)
+                # Preserve the separately calibrated small letter inside ©/®.
+                source.enclosed_letter=True
+                return source.ensure('C' if ch=='©' else 'R')
+            enclosed_symbols.apply(g,key,base,self.d,letter_at_weight)
         elif ch in 'ªº¹²³':
             base={'ª':'a','º':'o','¹':'1','²':'2','³':'3'}[ch];b=self.ensure(base)
             component='three.small' if base=='3' and 'three.small' in self.f else name(base)
@@ -273,9 +380,7 @@ class Source:
             elif ch=='₽':
                 drawing,w=d.latin('P');drawing.rect(-23,170,w*.72,s*.86)
             elif ch=='£':
-                drawing=Drawing();w=466
-                drawing.stroke((w*.13,0),[((w*.39,150),(w*.13,356),(w*.13,537)),((w*.13,740),(w*.76,758),(w-s*.43,611))],s)
-                drawing.rect(0,0,w,s*.9);drawing.rect(0,324,w*.76,s*.80)
+                drawing=Drawing();w=466  # sterling_ribbon supplies the contours.
             else:
                 drawing,w=d.latin('S' if ch in '$₴' else 'C')
                 if ch in '$¢':drawing.rect(w*.5-s*.28,-88,s*.56,884)
@@ -288,6 +393,7 @@ class Source:
             n=self.ensure('N');o=self.ensure('o');drawing=Drawing();drawing.rect(n.width+8,231,o.width*.55,s*.68)
             g=self.draw(key,drawing,n.width+o.width*.6,ord(ch),False)
             g.components.extend([Component('N'),Component('o',(.58,0,0,.58,n.width,338))])
+            numero.apply(g,self.d)
         elif ch in '¨¯´¸':
             accent={'¨':'\u0308','¯':'\u0304','´':'\u0301','¸':'\u0327'}[ch]
             drawing=mark(d,accent);g=self.draw(key,drawing,280,ord(ch))
@@ -353,6 +459,7 @@ def generate():
         for weight in (100,400,900):
             f=Source(weight,optical).finish()
             scale_source(f)
+            fixed_e_quadratics.apply(f)
             path=SOURCES/f'TabunaSans-{weight}-{optical}.ufo';f.save(path,overwrite=True)
             src=SourceDescriptor();src.path=str(path);src.name=f'w{weight}o{optical}'
             src.familyName=f.info.familyName;src.styleName=f.info.styleName
@@ -373,6 +480,48 @@ def generate():
 
 def scale_source(font):
     """Keep the design grid readable, export at finer 2048-unit precision."""
+    # A half-scale component preserves half-unit coordinates for these bars.
+    # Helpers are appended so existing public glyph IDs remain stable.
+    for key in ('bracketleft','bracketright'):
+        glyph=font[key];helper=font.newGlyph(key+'.fractional')
+        glyph.draw(helper.getPen());helper.width=glyph.width*2
+        for contour in helper.contours:
+            for point in contour.points:point.x*=2;point.y*=2
+        glyph.clearContours();glyph.components.clear()
+        glyph.components.append(Component(helper.name,(.5,0,0,.5,0,0)))
+        font.glyphOrder=list(font.glyphOrder)+[helper.name]
+    glyph=font['divide']
+    assert len(glyph.contours)==3 and not glyph.components
+    dots=font.newGlyph('divide.dots');dots.width=glyph.width
+    bar=font.newGlyph('divide.crossbar.fractional');bar.width=0
+    for item in glyph.contours[:-1]:item.draw(dots.getPen())
+    glyph.contours[-1].draw(bar.getPen())
+    for item in bar.contours:
+        for point in item.points:point.x*=2;point.y*=2
+    glyph.clearContours()
+    glyph.components.extend([Component(dots.name),Component(bar.name,(.5,0,0,.5,0,0))])
+    font.glyphOrder=list(font.glyphOrder)+[dots.name,bar.name]
+    # Keep the i dot on its ordinary grid; refine only the upright.
+    glyph=font['i'];assert len(glyph.contours)==2 and not glyph.components
+    dot=font.newGlyph('i.dot');dot.width=glyph.width
+    stem=font.newGlyph('i.stem.fractional');stem.width=0
+    glyph.contours[0].draw(stem.getPen());glyph.contours[1].draw(dot.getPen())
+    for item in stem.contours:
+        for point in item.points:point.x*=2;point.y*=2
+    glyph.clearContours()
+    glyph.components.extend([Component(dot.name),Component(stem.name,(.5,0,0,.5,0,0))])
+    font.glyphOrder=list(font.glyphOrder)+[dot.name,stem.name]
+    # Refine only the left upright; preserve the grid of the other strokes.
+    glyph=font['uni041C'];assert len(glyph.contours)==7 and not glyph.components
+    body=font.newGlyph('uni041C.body');body.width=glyph.width
+    stem=font.newGlyph('uni041C.stem.fractional');stem.width=0
+    glyph.contours[0].draw(stem.getPen())
+    for contour in glyph.contours[1:]:contour.draw(body.getPen())
+    for contour in stem.contours:
+        for point in contour.points:point.x*=2;point.y*=2
+    glyph.clearContours()
+    glyph.components.extend([Component(body.name),Component(stem.name,(.5,0,0,.5,0,0))])
+    font.glyphOrder=list(font.glyphOrder)+[body.name,stem.name]
     factor=2.048
     for glyph in font:
         glyph.width*=factor
@@ -457,6 +606,9 @@ def compile_font():
     # advances like the measured system-ui. Tracking is already in both.
     font.save(build_dir/'TabunaSans-with-hvar.ttf')
     del font['HVAR']
+    font.save(build_dir/'TabunaSansFull.ttf')
+    import compact
+    compact.apply(font, ROOT)
     font.save(build_dir/'TabunaSansVariable.ttf')
     font.flavor='woff2';font.save(build_dir/'TabunaSansVariable.woff2')
     for filename in ('TabunaSansVariable.ttf','TabunaSansVariable.woff2'):

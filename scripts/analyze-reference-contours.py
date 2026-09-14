@@ -52,7 +52,7 @@ def main():
     args.out.mkdir(parents=True, exist_ok=True)
     data = json.loads((args.source/'comparison.json').read_text())
     rows = []
-    for ch in 'ЯкКзЗ53':
+    for ch in 'ЯкКзЗ53ФфД':
         r = next(r for r in data['records'] if r['character'] == ch)
         ink = 1-np.asarray(Image.open(args.source/r['system']['file']).convert('L'), dtype=float)/255
         own = 1-np.asarray(Image.open(args.source/r['tabuna']['file']).convert('L'), dtype=float)/255

@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "default_filter": "all",
+  "default_weight": 100,
+  "characters_visible": 189,
+  "browser": "Codex in-app browser, localhost:4173/#glyphs",
+  "ui_checks": [
+    "Reload:189 symbols and all filter selected",
+    "Set weight900:output900 and glyphs visibly heavy",
+    "Set weight100:output100 and glyphs visibly thin"
+  ],
+  "javascript_syntax": "node --check demo.js passed",
+  "limitations": "Visual endpoint checks; font geometry quality remains independently audited."
+}

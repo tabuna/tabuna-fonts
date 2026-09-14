@@ -1,9 +1,9 @@
 """Original two-storey a: eight outer and four counter cubic arcs."""
+from parameters import at_location
 from pathlib import Path
 from functools import lru_cache
 import json
 from geometry import Drawing
-from rectilinear import mix
 
 NAMES=['notchY','bottomX','leftY','neckX','neckY','bowlRightY','hookRightY','innerTopX','innerTopY','tipY','tipOuterX','tipInnerX','outerTopX','outerRightY','counterLeftX','counterLeftY','counterBottomX','counterBottomY','counterRightY','counterTopX','counterTopY','counterTopRightY']
 
@@ -38,10 +38,7 @@ def load():
 def apply(glyph,key,design):
     ch={'uni0430':'а'}.get(key,key);data=load().get(ch)
     if data is None:return
-    lo,hi=(100,400) if design.weight<=400 else (400,900)
-    a=mix(data[str(lo)]['text'],data[str(lo)]['display'],design.display)
-    b=mix(data[str(hi)]['text'],data[str(hi)]['display'],design.display)
-    p=mix(a,b,(design.weight-lo)/(hi-lo));drawing=Drawing()
+    p=at_location(data, design);drawing=Drawing()
     for start,segments,counter in contours(p['parameters'],p['handles']):drawing.outline(start,segments,counter)
     left,bottom,right,top=p['bounds'];glyph.clearContours()
     drawing.replay(glyph.getPen(),(right-left,0,0,top,left,0));glyph.width=p['advance']

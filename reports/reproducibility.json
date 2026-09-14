@@ -1,0 +1,36 @@
+{
+  "status": "passed",
+  "method": "Export staged tracked files to an empty directory, rebuild with the configured Python environment, compare release files byte-for-byte, then run verify.py.",
+  "ttf_sha256": "73e581dd77b175efb5bc5974bf6be0cc3737c5c26819250831cbf0eb86dcce34",
+  "woff2_sha256": "4209f41541c9f6a11b21107c17f76bd21c9e81131a1b71733b6ab7b406a37f67",
+  "clean_build_matches_release": true,
+  "verification": {
+    "status": "passed",
+    "characters": 189,
+    "glyphs": 218,
+    "axes": {
+      "wght": [
+        100.0,
+        900.0
+      ],
+      "opsz": [
+        9.0,
+        128.0
+      ]
+    },
+    "glyph_location_comparisons": 5232,
+    "shaping_comparisons": 48,
+    "ttf_woff2_equal_geometry": true,
+    "full_source_sha256": "43b7e5d20806f1dc5bfb9c05be68c59d2f5b5dd9c0b031c9bc18a45be4e314d3",
+    "font_sha256": "73e581dd77b175efb5bc5974bf6be0cc3737c5c26819250831cbf0eb86dcce34",
+    "scope": "Compaction preserves the authored model; does not prove complete provenance or SFNS equality."
+  },
+  "additional_checks": [
+    "Bézier tests:3 passed",
+    "Python modules compile",
+    "demo.js and comparison.js syntax",
+    "build-web.sh shell syntax",
+    "Current documentation links resolve",
+    "Report hashes match the release"
+  ]
+}

@@ -56,17 +56,8 @@ def symbol(design,ch):
         d.rect(0,-110 if ch=='_' else h*.46,w,sy*.85)
     elif ch in '+±=≠≤≥<>×÷≈':
         w=490;t=s*.86;mid=H*.38
-        if ch in '+±':
-            line((0,mid),(w,mid),t);line((w/2,mid-w/2),(w/2,mid+w/2),t)
-            if ch=='±':line((0,-81),(w,-81),t)
-        elif ch in '=≠':
-            for yy in [mid-95,mid+95]:line((0,yy),(w,yy),t)
-            if ch=='≠':line((w*.2,-20),(w*.8,mid*2+20),t*.87)
-        elif ch in '<>≤≥':
-            left=ch in '<≤'
-            path((w if left else 0,mid+190),(0 if left else w,mid),(w if left else 0,mid-190),sw=t)
-            if ch in '≤≥':line((0,-63),(w,-63),t)
-        elif ch=='×':
+        if ch in '+=±≠<>≤≥':return d,w  # Parameterized bands own these outlines.
+        if ch=='×':
             line((45,mid-195),(w-45,mid+195),t);line((45,mid+195),(w-45,mid-195),t)
         elif ch=='÷':
             line((0,mid),(w,mid),t)
@@ -75,16 +66,17 @@ def symbol(design,ch):
             for yy in [mid-90,mid+90]:path((0,yy-23),((w*.27,yy+183),(w*.65,yy-183),(w,yy+23)),sw=t*.85)
     elif ch in '/\\|¦':
         w=s if ch in '|¦' else 350
+        if ch != '¦':return d,w  # math_bands owns slash, backslash and bar.
         if ch=='¦':
             d.rect(0,-145,s,350);d.rect(0,350,s,390)
         else:line((s/2 if ch!='\\' else w-s/2,-155),(w-s/2 if ch!='\\' else s/2,745),s*.83)
-    elif ch in '()[]{}':
+    elif ch in '{}':
+        w=208  # curly_braces supplies the shared tangent-arc construction.
+    elif ch in '()[]':
         w=208
         if ch in '()':path((w,790),((s*.1,550),(s*.1,22),(w,-178)),sw=s*.83)
         elif ch in '[]':
             d.rect(0,-175,s*.83,965);d.rect(0,790-s*.83,w,s*.83);d.rect(0,-175,w,s*.83)
-        else:path((w,790),((w*.35,790),(w*.4,730),(w*.4,594)),(w*.4,448),((w*.4,350),(w*.15,315),(0,306)),
-                  ((w*.15,296),(w*.4,263),(w*.4,165)),(w*.4,21),((w*.4,-117),(w*.35,-175),(w,-175)),sw=s*.80)
         if ch in ')]}':e=Drawing();d.replay(e.pen,(-1,0,0,1,w,0));d=e
     elif ch in "'\"‘’‚“”„":
         double=ch in '\"“”„';w=dot*(2.6 if double else 1)
@@ -107,16 +99,9 @@ def symbol(design,ch):
     elif ch in '·•':
         w=dot*(1 if ch=='·' else 1.8);d.ellipse(0,h*.47-w/2,w,h*.47+w/2)
     elif ch=='*':
-        from math import sin,cos,pi
-        w=325;cx=w/2;cy=H-170
-        for i in range(5):
-            angle=pi/2+2*pi*i/5
-            line((cx,cy),(cx+cos(angle)*160,cy+sin(angle)*160),s*.73)
+        w=325  # asterisk_rays supplies the six tapered rays.
     elif ch=='%':
-        w=716
-        d.ring(0,430,264,720,s*.69,s*.65)
-        d.ring(w-264,-10,w,280,s*.69,s*.65)
-        line((w*.19,-8),(w*.81,718),s*.77)
+        w=716  # percent_rings supplies the two bowls and diagonal.
     elif ch=='#':
         w=570
         for x in [w*.29,w*.70]:line((x-50,0),(x+50,H),s*.82)
@@ -147,7 +132,7 @@ def symbol(design,ch):
     elif ch=='√':
         w=618
         path((0,285),(102,337),(226,-24),(426,730),(w,730),sw=s*.87)
-    elif ch=='°':w=248;d.ring(0,H-248,w,H,s*.70)
+    elif ch=='°':w=248  # ring_symbols supplies the final contours.
     elif ch=='¬':w=490;d.rect(0,H*.38,w,s*.85);d.rect(w-s*.85,H*.16,s*.85,H*.22)
     elif ch=='¶':
         w=460;d.ellipse(0,H*.46,w*.8,H);d.rect(w*.32,-135,s*.85,H+135);d.rect(w-s,-135,s*.85,H+135)

@@ -45,7 +45,7 @@ function drawGlyphs() {
   const chars = charset.filter(({character: c}) => {
     const n = c.codePointAt(0);
     if (mode === "basic") return /[A-Za-zА-Яа-яЁё]/u.test(c);
-    if (mode === "latin") return (n >= 0xA1 && n <= 0x17F) || /[ȘșȚț]/u.test(c);
+    if (mode === "latin") return /[A-Za-z]/u.test(c);
     if (mode === "cyrillic") return n >= 0x400 && n <= 0x45F;
     if (mode === "signs") return !/\p{Letter}|\p{Mark}|\p{Separator}|\p{Other}/u.test(c);
     return true;
@@ -73,3 +73,11 @@ if (charset.length) {
   $("glyph-filter").disabled = true;
   $("glyph-count").textContent = "Не удалось загрузить набор символов. Обновите страницу.";
 }
+
+function updateGlyphWeight() {
+  const weight = $("glyph-weight").value;
+  $("glyph-weight-value").textContent = weight;
+  $("glyph-grid").style.setProperty("--glyph-weight", weight);
+}
+$("glyph-weight").addEventListener("input", updateGlyphWeight);
+updateGlyphWeight();

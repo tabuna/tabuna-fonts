@@ -1,0 +1,474 @@
+[
+  {
+    "character": "A",
+    "codepoint": "U+0041"
+  },
+  {
+    "character": "B",
+    "codepoint": "U+0042"
+  },
+  {
+    "character": "C",
+    "codepoint": "U+0043"
+  },
+  {
+    "character": "D",
+    "codepoint": "U+0044"
+  },
+  {
+    "character": "E",
+    "codepoint": "U+0045"
+  },
+  {
+    "character": "F",
+    "codepoint": "U+0046"
+  },
+  {
+    "character": "G",
+    "codepoint": "U+0047"
+  },
+  {
+    "character": "H",
+    "codepoint": "U+0048"
+  },
+  {
+    "character": "I",
+    "codepoint": "U+0049"
+  },
+  {
+    "character": "J",
+    "codepoint": "U+004A"
+  },
+  {
+    "character": "K",
+    "codepoint": "U+004B"
+  },
+  {
+    "character": "L",
+    "codepoint": "U+004C"
+  },
+  {
+    "character": "M",
+    "codepoint": "U+004D"
+  },
+  {
+    "character": "N",
+    "codepoint": "U+004E"
+  },
+  {
+    "character": "O",
+    "codepoint": "U+004F"
+  },
+  {
+    "character": "P",
+    "codepoint": "U+0050"
+  },
+  {
+    "character": "Q",
+    "codepoint": "U+0051"
+  },
+  {
+    "character": "R",
+    "codepoint": "U+0052"
+  },
+  {
+    "character": "S",
+    "codepoint": "U+0053"
+  },
+  {
+    "character": "T",
+    "codepoint": "U+0054"
+  },
+  {
+    "character": "U",
+    "codepoint": "U+0055"
+  },
+  {
+    "character": "V",
+    "codepoint": "U+0056"
+  },
+  {
+    "character": "W",
+    "codepoint": "U+0057"
+  },
+  {
+    "character": "X",
+    "codepoint": "U+0058"
+  },
+  {
+    "character": "Y",
+    "codepoint": "U+0059"
+  },
+  {
+    "character": "Z",
+    "codepoint": "U+005A"
+  },
+  {
+    "character": "a",
+    "codepoint": "U+0061"
+  },
+  {
+    "character": "b",
+    "codepoint": "U+0062"
+  },
+  {
+    "character": "c",
+    "codepoint": "U+0063"
+  },
+  {
+    "character": "d",
+    "codepoint": "U+0064"
+  },
+  {
+    "character": "e",
+    "codepoint": "U+0065"
+  },
+  {
+    "character": "f",
+    "codepoint": "U+0066"
+  },
+  {
+    "character": "g",
+    "codepoint": "U+0067"
+  },
+  {
+    "character": "h",
+    "codepoint": "U+0068"
+  },
+  {
+    "character": "i",
+    "codepoint": "U+0069"
+  },
+  {
+    "character": "j",
+    "codepoint": "U+006A"
+  },
+  {
+    "character": "k",
+    "codepoint": "U+006B"
+  },
+  {
+    "character": "l",
+    "codepoint": "U+006C"
+  },
+  {
+    "character": "m",
+    "codepoint": "U+006D"
+  },
+  {
+    "character": "n",
+    "codepoint": "U+006E"
+  },
+  {
+    "character": "o",
+    "codepoint": "U+006F"
+  },
+  {
+    "character": "p",
+    "codepoint": "U+0070"
+  },
+  {
+    "character": "q",
+    "codepoint": "U+0071"
+  },
+  {
+    "character": "r",
+    "codepoint": "U+0072"
+  },
+  {
+    "character": "s",
+    "codepoint": "U+0073"
+  },
+  {
+    "character": "t",
+    "codepoint": "U+0074"
+  },
+  {
+    "character": "u",
+    "codepoint": "U+0075"
+  },
+  {
+    "character": "v",
+    "codepoint": "U+0076"
+  },
+  {
+    "character": "w",
+    "codepoint": "U+0077"
+  },
+  {
+    "character": "x",
+    "codepoint": "U+0078"
+  },
+  {
+    "character": "y",
+    "codepoint": "U+0079"
+  },
+  {
+    "character": "z",
+    "codepoint": "U+007A"
+  },
+  {
+    "character": "Ё",
+    "codepoint": "U+0401"
+  },
+  {
+    "character": "А",
+    "codepoint": "U+0410"
+  },
+  {
+    "character": "Б",
+    "codepoint": "U+0411"
+  },
+  {
+    "character": "В",
+    "codepoint": "U+0412"
+  },
+  {
+    "character": "Г",
+    "codepoint": "U+0413"
+  },
+  {
+    "character": "Д",
+    "codepoint": "U+0414"
+  },
+  {
+    "character": "Е",
+    "codepoint": "U+0415"
+  },
+  {
+    "character": "Ж",
+    "codepoint": "U+0416"
+  },
+  {
+    "character": "З",
+    "codepoint": "U+0417"
+  },
+  {
+    "character": "И",
+    "codepoint": "U+0418"
+  },
+  {
+    "character": "Й",
+    "codepoint": "U+0419"
+  },
+  {
+    "character": "К",
+    "codepoint": "U+041A"
+  },
+  {
+    "character": "Л",
+    "codepoint": "U+041B"
+  },
+  {
+    "character": "М",
+    "codepoint": "U+041C"
+  },
+  {
+    "character": "Н",
+    "codepoint": "U+041D"
+  },
+  {
+    "character": "О",
+    "codepoint": "U+041E"
+  },
+  {
+    "character": "П",
+    "codepoint": "U+041F"
+  },
+  {
+    "character": "Р",
+    "codepoint": "U+0420"
+  },
+  {
+    "character": "С",
+    "codepoint": "U+0421"
+  },
+  {
+    "character": "Т",
+    "codepoint": "U+0422"
+  },
+  {
+    "character": "У",
+    "codepoint": "U+0423"
+  },
+  {
+    "character": "Ф",
+    "codepoint": "U+0424"
+  },
+  {
+    "character": "Х",
+    "codepoint": "U+0425"
+  },
+  {
+    "character": "Ц",
+    "codepoint": "U+0426"
+  },
+  {
+    "character": "Ч",
+    "codepoint": "U+0427"
+  },
+  {
+    "character": "Ш",
+    "codepoint": "U+0428"
+  },
+  {
+    "character": "Щ",
+    "codepoint": "U+0429"
+  },
+  {
+    "character": "Ъ",
+    "codepoint": "U+042A"
+  },
+  {
+    "character": "Ы",
+    "codepoint": "U+042B"
+  },
+  {
+    "character": "Ь",
+    "codepoint": "U+042C"
+  },
+  {
+    "character": "Э",
+    "codepoint": "U+042D"
+  },
+  {
+    "character": "Ю",
+    "codepoint": "U+042E"
+  },
+  {
+    "character": "Я",
+    "codepoint": "U+042F"
+  },
+  {
+    "character": "а",
+    "codepoint": "U+0430"
+  },
+  {
+    "character": "б",
+    "codepoint": "U+0431"
+  },
+  {
+    "character": "в",
+    "codepoint": "U+0432"
+  },
+  {
+    "character": "г",
+    "codepoint": "U+0433"
+  },
+  {
+    "character": "д",
+    "codepoint": "U+0434"
+  },
+  {
+    "character": "е",
+    "codepoint": "U+0435"
+  },
+  {
+    "character": "ж",
+    "codepoint": "U+0436"
+  },
+  {
+    "character": "з",
+    "codepoint": "U+0437"
+  },
+  {
+    "character": "и",
+    "codepoint": "U+0438"
+  },
+  {
+    "character": "й",
+    "codepoint": "U+0439"
+  },
+  {
+    "character": "к",
+    "codepoint": "U+043A"
+  },
+  {
+    "character": "л",
+    "codepoint": "U+043B"
+  },
+  {
+    "character": "м",
+    "codepoint": "U+043C"
+  },
+  {
+    "character": "н",
+    "codepoint": "U+043D"
+  },
+  {
+    "character": "о",
+    "codepoint": "U+043E"
+  },
+  {
+    "character": "п",
+    "codepoint": "U+043F"
+  },
+  {
+    "character": "р",
+    "codepoint": "U+0440"
+  },
+  {
+    "character": "с",
+    "codepoint": "U+0441"
+  },
+  {
+    "character": "т",
+    "codepoint": "U+0442"
+  },
+  {
+    "character": "у",
+    "codepoint": "U+0443"
+  },
+  {
+    "character": "ф",
+    "codepoint": "U+0444"
+  },
+  {
+    "character": "х",
+    "codepoint": "U+0445"
+  },
+  {
+    "character": "ц",
+    "codepoint": "U+0446"
+  },
+  {
+    "character": "ч",
+    "codepoint": "U+0447"
+  },
+  {
+    "character": "ш",
+    "codepoint": "U+0448"
+  },
+  {
+    "character": "щ",
+    "codepoint": "U+0449"
+  },
+  {
+    "character": "ъ",
+    "codepoint": "U+044A"
+  },
+  {
+    "character": "ы",
+    "codepoint": "U+044B"
+  },
+  {
+    "character": "ь",
+    "codepoint": "U+044C"
+  },
+  {
+    "character": "э",
+    "codepoint": "U+044D"
+  },
+  {
+    "character": "ю",
+    "codepoint": "U+044E"
+  },
+  {
+    "character": "я",
+    "codepoint": "U+044F"
+  },
+  {
+    "character": "ё",
+    "codepoint": "U+0451"
+  }
+]

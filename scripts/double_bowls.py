@@ -3,7 +3,8 @@ from pathlib import Path
 from functools import lru_cache
 import json
 from geometry import Drawing
-from bowls import arc, mix
+from bowls import arc
+from parameters import at_location
 
 
 @lru_cache(maxsize=1)
@@ -34,10 +35,7 @@ def apply(glyph, key, design):
     data = load().get(ch)
     if data is None:
         return
-    lo, hi = (100, 400) if design.weight <= 400 else (400, 900)
-    a = mix(data[str(lo)]['text'], data[str(lo)]['display'], design.display)
-    b = mix(data[str(hi)]['text'], data[str(hi)]['display'], design.display)
-    p = mix(a, b, (design.weight-lo)/(hi-lo))
+    p = at_location(data, design)
     glyph.clearContours()
     drawing(p).replay(glyph.getPen())
     glyph.width = p['advance']

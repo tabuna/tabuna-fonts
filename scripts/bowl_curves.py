@@ -24,6 +24,9 @@ def raw(design, character):
 
 
 def apply(glyph, key, design):
+    import os
+    if key == 'two' and os.environ.get('TABUNA_DISABLE_BOWL_2'):
+        return
     entry = load().get(key)
     if entry is None: return
     data = entry['weights']

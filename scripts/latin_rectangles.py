@@ -1,9 +1,9 @@
 """Original single-polygon recipes for I/H/E/F/L and Cyrillic Е/І."""
+from parameters import at_location
 from pathlib import Path
 from functools import lru_cache
 import json
 from geometry import Drawing
-from rectilinear import mix
 
 @lru_cache(maxsize=1)
 def load():
@@ -29,9 +29,6 @@ def apply(glyph,key,design):
     ch=chr(int(key[3:],16)) if key.startswith('uni') and len(key)==7 else key
     data=load().get(ch)
     if data is None:return
-    lo,hi=(100,400) if design.weight<=400 else (400,900)
-    a=mix(data[str(lo)]['text'],data[str(lo)]['display'],design.display)
-    b=mix(data[str(hi)]['text'],data[str(hi)]['display'],design.display)
-    params=mix(a,b,(design.weight-lo)/(hi-lo))
+    params=at_location(data, design)
     drawing=Drawing();drawing.polygon(params['points'])
     glyph.clearContours();drawing.replay(glyph.getPen());glyph.width=params['advance']
