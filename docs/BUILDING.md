@@ -8,6 +8,7 @@ python3 -m venv .venv
 .venv/bin/python scripts/build.py
 .venv/bin/python scripts/test_bezier.py
 .venv/bin/python scripts/verify.py
+.venv/bin/python -m unittest font_recovery.test_design_status
 python3 -m http.server 4173 --bind 127.0.0.1
 ```
 
@@ -44,3 +45,16 @@ Python-окружения, кеши и сторонние загрузки не 
 учитываются рисунок, ширина и подмена шрифта. Сырые PNG и промежуточные
 кандидаты остаются локально. Проверки не равнозначны доказательству идеального
 сходства, полной независимости происхождения или завершённости всех форм.
+
+Готовность контрольной основы и выполнение обязательных дизайн-решений:
+
+```sh
+.venv/bin/python -m font_recovery.design_status
+.venv/bin/python -m font_recovery.design_status --require baseline
+.venv/bin/python -m font_recovery.design_status --require authorial
+```
+
+Два последних режима возвращают ненулевой код, если соответствующая стадия
+не завершена. Авторскому выпуску нужны сохранённая основа 95%, выбранная
+степень выраженности и закрытые решения D01–D06 с доказательствами для
+точного хеша TTF. Обычная сборка сама по себе не означает готовность выпуска.

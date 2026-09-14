@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "before_sha256": "478e905d54a4049872f19e46b5ad51b38c44f170be4434f33ba30135338a149d",
+  "font_sha256": "18f597e3a48133227d503eff9a297c9b9e62c646dd5cf7902dd8ed216369cf28",
+  "method": "HarfBuzz shaping, word wrapping, and conservative glyph extents; theme does not change layout geometry.",
+  "fixture_count": 10,
+  "layout_cases": 1260,
+  "distinct_axis_locations": 48,
+  "themes": [
+    "light",
+    "dark"
+  ],
+  "maximum_advance_change_px": 0,
+  "failures": [],
+  "visual_review_required": true,
+  "human_readability_study": false,
+  "corpus_sha256": "08198a8072f83425ed97069dd5f2f8db528518c584b99785ffed13cd57e44b6a"
+}

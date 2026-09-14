@@ -1,0 +1,668 @@
+[
+  {
+    "weight": 100,
+    "size": 16,
+    "records_count": 189,
+    "settings": {
+      "alignment": "shared pen origin and baseline; no image registration, scaling or contour extraction",
+      "antialias": "grayscale; subpixel positioning on; subpixel quantization off",
+      "canvas": [
+        512,
+        320
+      ],
+      "customOpticalSize": 16,
+      "customPostScriptName": "TabunaSans-Regular_Thin",
+      "customVariation": "{\n    1869640570 = 16;\n    2003265652 = 100;\n}",
+      "fontSHA256": "18f597e3a48133227d503eff9a297c9b9e62c646dd5cf7902dd8ed216369cf28",
+      "kerning": "disabled for isolated glyphs",
+      "originPixels": [
+        64,
+        276.8
+      ],
+      "os": "Version 26.5.2 (Build 25F84)",
+      "pixelScale": 2,
+      "pointSize": 16,
+      "referenceWeightMode": "axis",
+      "renderer": "CoreText / CoreGraphics, same offscreen context settings",
+      "selfTest": [
+        "self-test-a.png",
+        "self-test-b.png"
+      ],
+      "systemPostScriptName": ".SFNS-Regular_wdth_opsz110000_GRAD_wght640000",
+      "systemTraits": "{\n    NSCTFontProportionTrait = 0;\n    NSCTFontSlantTrait = 0;\n    NSCTFontSymbolicTrait = 0;\n    NSCTFontWeightTrait = \"-0.6000000238418579\";\n}",
+      "systemVariation": "{\n    1869640570 = 17;\n    2003265652 = 100;\n}",
+      "textMode": false,
+      "weight": 100
+    },
+    "original_settings_sha256": "42d7f6913097bbd00ce585b0d96b92050a3ea5ac9dd012b67befebc411d9a896"
+  },
+  {
+    "weight": 100,
+    "size": 64,
+    "records_count": 189,
+    "settings": {
+      "alignment": "shared pen origin and baseline; no image registration, scaling or contour extraction",
+      "antialias": "grayscale; subpixel positioning on; subpixel quantization off",
+      "canvas": [
+        512,
+        320
+      ],
+      "customOpticalSize": 64,
+      "customPostScriptName": "TabunaSans-Regular_Thin",
+      "customVariation": "{\n    1869640570 = 64;\n    2003265652 = 100;\n}",
+      "fontSHA256": "18f597e3a48133227d503eff9a297c9b9e62c646dd5cf7902dd8ed216369cf28",
+      "kerning": "disabled for isolated glyphs",
+      "originPixels": [
+        64,
+        219.2
+      ],
+      "os": "Version 26.5.2 (Build 25F84)",
+      "pixelScale": 2,
+      "pointSize": 64,
+      "referenceWeightMode": "axis",
+      "renderer": "CoreText / CoreGraphics, same offscreen context settings",
+      "selfTest": [
+        "self-test-a.png",
+        "self-test-b.png"
+      ],
+      "systemPostScriptName": ".SFNS-Regular_wdth_opsz400000_GRAD_wght640000",
+      "systemTraits": "{\n    NSCTFontProportionTrait = 0;\n    NSCTFontSlantTrait = 0;\n    NSCTFontSymbolicTrait = 0;\n    NSCTFontWeightTrait = \"-0.6000000238418579\";\n}",
+      "systemVariation": "{\n    1869640570 = 64;\n    2003265652 = 100;\n}",
+      "textMode": false,
+      "weight": 100
+    },
+    "original_settings_sha256": "d553e9bb38782082967674ea2612b2caee1a85aada337181fa98672989687944"
+  },
+  {
+    "weight": 200,
+    "size": 16,
+    "records_count": 189,
+    "settings": {
+      "alignment": "shared pen origin and baseline; no image registration, scaling or contour extraction",
+      "antialias": "grayscale; subpixel positioning on; subpixel quantization off",
+      "canvas": [
+        512,
+        320
+      ],
+      "customOpticalSize": 16,
+      "customPostScriptName": "TabunaSans-Regular_ExtraLight",
+      "customVariation": "{\n    1869640570 = 16;\n    2003265652 = 200;\n}",
+      "fontSHA256": "18f597e3a48133227d503eff9a297c9b9e62c646dd5cf7902dd8ed216369cf28",
+      "kerning": "disabled for isolated glyphs",
+      "originPixels": [
+        64,
+        276.8
+      ],
+      "os": "Version 26.5.2 (Build 25F84)",
+      "pixelScale": 2,
+      "pointSize": 16,
+      "referenceWeightMode": "axis",
+      "renderer": "CoreText / CoreGraphics, same offscreen context settings",
+      "selfTest": [
+        "self-test-a.png",
+        "self-test-b.png"
+      ],
+      "systemPostScriptName": ".SFNS-Regular_wdth_opsz110000_GRAD_wghtC80000",
+      "systemTraits": "{\n    NSCTFontProportionTrait = 0;\n    NSCTFontSlantTrait = 0;\n    NSCTFontSymbolicTrait = 0;\n    NSCTFontWeightTrait = \"-0.4000000059604645\";\n}",
+      "systemVariation": "{\n    1869640570 = 17;\n    2003265652 = 200;\n}",
+      "textMode": false,
+      "weight": 200
+    },
+    "original_settings_sha256": "180b5346495d5cf0c2a19a52645d393ab45a6418efe9f34e68697ac2dcc240c2"
+  },
+  {
+    "weight": 200,
+    "size": 64,
+    "records_count": 189,
+    "settings": {
+      "alignment": "shared pen origin and baseline; no image registration, scaling or contour extraction",
+      "antialias": "grayscale; subpixel positioning on; subpixel quantization off",
+      "canvas": [
+        512,
+        320
+      ],
+      "customOpticalSize": 64,
+      "customPostScriptName": "TabunaSans-Regular_ExtraLight",
+      "customVariation": "{\n    1869640570 = 64;\n    2003265652 = 200;\n}",
+      "fontSHA256": "18f597e3a48133227d503eff9a297c9b9e62c646dd5cf7902dd8ed216369cf28",
+      "kerning": "disabled for isolated glyphs",
+      "originPixels": [
+        64,
+        219.2
+      ],
+      "os": "Version 26.5.2 (Build 25F84)",
+      "pixelScale": 2,
+      "pointSize": 64,
+      "referenceWeightMode": "axis",
+      "renderer": "CoreText / CoreGraphics, same offscreen context settings",
+      "selfTest": [
+        "self-test-a.png",
+        "self-test-b.png"
+      ],
+      "systemPostScriptName": ".SFNS-Regular_wdth_opsz400000_GRAD_wghtC80000",
+      "systemTraits": "{\n    NSCTFontProportionTrait = 0;\n    NSCTFontSlantTrait = 0;\n    NSCTFontSymbolicTrait = 0;\n    NSCTFontWeightTrait = \"-0.4000000059604645\";\n}",
+      "systemVariation": "{\n    1869640570 = 64;\n    2003265652 = 200;\n}",
+      "textMode": false,
+      "weight": 200
+    },
+    "original_settings_sha256": "7e565da6056a28b6cb68e39879c969b6548b8fa5c6432beafc6b9bf2157bb733"
+  },
+  {
+    "weight": 300,
+    "size": 16,
+    "records_count": 189,
+    "settings": {
+      "alignment": "shared pen origin and baseline; no image registration, scaling or contour extraction",
+      "antialias": "grayscale; subpixel positioning on; subpixel quantization off",
+      "canvas": [
+        512,
+        320
+      ],
+      "customOpticalSize": 16,
+      "customPostScriptName": "TabunaSans-Regular_Light",
+      "customVariation": "{\n    1869640570 = 16;\n    2003265652 = 300;\n}",
+      "fontSHA256": "18f597e3a48133227d503eff9a297c9b9e62c646dd5cf7902dd8ed216369cf28",
+      "kerning": "disabled for isolated glyphs",
+      "originPixels": [
+        64,
+        276.8
+      ],
+      "os": "Version 26.5.2 (Build 25F84)",
+      "pixelScale": 2,
+      "pointSize": 16,
+      "referenceWeightMode": "axis",
+      "renderer": "CoreText / CoreGraphics, same offscreen context settings",
+      "selfTest": [
+        "self-test-a.png",
+        "self-test-b.png"
+      ],
+      "systemPostScriptName": ".SFNS-Regular_wdth_opsz110000_GRAD_wght12C0000",
+      "systemTraits": "{\n    NSCTFontProportionTrait = 0;\n    NSCTFontSlantTrait = 0;\n    NSCTFontSymbolicTrait = 0;\n    NSCTFontWeightTrait = \"-0.2300000041723251\";\n}",
+      "systemVariation": "{\n    1869640570 = 17;\n    2003265652 = 300;\n}",
+      "textMode": false,
+      "weight": 300
+    },
+    "original_settings_sha256": "41d5ab5fa3ffde5366e4e3af4b294afe63569cec9f70083b51edc23bb24c3549"
+  },
+  {
+    "weight": 300,
+    "size": 64,
+    "records_count": 189,
+    "settings": {
+      "alignment": "shared pen origin and baseline; no image registration, scaling or contour extraction",
+      "antialias": "grayscale; subpixel positioning on; subpixel quantization off",
+      "canvas": [
+        512,
+        320
+      ],
+      "customOpticalSize": 64,
+      "customPostScriptName": "TabunaSans-Regular_Light",
+      "customVariation": "{\n    1869640570 = 64;\n    2003265652 = 300;\n}",
+      "fontSHA256": "18f597e3a48133227d503eff9a297c9b9e62c646dd5cf7902dd8ed216369cf28",
+      "kerning": "disabled for isolated glyphs",
+      "originPixels": [
+        64,
+        219.2
+      ],
+      "os": "Version 26.5.2 (Build 25F84)",
+      "pixelScale": 2,
+      "pointSize": 64,
+      "referenceWeightMode": "axis",
+      "renderer": "CoreText / CoreGraphics, same offscreen context settings",
+      "selfTest": [
+        "self-test-a.png",
+        "self-test-b.png"
+      ],
+      "systemPostScriptName": ".SFNS-Regular_wdth_opsz400000_GRAD_wght12C0000",
+      "systemTraits": "{\n    NSCTFontProportionTrait = 0;\n    NSCTFontSlantTrait = 0;\n    NSCTFontSymbolicTrait = 0;\n    NSCTFontWeightTrait = \"-0.2300000041723251\";\n}",
+      "systemVariation": "{\n    1869640570 = 64;\n    2003265652 = 300;\n}",
+      "textMode": false,
+      "weight": 300
+    },
+    "original_settings_sha256": "7f850f2885c82c3f1ad94e2bb30956e865934f4cbb25bf1ac21eac41416c4513"
+  },
+  {
+    "weight": 400,
+    "size": 16,
+    "records_count": 189,
+    "settings": {
+      "alignment": "shared pen origin and baseline; no image registration, scaling or contour extraction",
+      "antialias": "grayscale; subpixel positioning on; subpixel quantization off",
+      "canvas": [
+        512,
+        320
+      ],
+      "customOpticalSize": 16,
+      "customPostScriptName": "TabunaSans-Regular",
+      "customVariation": "{\n    1869640570 = 16;\n}",
+      "fontSHA256": "18f597e3a48133227d503eff9a297c9b9e62c646dd5cf7902dd8ed216369cf28",
+      "kerning": "disabled for isolated glyphs",
+      "originPixels": [
+        64,
+        276.8
+      ],
+      "os": "Version 26.5.2 (Build 25F84)",
+      "pixelScale": 2,
+      "pointSize": 16,
+      "referenceWeightMode": "axis",
+      "renderer": "CoreText / CoreGraphics, same offscreen context settings",
+      "selfTest": [
+        "self-test-a.png",
+        "self-test-b.png"
+      ],
+      "systemPostScriptName": ".SFNS-Regular",
+      "systemTraits": "{\n    NSCTFontProportionTrait = 0;\n    NSCTFontSlantTrait = 0;\n    NSCTFontSymbolicTrait = 16384;\n    NSCTFontUIFontDesignTrait = NSCTFontUIFontDesignDefault;\n    NSCTFontWeightTrait = 0;\n}",
+      "systemVariation": "{\n    1869640570 = 17;\n}",
+      "textMode": false,
+      "weight": 400
+    },
+    "original_settings_sha256": "c1b7c28054274e0d1995a57e10ba80173e1730d449121a1a44b751e5bf4e8b8c"
+  },
+  {
+    "weight": 400,
+    "size": 64,
+    "records_count": 189,
+    "settings": {
+      "alignment": "shared pen origin and baseline; no image registration, scaling or contour extraction",
+      "antialias": "grayscale; subpixel positioning on; subpixel quantization off",
+      "canvas": [
+        512,
+        320
+      ],
+      "customOpticalSize": 64,
+      "customPostScriptName": "TabunaSans-Regular",
+      "customVariation": "{\n    1869640570 = 64;\n}",
+      "fontSHA256": "18f597e3a48133227d503eff9a297c9b9e62c646dd5cf7902dd8ed216369cf28",
+      "kerning": "disabled for isolated glyphs",
+      "originPixels": [
+        64,
+        219.2
+      ],
+      "os": "Version 26.5.2 (Build 25F84)",
+      "pixelScale": 2,
+      "pointSize": 64,
+      "referenceWeightMode": "axis",
+      "renderer": "CoreText / CoreGraphics, same offscreen context settings",
+      "selfTest": [
+        "self-test-a.png",
+        "self-test-b.png"
+      ],
+      "systemPostScriptName": ".SFNS-Regular",
+      "systemTraits": "{\n    NSCTFontProportionTrait = 0;\n    NSCTFontSlantTrait = 0;\n    NSCTFontSymbolicTrait = 16384;\n    NSCTFontUIFontDesignTrait = NSCTFontUIFontDesignDefault;\n    NSCTFontWeightTrait = 0;\n}",
+      "systemVariation": "{\n    1869640570 = 64;\n}",
+      "textMode": false,
+      "weight": 400
+    },
+    "original_settings_sha256": "4aef4faebc342172efec0dffde2bb8f33441e836e401cfc8db938b3e6a5ed03b"
+  },
+  {
+    "weight": 500,
+    "size": 16,
+    "records_count": 189,
+    "settings": {
+      "alignment": "shared pen origin and baseline; no image registration, scaling or contour extraction",
+      "antialias": "grayscale; subpixel positioning on; subpixel quantization off",
+      "canvas": [
+        512,
+        320
+      ],
+      "customOpticalSize": 16,
+      "customPostScriptName": "TabunaSans-Regular_Medium",
+      "customVariation": "{\n    1869640570 = 16;\n    2003265652 = 500;\n}",
+      "fontSHA256": "18f597e3a48133227d503eff9a297c9b9e62c646dd5cf7902dd8ed216369cf28",
+      "kerning": "disabled for isolated glyphs",
+      "originPixels": [
+        64,
+        276.8
+      ],
+      "os": "Version 26.5.2 (Build 25F84)",
+      "pixelScale": 2,
+      "pointSize": 16,
+      "referenceWeightMode": "axis",
+      "renderer": "CoreText / CoreGraphics, same offscreen context settings",
+      "selfTest": [
+        "self-test-a.png",
+        "self-test-b.png"
+      ],
+      "systemPostScriptName": ".SFNS-Regular_wdth_opsz110000_GRAD_wght1F40000",
+      "systemTraits": "{\n    NSCTFontProportionTrait = 0;\n    NSCTFontSlantTrait = 0;\n    NSCTFontSymbolicTrait = 0;\n    NSCTFontWeightTrait = \"0.2000000029802322\";\n}",
+      "systemVariation": "{\n    1869640570 = 17;\n    2003265652 = 500;\n}",
+      "textMode": false,
+      "weight": 500
+    },
+    "original_settings_sha256": "e1444b73937fefaa7f0ef2c37fc0ea3f964423b379cbcd1d04769c61599c48f7"
+  },
+  {
+    "weight": 500,
+    "size": 64,
+    "records_count": 189,
+    "settings": {
+      "alignment": "shared pen origin and baseline; no image registration, scaling or contour extraction",
+      "antialias": "grayscale; subpixel positioning on; subpixel quantization off",
+      "canvas": [
+        512,
+        320
+      ],
+      "customOpticalSize": 64,
+      "customPostScriptName": "TabunaSans-Regular_Medium",
+      "customVariation": "{\n    1869640570 = 64;\n    2003265652 = 500;\n}",
+      "fontSHA256": "18f597e3a48133227d503eff9a297c9b9e62c646dd5cf7902dd8ed216369cf28",
+      "kerning": "disabled for isolated glyphs",
+      "originPixels": [
+        64,
+        219.2
+      ],
+      "os": "Version 26.5.2 (Build 25F84)",
+      "pixelScale": 2,
+      "pointSize": 64,
+      "referenceWeightMode": "axis",
+      "renderer": "CoreText / CoreGraphics, same offscreen context settings",
+      "selfTest": [
+        "self-test-a.png",
+        "self-test-b.png"
+      ],
+      "systemPostScriptName": ".SFNS-Regular_wdth_opsz400000_GRAD_wght1F40000",
+      "systemTraits": "{\n    NSCTFontProportionTrait = 0;\n    NSCTFontSlantTrait = 0;\n    NSCTFontSymbolicTrait = 0;\n    NSCTFontWeightTrait = \"0.2000000029802322\";\n}",
+      "systemVariation": "{\n    1869640570 = 64;\n    2003265652 = 500;\n}",
+      "textMode": false,
+      "weight": 500
+    },
+    "original_settings_sha256": "803e09a0e646c8687ef394ab523a550bb68fbbe8be8c816435c449e5d3ddcc0a"
+  },
+  {
+    "weight": 600,
+    "size": 16,
+    "records_count": 189,
+    "settings": {
+      "alignment": "shared pen origin and baseline; no image registration, scaling or contour extraction",
+      "antialias": "grayscale; subpixel positioning on; subpixel quantization off",
+      "canvas": [
+        512,
+        320
+      ],
+      "customOpticalSize": 16,
+      "customPostScriptName": "TabunaSans-Regular_SemiBold",
+      "customVariation": "{\n    1869640570 = 16;\n    2003265652 = 600;\n}",
+      "fontSHA256": "18f597e3a48133227d503eff9a297c9b9e62c646dd5cf7902dd8ed216369cf28",
+      "kerning": "disabled for isolated glyphs",
+      "originPixels": [
+        64,
+        276.8
+      ],
+      "os": "Version 26.5.2 (Build 25F84)",
+      "pixelScale": 2,
+      "pointSize": 16,
+      "referenceWeightMode": "axis",
+      "renderer": "CoreText / CoreGraphics, same offscreen context settings",
+      "selfTest": [
+        "self-test-a.png",
+        "self-test-b.png"
+      ],
+      "systemPostScriptName": ".SFNS-Regular_wdth_opsz110000_GRAD_wght2580000",
+      "systemTraits": "{\n    NSCTFontProportionTrait = 0;\n    NSCTFontSlantTrait = 0;\n    NSCTFontSymbolicTrait = 2;\n    NSCTFontWeightTrait = \"0.300000011920929\";\n}",
+      "systemVariation": "{\n    1869640570 = 17;\n    2003265652 = 600;\n}",
+      "textMode": false,
+      "weight": 600
+    },
+    "original_settings_sha256": "d74285f7d901dfe11c98b1525e47284f3b1b5c0848e0cae7ab47f2d8ada407d6"
+  },
+  {
+    "weight": 600,
+    "size": 64,
+    "records_count": 189,
+    "settings": {
+      "alignment": "shared pen origin and baseline; no image registration, scaling or contour extraction",
+      "antialias": "grayscale; subpixel positioning on; subpixel quantization off",
+      "canvas": [
+        512,
+        320
+      ],
+      "customOpticalSize": 64,
+      "customPostScriptName": "TabunaSans-Regular_SemiBold",
+      "customVariation": "{\n    1869640570 = 64;\n    2003265652 = 600;\n}",
+      "fontSHA256": "18f597e3a48133227d503eff9a297c9b9e62c646dd5cf7902dd8ed216369cf28",
+      "kerning": "disabled for isolated glyphs",
+      "originPixels": [
+        64,
+        219.2
+      ],
+      "os": "Version 26.5.2 (Build 25F84)",
+      "pixelScale": 2,
+      "pointSize": 64,
+      "referenceWeightMode": "axis",
+      "renderer": "CoreText / CoreGraphics, same offscreen context settings",
+      "selfTest": [
+        "self-test-a.png",
+        "self-test-b.png"
+      ],
+      "systemPostScriptName": ".SFNS-Regular_wdth_opsz400000_GRAD_wght2580000",
+      "systemTraits": "{\n    NSCTFontProportionTrait = 0;\n    NSCTFontSlantTrait = 0;\n    NSCTFontSymbolicTrait = 2;\n    NSCTFontWeightTrait = \"0.300000011920929\";\n}",
+      "systemVariation": "{\n    1869640570 = 64;\n    2003265652 = 600;\n}",
+      "textMode": false,
+      "weight": 600
+    },
+    "original_settings_sha256": "123724ea3034f5597ba80dbed7b29053dc359a98d216a1ec29b867eb8e261852"
+  },
+  {
+    "weight": 700,
+    "size": 16,
+    "records_count": 189,
+    "settings": {
+      "alignment": "shared pen origin and baseline; no image registration, scaling or contour extraction",
+      "antialias": "grayscale; subpixel positioning on; subpixel quantization off",
+      "canvas": [
+        512,
+        320
+      ],
+      "customOpticalSize": 16,
+      "customPostScriptName": "TabunaSans-Regular_Bold",
+      "customVariation": "{\n    1869640570 = 16;\n    2003265652 = 700;\n}",
+      "fontSHA256": "18f597e3a48133227d503eff9a297c9b9e62c646dd5cf7902dd8ed216369cf28",
+      "kerning": "disabled for isolated glyphs",
+      "originPixels": [
+        64,
+        276.8
+      ],
+      "os": "Version 26.5.2 (Build 25F84)",
+      "pixelScale": 2,
+      "pointSize": 16,
+      "referenceWeightMode": "axis",
+      "renderer": "CoreText / CoreGraphics, same offscreen context settings",
+      "selfTest": [
+        "self-test-a.png",
+        "self-test-b.png"
+      ],
+      "systemPostScriptName": ".SFNS-Regular_wdth_opsz110000_GRAD_wght2BC0000",
+      "systemTraits": "{\n    NSCTFontProportionTrait = 0;\n    NSCTFontSlantTrait = 0;\n    NSCTFontSymbolicTrait = 2;\n    NSCTFontWeightTrait = \"0.4000000059604645\";\n}",
+      "systemVariation": "{\n    1869640570 = 17;\n    2003265652 = 700;\n}",
+      "textMode": false,
+      "weight": 700
+    },
+    "original_settings_sha256": "bb09147a5a2a479793ab227a78e0d396ad9b3eb2fbfc03f28ef6e6313dc7fabf"
+  },
+  {
+    "weight": 700,
+    "size": 64,
+    "records_count": 189,
+    "settings": {
+      "alignment": "shared pen origin and baseline; no image registration, scaling or contour extraction",
+      "antialias": "grayscale; subpixel positioning on; subpixel quantization off",
+      "canvas": [
+        512,
+        320
+      ],
+      "customOpticalSize": 64,
+      "customPostScriptName": "TabunaSans-Regular_Bold",
+      "customVariation": "{\n    1869640570 = 64;\n    2003265652 = 700;\n}",
+      "fontSHA256": "18f597e3a48133227d503eff9a297c9b9e62c646dd5cf7902dd8ed216369cf28",
+      "kerning": "disabled for isolated glyphs",
+      "originPixels": [
+        64,
+        219.2
+      ],
+      "os": "Version 26.5.2 (Build 25F84)",
+      "pixelScale": 2,
+      "pointSize": 64,
+      "referenceWeightMode": "axis",
+      "renderer": "CoreText / CoreGraphics, same offscreen context settings",
+      "selfTest": [
+        "self-test-a.png",
+        "self-test-b.png"
+      ],
+      "systemPostScriptName": ".SFNS-Regular_wdth_opsz400000_GRAD_wght2BC0000",
+      "systemTraits": "{\n    NSCTFontProportionTrait = 0;\n    NSCTFontSlantTrait = 0;\n    NSCTFontSymbolicTrait = 2;\n    NSCTFontWeightTrait = \"0.4000000059604645\";\n}",
+      "systemVariation": "{\n    1869640570 = 64;\n    2003265652 = 700;\n}",
+      "textMode": false,
+      "weight": 700
+    },
+    "original_settings_sha256": "9dc384328f6a81e4c84a56e67114725879c9f20359198ce42207dafa43b1b3b1"
+  },
+  {
+    "weight": 800,
+    "size": 16,
+    "records_count": 189,
+    "settings": {
+      "alignment": "shared pen origin and baseline; no image registration, scaling or contour extraction",
+      "antialias": "grayscale; subpixel positioning on; subpixel quantization off",
+      "canvas": [
+        512,
+        320
+      ],
+      "customOpticalSize": 16,
+      "customPostScriptName": "TabunaSans-Regular_ExtraBold",
+      "customVariation": "{\n    1869640570 = 16;\n    2003265652 = 800;\n}",
+      "fontSHA256": "18f597e3a48133227d503eff9a297c9b9e62c646dd5cf7902dd8ed216369cf28",
+      "kerning": "disabled for isolated glyphs",
+      "originPixels": [
+        64,
+        276.8
+      ],
+      "os": "Version 26.5.2 (Build 25F84)",
+      "pixelScale": 2,
+      "pointSize": 16,
+      "referenceWeightMode": "axis",
+      "renderer": "CoreText / CoreGraphics, same offscreen context settings",
+      "selfTest": [
+        "self-test-a.png",
+        "self-test-b.png"
+      ],
+      "systemPostScriptName": ".SFNS-Regular_wdth_opsz110000_GRAD_wght3200000",
+      "systemTraits": "{\n    NSCTFontProportionTrait = 0;\n    NSCTFontSlantTrait = 0;\n    NSCTFontSymbolicTrait = 2;\n    NSCTFontWeightTrait = \"0.6000000238418579\";\n}",
+      "systemVariation": "{\n    1869640570 = 17;\n    2003265652 = 800;\n}",
+      "textMode": false,
+      "weight": 800
+    },
+    "original_settings_sha256": "175d4426636fa6bf3b33583a797f7070b58f6d1ad0697f2d8461bd1138a7d298"
+  },
+  {
+    "weight": 800,
+    "size": 64,
+    "records_count": 189,
+    "settings": {
+      "alignment": "shared pen origin and baseline; no image registration, scaling or contour extraction",
+      "antialias": "grayscale; subpixel positioning on; subpixel quantization off",
+      "canvas": [
+        512,
+        320
+      ],
+      "customOpticalSize": 64,
+      "customPostScriptName": "TabunaSans-Regular_ExtraBold",
+      "customVariation": "{\n    1869640570 = 64;\n    2003265652 = 800;\n}",
+      "fontSHA256": "18f597e3a48133227d503eff9a297c9b9e62c646dd5cf7902dd8ed216369cf28",
+      "kerning": "disabled for isolated glyphs",
+      "originPixels": [
+        64,
+        219.2
+      ],
+      "os": "Version 26.5.2 (Build 25F84)",
+      "pixelScale": 2,
+      "pointSize": 64,
+      "referenceWeightMode": "axis",
+      "renderer": "CoreText / CoreGraphics, same offscreen context settings",
+      "selfTest": [
+        "self-test-a.png",
+        "self-test-b.png"
+      ],
+      "systemPostScriptName": ".SFNS-Regular_wdth_opsz400000_GRAD_wght3200000",
+      "systemTraits": "{\n    NSCTFontProportionTrait = 0;\n    NSCTFontSlantTrait = 0;\n    NSCTFontSymbolicTrait = 2;\n    NSCTFontWeightTrait = \"0.6000000238418579\";\n}",
+      "systemVariation": "{\n    1869640570 = 64;\n    2003265652 = 800;\n}",
+      "textMode": false,
+      "weight": 800
+    },
+    "original_settings_sha256": "137124fa80aceed40e1a02dff60647eb3c7c8a393bcb0a845e7775ad8a2fbcd8"
+  },
+  {
+    "weight": 900,
+    "size": 16,
+    "records_count": 189,
+    "settings": {
+      "alignment": "shared pen origin and baseline; no image registration, scaling or contour extraction",
+      "antialias": "grayscale; subpixel positioning on; subpixel quantization off",
+      "canvas": [
+        512,
+        320
+      ],
+      "customOpticalSize": 16,
+      "customPostScriptName": "TabunaSans-Regular_Black",
+      "customVariation": "{\n    1869640570 = 16;\n    2003265652 = 900;\n}",
+      "fontSHA256": "18f597e3a48133227d503eff9a297c9b9e62c646dd5cf7902dd8ed216369cf28",
+      "kerning": "disabled for isolated glyphs",
+      "originPixels": [
+        64,
+        276.8
+      ],
+      "os": "Version 26.5.2 (Build 25F84)",
+      "pixelScale": 2,
+      "pointSize": 16,
+      "referenceWeightMode": "axis",
+      "renderer": "CoreText / CoreGraphics, same offscreen context settings",
+      "selfTest": [
+        "self-test-a.png",
+        "self-test-b.png"
+      ],
+      "systemPostScriptName": ".SFNS-Regular_wdth_opsz110000_GRAD_wght3840000",
+      "systemTraits": "{\n    NSCTFontProportionTrait = 0;\n    NSCTFontSlantTrait = 0;\n    NSCTFontSymbolicTrait = 2;\n    NSCTFontWeightTrait = \"0.800000011920929\";\n}",
+      "systemVariation": "{\n    1869640570 = 17;\n    2003265652 = 900;\n}",
+      "textMode": false,
+      "weight": 900
+    },
+    "original_settings_sha256": "d602636c0072d1ff7cc456b72ad46ab2cd8bd65a0b84ab3977baa1278cf74dc3"
+  },
+  {
+    "weight": 900,
+    "size": 64,
+    "records_count": 189,
+    "settings": {
+      "alignment": "shared pen origin and baseline; no image registration, scaling or contour extraction",
+      "antialias": "grayscale; subpixel positioning on; subpixel quantization off",
+      "canvas": [
+        512,
+        320
+      ],
+      "customOpticalSize": 64,
+      "customPostScriptName": "TabunaSans-Regular_Black",
+      "customVariation": "{\n    1869640570 = 64;\n    2003265652 = 900;\n}",
+      "fontSHA256": "18f597e3a48133227d503eff9a297c9b9e62c646dd5cf7902dd8ed216369cf28",
+      "kerning": "disabled for isolated glyphs",
+      "originPixels": [
+        64,
+        219.2
+      ],
+      "os": "Version 26.5.2 (Build 25F84)",
+      "pixelScale": 2,
+      "pointSize": 64,
+      "referenceWeightMode": "axis",
+      "renderer": "CoreText / CoreGraphics, same offscreen context settings",
+      "selfTest": [
+        "self-test-a.png",
+        "self-test-b.png"
+      ],
+      "systemPostScriptName": ".SFNS-Regular_wdth_opsz400000_GRAD_wght3840000",
+      "systemTraits": "{\n    NSCTFontProportionTrait = 0;\n    NSCTFontSlantTrait = 0;\n    NSCTFontSymbolicTrait = 2;\n    NSCTFontWeightTrait = \"0.800000011920929\";\n}",
+      "systemVariation": "{\n    1869640570 = 64;\n    2003265652 = 900;\n}",
+      "textMode": false,
+      "weight": 900
+    },
+    "original_settings_sha256": "a4da2289a0b22c8059b8cdf6b8bc322e3ca55c9d77f034c80851e2755474503e"
+  }
+]

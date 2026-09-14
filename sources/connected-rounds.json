@@ -678,9 +678,9 @@
           "ring": {
             "bounds": [
               [
-                313.96484375,
+                311.96484375,
                 -13.020833333333332,
-                868.8964843750001,
+                870.8964843750001,
                 558.10546875
               ],
               [
@@ -811,7 +811,7 @@
   },
   "measurements": [
     {
-      "character": "\u042e",
+      "character": "Ю",
       "weight": 100,
       "optical": 17,
       "ring_residuals": [
@@ -820,7 +820,7 @@
       ]
     },
     {
-      "character": "\u042e",
+      "character": "Ю",
       "weight": 100,
       "optical": 28,
       "ring_residuals": [
@@ -829,7 +829,7 @@
       ]
     },
     {
-      "character": "\u042e",
+      "character": "Ю",
       "weight": 400,
       "optical": 17,
       "ring_residuals": [
@@ -838,7 +838,7 @@
       ]
     },
     {
-      "character": "\u042e",
+      "character": "Ю",
       "weight": 400,
       "optical": 28,
       "ring_residuals": [
@@ -847,7 +847,7 @@
       ]
     },
     {
-      "character": "\u042e",
+      "character": "Ю",
       "weight": 900,
       "optical": 17,
       "ring_residuals": [
@@ -856,7 +856,7 @@
       ]
     },
     {
-      "character": "\u042e",
+      "character": "Ю",
       "weight": 900,
       "optical": 28,
       "ring_residuals": [
@@ -865,7 +865,7 @@
       ]
     },
     {
-      "character": "\u044e",
+      "character": "ю",
       "weight": 100,
       "optical": 17,
       "ring_residuals": [
@@ -874,7 +874,7 @@
       ]
     },
     {
-      "character": "\u044e",
+      "character": "ю",
       "weight": 100,
       "optical": 28,
       "ring_residuals": [
@@ -883,7 +883,7 @@
       ]
     },
     {
-      "character": "\u044e",
+      "character": "ю",
       "weight": 400,
       "optical": 17,
       "ring_residuals": [
@@ -892,7 +892,7 @@
       ]
     },
     {
-      "character": "\u044e",
+      "character": "ю",
       "weight": 400,
       "optical": 28,
       "ring_residuals": [
@@ -901,7 +901,7 @@
       ]
     },
     {
-      "character": "\u044e",
+      "character": "ю",
       "weight": 900,
       "optical": 17,
       "ring_residuals": [
@@ -910,7 +910,7 @@
       ]
     },
     {
-      "character": "\u044e",
+      "character": "ю",
       "weight": 900,
       "optical": 28,
       "ring_residuals": [

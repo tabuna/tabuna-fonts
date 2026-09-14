@@ -1,29 +1,82 @@
 {
   "status": "accepted",
-  "font_sha256": "ac14e828febe57a6e76bba27b480175bf47a11f79e8c4a890121f31801721cb7",
-  "characters": "±",
-  "aggregate": {
-    "before": {
-      "tp": 17227,
-      "fp": 28,
-      "fn": 58,
-      "mask_iou": 0.9950326344365505
-    },
-    "after": {
-      "tp": 17283,
-      "fp": 28,
-      "fn": 2,
-      "mask_iou": 0.9982671980592618
-    }
-  },
+  "font_sha256": "6fb4e678a248bfd2cb99d1c083f11b682dc03ef0967a21e878212534895c5585",
+  "characters": "@",
   "cases": 18,
-  "improved_cases": 1,
-  "equal_cases": 17,
-  "repeat_verified": true,
+  "improved_cases": 11,
+  "equal_cases": 7,
   "regressions": 0,
-  "fp_growth": 0,
-  "construction": "Shared lower-bar optical rule for ±≤≥:0.25*clamp((400-w)/300,0,1)*display. Independent per-glyph duplicate parameters removed; complete TTF equals audited candidate.",
-  "shaping_checks": 72,
-  "contour_checks": 63,
-  "limitations": "Binary-mask improvement; grayscale IoU slightly decreases at100/64. Intentional plus-bar overlaps; finite tests, whole-font quality remains in progress."
+  "repeat_verified": true,
+  "minimum_mask_iou": 0.95,
+  "fp_component_growth": [
+    {
+      "weight": 400,
+      "size": 16,
+      "character": "@",
+      "before": {
+        "tp": 223,
+        "fp": 9,
+        "fn": 6,
+        "mask_iou": 0.9369747899159664,
+        "ink_iou": 0.927277
+      },
+      "after": {
+        "tp": 226,
+        "fp": 8,
+        "fn": 3,
+        "mask_iou": 0.9535864978902954,
+        "ink_iou": 0.935865
+      },
+      "largest_fp_component": [
+        1,
+        2
+      ]
+    }
+  ],
+  "fp_component_review": {
+    "font_sha256": "6fb4e678a248bfd2cb99d1c083f11b682dc03ef0967a21e878212534895c5585",
+    "verdict": "accept",
+    "cases": [
+      {
+        "character": "@",
+        "weight": 400,
+        "size": 16,
+        "largest_fp_component": [
+          1,
+          2
+        ],
+        "pixels": [
+          [
+            80,
+            254
+          ],
+          [
+            81,
+            254
+          ]
+        ],
+        "reason": "Two adjacent upper-arc boundary pixels, no isolated spike or new hole. Total FP decreases 9 to 8, FN 6 to 3, mask IoU .936975 to .953586 and grayscale IoU .927277 to .935865. Native specimens reviewed."
+      }
+    ],
+    "visual_review": "build/font-recovery/direction-baseline-05/geometry-review.png"
+  },
+  "secondary_grayscale_decreases": [],
+  "secondary_metric_decision": "Small grayscale decreases reviewed in native specimens; no silhouette or counter defect introduced. Binary masks do not regress. Any growth of false-positive components has a separate, explicit review.",
+  "contour_checks": [
+    {
+      "checked": 63,
+      "failures": [],
+      "between_contours_checked": false,
+      "method": "Pairwise proper intersections of sampled compiled contours; not an exact analytic proof"
+    }
+  ],
+  "visual_review": "build/font-recovery/direction-baseline-05/geometry-review.png",
+  "remaining_below_95_cases": 0,
+  "remaining_below_95_characters": 0,
+  "release_metadata_update": {
+    "version": "0.0.1",
+    "font_sha256": "18f597e3a48133227d503eff9a297c9b9e62c646dd5cf7902dd8ed216369cf28",
+    "proof": "reports/releases/0.0.1-version-equivalence.json",
+    "geometry_unchanged": true
+  }
 }

@@ -18,7 +18,9 @@ def construction(p):
                   (x(ur,uc),uc),(root,uc)])
     side.polygon([(x(ll,0),0),(x(ll,jb),jb),(root,jb),
                   (root,lc),(x(lr,lc),lc),(x(lr,0),0)])
-    d=Drawing();d.rect(sl,0,sr-sl,h)
+    # Stem edge compensation is independent of the reflected branch axis.
+    left_edge, right_edge = p.get('stem_edge_compensation', (0, 0))
+    d=Drawing();d.rect(sl+left_edge,0,sr-sl+right_edge-left_edge,h)
     side.replay(d.pen)
     side.replay(d.pen,(-1,0,0,1,sl+sr,0))
     return d

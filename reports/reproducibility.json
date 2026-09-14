@@ -1,8 +1,8 @@
 {
   "status": "passed",
-  "method": "Copy version-controlled sources and the new shared optical module into an empty directory; rebuild with the configured Python environment; compare TTF and WOFF2 byte-for-byte and run verify.py.",
-  "ttf_sha256": "ac14e828febe57a6e76bba27b480175bf47a11f79e8c4a890121f31801721cb7",
-  "woff2_sha256": "0b29aeed51bb092ba388f0d6a460b987388a23a0b559ac3620f8e34714f4b3b9",
+  "method": "Independent clean working-source export and root builds; TTF and WOFF2 byte-identical.",
+  "ttf_sha256": "18f597e3a48133227d503eff9a297c9b9e62c646dd5cf7902dd8ed216369cf28",
+  "woff2_sha256": "59b13381af3ba080c6662fb17cd59fcc485e575b893f49c9da9e5fba368697f3",
   "clean_build_matches_release": true,
   "verification": {
     "status": "passed",
@@ -21,16 +21,8 @@
     "glyph_location_comparisons": 5232,
     "shaping_comparisons": 48,
     "ttf_woff2_equal_geometry": true,
-    "full_source_sha256": "f8dda6167bb6eb08622ee135a73279f4d4e4b431c0e92022fbdfb8e002bb5d35",
-    "font_sha256": "ac14e828febe57a6e76bba27b480175bf47a11f79e8c4a890121f31801721cb7",
+    "full_source_sha256": "c24d821eff0ddd50d93b564d20d568e9aba499e8a84cb6faa6c95099bd76582b",
+    "font_sha256": "18f597e3a48133227d503eff9a297c9b9e62c646dd5cf7902dd8ed216369cf28",
     "scope": "Compaction preserves the authored model; does not prove complete provenance or SFNS equality."
-  },
-  "additional_checks": [
-    "18 repeated ± raster cases:1 improved,17 unchanged,0 regressions",
-    "Other glyphs and metrics unchanged, including ≤≥",
-    "72 text-shaping comparisons passed",
-    "63 contour self-intersection checks passed",
-    "demo.js and comparison.js syntax passed",
-    "No active code references removed calibration pages or their helper scripts"
-  ]
+  }
 }

@@ -282,7 +282,7 @@
               "bars": [],
               "vertical_clip": [
                 75.27669270833334,
-                477.7018229166667
+                478.2018229166667
               ]
             },
             {
@@ -662,7 +662,7 @@
               "bars": [],
               "vertical_clip": [
                 75.27669270833334,
-                477.7018229166667
+                478.2018229166667
               ]
             },
             {
@@ -763,73 +763,73 @@
   },
   "measurements": [
     {
-      "character": "\u00ab",
+      "character": "«",
       "weight": 100,
       "optical": 17,
       "max_line_error": 0.011801238185285001
     },
     {
-      "character": "\u00bb",
+      "character": "»",
       "weight": 100,
       "optical": 17,
       "max_line_error": 0.02338933035980517
     },
     {
-      "character": "\u00ab",
+      "character": "«",
       "weight": 100,
       "optical": 28,
       "max_line_error": 0.011801238185341845
     },
     {
-      "character": "\u00bb",
+      "character": "»",
       "weight": 100,
       "optical": 28,
       "max_line_error": 0.02338933035977675
     },
     {
-      "character": "\u00ab",
+      "character": "«",
       "weight": 400,
       "optical": 17,
       "max_line_error": 0.14884988303845148
     },
     {
-      "character": "\u00bb",
+      "character": "»",
       "weight": 400,
       "optical": 17,
       "max_line_error": 0.20845358150481275
     },
     {
-      "character": "\u00ab",
+      "character": "«",
       "weight": 400,
       "optical": 28,
       "max_line_error": 0.14884988303845148
     },
     {
-      "character": "\u00bb",
+      "character": "»",
       "weight": 400,
       "optical": 28,
       "max_line_error": 0.20845358150481275
     },
     {
-      "character": "\u00ab",
+      "character": "«",
       "weight": 900,
       "optical": 17,
       "max_line_error": 0.07002702606041566
     },
     {
-      "character": "\u00bb",
+      "character": "»",
       "weight": 900,
       "optical": 17,
       "max_line_error": 0.08673868939717977
     },
     {
-      "character": "\u00ab",
+      "character": "«",
       "weight": 900,
       "optical": 28,
       "max_line_error": 0.09836008882962233
     },
     {
-      "character": "\u00bb",
+      "character": "»",
       "weight": 900,
       "optical": 28,
       "max_line_error": 0.12011905324101235

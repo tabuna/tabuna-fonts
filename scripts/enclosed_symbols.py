@@ -16,6 +16,12 @@ def apply(glyph,key,base,design,letter_at_weight):
     data=load().get(key)
     if data is None:return
     p=at_location(data,design);d=Drawing();d.ellipse(*p['outer']);d.ellipse(*p['inner'],reverse=True)
+    if key=='registered':
+        from r_bowl import construction
+        parameters=json.loads((Path(__file__).resolve().parents[1]/'sources/registered-bowl.json').read_text())['weights']
+        construction(at_location(parameters,design)).replay(d.pen)
+        glyph.clearContours();glyph.clearComponents();d.replay(glyph.getPen());glyph.width=p['advance']
+        return
     base=letter_at_weight(p['letter_weight'])
     from fontTools.pens.boundsPen import BoundsPen
     bounds=BoundsPen(None);base.draw(bounds)

@@ -1,5 +1,5 @@
 """Audit every required compact character, including punctuation and spaces."""
-import argparse,json,subprocess,sys
+import argparse,hashlib,json,subprocess,sys
 from pathlib import Path
 from fontTools.ttLib import TTFont
 ROOT=Path(__file__).resolve().parents[1]
@@ -9,15 +9,16 @@ def main():
     ap=argparse.ArgumentParser();ap.add_argument('--weights',default='100,200,300,400,500,600,700,800,900')
     ap.add_argument('--sizes',default='16,64');ap.add_argument('--out',type=Path,default=ROOT/'build/font-recovery/full-charset-audit')
     ap.add_argument('--summarize-only',action='store_true')
+    ap.add_argument('--font',type=Path,default=ROOT/'dist/TabunaSansVariable.ttf')
     args=ap.parse_args()
     chars=''.join(sorted(set((ROOT/'sources/compact-charset.txt').read_text().replace('\n','').replace('\r','')),key=ord))
-    font=TTFont(ROOT/'dist/TabunaSansVariable.ttf')
+    font=TTFont(args.font)
     assert set(map(ord,chars))==set(font.getBestCmap()), 'Audit scope must equal the shipped cmap'
     required=json.loads((ROOT/'sources/quality-scope.json').read_text())['codepoints']
     assert {f'U+{ord(c):04X}' for c in chars}==set(required), 'Must cover the complete explicit user list'
     if not args.summarize_only:
         subprocess.run([sys.executable,str(ROOT/'scripts/weight-highlight-audit.py'),
-                        '--font',str(ROOT/'dist/TabunaSansVariable.ttf'),'--out',str(args.out),
+                        '--font',str(args.font),'--out',str(args.out),
                         '--weights',args.weights,'--sizes',args.sizes,'--chars',chars,'--verify-repeat'],check=True)
     d=json.loads((args.out/'report.json').read_text())
     repeat=json.loads((args.out/'_repeat/report.json').read_text())
@@ -38,6 +39,7 @@ def main():
                              custom_fallback=row['customFallback'],reference_fallback=row['referenceFallback'],
                              fp=row['fp'],fn=row['fn']))
     assert len(font_hashes)==1, 'A full audit cannot mix different font builds'
+    assert font_hashes=={hashlib.sha256(args.font.read_bytes()).hexdigest()}, 'Audit does not describe the selected font'
     per_character=[]
     for c in chars:
         cases=[r for r in rows if r['character']==c]

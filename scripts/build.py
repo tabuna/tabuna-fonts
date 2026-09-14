@@ -2,6 +2,15 @@
 """Generate original sources and compile Tabuna Sans. Run from any directory."""
 from pathlib import Path
 import fixed_e_quadratics
+import fixed_open_double_quadratics
+import fixed_eight_quadratics
+import fixed_s_quadratics
+import fixed_at_quadratics
+import fixed_g_quadratics
+import fixed_ereversed_quadratics
+import fixed_copyright_quadratics
+import fixed_dollar_quadratics
+import open_double_bowls
 import argparse
 import json
 import os
@@ -82,6 +91,7 @@ import round_band_marks
 import one_stem
 import diagonal_family
 import j_hooks
+import centered_dot
 import tilde_wave
 import six_bowl
 import r_bowl
@@ -98,6 +108,7 @@ import yo_dots
 ROOT=Path(__file__).resolve().parents[1]
 SOURCES=ROOT/'sources'
 DIST=ROOT/'dist'
+VERSION='0.0.1'
 MARKS='\u0300\u0301\u0302\u0303\u0304\u0306\u0307\u0308\u030A\u030B\u030C\u0326\u0327\u0328'
 EXTRA='ȘșȚțҐґ€₽₴№−×÷±≠≤≥≈∞√‘’‚“”„‹›«»‐‑–—…•\u2002\u2003\u2009\u202F\u2007\u200B\u2060\uFEFF'
 CHARSET=sorted(set(chr(c) for c in list(range(0x20,0x7f))+list(range(0xA0,0x180))+list(range(0x400,0x460))) | set(MARKS+EXTRA))
@@ -114,7 +125,8 @@ class Source:
         self.f=Font();i=self.f.info
         i.familyName='Tabuna Sans';i.styleName=f'{WEIGHTS[weight]} Optical {optical}'
         i.unitsPerEm=1000;i.ascender=950;i.descender=-260;i.capHeight=710;i.xHeight=self.d.h
-        i.versionMajor=0;i.versionMinor=900
+        i.versionMajor=0;i.versionMinor=1
+        i.openTypeNameVersion=f'Version {VERSION}'
         i.copyright='Copyright 2026 The Tabuna Sans Project Authors'
         i.openTypeNameDesigner='The Tabuna Sans Project Authors'
         i.openTypeNameManufacturer='Tabuna Sans Project'
@@ -206,6 +218,7 @@ class Source:
         diagonal_family.apply(g,key,self.d)
         j_hooks.apply(g,key,self.d)
         tilde_wave.apply(g,key,self.d)
+        centered_dot.apply(g,key,self.d)
         six_bowl.apply(g,key,self.d)
         if not getattr(self,"enclosed_letter",False):
             r_bowl.apply(g,key,self.d)
@@ -216,6 +229,7 @@ class Source:
         top_bars.apply(g,key,self.d)
         folded_bands.apply(g,key,self.d)
         z_bands.apply(g,key,self.d)
+        open_double_bowls.apply(g,key,self.d)
         r_shoulder.apply(g,key,self.d)
         return g
 
@@ -460,6 +474,14 @@ def generate():
             f=Source(weight,optical).finish()
             scale_source(f)
             fixed_e_quadratics.apply(f)
+            fixed_open_double_quadratics.apply(f)
+            fixed_eight_quadratics.apply(f)
+            fixed_s_quadratics.apply(f)
+            fixed_at_quadratics.apply(f)
+            fixed_g_quadratics.apply(f)
+            fixed_ereversed_quadratics.apply(f)
+            fixed_copyright_quadratics.apply(f)
+            fixed_dollar_quadratics.apply(f)
             path=SOURCES/f'TabunaSans-{weight}-{optical}.ufo';f.save(path,overwrite=True)
             src=SourceDescriptor();src.path=str(path);src.name=f'w{weight}o{optical}'
             src.familyName=f.info.familyName;src.styleName=f.info.styleName
@@ -613,7 +635,7 @@ def compile_font():
     font.flavor='woff2';font.save(build_dir/'TabunaSansVariable.woff2')
     for filename in ('TabunaSansVariable.ttf','TabunaSansVariable.woff2'):
         (build_dir/filename).replace(DIST/filename)
-    manifest={'family':'Tabuna Sans','version':'0.900','unitsPerEm':font['head'].unitsPerEm,'masters':len(optics.MASTER_SIZES)*3,'axes':{'wght':[100,400,900],'opsz':optics.AXIS_RANGE},
+    manifest={'family':'Tabuna Sans','version':VERSION,'unitsPerEm':font['head'].unitsPerEm,'masters':len(optics.MASTER_SIZES)*3,'axes':{'wght':[100,400,900],'opsz':optics.AXIS_RANGE},
               'glyphs':len(font.getGlyphOrder()),'characters':len(font.getBestCmap()),
               'files':{p.name:p.stat().st_size for p in DIST.glob('*') if p.suffix in ('.ttf','.woff2')}}
     (DIST/'manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')

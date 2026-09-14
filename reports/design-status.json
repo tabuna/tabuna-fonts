@@ -1,0 +1,19 @@
+{
+  "font_sha256": "18f597e3a48133227d503eff9a297c9b9e62c646dd5cf7902dd8ed216369cf28",
+  "phase": "baseline",
+  "baseline_ready": true,
+  "author_release_ready": false,
+  "technical_failures": [],
+  "below_95_cases": 0,
+  "below_95_characters": 0,
+  "remaining_cases": [],
+  "pending_decisions": [
+    "D01",
+    "D02",
+    "D03",
+    "D04",
+    "D05",
+    "D06"
+  ],
+  "baseline_checkpoint_verified": true
+}

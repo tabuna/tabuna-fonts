@@ -27,6 +27,14 @@ def load():
     return json.loads(path.read_text())['glyphs'] if path.exists() else {}
 
 
+def construction(profile, lower=False):
+    """Normalized authored bowl, also used for isolated parameter previews."""
+    drawing=Drawing()
+    for start,segments,counter in contours(profile['parameters'],profile['handles'],lower):
+        drawing.outline(start,segments,counter)
+    return drawing
+
+
 def apply(glyph,key,design):
     data=load().get(key)
     if data is None:return

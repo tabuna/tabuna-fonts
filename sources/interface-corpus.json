@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "purpose": "Fixed RU/EN interface and reading corpus for baseline and authorial comparisons. This is an engineering check, not a human readability study.",
+  "sizes_px": [9, 11, 14, 16, 24, 48, 64],
+  "weights": [100, 200, 400, 500, 700, 900],
+  "optical_sizes": ["auto", 9, 128],
+  "themes": ["light", "dark"],
+  "fixtures": [
+    {
+      "id": "settings-ru",
+      "language": "ru",
+      "kind": "settings",
+      "width_em": 24,
+      "padding_em": 0.5,
+      "lines": ["Настройки приложения", "Учётная запись", "Уведомления", "Язык и регион", "Сохранить изменения"]
+    },
+    {
+      "id": "settings-en",
+      "language": "en",
+      "kind": "settings",
+      "width_em": 24,
+      "padding_em": 0.5,
+      "lines": ["Application settings", "Account and profile", "Notifications", "Language and region", "Save changes"]
+    },
+    {
+      "id": "table-ru",
+      "language": "ru",
+      "kind": "table",
+      "width_em": 24,
+      "padding_em": 0.5,
+      "lines": ["Название", "Количество", "Стоимость", "Итого: 99 900,00 ₽", "№ 108 / 24.09.2026"]
+    },
+    {
+      "id": "table-en",
+      "language": "en",
+      "kind": "table",
+      "width_em": 24,
+      "padding_em": 0.5,
+      "lines": ["Description", "Quantity", "Unit price", "Total: €1,249.50", "£99.00 / ¥1,280.00"]
+    },
+    {
+      "id": "numbers-and-marks",
+      "language": "mixed",
+      "kind": "data",
+      "width_em": 30,
+      "padding_em": 0.5,
+      "lines": ["0123456789 100–900", "+12,5% −7,25% ±0,01", "x ≤ 100; y ≥ 9; x ≠ y", "2 × 4 = 8; 8 ÷ 2 = 4", "© Tabuna Sans · ® · ∞"]
+    },
+    {
+      "id": "silhouettes",
+      "language": "mixed",
+      "kind": "identifiers",
+      "width_em": 30,
+      "padding_em": 0.5,
+      "lines": ["I l 1 i | Il1i", "Ilia 101 / lili 110", "rn m nn / minimum", "Лл Дд Жж Кк Яя", "пт пн пп / тп нп тт"]
+    },
+    {
+      "id": "reading-ru",
+      "language": "ru",
+      "kind": "paragraph",
+      "width_em": 32,
+      "padding_em": 0.5,
+      "text": "Лёгкое движение букв сохраняет спокойный ритм строки. Открытые формы, ясные цифры и привычная кириллица помогают читать названия, цены и сообщения. Данные изменены: выберите нужный раздел и сохраните результат."
+    },
+    {
+      "id": "reading-en",
+      "language": "en",
+      "kind": "paragraph",
+      "width_em": 32,
+      "padding_em": 0.5,
+      "text": "Open forms and a steady rhythm support everyday reading. Clear letters, compact numbers and quiet punctuation work together in settings, tables and messages. Choose a section, review the details and save your changes."
+    },
+    {
+      "id": "headings-ru",
+      "language": "ru",
+      "kind": "heading",
+      "width_em": 24,
+      "padding_em": 0.5,
+      "lines": ["Ладога и движение", "Открытые формы", "Дело в деталях", "Ясный русский рисунок"]
+    },
+    {
+      "id": "headings-en",
+      "language": "en",
+      "kind": "heading",
+      "width_em": 24,
+      "padding_em": 0.5,
+      "lines": ["Open and composed", "A clear direction", "Quiet details", "Reading in motion"]
+    }
+  ]
+}

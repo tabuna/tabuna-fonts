@@ -1,0 +1,39 @@
+{
+  "release_version": "0.0.1",
+  "tag": "v0.0.1",
+  "kind": "control-baseline",
+  "baseline_ready": true,
+  "author_release_ready": false,
+  "font_sha256": "18f597e3a48133227d503eff9a297c9b9e62c646dd5cf7902dd8ed216369cf28",
+  "woff2_sha256": "59b13381af3ba080c6662fb17cd59fcc485e575b893f49c9da9e5fba368697f3",
+  "characters": 189,
+  "cases": 3402,
+  "visible_cases": 3366,
+  "whitespace_cases": 36,
+  "below_95_cases": 0,
+  "minimum_mask_iou": 0.95,
+  "repeat_verified": true,
+  "differences_from_accumulated_matrix": 0,
+  "clean_build_matches_release": true,
+  "initial_font_sha256": "fc78da696f2cc9cebb38d8746dfdebec6af683ada18db064f44fc57a79e04fe1",
+  "initial_below_95_cases": 37,
+  "binary_mask_regressions": 0,
+  "improved_cases": 68,
+  "pending_design_decisions": [
+    "D01",
+    "D02",
+    "D03",
+    "D04",
+    "D05",
+    "D06"
+  ],
+  "scope": "Binary mask agreement with the local SFNS reference at 16/64 pt, 2x, nine weights; not a readability study or approval of the authorial design.",
+  "evidence_at_tag": {
+    "reports/current-quality.json": "237050d590d1e50a4cfccd0db8b11e604c7c7a2c62079be125abba0313b29c13",
+    "reports/verification.json": "618b2b90683f76249a8895b984f3bfcd2e3aad7d1414c9df6bf13718cd41532f",
+    "reports/reproducibility.json": "f5f2b741b75f1bd97cabda267f2e8629757329b0545b535a3564a2bf78887f79",
+    "reports/interface-corpus.json": "f185549515c72a99e506c738a86ea94e1c00a8bd384345aecc5c258b6a103305",
+    "reports/releases/0.0.1-version-equivalence.json": "d17ebfb920b84786d1000648c1d1be297cb37e3ffa9b90aef54df9f84d7ba055",
+    "reports/releases/0.0.1-render-settings.json": "957255fbb80d15d9eed6382f9b4141fa755a548b13712342b6be004d229de18c"
+  }
+}

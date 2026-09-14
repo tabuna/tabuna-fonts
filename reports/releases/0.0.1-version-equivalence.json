@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "before_font_sha256": "6fb4e678a248bfd2cb99d1c083f11b682dc03ef0967a21e878212534895c5585",
+  "font_sha256": "18f597e3a48133227d503eff9a297c9b9e62c646dd5cf7902dd8ed216369cf28",
+  "changed_tables": [
+    "head",
+    "name"
+  ],
+  "head_changes": {
+    "fontRevision": [
+      0.899993896484375,
+      0.001007080078125
+    ],
+    "checkSumAdjustment": [
+      1194694278,
+      1195074270
+    ]
+  },
+  "all_rendering_and_shaping_tables_byte_identical": true,
+  "version": "Version 0.0.1"
+}

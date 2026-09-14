@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "direction": "Компактный интерфейсный гротеск с умеренной гуманистической пластикой и самостоятельной кириллицей",
+  "phase": "baseline",
+  "baseline_checkpoint": {
+    "path": "reports/releases/0.0.1-baseline.json",
+    "sha256": "1bd6d1e41ed9c6b03da7167c4d5ad64dfcc6c56d5946c338caab5a6e39119f59",
+    "font_sha256": "18f597e3a48133227d503eff9a297c9b9e62c646dd5cf7902dd8ed216369cf28"
+  },
+  "selected_intensity": null,
+  "constraints": {
+    "characters": 189,
+    "wght": [
+      100,
+      900
+    ],
+    "opsz": [
+      9,
+      128
+    ],
+    "woff2_max_bytes": 102400,
+    "baseline_minimum_mask_iou": 0.95
+  },
+  "decisions": [
+    {
+      "id": "D01",
+      "title": "Направленное натяжение чаш",
+      "status": "pending",
+      "change": null,
+      "evidence": [],
+      "verdict": null
+    },
+    {
+      "id": "D02",
+      "title": "Открытые формы и окончания",
+      "status": "pending",
+      "change": null,
+      "evidence": [],
+      "verdict": null
+    },
+    {
+      "id": "D03",
+      "title": "Различимые силуэты",
+      "status": "pending",
+      "change": null,
+      "evidence": [],
+      "verdict": null
+    },
+    {
+      "id": "D04",
+      "title": "Самостоятельная кириллица",
+      "status": "pending",
+      "change": null,
+      "evidence": [],
+      "verdict": null
+    },
+    {
+      "id": "D05",
+      "title": "Непрерывность и оптическая компенсация",
+      "status": "pending",
+      "change": null,
+      "evidence": [],
+      "verdict": null
+    },
+    {
+      "id": "D06",
+      "title": "Компактность и полный набор",
+      "status": "pending",
+      "change": null,
+      "evidence": [],
+      "verdict": null
+    }
+  ]
+}

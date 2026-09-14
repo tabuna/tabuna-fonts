@@ -1,0 +1,59 @@
+{
+  "provenance": "Explicit ellipse bounds from the existing authored symbol model, with an optical edge correction at the heavy text master. No reference outlines imported.",
+  "weights": {
+    "100": {
+      "text": {
+        "bounds": [
+          104.4921875,
+          250.0,
+          174.8046875,
+          320.3125
+        ]
+      },
+      "display": {
+        "bounds": [
+          70.3125,
+          251.953125,
+          132.32421875,
+          313.96484375
+        ]
+      }
+    },
+    "400": {
+      "text": {
+        "bounds": [
+          84.9609375,
+          220.21484375,
+          211.9140625,
+          347.16796875
+        ]
+      },
+      "display": {
+        "bounds": [
+          51.7578125,
+          229.98046875,
+          163.0859375,
+          341.30859375
+        ]
+      }
+    },
+    "900": {
+      "text": {
+        "bounds": [
+          89.34375,
+          185.53515625,
+          291.9921875,
+          383.7890625
+        ]
+      },
+      "display": {
+        "bounds": [
+          34.1796875,
+          191.89453125,
+          224.12109375,
+          381.8359375
+        ]
+      }
+    }
+  }
+}

@@ -23,6 +23,21 @@ def raw(design, character):
     return Drawing(), width+max(0, (design.weight-400)/500)*heavy_delta
 
 
+def construction(shape):
+    curves = shape['curves']
+    tensions = shape.get('handle_tensions')
+    if tensions:
+        adjusted = []
+        for curve, (outgoing, incoming) in zip(curves, tensions):
+            a, u, v, b = curve
+            adjusted.append([a, [x+(y-x)*outgoing for x,y in zip(a,u)],
+                             [x+(y-x)*incoming for x,y in zip(b,v)], b])
+        curves = adjusted
+    drawing = Drawing()
+    drawing.outline(tuple(curves[0][0]), [[tuple(p) for p in c[1:]] for c in curves])
+    return drawing
+
+
 def apply(glyph, key, design):
     import os
     if key == 'two' and os.environ.get('TABUNA_DISABLE_BOWL_2'):
@@ -34,8 +49,5 @@ def apply(glyph, key, design):
     a = mix(data[str(lo)]['text'], data[str(lo)]['display'], design.display)
     b = mix(data[str(hi)]['text'], data[str(hi)]['display'], design.display)
     shape = mix(a, b, (design.weight-lo)/(hi-lo))
-    curves = shape['curves']
-    drawing = Drawing()
-    drawing.outline(tuple(curves[0][0]), [[tuple(p) for p in c[1:]] for c in curves])
     glyph.clearContours()
-    drawing.replay(glyph.getPen())
+    construction(shape).replay(glyph.getPen())

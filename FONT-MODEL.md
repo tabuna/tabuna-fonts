@@ -963,3 +963,139 @@ FP остаётся0. Остальные17 растровых случаев н�
 63 проверки самопересечений контуров и72 проверки набора прошли.
 Между перекладинами плюса допускается намеренное перекрытие.
 Доказательства: `build/font-recovery/plusminus-grid/decision.json`.
+
+### Малая R внутри ®
+
+`sources/registered-bowl.json` хранит шесть наборов параметров чаши и диагональной полосы. `enclosed_symbols.py` использует общую конструкцию `r_bowl.construction`; кольцо сохраняет прежнюю модель. `font_recovery.fit_registered_bowl` измеряет нормализованные сечения малой буквы, не переносит узлы эталона. Структура контуров постоянна между мастерами; ручки кубических кривых подобраны по 101 сечению.
+
+### Открытые двойные чаши 3, З, з
+
+`open_double_model.contour` строит один контур из 12 кубических дуг Безье и пяти прямых участков. `sources/open-double-bowls.json` задаёт для каждого знака шесть профилей: веса 100/400/900, текстовая и крупная оптика. Модель применяется к `three`, `uni0417` (З) и `uni0437` (з), с независимыми параметрами каждого знака; табличная цифра использует рисунок `three`.
+
+Для каждой дуги контрольные точки задаются как `P1 = P0 + h0 × D0 × T0` и `P2 = P3 − h1 × D1 × T1`: `T` — заданное направление касательной, `D` — расстояние между концами по соответствующей оси, `h` — положительная длина ручки относительно этого расстояния. Общие касательные сохраняют сопряжения чаш; внешний стык чаш и торцы имеют намеренные углы. Непрерывность кривизны второго порядка не заявляется.
+
+`fixed_open_double_quadratics.py` сохраняет число квадратичных сегментов каждой дуги при изменении параметров. Контрольная кривая cu2qu выбирает точность преобразования и не входит в шрифт. После измерения сечений параметры тонкого и тяжёлого текстовых профилей уточнены совместным растровым подбором нескольких весов, без изменения рендерера, масштаба или порога.
+
+Все 18 случаев цифры улучшены относительно предыдущей основной сборки; минимальное совпадение — 95,24%. Геометрия и вариационные данные остальных знаков, все ширины и метрики сохранены. Проверены 63 положения контура и текстовый образец. Доказательства: `build/font-recovery/open-double-bowls/comparison-three-joint.json`, `impact-three-joint.json`, `crossings-three-joint.json`, `fp-review-three-joint.json`. Это завершённое улучшение одной цифры, а не достижение порога 95% для всего набора.
+
+Для З совместно настроены текстовые профили 100 и 900 с контролем промежуточных весов. В 18 растровых случаях 16 улучшений и два равных результата; минимум — 96,75%. Ширины набора и вариационные фантомные дельты сохранены; левое поле З в основном мастере изменилось с 99 до 100 единиц. Остальные глифы и их метрики неизменны. Узкие однопиксельные полосы FP на нижнем торце просмотрены отдельно: суммарная ошибка и ошибка полутонов уменьшились. Доказательства: `build/font-recovery/open-double-bowls/comparison-ze-joint.json`, `impact-ze-joint.json`, `crossings-ze-joint.json`, `fp-review-ze-joint.json`.
+
+Для строчной з настроены все три текстовых профиля с совместным контролем промежуточных весов. Все 18 результатов улучшены; минимум — 95,22%. Ширины, метрики и остальные глифы сохранены. Ускоренный пересчёт вариационных дельт совпал с полной сборкой в 63 положениях; он служит предварительному подбору, а принятие подтверждено повторным полным аудитом знака. Единственный рост связной FP-компоненты — один пиксель на 500/16, при уменьшении общей ошибки. Доказательства: `build/font-recovery/open-double-bowls/comparison-lower-ze-joint.json`, `impact-lower-ze-joint.json`, `crossings-lower-ze-joint.json`, `lower-ze-preview-validation.json`.
+
+### Тонкий текстовый профиль 8
+
+В `eight_bowls` сохраняется собственная конструкция из двух сопряжённых половин внешней формы и двух овальных просветов: всего 16 кубических дуг. Изменены только параметры профиля 100/text в `sources/eight-bowls.json`; общий размер и остальные профили сохранены. Подбор учитывает одновременно веса 100/200/300. После покоординатного поиска применён воспроизводимый поиск пар параметров с seed 818.
+
+`fixed_eight_quadratics.py` сохраняет исходное количество квадратичных сегментов каждой дуги. Ускоренный пересчёт вариаций совпал с полной сборкой в 63 положениях. Повторный аудит: 3 улучшения, 15 равных результатов, минимум 95,56%; роста FP-компонент нет. Все метрики, ширины и остальные глифы сохранены. Доказательства: `build/font-recovery/eight-raster/comparison.json`, `impact.json`, `crossings.json`, `preview-validation.json`.
+
+### Тонкий текстовый профиль S
+
+В исходной модели `s_curves.contours` сохраняются 12 кубических дуг и общие касательные центральных сопряжений. Изменены только параметры S на 100/text; строчная s и прочие профили независимы и сохранены. Покоординатный и парный подбор учитывают веса 100/200/300 совместно. `fixed_s_quadratics.py` фиксирует исходное разбиение дуг на квадратичные сегменты; пересчёт совпал с полной сборкой в 63 положениях.
+
+Повторный аудит дал 3 улучшения и 15 равных результатов, минимум 95,45%. FP-компоненты не выросли; метрики и остальные знаки сохранены. На 100/16 grayscale IoU немного снизился: 0,949975 → 0,949076, при росте бинарного IoU 0,882353 → 0,954545. Это принятый компромисс измеряемого бинарного критерия, а не заявление о полном совпадении полутонов. Доказательства: `build/font-recovery/s-raster/comparison.json`, `impact.json`, `crossings.json`, `fp-review.json`, `preview-validation.json`.
+
+### At-sign spline refinement
+
+The authored spiral, bowl and counter keep their cubic construction; five weight/optical profiles were refined together with stable quadratic segment counts. Advances, axes and other glyphs are unchanged. Repeated native audits improve 17 of 18 cases with one equal and no mask IoU regressions. The minimum improves from 88.41% to 93.47%; six cases remain below the 95% target. This is an intermediate improvement, not completion of the target.
+
+At weight 600 / size 64 the largest false-positive component grows from 14 to 17 pixels along the existing inner boundary, while total FP decreases 112 to 89 and FN 104 to 67. The specimen and highlight were reviewed. The 63-location intersection check covers individual contours; overlap between the intentional spiral pieces is retained. Audit evidence: `build/font-recovery/at-raster/`.
+
+### Lowercase g thin text profile
+
+The authored eight-exterior/four-counter Bezier construction retains its topology and spacing. Thin text curve parameters and the right bound (515.625 to 515.125 design units) were refined with joint checks at weights 100, 200 and 300. A fixed quadratic segmentation reproduces all six original endpoint profiles exactly before fitting and prevents unrelated master changes.
+
+The complete repeated 18-case audit has minimum mask IoU 97.39% (previous worst 88.51%). No cases regress and no largest false-positive component grows. All other glyphs, advances and variation metrics are unchanged. Sampled contour checks pass at 63 axis locations including between contours. Evidence: `build/font-recovery/g-raster/`.
+
+### Cyrillic Э text profiles
+
+The authored mirrored open-round Bezier body and separate crossbar retain their topology and advance model. Thin and heavy text profiles were refined jointly across their affected weight intervals. Fixed quadratic segmentation reproduces all six original endpoint profiles exactly before fitting. The thin preview also matches a full build at 63 sampled locations.
+
+The full repeated 18-case audit has minimum mask IoU 95.00%; weight 100 / size 16 improves from 88.61% to 97.33%. No audited case regresses and no largest false-positive component grows. Other glyphs and metrics remain identical. Individual contours pass sampled intersection checks at 63 locations; the intended crossbar/body overlap is retained. Evidence: `build/font-recovery/ereversed-raster/`.
+
+### Copyright ring and enclosed C profiles
+
+The copyright symbol retains two authored cubic ellipses and the private authored C model. Thin text/display and regular text profiles were refined together; advance widths are unchanged. Fixed quadratic segmentation reproduces all six original endpoint profiles exactly before fitting. A regular-profile candidate with a small regression was rejected; paired fitting then satisfied the no-regression requirement.
+
+The repeated 18-case audit has minimum mask IoU 95.04% (previous worst 89.47%). No case regresses; other glyph geometry and metrics are identical. The largest false-positive boundary components at sizes 64 / weights 100, 200 and 300 increase to 2, 8 and 4 pixels, while both total FP and FN decrease. All three highlights and text specimens were reviewed. Sampled contour intersection checks pass at 63 locations, including between contours. Evidence: `build/font-recovery/copyright-raster/`.
+
+### W diagonal width and taper
+
+The four authored stroke contours now allow independent inner diagonal width and a linear variation in inner width between the lower join and central top. Existing geometry is reproduced exactly when all widths agree, verified for all six original masters. The linear edge construction retains 16 contour points, symmetry, original advance model and continuous weight/optical interpolation.
+
+The repeated 18-case audit improves 17 cases with one equal and no regressions. Minimum mask IoU rises from 89.98% to 94.84%; two display cases remain below 95% (weights 800 and 900). This is accepted intermediate progress, not completion of the 95% target. Other glyphs and metrics remain identical.
+
+At display weights 200/300/400, the largest FP components grow to 7/9/11 pixels along the existing lower joins. Total FP decreases 29/55/83 pixels against FN increases 10/17/31 pixels; total errors decrease. Highlights and specimens reviewed. Within-contour sampled intersection checks pass at 63 locations; intentional stroke overlaps are retained. Evidence: `build/font-recovery/w-raster/`.
+
+### Lowercase ц thin tail width
+
+The authored rectilinear construction retains its topology and metrics. The right edge of the tail in the thin text profile moves by +0.5 design units; all other profile parameters remain unchanged. Repeated native audit improves the weight 100 / size 16 mask from 91.23% to 100%, with all other 17 cases unchanged. Every ц case now exceeds 95%. Other glyph geometry, variation data and metrics are identical. Specimens reviewed and within-contour intersection checks pass at 63 locations; existing contour overlaps are retained. Evidence: `build/font-recovery/tse-raster/`.
+
+### Lowercase s thin Bezier profile
+
+The authored s construction retains its cubic topology and spacing. Thin text control parameters were refined jointly at weights 100, 200 and 300. Stable quadratic segmentation reproduces all six original endpoint masters exactly and preserves unaffected profiles.
+
+The repeated 18-case audit has minimum mask IoU 95.07%. Weight 100 / size 16 improves from 91.67% to 100%, and weight 300 / size 16 to 96.63%. No case regresses and no largest false-positive component grows. Other glyphs and metrics remain identical. Specimens reviewed; sampled contour intersection checks pass at 63 locations including between contours. Evidence: `build/font-recovery/lower-s-raster/`.
+
+### Dollar thin stem and S profile
+
+The authored twelve-cubic S body and separate vertical stem retain their topology, metrics and weight/optical interpolation. Thin display stem edges and thin text body controls were refined jointly with weights 200/300. Fixed quadratic segmentation reproduces all six original endpoint masters exactly.
+
+All 18 repeated audit cases exceed 95%, with minimum mask IoU 97.51%. Primary mask IoU has no regressions and largest FP components do not grow. Secondary gray IoU decreases at size 64 for weights 100/200/300 by 0.002586/0.001444/0.000406 respectively; this is an explicit tradeoff for the primary mask improvement. Other glyphs and metrics remain identical. Specimens reviewed; within-contour checks pass at 63 locations, retaining intentional S/stem overlaps. Evidence: `build/font-recovery/dollar-raster/`.
+
+
+## Контрольная основа: I, Н, {, €, ф
+
+У I уточнена левая граница тяжёлого display-мастера; у Н — внутренняя
+граница правого стержня Regular/display. Собственные модели скобки, евро
+и строчной фи сохраняют топологию; изменены параметры дуг и границы чаш.
+У евро текстовый и крупный тонкие профили уточнены отдельно, перекладины
+сохранены. Правила авторского направления закреплены отдельно в
+[документе дизайна](docs/DESIGN-DIRECTION.md); этот выпуск завершает только
+часть контрольной основы.
+
+Все 90 случаев пяти знаков повторены; каждый имеет mask IoU не ниже 95%.
+Регрессий бинарной маски и роста крупнейших FP-компонент нет. Число случаев
+ниже 95% во всём наборе сократилось 37 → 30 (25 → 20 символов).
+Для Н400/64 вторичный grayscale IoU снизился на 0,003973 при неизменной
+бинарной маске; компромисс проверен по нативным образцам и отражён в отчёте.
+
+315 проверок контуров пройдены, включая промежуточные веса и opsz.
+Намеренные пересечения перекладин евро и штамба фи с чашами сохранены.
+Остальные глифы, таблицы набора, ширины и вариационные метрики неизменны.
+Независимая сборка и обычная сборка из корня дают побайтово одинаковые TTF
+и WOFF2; verify.py проверил 5232 положения и 48 сценариев набора.
+Доказательства: build/font-recovery/direction-baseline/.
+
+Ускоренное исследование использует native_refinement.py: исходные шесть
+мастеров должны точно совпадать со скомпилированными; затем изменяются
+дельты собственной геометрии при прежней квадратной топологии. Это только
+предварительная проверка: обычная сборка и независимый аудит обязательны.
+
+Следующая принятая группа технической основы: `б э % & Ф 9`.
+Поправки затрагивают границы и натяжение собственных чаш и лент в тонком и
+Regular текстовых мастерах. Все 108 повторно измеренных случаев достигли 95%;
+бинарных регрессий и роста максимальных лишних компонент нет. Остальные
+контуры и метрики сохранены во всём пространстве осей. Независимая и обычная
+сборки совпадают побайтно. Контрольный снимок `checkpoint-direction-baseline-02`
+остаётся промежуточным: ещё 21 случай ниже порога.
+
+Третья принятая группа основы: `? 5 J ~ U ю « » ·`.
+Для открытого низа U согласованы натяжения внутренних и наружных дуг;
+у 5 отдельно настроены тонкие текстовый и дисплейный мастера. Средняя точка
+получила независимую эллиптическую модель вместо общей настройки пунктуации.
+У кавычек поправлена высота среза тяжёлого текстового мастера, у остальных
+знаков — собственные границы и управляющие параметры. Все 162 случая
+повторяются без бинарных регрессий; 567 проверок контуров не нашли новых
+самопересечений. Снимок `checkpoint-direction-baseline-03` сохраняет 11
+оставшихся случаев у пяти знаков и не объявляет основу 95% завершённой.
+
+Четвёртая группа основы: `ж r 2 W`. У ж отдельная компенсация края стержня
+сохраняет ось отражения ветвей. У r сдвинута промежуточная точка внешнего
+плеча; у 2 изменены длины ручек первых дуг без изменения их направлений.
+У W нижние окончания сдвигаются вдоль сторон штрихов к горизонтальному
+срезу: топология сохраняет четыре вершины на штрих. Все 72 случая повторены
+без бинарных регрессий и без роста максимальных FP-компонент; 252 проверки
+пересечений прошли. Для ж100/64 зафиксировано вторичное снижение серого IoU
+на 0,003073 при устранении 59 FN-пикселей. Нативные образцы просмотрены;
+это принятый компромисс относительно основной бинарной метрики.
+Снимок `checkpoint-direction-baseline-04` оставляет шесть случаев @ ниже95%.
