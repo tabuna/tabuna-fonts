@@ -4,6 +4,7 @@ from functools import lru_cache
 from pathlib import Path
 from geometry import Drawing
 from parameters import at_location
+from stroke_optics import lower_bar_top_expansion
 
 
 def construction(p):
@@ -21,7 +22,7 @@ def construction(p):
         return d
     for bar in p['bars']:
         x,y,w,h=(bar[k] for k in ['x','y','width','height'])
-        d.rect(x-w/2,y-h/2,w,h)
+        d.rect(x-w/2,y-h/2,w,h+bar.get('optical_top_expansion',0))
     for band in p['slashes']:
         a,b,w,lo,hi=(band[k] for k in ['slope','intercept','width','bottom','top'])
         wl=w+band.get('width_slope',0)*lo;wh=w+band.get('width_slope',0)*hi
@@ -40,4 +41,7 @@ def load():
 def apply(glyph,key,design):
     data=load().get(key)
     if data is not None:
-        glyph.clearContours();construction(at_location(data,design)).replay(glyph.getPen())
+        p=at_location(data,design)
+        if key=='plusminus':
+            p['bars'][-1]['optical_top_expansion']=lower_bar_top_expansion(design.weight,design.display)
+        glyph.clearContours();construction(p).replay(glyph.getPen())

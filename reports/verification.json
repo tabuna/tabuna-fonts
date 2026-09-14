@@ -15,7 +15,7 @@
   "glyph_location_comparisons": 5232,
   "shaping_comparisons": 48,
   "ttf_woff2_equal_geometry": true,
-  "full_source_sha256": "43b7e5d20806f1dc5bfb9c05be68c59d2f5b5dd9c0b031c9bc18a45be4e314d3",
-  "font_sha256": "73e581dd77b175efb5bc5974bf6be0cc3737c5c26819250831cbf0eb86dcce34",
+  "full_source_sha256": "f8dda6167bb6eb08622ee135a73279f4d4e4b431c0e92022fbdfb8e002bb5d35",
+  "font_sha256": "ac14e828febe57a6e76bba27b480175bf47a11f79e8c4a890121f31801721cb7",
   "scope": "Compaction preserves the authored model; does not prove complete provenance or SFNS equality."
 }

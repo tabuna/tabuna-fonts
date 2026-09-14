@@ -1,55 +1,29 @@
 {
-  "status": "accepted_improvement_further_refinement_needed",
-  "font_sha256": "73e581dd77b175efb5bc5974bf6be0cc3737c5c26819250831cbf0eb86dcce34",
-  "characters": "@",
+  "status": "accepted",
+  "font_sha256": "ac14e828febe57a6e76bba27b480175bf47a11f79e8c4a890121f31801721cb7",
+  "characters": "±",
   "aggregate": {
     "before": {
-      "tp": 36788,
-      "fp": 1554,
-      "fn": 1438,
-      "mask_iou": 0.9247863247863248
+      "tp": 17227,
+      "fp": 28,
+      "fn": 58,
+      "mask_iou": 0.9950326344365505
     },
     "after": {
-      "tp": 37100,
-      "fp": 1250,
-      "fn": 1126,
-      "mask_iou": 0.9398115310568447
+      "tp": 17283,
+      "fp": 28,
+      "fn": 2,
+      "mask_iou": 0.9982671980592618
     }
   },
   "cases": 18,
-  "improved_cases": 18,
-  "equal_cases": 0,
+  "improved_cases": 1,
+  "equal_cases": 17,
   "repeat_verified": true,
   "regressions": 0,
-  "fp_review": [
-    {
-      "weight": 500,
-      "size": 64,
-      "character": "@",
-      "before": {
-        "tp": 4122,
-        "fp": 132,
-        "fn": 124,
-        "mask_iou": 0.9415258108725445,
-        "ink_iou": 0.942629
-      },
-      "after": {
-        "tp": 4167,
-        "fp": 117,
-        "fn": 79,
-        "mask_iou": 0.9550767820307128,
-        "ink_iou": 0.953018
-      },
-      "largest_fp_component": [
-        15,
-        18
-      ]
-    }
-  ],
-  "fp_assessment": "500/64: new18-pixel component in8×7 region at upper bowl junction; previous maximum15. TotalFP132→117 and FN124→79. Local residual visually reviewed; no disproportionate large new patch.",
-  "construction": "Independent extrema for four-arc bowl and counter, independent terminal tangents, section-moment fits and targeted return-hook tangent fit. No reference vertices exported.",
+  "fp_growth": 0,
+  "construction": "Shared lower-bar optical rule for ±≤≥:0.25*clamp((400-w)/300,0,1)*display. Independent per-glyph duplicate parameters removed; complete TTF equals audited candidate.",
   "shaping_checks": 72,
   "contour_checks": 63,
-  "g1_joins": 108,
-  "limitations": "One optimizer profile reached160 evaluations. Finite checks, intentional overlaps between spiral pieces, noG2 or global optimum claim. Remaining @ and full-font quality work continues."
+  "limitations": "Binary-mask improvement; grayscale IoU slightly decreases at100/64. Intentional plus-bar overlaps; finite tests, whole-font quality remains in progress."
 }

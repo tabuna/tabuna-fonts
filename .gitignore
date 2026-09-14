@@ -39,3 +39,6 @@ __pycache__/
 /vendor/
 *.bak
 *.orig
+
+# One-off browser calibration pages are local research artifacts
+/*-calibration.html

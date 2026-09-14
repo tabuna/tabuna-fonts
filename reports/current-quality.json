@@ -2,7 +2,7 @@
   "characters": 189,
   "cases": 3402,
   "repeat_verified": true,
-  "font_sha256": "73e581dd77b175efb5bc5974bf6be0cc3737c5c26819250831cbf0eb86dcce34",
+  "font_sha256": "ac14e828febe57a6e76bba27b480175bf47a11f79e8c4a890121f31801721cb7",
   "per_character": [
     {
       "character": " ",
@@ -2025,16 +2025,16 @@
       "worst_ink_case": {
         "character": "±",
         "codepoint": "U+00B1",
-        "weight": 100,
+        "weight": 700,
         "size": 64,
-        "mask_iou": 0.9141566265060241,
-        "ink_iou": 0.991405,
-        "advance_difference": -0.013378,
+        "mask_iou": 0.9883961873186904,
+        "ink_iou": 0.998239,
+        "advance_difference": 0.0,
         "has_ink": true,
         "custom_fallback": false,
         "reference_fallback": false,
-        "fp": 0,
-        "fn": 57
+        "fp": 28,
+        "fn": 0
       },
       "maximum_advance_difference": 0.0149
     },
@@ -4729,20 +4729,6 @@
       "fn": 8
     },
     {
-      "character": "±",
-      "codepoint": "U+00B1",
-      "weight": 100,
-      "size": 64,
-      "mask_iou": 0.9141566265060241,
-      "ink_iou": 0.991405,
-      "advance_difference": -0.013378,
-      "has_ink": true,
-      "custom_fallback": false,
-      "reference_fallback": false,
-      "fp": 0,
-      "fn": 57
-    },
-    {
       "character": "W",
       "codepoint": "U+0057",
       "weight": 500,
@@ -5665,6 +5651,20 @@
       "reference_fallback": false,
       "fp": 3,
       "fn": 3
+    },
+    {
+      "character": "%",
+      "codepoint": "U+0025",
+      "weight": 100,
+      "size": 16,
+      "mask_iou": 0.9473684210526315,
+      "ink_iou": 0.946357,
+      "advance_difference": -0.003213,
+      "has_ink": true,
+      "custom_fallback": false,
+      "reference_fallback": false,
+      "fp": 4,
+      "fn": 0
     }
   ],
   "fallback_cases": [],
@@ -9748,14 +9748,14 @@
       "codepoint": "U+00B1",
       "weight": 100,
       "size": 64,
-      "mask_iou": 0.9141566265060241,
-      "ink_iou": 0.991405,
+      "mask_iou": 0.9984939759036144,
+      "ink_iou": 0.989462,
       "advance_difference": -0.013378,
       "has_ink": true,
       "custom_fallback": false,
       "reference_fallback": false,
       "fp": 0,
-      "fn": 57
+      "fn": 1
     },
     {
       "character": "·",
@@ -15041,7 +15041,7 @@
       "weight": 200,
       "size": 64,
       "mask_iou": 0.9989224137931034,
-      "ink_iou": 0.99582,
+      "ink_iou": 0.995126,
       "advance_difference": 0.00145,
       "has_ink": true,
       "custom_fallback": false,
@@ -20333,7 +20333,7 @@
       "weight": 300,
       "size": 64,
       "mask_iou": 1.0,
-      "ink_iou": 0.998648,
+      "ink_iou": 0.99847,
       "advance_difference": -0.0149,
       "has_ink": true,
       "custom_fallback": false,
@@ -53300,10 +53300,10 @@
   ],
   "evidence": {
     "method": "Full measured baseline plus measured delta; unchanged glyph geometry and metrics certified by impact proof",
-    "base": "build/font-recovery/at-refinement/before-quality.json",
-    "delta": "build/font-recovery/at-refinement/hook-audit",
-    "impact": "build/font-recovery/at-refinement/hook-impact.json",
-    "comparison": "build/font-recovery/at-refinement/hook-comparison.json",
+    "base": "build/font-recovery/plusminus-grid/before-quality.json",
+    "delta": "build/font-recovery/plusminus-grid/audit",
+    "impact": "build/font-recovery/plusminus-grid/impact.json",
+    "comparison": "build/font-recovery/plusminus-grid/comparison.json",
     "replaced_cases": 18,
     "reused_cases": 3384
   },
