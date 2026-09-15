@@ -11,8 +11,6 @@
 **[Скачать TTF](dist/TabunaSansVariable.ttf?raw=true)** ·
 [Все символы](sources/compact-charset.txt) · [Лицензия](OFL.txt)
 
-Зафиксированная контрольная основа: [выпуск 0.0.1](https://github.com/tabuna/tabuna-fonts/releases/tag/v0.0.1).
-
 ## Возможности
 
 | Характеристика | Значение |
