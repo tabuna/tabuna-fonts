@@ -1,0 +1,11 @@
+{
+ "role":"Root browser arbitration; not one of ten fresh reviewers",
+ "font_sha256":"56cb3cbd30099ed97b0395e7eae28f9431e84ff9eede14cdfb4061f1c5873edc",
+ "fixture":"build/matrix003/enlargement.html",
+ "method":"Copy of current index.html with original assets; test selector changes only html font-size16px to32px at viewport320px. Browser viewport override reset after test.",
+ "normal":{"root_font_px":16,"viewport_width":320,"document_scroll_width":320},
+ "enlarged":{"root_font_px":32,"viewport_width":320,"document_scroll_width":517,"hero":{"client_width":256,"scroll_width":469,"font_px":89.6},"controls":{"client_width":256,"scroll_width":485,"font_px":26},"reading_grid":{"client_width":256,"scroll_width":322},"table":{"client_width":322,"scroll_width":322,"font_px":28.8}},
+ "verdict":"Confirmed demo reflow failure under doubled base text in narrow viewport; font-outline defect not established.",
+ "recommendation":"Allow hero wrapping; adapt control grid to intrinsic label sizes and numeric-table layout when base text grows. Preserve user text enlargement.",
+ "limit":"CSS base-font enlargement simulation, not OS Dynamic Type, actual browser200% zoom, or human reading test. Explicit-pixel specimen controls may intentionally remain fixed for font inspection."
+}

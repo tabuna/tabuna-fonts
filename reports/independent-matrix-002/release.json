@@ -1,0 +1,121 @@
+{
+  "role": "independent release/reproducibility reviewer",
+  "font_sha256": "3567058955eb20ebaf25ef5241a094b25d86dfd7be966f8032492dd3caa3e011",
+  "woff2_sha256": "d07839f04ebdbfb89fed1c4f9d5d2609197db1071251bd5cf8ab0db5f626b207",
+  "tests": [
+    {
+      "name": "Binary metadata versus manifest and README",
+      "status": "pass",
+      "evidence": "0.0.2; 189 characters; 218 glyphs; 2048 UPM; wght 100/400/900; opsz 9/14/128; 311352-byte TTF and 93128-byte WOFF2; feature tags support documented liga/calt/pnum/tnum/kern."
+    },
+    {
+      "name": "Main demo CSS/preload dependency cache chain",
+      "status": "pass",
+      "references_checked": 9,
+      "evidence": "Every existing v= token matches SHA256 prefix; preload and CSS resolve the same WOFF2 URL. Cache regression unit test passes."
+    },
+    {
+      "name": "Isolated source rebuild",
+      "status": "pass",
+      "evidence": {
+        "returncode": 0,
+        "seconds": 20.896610021591187,
+        "comparisons": [
+          {
+            "file": "TabunaSansVariable.ttf",
+            "byte_identical": true,
+            "original_sha256": "3567058955eb20ebaf25ef5241a094b25d86dfd7be966f8032492dd3caa3e011",
+            "rebuilt_sha256": "3567058955eb20ebaf25ef5241a094b25d86dfd7be966f8032492dd3caa3e011"
+          },
+          {
+            "file": "TabunaSansVariable.woff2",
+            "byte_identical": true,
+            "original_sha256": "d07839f04ebdbfb89fed1c4f9d5d2609197db1071251bd5cf8ab0db5f626b207",
+            "rebuilt_sha256": "d07839f04ebdbfb89fed1c4f9d5d2609197db1071251bd5cf8ab0db5f626b207"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TTF/WOFF2 geometry and advance parity",
+      "status": "pass",
+      "evidence": {
+        "test": "TTF/WOFF2 outline and advance parity",
+        "glyph_location_cases": 5450,
+        "failures": [],
+        "passed": true
+      }
+    },
+    {
+      "name": "Authorial gate",
+      "status": "fail",
+      "evidence": {
+        "exit_code": 1,
+        "author_release_ready": false,
+        "technical_failures": [],
+        "audit_failures": [],
+        "pending_decisions": [
+          "D01",
+          "D02",
+          "D03",
+          "D04",
+          "D05",
+          "D06"
+        ],
+        "authorial_deviations_verified": false
+      }
+    }
+  ],
+  "verdicts": {
+    "ui": {
+      "status": "conditional",
+      "reason": "Release packaging, same-environment reproduction and web font cache chain pass; use as the documented pilot with content-specific platform checks. This role did not assess visual legibility."
+    },
+    "headings": {
+      "status": "conditional",
+      "reason": "Release packaging, same-environment reproduction and web font cache chain pass; use as the documented pilot with content-specific platform checks. This role did not assess visual legibility."
+    },
+    "body": {
+      "status": "conditional",
+      "reason": "Release packaging, same-environment reproduction and web font cache chain pass; use as the documented pilot with content-specific platform checks. This role did not assess visual legibility."
+    },
+    "sustained_reading": {
+      "status": "unverified",
+      "reason": "No participant sustained-reading assessment performed; README explicitly says this validation is incomplete."
+    }
+  },
+  "findings": [
+    {
+      "id": "R1",
+      "priority": "P2",
+      "title": "Authorial release gate remains closed; pilot distribution is accurately labeled",
+      "evidence": [
+        "font_recovery.design_status --require authorial returns 1",
+        "D01–D06 pending; authorial_deviations_verified=false; technical_failures=[]; audit_failures=[]",
+        "docs/BUILDING.md explicitly requires this gate for authorial release; README identifies 0.0.2 as pilot"
+      ],
+      "recommendation": "Keep pilot wording. Before calling this an accepted authorial release, close the six decisions with current-hash evidence and satisfy the project gate. This is not a finding that the pilot binaries fail to load or render.",
+      "acceptance_test": ".venv/bin/python -m font_recovery.design_status --require authorial exits 0 on the exact shipped TTF."
+    },
+    {
+      "id": "R2",
+      "priority": "P3",
+      "title": "Archive comparison navigation is incomplete in a clean static checkout",
+      "evidence": [
+        "index.html links comparison.html",
+        "comparison.html links REVIEW.md, which does not exist",
+        "comparison.js fetches proofs/pixel-${size}/comparison.json; proofs is ignored and git ls-files proofs returns no files",
+        "Archive disclaimer and fetch-error handling exist"
+      ],
+      "recommendation": "Replace the missing review link and either provide an intentional archive landing page without live proof controls or publish the required archive data alongside the page.",
+      "acceptance_test": "Serve only tracked site files; follow the comparison and review links and confirm no broken navigation or unavailable expected comparison data."
+    }
+  ],
+  "limits": [
+    "No previous or current reviewer reports were read for the initial audit. Project gate was executed after independent metadata/cache/source inspection.",
+    "Only scratch build/matrix002/release and assigned reports were written; production font sources/binaries untouched.",
+    "Rebuild uses the existing pinned local Python dependencies; no clean dependency download or cross-OS build performed.",
+    "No browser renderer, participant reading study, full font visual review, remote deployment or push performed.",
+    "Legacy scripts/verify-full.py inspected but not run: it still requests out-of-repertoire marks/letters and local references; documented compact verify.py is the relevant repertoire check."
+  ]
+}

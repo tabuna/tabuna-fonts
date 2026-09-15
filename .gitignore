@@ -42,3 +42,6 @@ __pycache__/
 
 # One-off browser calibration pages are local research artifacts
 /*-calibration.html
+
+# Local audit scratch work
+/scratchbuild/

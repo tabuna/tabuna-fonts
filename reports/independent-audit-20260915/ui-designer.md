@@ -1,0 +1,64 @@
+# Independent desktop UI/product hierarchy review
+
+Independent desktop UI/product hierarchy reviewer; own product judgement, not an Apple employee or HIG compliance assessor
+
+Read README.md, index.html, demo.css, demo.js, dist/tabuna.css and proof generators. Viewed fresh accessibility/specimen-light-1x.png, type/ui-native-opsz9.png and type/body-native.png. These are Pillow/FreeType proofs, not browser screenshots of the demo. No prior reports or verdicts read. No font or application edits.
+
+## Font identity
+
+- `dist/TabunaSansVariable.woff2` SHA-256: `9c5c23886f3cac3acca41e9db66bdde9a69e5145453e1a84e24605bc31b43e59`
+- `dist/TabunaSansVariable.ttf` SHA-256: `5888eecc912f46f14b7807906d2ffc0a42d543a3695465b76a83b699373344b9`
+
+## P2 UI-1 — The live sample retains display spacing at body sizes
+
+**Scope:** Demo-specific
+
+**Condition:** Set the live sample to 12–18 px and enter a paragraph with several lines.
+
+**Evidence:** demo.css sets #sample-text and #system-sample to line-height:1.17 and letter-spacing:-.018em at all sizes; demo.js update() changes size/weight/optical settings but not these values. The dedicated article instead uses 16 px / 1.65. Fresh body-native.png shows a comfortable paragraph reference at 1.5, although its explicit opsz values differ from browser auto.
+
+**Impact:** The small-size sample combines compact line spacing and negative tracking with a reading task, making the demonstration unnecessarily crowded and obscuring the difference between font performance and specimen styling.
+
+**Confidence:** High for CSS behavior; medium for the subjective reading impact, since no browser paragraph at 12 px was captured.
+
+**Recommendation:** For the existing sample, use neutral tracking and approximately 1.45–1.6 line-height at body sizes; retain tighter display treatment only at larger sizes.
+
+**Acceptance criteria:** At 12, 14, 16 and 18 px, both comparison panes use the same neutral tracking and body-appropriate line-height; a multi-line Russian/English paragraph remains clearly separated. Larger display sizes retain their intended composition.
+
+
+## P3 UI-2 — Small specimen metadata has too little visual priority
+
+**Scope:** Demo-specific; not a font-wide legibility failure
+
+**Condition:** Read labels at desktop 100% scale with a 16 px root size.
+
+**Evidence:** demo.css uses .overline at .65rem (10.4 px) with .1em tracking; .small and .caption at .7rem (11.2 px), .sample-label and reset button around .72rem (11.52 px), and glyph codepoints at .55rem (8.8 px). The UI proof shows 9–11 px rows requiring closer attention than 14–16 px rows. Most control and metadata text uses system-ui, while the article overline uses Tabuna.
+
+**Impact:** Instructions, technical labels and codepoints compete poorly with large specimens. The tiny uppercase overline is particularly weak as a section cue. This is an information-hierarchy choice, not evidence that Tabuna fails at these sizes.
+
+**Confidence:** High for actual CSS sizes; medium for product severity.
+
+**Recommendation:** Raise useful instructional/technical metadata to a consistent readable caption size (starting around 12 px), and reduce the overline’s dependence on tracking to create hierarchy. Keep purely decorative metadata subordinate.
+
+**Acceptance criteria:** Existing sample instructions, reset label, article overline and glyph codepoints can be read without zoom at the intended desktop viewing distance; verify 1x/2x and both themes, with no new components.
+
+
+## P3 UI-3 — The glyph catalog defaults to the least representative UI weight
+
+**Scope:** Demo-specific default; no claim of invalid Thin contours
+
+**Condition:** Open the glyph catalog without changing its weight slider.
+
+**Evidence:** index.html sets glyph-weight and its output to 100; demo.css .glyph b falls back to weight 100; demo.js applies that value on load. Meanwhile the live sample defaults to 400 and README body guidance uses 400. In fresh 1x proofs, weight 100 is markedly fainter than 400–500. Catalog glyphs are larger than the proof’s small UI rows, so those proofs do not establish a catalog readability failure.
+
+**Impact:** A reader examining coverage encounters an extreme weight first, which is less representative of the advertised interface/body role than the normal default.
+
+**Confidence:** High for inconsistent defaults; medium for first-impression effect.
+
+**Recommendation:** Default the existing glyph slider/output/CSS fallback to 400 while retaining the full 100–900 range.
+
+**Acceptance criteria:** On fresh load the glyph slider, output and computed glyph weight all equal 400; Thin remains available through the existing slider.
+
+## Positive observations and limits
+
+The existing 16 px / 400 / 1.65 article is a sensible body role. Its 500 heading provides separation without excessive weight; the table uses moderate 14.4 px values, right alignment and tabular numerals with ample cell padding. No table-density defect established. README does not recommend Thin or Black for small controls. Native demo buttons/navigation are system-ui, so they do not substantiate Tabuna control-label suitability. Current proofs support considering 400–500 at 14–18 px; they do not establish usability across renderers or substitute for a user test. No new features, glyph additions or font edits requested.

@@ -1,0 +1,74 @@
+{
+  "issue": "M01 / ENG-001",
+  "status": "fixed",
+  "version": "0.0.3",
+  "font_sha256": "56cb3cbd30099ed97b0395e7eae28f9431e84ff9eede14cdfb4061f1c5873edc",
+  "woff2_sha256": "090801dbfa6086e63678a38df35c522f3032164b2e4bced9e692121bccef704e",
+  "before_regression": {
+    "context_checks": 1888,
+    "failures": 214,
+    "passed": false
+  },
+  "after": {
+    "font_sha256": "56cb3cbd30099ed97b0395e7eae28f9431e84ff9eede14cdfb4061f1c5873edc",
+    "files": {
+      "dist/TabunaSansVariable.ttf": "56cb3cbd30099ed97b0395e7eae28f9431e84ff9eede14cdfb4061f1c5873edc",
+      "dist/TabunaSansVariable.woff2": "090801dbfa6086e63678a38df35c522f3032164b2e4bced9e692121bccef704e"
+    },
+    "axis_locations": 117,
+    "context_checks": 220896,
+    "format_comparisons": 110448,
+    "equal_width_timer_groups": 234,
+    "failure_count": 0,
+    "failures": [],
+    "passed": true
+  },
+  "visual_checks": {
+    "freetype_px": [
+      12,
+      14,
+      16,
+      32,
+      64
+    ],
+    "browser_px": [
+      14,
+      32,
+      64
+    ],
+    "browser_loaded_faces": 1,
+    "backgrounds": [
+      "light",
+      "dark"
+    ],
+    "result": "Contextual colon remains raised with tabular figures; calt=0 deliberately selects ordinary colon."
+  },
+  "evidence": [
+    {
+      "path": "reports/timer-verification.json",
+      "sha256": "4b70dc7511dc2806141d67d7d0754a1cf89dbdee20e85ce836ebe4ba2bda43d6"
+    },
+    {
+      "path": "reports/timer-fix/scope.json",
+      "sha256": "860c981a26089e8805c52afbf0a535a444b5bab39e18e0fdc3d0ba2fc9043af0"
+    },
+    {
+      "path": "reports/digit-verification.json",
+      "sha256": "28d902435ddb400aed690d4719a66ea36be3f096b3c44a5b81b1593c1edf4ecc"
+    },
+    {
+      "path": "reports/verification.json",
+      "sha256": "eff351972e740f36cffd6bfb3a9445a8810d3f6192176f5dad4ec7e6fb6dd4b1"
+    }
+  ],
+  "remaining_matrix_actions": [
+    "M02",
+    "M03",
+    "M04",
+    "M05",
+    "M06",
+    "M07",
+    "M08"
+  ],
+  "publication": "Local repair build, not a GitHub release; control0.0.1 unchanged"
+}

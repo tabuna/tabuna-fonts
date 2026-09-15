@@ -1,0 +1,95 @@
+{
+  "role": "independent reading and typography methods reviewer",
+  "font_sha256": "3567058955eb20ebaf25ef5241a094b25d86dfd7be966f8032492dd3caa3e011",
+  "method": "Single model visual examination; no human participant research. Blind pair examined before actual-font proof; no blind key or other reports read.",
+  "tests": [
+    {
+      "name": "blind pair examination",
+      "artifact": "build/matrix002/blind-pairs.png",
+      "result": "Completed visual inspection of every A/B pair at supplied resolution."
+    },
+    {
+      "name": "actual artifact hash",
+      "result": "SHA-256 independently matches requested artifact."
+    },
+    {
+      "name": "actual font render and examination",
+      "artifact": "reports/independent-matrix-002/reading-actual.png",
+      "renderer": "Pillow FreeType, variable font axes set explicitly",
+      "conditions": "14/16/18px weight400 opsz14; Russian/English short paragraphs and UI labels; confusion strings; 48px weight500 opsz48 Russian/English headings; 38px weight400 opsz38 confusion string",
+      "result": "Completed visual examination; body rhythm and heading spacing coherent in these samples."
+    }
+  ],
+  "blind_assessment": [
+    {
+      "condition": "18px UI, 22px Russian body, 22px English body",
+      "preference": "indistinguishable",
+      "confidence": "medium",
+      "reason": "No reliable visible difference in word spacing, line length, texture, or individual forms in the supplied phrases. This is not proof of font equivalence."
+    },
+    {
+      "condition": "48px weight500 Russian and English headings",
+      "preference": "indistinguishable",
+      "confidence": "medium",
+      "reason": "Both pairs show similarly steady spacing and intact counters; no visible change that justifies a preference."
+    },
+    {
+      "condition": "54px weight100 and weight900 confusion rows",
+      "preference": "B",
+      "confidence": "high for visible I cue; low for measured reading benefit",
+      "reason": "B adds clear horizontal terminals to capital I, differentiating it from lowercase l. Other shown forms offer no convincing A/B preference. O/0 remain similar oval silhouettes."
+    }
+  ],
+  "verdicts": {
+    "ui": {
+      "status": "conditional",
+      "reason": "Ordinary 14–18px labels are coherent in the actual render. Dense ambiguous identifiers need task testing; capital I terminals help but lowercase l and numeral1 remain narrow, and O/0 differentiation is modest."
+    },
+    "headings": {
+      "status": "pass",
+      "reason": "Visual pass limited to 48px weight500 opsz48 Russian and English samples: even rhythm, no conspicuous collisions or counter loss."
+    },
+    "body": {
+      "status": "conditional",
+      "reason": "Three-line Russian/English samples at 14–18px are visually legible and balanced. Paragraphs are too short to establish reading performance; no browser/device proof included."
+    },
+    "sustained_reading": {
+      "status": "unverified",
+      "reason": "No human reading speed, comprehension, fatigue, or longer-session data were collected."
+    }
+  },
+  "findings": [
+    {
+      "concrete_condition": "Blind 54px weight100/900 I l 1 sequences; actual 14–18px sequences",
+      "evidence": "B capital I has crossbars; actual-font capital I also visibly has them. Narrow l and1 still require attention at the smallest size. No measured confusion rate.",
+      "recommendation": "Retain the capital-I cue; test identifier transcription before making further glyph changes.",
+      "acceptance_test": "Randomized 6–8-character identifiers containing I/l/1 at14/16/18px; compare target to a chosen incumbent font, count character substitutions and completion time."
+    },
+    {
+      "concrete_condition": "Actual-font O/0 and Cyrillic З/3 in context-free 14–18px strings",
+      "evidence": "O/0 depend mainly on subtle proportions; З/3 have closely related silhouettes. The 38px row makes proportions easier to inspect but does not resolve small-size performance.",
+      "recommendation": "Test numeric/letter contexts and consider an optional distinct-zero feature only if task errors justify it; do not infer failure from silhouette similarity alone.",
+      "acceptance_test": "Counterbalanced code and account-number transcription tasks; inspect pair-specific confusion counts and compare with incumbent. No claim of improved distinction without observed error reduction."
+    },
+    {
+      "concrete_condition": "14/16/18px weight400 opsz14 paragraphs, 48px weight500 opsz48 headings",
+      "evidence": "Actual proof shows consistent word boundaries, intact counters, and no conspicuous local spacing defects across the sampled phrases.",
+      "recommendation": "Keep current spacing pending broader text and device checks; no visual basis here for global tracking changes.",
+      "acceptance_test": "Render varied Russian/English paragraphs in target browsers at1x/2x, 14–18px, normal UI line heights and400–600 weights; no clipping, overlaps, or word-boundary ambiguity in review."
+    }
+  ],
+  "human_pilot": {
+    "participants": "8–12 target readers, with fluent Russian and English represented; exploratory pilot, not statistical validation.",
+    "design": "Within-person, counterbalanced current-font versus incumbent-font order, masked labels; rotate matched passages so a participant never rereads the same passage. Match rendered x-height and line length for the principal reading comparison, then separately test native product CSS settings.",
+    "tasks": "Two matched 500–700-word passages per font with comprehension questions, one10-minute reading block per font plus discomfort rating, and24 randomized short identifier-transcription trials per font at14/16/18px.",
+    "record": "Reading time, comprehension correctness, character-specific transcription errors, time per identifier, and subjective comfort after each block. Record device/DPR, language fluency, corrective lenses, and text-size preference.",
+    "decision": "Use paired participant results to identify recurring confusions and adverse reading signals. Treat any repeatable confusion cluster or comprehension reduction as a follow-up trigger; do not declare equivalence or sustained-reading superiority from this small pilot. Predefine the acceptable margin for a larger confirmatory study."
+  },
+  "limitations": [
+    "Visual judgement by one model; not a human readability study.",
+    "No prior reports, blind key, or source generation code inspected. Actual-font proof may permit inference about one glyph but no A/B identity was requested or revealed.",
+    "Pillow rendering is not a browser/OS font-rasterization audit.",
+    "Only selected sizes, axes, text, white background, and short paragraphs examined; no italic, multilingual coverage, or accessibility compliance determination.",
+    "Supplied blind image inspected visually; no pixel difference measurement."
+  ]
+}

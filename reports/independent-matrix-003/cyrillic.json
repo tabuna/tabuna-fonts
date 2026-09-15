@@ -1,0 +1,81 @@
+{
+  "role": "independent Cyrillic/editorial reviewer",
+  "font_sha256": "56cb3cbd30099ed97b0395e7eae28f9431e84ff9eede14cdfb4061f1c5873edc",
+  "font": "dist/TabunaSansVariable.ttf",
+  "font_version": "0.0.3",
+  "independence": "Read font manifest and generated my own HarfBuzz/FreeType Russian proofs. Did not read prior reports, matrices, other reviewer reports, or their proof images/scripts. Source/font were not modified.",
+  "tests": {
+    "renderer": "HarfBuzz shaping + FreeType grayscale rasterization; black on white, pixel-size-matched opsz",
+    "weights": [
+      100,
+      400,
+      900
+    ],
+    "sizes_px": [
+      12,
+      14,
+      16,
+      18,
+      20,
+      24,
+      32,
+      36,
+      40,
+      48,
+      96
+    ],
+    "proof_images_viewed": 3,
+    "shaped_lines": 54,
+    "missing_glyph_occurrences": 3,
+    "requested_letters": "ДЛдлбвжкяЁй",
+    "evidence": "scratchbuild/matrix003/cyrillic/evidence.json"
+  },
+  "verdicts": {
+    "ui": {
+      "status": "conditional_pass",
+      "reason": "Regular 400 Russian labels at 12–20 px remain legible with matched opsz. Thin 100 at 12–16 px has very low stroke coverage; heavy 900 is usable for short emphasis, not a default text weight."
+    },
+    "headings": {
+      "status": "pass",
+      "reason": "At 24–96 px the tested Cyrillic constructions and diacritics remain recognizable at 100, 400 and 900; no visible broken joins or counter collapse in the inspected samples."
+    },
+    "body": {
+      "status": "conditional_pass",
+      "reason": "Russian paragraphs at 14 and 18 px / weight 400 are readable and have coherent texture. This is a short visual inspection, not a reading study."
+    },
+    "sustained_reading": {
+      "status": "not_established",
+      "reason": "Four-line paragraphs do not establish long-session readability or fatigue; no human reading test was performed."
+    }
+  },
+  "findings": [
+    {
+      "id": "CYR-01",
+      "priority": "P2",
+      "type": "coverage_defect",
+      "condition": "U+2022 BULLET in the heading test shapes to glyph 0 at all three weights. Rendered as an outlined oval unrelated to surrounding weight. All requested Cyrillic letters shape to nonzero glyph IDs.",
+      "recommendation": "Add U+2022 with an appropriate bullet drawing/advance, or require an explicit fallback before claiming general editorial punctuation coverage.",
+      "acceptance_test": "Shape RU text containing U+2022 at 100/400/900 and opsz 14/48; require nonzero glyph ID and visually appropriate bullet at each instance.",
+      "evidence": [
+        "scratchbuild/matrix003/cyrillic/ru-100.png",
+        "scratchbuild/matrix003/cyrillic/ru-400.png",
+        "scratchbuild/matrix003/cyrillic/ru-900.png"
+      ]
+    },
+    {
+      "id": "CYR-02",
+      "priority": "P3",
+      "type": "usage_limit_not_construction_defect",
+      "condition": "At 12–16 px, weight 100 renders Russian UI strokes very faint; at weight 900 the same sizes produce dense counters. No Cyrillic-specific failure isolated.",
+      "recommendation": "Use weight 400 for default UI/body; reserve extremes for large display or deliberate emphasis. Do not redesign Cyrillic solely from the extreme samples.",
+      "acceptance_test": "Check 12/14/16 px Russian labels at the intended default weight in target native/browser rasterizers on actual displays."
+    }
+  ],
+  "limitations": [
+    "Single renderer, grayscale rasterization; no CoreText/browser screenshot comparison.",
+    "Three weights and sampled optical sizes, not exhaustive continuous-axis testing.",
+    "Short excerpts only, no controlled human sustained-reading study.",
+    "No Latin benchmark or competitor comparison used.",
+    "Visual taste is not treated as a construction failure: flat-top Д/Л and angular ж/к are stylistic choices."
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "phase": "discussion cross-critique after blind first report",
+  "first_report_modified": false,
+  "read": ["reading.md", "type.md", "cyrillic.md", "coverage.json", "build/matrix003/key.json"],
+  "peer_proof_images_reinspected": false,
+  "identity": {"X": "current dist TTF", "Y": "release 0.0.1", "current_sha256": "56cb3cbd30099ed97b0395e7eae28f9431e84ff9eede14cdfb4061f1c5873edc"},
+  "larger_character_redesign": "not warranted by this evidence",
+  "reason": "Current font has narrow capital-I diagnostic preference; running lines indistinguishable. Same-family versions and limited passages cannot establish absolute character weakness or recognition gains.",
+  "verdicts": {"ui": "conditional", "headings": "provisional visual pass", "body": "conditional", "sustained_reading": "not established"},
+  "adjudications": [
+    {"topic": "capital I", "decision": "retain current distinction provisionally", "acceptance_test": "Random Il1 at 12/14/16/18px, weights 400/500/700, opsz9/14/16 plus production automatic sizing; target renderer spacing/clipping review and blinded human transcription"},
+    {"topic": "recurring character", "decision": "no demonstrated improvement or demonstrated need for wholesale redesign", "acceptance_test": "If commissioned, shuffled repeated paragraph comparisons per script excluding isolated diagnostic letters, with predeclared human recognition/preference criteria"},
+    {"topic": "O/0", "decision": "identifier use-case limitation, not general prose defect", "acceptance_test": "Optional differentiated zero or identifier treatment adding non-width cue at 14/18px; human error comparison against untreated version"},
+    {"topic": "Cyrillic construction", "decision": "no reproducible construction defect established; flat tops stylistic", "acceptance_test": "Native-reader longer Russian passages with recurring dense letter groups at intended sizes"},
+    {"topic": "U+2022", "decision": "reject contracted-glyph defect; outside explicit 189-character inventory", "coverage": {"expected": 189, "actual": 189, "missing": [], "extra": [], "bullet_in_requested_set": false}, "acceptance_test": "Document scope and test product fallback; add and verify bullet across instances only if inventory expands"},
+    {"topic": "sustained reading", "decision": "unestablished", "acceptance_test": "Counterbalanced human RU/EN 10–15 minute sessions against named reference at matched apparent size; predeclared comprehension/error/discomfort criteria"}
+  ],
+  "limitations": ["No human recognition or reading evidence", "Peer expanded proofs assessed through reports only", "No new proof rendered", "Cross-review agreement is not a quantified reader result"]
+}

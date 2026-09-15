@@ -1,0 +1,207 @@
+{
+  "reviewer_role": "Independent typographic and mixed Latin/Cyrillic reviewer (AI); no impersonation or Apple participation",
+  "date": "2026-09-15",
+  "font_path": "/Users/tabuna/math-design/tabuna-fonts/dist/TabunaSansVariable.ttf",
+  "font_sha256": "5888eecc912f46f14b7807906d2ffc0a42d543a3695465b76a83b699373344b9",
+  "independence": "Did not read previous design verdicts or quality conclusions. Initial images preceded cmap inspection. Approved 189-character scope was clarified after the missing-symbol observation.",
+  "method": "Pillow12.3.0/FreeType native1x raster, fontTools4.65.0 cmap/outline identity checks after initial visual inspection. White background, #111 text; no fallback; no CoreText validation. Some wide contact sheets were downscaled by the viewing tool; native small UI and selected crops were also inspected. Crops can cut sample lines; they are diagnostic excerpts.",
+  "axes": {
+    "wght": [
+      100,
+      400,
+      900
+    ],
+    "opsz": [
+      9,
+      14,
+      128
+    ]
+  },
+  "tested_weights": [
+    100,
+    400,
+    500,
+    700,
+    900
+  ],
+  "tested_sizes_px": [
+    9,
+    11,
+    12,
+    14,
+    16,
+    18,
+    20,
+    24,
+    48
+  ],
+  "coverage": "Complete basic Latin and Russian upper/lower alphabets; digits0–9; common quotes, brackets, punctuation, currency and operators; mixed RU/EN strings; a/а, P/Р, B/В/в, I/l/1, O/О/0, rn/m/rm, Л/Д/Ж/К/Я and lowercase counterparts. Paragraphs14/16/18px at400/500 and matched numerical opsz. This is a bounded specimen audit, not all pairs or full-font certification.",
+  "verdict": "Core sampled Latin/Cyrillic is a credible UI and heading candidate. No release-blocking core letterform defect established. Broad readability/accessibility readiness remains unproven by this static AI inspection.",
+  "findings": [
+    {
+      "id": "TYPE-01",
+      "priority": "P2",
+      "kind": "coverage/integration risk, not scoped font defect",
+      "title": "Unsupported punctuation becomes misleading oval in a font-only renderer",
+      "scenario": "UI separators, financial/editorial content; no fallback renderer or incomplete fallback stack",
+      "conditions": "Observed at 14,24,48 px, weights 100/400/500/700/900, opsz 9/14/128",
+      "observed": "U+2022 bullet and U+2030 per mille lack cmap entries. Font-only Pillow proof substitutes a thin oval resembling 0, including at heavy weights. Parent clarified after initial findings that the approved repertoire intentionally contains 189 characters.",
+      "confidence": "high for missing mappings and font-only raster; browser outcome untested by this reviewer",
+      "recommendation": "Keep the approved repertoire; define allowed content and exercise an explicit tested fallback stack for unsupported characters. Do not treat this alone as a request to add glyphs.",
+      "acceptance_test": "In actual target browser and native app, render bullet, per mille, arrows, narrow no-break space and nonbreaking hyphen at 14/16/24 px and 400/700 with the intended fallback stack; verify intended symbol, baseline, line height and no oval/tofu. A font-only export must reject unsupported content or substitute deliberately.",
+      "proofs": [
+        "families-24px-opsz14.png",
+        "families-48px-opsz128.png"
+      ]
+    },
+    {
+      "id": "TYPE-02",
+      "priority": "P2",
+      "kind": "observed usage limitation",
+      "title": "Weight 100 is fragile for functional small text",
+      "scenario": "Labels, secondary text, forms, sustained reading",
+      "conditions": "9/11/12/14/16/18/20 px, wght100, opsz9/14/128, #111 on white, 1x FreeType",
+      "observed": "Thin strokes rasterize predominantly pale grey; short controls and dense Cyrillic have much lower visual presence than 400/500. Increasing opsz to128 does not make this a robust small-text face.",
+      "confidence": "high for the shown renderer; medium for target devices",
+      "recommendation": "Treat 100 as a discretionary display style, not a default UI/body style. Start functional tests at 400/500.",
+      "acceptance_test": "Blind target-device comparison at intended minimum sizes, normal and low-vision settings; users must identify labels and read text without meaningful error/time disadvantage relative to the product baseline. Include dark mode and text scaling.",
+      "proofs": [
+        "ui-native-opsz14.png",
+        "ui-detail-opsz9.png",
+        "ui-detail-opsz128.png"
+      ]
+    },
+    {
+      "id": "TYPE-03",
+      "priority": "P2",
+      "kind": "observed usage limitation",
+      "title": "Display optical extreme packs small strings more tightly",
+      "scenario": "Small UI forced to opsz128, identifiers and dense mixed-script controls",
+      "conditions": "9–16 px, weights400/500/700/900, opsz128 versus9/14",
+      "observed": "At 9–12 px, rn/m and Il1 details and Cyrillic joins are small and dense; opsz128 reduces word/string width relative to text opsz. For the exact UI proof string, 16px/w400 width is630px at opsz9,591px at14,535px at128 (includes the same missing bullet placeholder each time). No categorical rn=m collapse claimed.",
+      "confidence": "high for density/width; medium for effect on human recognition",
+      "recommendation": "Do not force display opsz across UI. Keep text optical sizing near actual use size, then test the renderer-specific mapping; do not equate CSS px and typographic points without checking integration.",
+      "acceptance_test": "Compare opsz automatic/native behavior and explicit9/14/128 at12/14/16px, DPR1/2, supported platforms; timed Il1/rn/m and mixed RU/EN identification with no critical errors and acceptable label wrapping.",
+      "proofs": [
+        "ui-detail-opsz9.png",
+        "ui-detail-opsz128.png",
+        "14px-detail-nearest2x.png"
+      ]
+    }
+  ],
+  "positive_observations": [
+    "14–20px w400/500 opsz9/14 show recognizable mixed-script labels. Paragraph14/16/18px w400/500 has coherent Latin/Cyrillic texture;500 is distinctly darker,400 calmer for long blocks.",
+    "24/48px w400/500/700 show coherent headings and conventional Л/Д feet, Ж/К diagonals, Я bowl/leg, and small в. No obviously broken or misplaced construction in sampled families.",
+    "Latin a and Cyrillic а, Latin P/Cyrillic Р, Latin B/Cyrillic В correctly belong to related visual families. Their resemblance is not a defect; base outlines and advances are not literally identical. This is not a script-identification font.",
+    "I has bars, l is narrow and1 has a flag; at14px the distinctions exist, although9–11px still needs identification testing. Zero is narrower than uppercase O, with no prominent distinguishing slash in inspected default samples. No forced change to the zero is recommended without an identifier-use requirement.",
+    "Ordinary punctuation, ruble, euro, dollar and pound are present and align plausibly in inspected24/48px samples."
+  ],
+  "preferences_not_defects": [
+    "Rectangular Cyrillic Л/Д family and dense black headings are stylistic choices. A softer/triangular alternative is not justified by this audit.",
+    "w900 is useful for short emphatic headings but visually heavy for paragraphs. This is a scenario choice, not proof of a malformed font.",
+    "w400 preferred over500 for long reading blocks in these proofs; a personal visual preference, not a demonstrated reading-speed advantage."
+  ],
+  "scenario_hypotheses": [
+    {
+      "scenario": "Functional UI",
+      "start_range": "14–20px,400–500; text optical sizing near use size",
+      "caveat": "12px compact labels require target-device checks; avoid assuming9–11px is acceptable"
+    },
+    {
+      "scenario": "Sustained screen reading",
+      "start_range": "16–18px,400;500 available for increased presence, line-height1.45–1.6",
+      "caveat": "Based on brief static paragraphs, not sustained human reading"
+    },
+    {
+      "scenario": "Headings",
+      "start_range": "24–48px,500–700 with optical sizing appropriate to heading",
+      "caveat": "400 also workable;900 discretionary short emphasis; proof not a full range certification"
+    },
+    {
+      "scenario": "Display100",
+      "start_range": "At least48px as initial exploratory use only",
+      "caveat": "No demonstrated safe minimum, and48px does not imply accessibility compliance"
+    }
+  ],
+  "missing_human_evidence": [
+    "Independent native-Russian typographer and Latin type designer review",
+    "Blind target-user reading speed/comprehension/error comparisons with product baseline",
+    "Low-vision readers, actualApple/Android/Windows devices, CoreText/DirectWrite, dark mode and scaling",
+    "Extended reading fatigue, DynamicType/content clipping, script/identifier errors under real tasks"
+  ],
+  "apple_informed_boundary": "Conservative respect for functional text legibility, weight, scaling and device validation; this reviewer makes no direct HIG-compliance claim and did not inspect Apple guidance. Parent reviewer may attach verified HIG references.",
+  "proofs": [
+    {
+      "path": "/Users/tabuna/math-design/tabuna-fonts/build/independent-audit-20260915/type/14px-detail-nearest2x.png",
+      "sha256": "5a90c9b61262678214027d2363f4b8dbfe5cff9e6f214e909d172620c8c88f76"
+    },
+    {
+      "path": "/Users/tabuna/math-design/tabuna-fonts/build/independent-audit-20260915/type/body-native.png",
+      "sha256": "81f65f82f16ac5bc9d5afb40032a2d423ee0cff9eb11951aec1ef7a605e2ae82"
+    },
+    {
+      "path": "/Users/tabuna/math-design/tabuna-fonts/build/independent-audit-20260915/type/families-14px-opsz128.png",
+      "sha256": "18592b6400ae5378e173907ef3a7b2ebfccf9abeb66f7c07592e3a7c6c303bd5"
+    },
+    {
+      "path": "/Users/tabuna/math-design/tabuna-fonts/build/independent-audit-20260915/type/families-14px-opsz14.png",
+      "sha256": "62d7270902444373736d9c0c32b2f5eb1708f9a1f5282e0e145fe3a7b7f03189"
+    },
+    {
+      "path": "/Users/tabuna/math-design/tabuna-fonts/build/independent-audit-20260915/type/families-14px-opsz9.png",
+      "sha256": "94d680fe498dd9e453c9294738c9887ef000d211135bf6dc3ef2be5ffe1a4738"
+    },
+    {
+      "path": "/Users/tabuna/math-design/tabuna-fonts/build/independent-audit-20260915/type/families-24px-opsz128.png",
+      "sha256": "7bcdf67beb12cfd4d9473e70debc04f0c7e64e3829404c27885fcfe4c651fbdf"
+    },
+    {
+      "path": "/Users/tabuna/math-design/tabuna-fonts/build/independent-audit-20260915/type/families-24px-opsz14.png",
+      "sha256": "2cf2bbda3ea17bd4c27aa1985f644009948667a475984f1dd14ba9d040fb80e2"
+    },
+    {
+      "path": "/Users/tabuna/math-design/tabuna-fonts/build/independent-audit-20260915/type/families-24px-opsz9.png",
+      "sha256": "b4c72f7962eca2fedb4b6fa80a4fb70f933de3413a74732d456f4cd641473508"
+    },
+    {
+      "path": "/Users/tabuna/math-design/tabuna-fonts/build/independent-audit-20260915/type/families-48px-opsz128.png",
+      "sha256": "6856854a7c660d8ed9bc2c3dea679a6a1e148e96002c0806064bcff5c4f74264"
+    },
+    {
+      "path": "/Users/tabuna/math-design/tabuna-fonts/build/independent-audit-20260915/type/families-48px-opsz14.png",
+      "sha256": "6149ea8335f84db222213b073dce7929c223f81421e6bd708a5ea184c83bdd6c"
+    },
+    {
+      "path": "/Users/tabuna/math-design/tabuna-fonts/build/independent-audit-20260915/type/families-48px-opsz9.png",
+      "sha256": "687e00852c81899a40b80b20c3862116168bd539ed852f9c52f3a27872534ca9"
+    },
+    {
+      "path": "/Users/tabuna/math-design/tabuna-fonts/build/independent-audit-20260915/type/heading-detail-opsz128.png",
+      "sha256": "8d443fed9614673d57bbaa0ba842b1d9b8a559acfa684249bbec38ff7b98f912"
+    },
+    {
+      "path": "/Users/tabuna/math-design/tabuna-fonts/build/independent-audit-20260915/type/heading-detail-opsz9.png",
+      "sha256": "27576d26b630a43d826769f08604e6901942b803701e3fb7e0519ec346965a51"
+    },
+    {
+      "path": "/Users/tabuna/math-design/tabuna-fonts/build/independent-audit-20260915/type/ui-detail-opsz128.png",
+      "sha256": "1eaa922a4352422a01e6c5d6c427b7b6154b8f5e0590901421d5530109a24ba4"
+    },
+    {
+      "path": "/Users/tabuna/math-design/tabuna-fonts/build/independent-audit-20260915/type/ui-detail-opsz9.png",
+      "sha256": "972ddc81d4fc5cbed9b9673bfcd5cbe242aa48be6760547596c907e12899121a"
+    },
+    {
+      "path": "/Users/tabuna/math-design/tabuna-fonts/build/independent-audit-20260915/type/ui-native-opsz128.png",
+      "sha256": "fcc9b16b31247dda89c0ceb14dd0723ca982ff70a7b51180d55ae3a7ba7bf264"
+    },
+    {
+      "path": "/Users/tabuna/math-design/tabuna-fonts/build/independent-audit-20260915/type/ui-native-opsz14.png",
+      "sha256": "edf5fce603561e1eabbc8fa23a81a19e408dfe67f8bd126aeb0659bb0334eff2"
+    },
+    {
+      "path": "/Users/tabuna/math-design/tabuna-fonts/build/independent-audit-20260915/type/ui-native-opsz9.png",
+      "sha256": "bfec3c5d2da983eda08179ac23274469384859ba2cc9e09d60cde9eda4f3e65e"
+    }
+  ]
+}

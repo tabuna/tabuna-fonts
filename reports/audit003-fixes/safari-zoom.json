@@ -1,0 +1,39 @@
+{
+  "method": "Native Safari via CUA; page zoom200% selected from page menu; window resized. Instrumented copy of current index with original CSS/JS/font assets.",
+  "font_woff2_sha256": "090801dbfa6086e63678a38df35c522f3032164b2e4bced9e692121bccef704e",
+  "fixture_sha256": "47927cf497fa230b350c44df706fd8563336bce8028be8b00dc2e521c3335e4f",
+  "observations": [
+    {
+      "zoom_percent": 200,
+      "viewport": 700,
+      "document": 701,
+      "dpr": 4,
+      "root_px": 16,
+      "font_loaded": true
+    },
+    {
+      "zoom_percent": 200,
+      "viewport": 326,
+      "document": 327,
+      "dpr": 4,
+      "root_px": 16,
+      "table_client": 295,
+      "table_scroll": 295,
+      "font_loaded": true
+    },
+    {
+      "zoom_percent": 100,
+      "viewport": 653,
+      "document": 653,
+      "dpr": 2,
+      "root_px": 16,
+      "font_loaded": true
+    }
+  ],
+  "max_rounding_allowance_px": 1,
+  "passed": true,
+  "zoom_restored": true,
+  "window_restored": true,
+  "dedicated_final_test_tab_closed": true,
+  "limits": "Visual and exposed DOM readout; no full VoiceOver or physical participant study. Screenshots inspected in tool session, not saved as files."
+}

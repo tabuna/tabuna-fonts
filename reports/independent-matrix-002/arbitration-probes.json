@@ -1,0 +1,260 @@
+{
+  "timer_runs": [
+    {
+      "size": 16,
+      "weight": 400,
+      "opsz": 14,
+      "tnum": false,
+      "glyphs": [
+        "one",
+        "two",
+        "colon.case",
+        "three",
+        "four",
+        "space",
+        "space",
+        "zero",
+        "zero",
+        "colon.case",
+        "zero",
+        "zero",
+        "space",
+        "space",
+        "eight",
+        "eight",
+        "colon.case",
+        "eight",
+        "eight"
+      ]
+    },
+    {
+      "size": 16,
+      "weight": 400,
+      "opsz": 14,
+      "tnum": true,
+      "glyphs": [
+        "one.tnum",
+        "two.tnum",
+        "colon",
+        "three.tnum",
+        "four.tnum",
+        "space",
+        "space",
+        "zero.tnum",
+        "zero.tnum",
+        "colon",
+        "zero.tnum",
+        "zero.tnum",
+        "space",
+        "space",
+        "eight.tnum",
+        "eight.tnum",
+        "colon",
+        "eight.tnum",
+        "eight.tnum"
+      ]
+    },
+    {
+      "size": 32,
+      "weight": 400,
+      "opsz": 14,
+      "tnum": false,
+      "glyphs": [
+        "one",
+        "two",
+        "colon.case",
+        "three",
+        "four",
+        "space",
+        "space",
+        "zero",
+        "zero",
+        "colon.case",
+        "zero",
+        "zero",
+        "space",
+        "space",
+        "eight",
+        "eight",
+        "colon.case",
+        "eight",
+        "eight"
+      ]
+    },
+    {
+      "size": 32,
+      "weight": 400,
+      "opsz": 14,
+      "tnum": true,
+      "glyphs": [
+        "one.tnum",
+        "two.tnum",
+        "colon",
+        "three.tnum",
+        "four.tnum",
+        "space",
+        "space",
+        "zero.tnum",
+        "zero.tnum",
+        "colon",
+        "zero.tnum",
+        "zero.tnum",
+        "space",
+        "space",
+        "eight.tnum",
+        "eight.tnum",
+        "colon",
+        "eight.tnum",
+        "eight.tnum"
+      ]
+    },
+    {
+      "size": 64,
+      "weight": 900,
+      "opsz": 64,
+      "tnum": false,
+      "glyphs": [
+        "one",
+        "two",
+        "colon.case",
+        "three",
+        "four",
+        "space",
+        "space",
+        "zero",
+        "zero",
+        "colon.case",
+        "zero",
+        "zero",
+        "space",
+        "space",
+        "eight",
+        "eight",
+        "colon.case",
+        "eight",
+        "eight"
+      ]
+    },
+    {
+      "size": 64,
+      "weight": 900,
+      "opsz": 64,
+      "tnum": true,
+      "glyphs": [
+        "one.tnum",
+        "two.tnum",
+        "colon",
+        "three.tnum",
+        "four.tnum",
+        "space",
+        "space",
+        "zero.tnum",
+        "zero.tnum",
+        "colon",
+        "zero.tnum",
+        "zero.tnum",
+        "space",
+        "space",
+        "eight.tnum",
+        "eight.tnum",
+        "colon",
+        "eight.tnum",
+        "eight.tnum"
+      ]
+    }
+  ],
+  "lowercase_l_contour": [
+    [
+      "moveTo",
+      [
+        [
+          172,
+          1506
+        ]
+      ]
+    ],
+    [
+      "lineTo",
+      [
+        [
+          346,
+          1506
+        ]
+      ]
+    ],
+    [
+      "lineTo",
+      [
+        [
+          346,
+          193
+        ]
+      ]
+    ],
+    [
+      "qCurveTo",
+      [
+        [
+          346,
+          176
+        ],
+        [
+          369,
+          153
+        ],
+        [
+          386,
+          153
+        ]
+      ]
+    ],
+    [
+      "lineTo",
+      [
+        [
+          434,
+          153
+        ]
+      ]
+    ],
+    [
+      "lineTo",
+      [
+        [
+          434,
+          0
+        ]
+      ]
+    ],
+    [
+      "lineTo",
+      [
+        [
+          212,
+          0
+        ]
+      ]
+    ],
+    [
+      "qCurveTo",
+      [
+        [
+          195,
+          0
+        ],
+        [
+          172,
+          23
+        ],
+        [
+          172,
+          40
+        ]
+      ]
+    ],
+    [
+      "closePath",
+      []
+    ]
+  ]
+}

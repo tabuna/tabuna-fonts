@@ -1,0 +1,91 @@
+{
+  "version": "0.0.2",
+  "font_sha256": "3567058955eb20ebaf25ef5241a094b25d86dfd7be966f8032492dd3caa3e011",
+  "woff2_sha256": "d07839f04ebdbfb89fed1c4f9d5d2609197db1071251bd5cf8ab0db5f626b207",
+  "technical_fixes_verified": true,
+  "authorial_release_ready": false,
+  "findings": [
+    {
+      "id": "IA-01",
+      "status": "fixed",
+      "evidence": "reports/digit-verification.json",
+      "result": "15300 tnum +15300 pnum pairs, 153 axis locations; 0 intersections; equal tnum advances; min gap 131.506 FU"
+    },
+    {
+      "id": "IA-02",
+      "status": "fixed",
+      "evidence": "reports/tabular-scope.json",
+      "result": "Version 0.0.2, revised head revision and unique ID; control release 0.0.1 untouched"
+    },
+    {
+      "id": "IA-03",
+      "status": "fixed",
+      "result": "Font, CSS, preload and JS use content fingerprints; cache-chain invalidation and idempotence unit test passed"
+    },
+    {
+      "id": "IA-04",
+      "status": "fixed",
+      "result": "UI 16/500/1.45; body 18/400/1.6; display 64/400/1.17. Zero tracking in small text. Glyph default400; metadata >=13px. Scoped Tabuna controls. 320px page fits after wrapping navigation."
+    },
+    {
+      "id": "IA-05",
+      "status": "partially_verified",
+      "result": "189 characters preserved; system fallback and NFC/NBSP policy documented. NFC/NFD RU shaping verified at four axis locations. Arbitrary external content still requires integration-specific fallback checks."
+    },
+    {
+      "id": "IA-06",
+      "status": "limited_platform_evidence",
+      "result": "macOS in-app browser and FreeType/HarfBuzz checked. Windows/DirectWrite, real1x/2x hardware matrix and native accessibility remain unverified."
+    },
+    {
+      "id": "IA-07",
+      "status": "human_study_pending",
+      "result": "Protocol retained; no sustained-reading claim or fabricated participant results."
+    }
+  ],
+  "browser_checks": {
+    "ui": {
+      "px": 16,
+      "weight": 500,
+      "line_height_px": 23.2,
+      "letter_spacing": "normal"
+    },
+    "body": {
+      "px": 18,
+      "weight": 400,
+      "line_height_px": 28.8,
+      "letter_spacing": "normal"
+    },
+    "font_loaded": true,
+    "ui_button_uses_tabuna": true,
+    "glyph_default_weight": 400,
+    "viewport_width": 320,
+    "document_scroll_width": 320,
+    "table_width": 288,
+    "numeric_fixture_loaded_faces": 1,
+    "numeric_fixture_visually_separated": true
+  },
+  "evidence": [
+    {
+      "path": "reports/digit-verification.json",
+      "sha256": "6c59d8774a65f3b3b14d40025df59549bc21a5ecf735c4cdfc18590fcdb99813"
+    },
+    {
+      "path": "reports/tabular-scope.json",
+      "sha256": "ea70dca5d0c27744378432cefa4c03e577c2358a9e79167ce064c4be1c8b40c0"
+    },
+    {
+      "path": "reports/verification.json",
+      "sha256": "e0a7ef0010d50ead1230beb300a0c0d61acc6ba01b14b539ac9ee38e035872fc"
+    },
+    {
+      "path": "reports/audit-fix-reproducibility.json",
+      "sha256": "46e345bfffaa00930a6991a8e24451cf32ac239448f467c93999278ad7890133"
+    },
+    {
+      "path": "reports/unicode-verification.json",
+      "sha256": "aac549a1eb3d0541a2d91f07bddbf7b49f05bbea5a73bee5883eb35540564509"
+    }
+  ],
+  "release_note": "Local technical repair build only. Prior design evidence remains bound to v5; publication gate stays closed until authorial evidence is revalidated for this binary."
+}

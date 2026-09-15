@@ -1,0 +1,14 @@
+{
+  "A": {
+    "variant": "subtle",
+    "ttf_sha256": "2f14f3d6279eacb8226cf4490264828351e9bf95fa87378da3ccffc6b59447db"
+  },
+  "B": {
+    "variant": "moderate",
+    "ttf_sha256": "56cb3cbd30099ed97b0395e7eae28f9431e84ff9eede14cdfb4061f1c5873edc"
+  },
+  "C": {
+    "variant": "strong",
+    "ttf_sha256": "5fb8614d901f1ef0af6cc66c0a8be5acfb5312f94b39031acfe1c029123cbc86"
+  }
+}

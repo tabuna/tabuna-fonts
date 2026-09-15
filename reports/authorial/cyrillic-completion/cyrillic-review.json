@@ -1,0 +1,11 @@
+{
+  "font_sha256": "5888eecc912f46f14b7807906d2ffc0a42d543a3695465b76a83b699373344b9",
+  "reviewer": "root agent",
+  "decision": "accept_visual",
+  "reason": "Cyrillic а/Р now share the upper-bowl character of a/P; lowercase в has the same directed bowl family as В/B. No new closed counters or disruptive joins observed at weights 100/400/900 and opsz 9/128.",
+  "human_readability_study": false,
+  "evidence": {
+    "path": "reports/authorial/cyrillic-completion/cyrillic-families.png",
+    "sha256": "3d47db908b605b3edc13789d255726124cf185db0704d2f8bb9ddf3751d302d4"
+  }
+}

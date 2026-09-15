@@ -1,0 +1,71 @@
+{
+  "font_sha256": "5888eecc912f46f14b7807906d2ffc0a42d543a3695465b76a83b699373344b9",
+  "status": "passed",
+  "raster_cases": 3402,
+  "repeat_verified": true,
+  "design_scope_characters": 57,
+  "unchanged_raster_cases": 2376,
+  "unexpected_raster_changes": 0,
+  "below_reference_95_cases": 160,
+  "below_reference_95_characters": 37,
+  "geometry_comparisons": 5232,
+  "shaping_comparisons": 48,
+  "browser_cases": 2520,
+  "harfbuzz_cases": 1260,
+  "added_contour_cases": 189,
+  "previous_contour_cases": 3402,
+  "source_tangent_checks": 11190,
+  "independent_build_equal": true,
+  "human_readability_study": false,
+  "evidence": [
+    {
+      "path": "reports/current-quality.json",
+      "sha256": "3a5ae2ab069c94cdf64898973efadd42694cf37c7f36e8b970876f5c474fb12e"
+    },
+    {
+      "path": "reports/verification.json",
+      "sha256": "bcfb8f61c61388226c3eb127bb790e8565f6e43dfd70199ffe0e4bfc7d703d17"
+    },
+    {
+      "path": "reports/authorial-contours.json",
+      "sha256": "0147ef79c3c3b53c9b642b6402caf1fb735161129aa3808d2e4b277256b344cc"
+    },
+    {
+      "path": "reports/authorial-visual-review.json",
+      "sha256": "690885406967503757742628f5897e77c255852cb4d0062d239c6201239de616"
+    },
+    {
+      "path": "reports/authorial/impact.json",
+      "sha256": "cc65b40da77bbfe07dae8b1a254c14707500ddc6beeedc9e5ece00f7190cf1e3"
+    },
+    {
+      "path": "reports/authorial/cyrillic-completion/impact-from-v4.json",
+      "sha256": "47a103ada9e4bb0d9678075578c325d1b66ba316c835342b157ba76a0d479d25"
+    },
+    {
+      "path": "reports/authorial/cyrillic-completion/added-crossings.json",
+      "sha256": "c26874c4804f44641f774abf0bf5d69842b6414dd9939b76746c37f7881b6f02"
+    },
+    {
+      "path": "reports/authorial/cyrillic-completion/interface-corpus.json",
+      "sha256": "9c8ad985cbd1c2b9fb112e396520f399ca55c5d699399b1349273fccce7e6ad9"
+    },
+    {
+      "path": "reports/authorial/cyrillic-completion/browser-corpus.json",
+      "sha256": "4074edb5ac78dd0d2a68fb1eb4983ee7b9ef7bb36da1b4e1b1e452b28bfb1c20"
+    },
+    {
+      "path": "reports/authorial/cyrillic-completion/reproducibility.json",
+      "sha256": "a4f22c0b8699a4716792930ad14acb588e15174239081ad7dabb5e4788746009"
+    },
+    {
+      "path": "reports/authorial/cyrillic-completion/tangent-proof.json",
+      "sha256": "2ee4151371257c2ef908a5c1f5202a7e870a8317ac83407372340eb55941b019"
+    },
+    {
+      "path": "reports/authorial/cyrillic-completion/cyrillic-review.json",
+      "sha256": "23196f2cf90938574608cd7d87bd5e625f8bad1e7eb7a68aaeb3e595126ed7af"
+    }
+  ],
+  "scope_note": "The 54 previously reviewed glyphs and all their variation data are unchanged in v5. Three completed Cyrillic family members have separate visual, contour and variation checks. Existing same-winding component intersections match baseline. Geometry sampling is not an analytic proof."
+}

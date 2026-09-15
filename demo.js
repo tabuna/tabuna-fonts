@@ -14,6 +14,9 @@ function update() {
   $("comparison").hidden = !$("compare").checked;
   for (const target of [$("sample-text"), $("system-sample")]) {
     target.style.fontSize = `${size}px`;
+    const body = $("sample-role").value === "body";
+    target.style.lineHeight = body ? "1.6" : Number(size) < 24 ? "1.45" : "1.17";
+    target.style.letterSpacing = Number(size) < 24 || body ? "0" : "-.018em";
     target.style.fontWeight = weight;
     target.style.fontOpticalSizing = auto ? "auto" : "none";
     target.style.fontVariationSettings = auto ? "normal" : `"opsz" ${optical}`;
@@ -22,9 +25,20 @@ function update() {
   $("sample-text").style.height = "auto";
   $("sample-text").style.height = `${Math.min($("sample-text").scrollHeight, Number(size) * 14)}px`;
 }
+$("sample-role").addEventListener("change", () => {
+  const preset = {ui: [16, 500], body: [18, 400], display: [64, 400]}[$("sample-role").value];
+  $("size").value = preset[0];
+  $("weight").value = preset[1];
+  $("auto-optical").checked = true;
+  update();
+});
+$("ui-save").addEventListener("click", () => {
+  $("ui-feedback").textContent = "Настройки образца сохранены.";
+});
 controls.forEach((id) => $(id).addEventListener("input", update));
 $("sample-text").addEventListener("input", update);
 $("reset").addEventListener("click", () => {
+  $("sample-role").value = "display";
   $("size").value = matchMedia("(max-width:620px)").matches ? "40" : "64";
   $("weight").value = "400";
   $("optical").value = "14";

@@ -1,0 +1,114 @@
+{
+  "role": "independent release engineering reviewer",
+  "font_sha256": "56cb3cbd30099ed97b0395e7eae28f9431e84ff9eede14cdfb4061f1c5873edc",
+  "independence": {
+    "prior_or_peer_reviews_read": false,
+    "inputs": "Current dist artifacts, README, docs/BUILDING, build/cache/gate source, gate status and repository tests only. Gate internals read its machine evidence as explicitly permitted.",
+    "mutations": "Only own report/scratch outputs; no dist build or font/source edits."
+  },
+  "tests": [
+    {
+      "name": "artifact metadata and manifest",
+      "result": "pass",
+      "details": "TTF 311328 B; WOFF2 93320 B (91.13 KiB); 218 glyphs; 189 encoded characters exactly matching declared charset; both cmap equal; version 0.0.3; axes wght 100/400/900 and opsz 9/14/128; nine named instances."
+    },
+    {
+      "name": "feature declarations",
+      "result": "pass",
+      "details": "GSUB calt/liga/pnum/tnum; GPOS kern present. Functional shaping not assessed here."
+    },
+    {
+      "name": "cache fingerprints",
+      "result": "pass",
+      "details": "All nine discovered versioned font/CSS/JS references match current payload digests."
+    },
+    {
+      "name": "gate/cache regression tests",
+      "result": "pass",
+      "details": "PYTHONPATH=scripts .venv/bin/python -m unittest scripts.test_web_cache font_recovery.test_design_status: 8 passed. Initial invocation lacked scripts import path; corrected invocation passed."
+    },
+    {
+      "name": "authorial release gate",
+      "result": "blocked",
+      "details": {
+        "font_sha256": "56cb3cbd30099ed97b0395e7eae28f9431e84ff9eede14cdfb4061f1c5873edc",
+        "phase": "authorial",
+        "baseline_ready": false,
+        "author_release_ready": false,
+        "technical_failures": [],
+        "audit_failures": [],
+        "below_95_cases": 160,
+        "below_95_characters": 37,
+        "pending_decisions": [
+          "D01",
+          "D02",
+          "D03",
+          "D04",
+          "D05",
+          "D06"
+        ],
+        "baseline_checkpoint_verified": true,
+        "authorial_deviations_verified": false
+      }
+    },
+    {
+      "name": "README consistency",
+      "result": "pass",
+      "details": "Coverage, sizes, axes, features, nine instances and version match binaries. README explicitly labels pilot status and incomplete participant/platform evaluation."
+    },
+    {
+      "name": "build-source inspection",
+      "result": "limited_pass",
+      "details": "Main builder generates UFO sources via local geometry modules and local source JSON; no direct SFNS/Inter reads observed. build-web compiles, checks digits/timers and refreshes caches. Full dependency/provenance audit and reproducible rebuild excluded."
+    }
+  ],
+  "evidence": {
+    "artifact_inspection": "scratchbuild/matrix003/release/artifact-inspection.json",
+    "sources": [
+      "dist/manifest.json",
+      "dist/TabunaSansVariable.ttf",
+      "dist/TabunaSansVariable.woff2",
+      "sources/compact-charset.txt",
+      "README.md",
+      "docs/BUILDING.md",
+      "scripts/build.py",
+      "scripts/build-web.sh",
+      "scripts/web_cache.py",
+      "font_recovery/design_status.py"
+    ]
+  },
+  "findings": [
+    {
+      "priority": "P1",
+      "condition": "Current authorial release gate rejects this exact TTF: all D01–D06 pending and authorial deviations unverified. Technical and numeric audit failure arrays are empty; baseline criterion has 160 cases below 95% across 37 characters.",
+      "recommendation": "Retain pilot-only positioning and complete exact-hash decision evidence before promoting an authorial-ready release. Do not equate raster similarity with reading performance.",
+      "acceptance_test": "python -m font_recovery.design_status --require authorial exits 0 for this exact approved artifact, with complete hashed evidence and no pending decisions."
+    }
+  ],
+  "limits": [
+    "No font rebuild performed; reproducibility unverified independently.",
+    "No human testing, Apple endorsement, visual/readability or full platform certification.",
+    "Gate readiness is an engineering/project decision criterion, not a reading-outcome measure.",
+    "Main build-source inspection does not prove entire dependency-chain provenance."
+  ],
+  "ui": {
+    "verdict": "conditional_pilot",
+    "scope": "Release engineering only: metadata, packaging, documented coverage and release gating; no visual legibility or user-performance assessment.",
+    "reason": "Packaging and documentation consistent; authorial gate incomplete. Reading quality requires separate evidence."
+  },
+  "headings": {
+    "verdict": "conditional_pilot",
+    "scope": "Release engineering only: metadata, packaging, documented coverage and release gating; no visual legibility or user-performance assessment.",
+    "reason": "Packaging and documentation consistent; authorial gate incomplete. Reading quality requires separate evidence."
+  },
+  "body": {
+    "verdict": "conditional_pilot",
+    "scope": "Release engineering only: metadata, packaging, documented coverage and release gating; no visual legibility or user-performance assessment.",
+    "reason": "Packaging and documentation consistent; authorial gate incomplete. Reading quality requires separate evidence."
+  },
+  "sustained_reading": {
+    "verdict": "not_established",
+    "scope": "Release engineering only: metadata, packaging, documented coverage and release gating; no visual legibility or user-performance assessment.",
+    "reason": "No participant reading study or sustained-reading evaluation performed; README appropriately limits the claim."
+  }
+}

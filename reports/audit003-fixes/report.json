@@ -1,0 +1,492 @@
+{
+  "method": "Chrome headless, CSS root text enlargement; not native Dynamic Type or real browser zoom",
+  "hashes": {
+    "index.html": "be9c0afa2a6510dad1ac4d7abd71eabf66d45852881caf1593339743398b3fdf",
+    "demo.css": "4d891a38c0b169fe627244bb72d730adc38b7d7b613f52c28293d3ddc457f546",
+    "demo.js": "c11d8e8f56a29b7e56e981c19ffa4e76e96a10ff2154bfb043fb16ff1fc20483",
+    "dist/TabunaSansVariable.woff2": "090801dbfa6086e63678a38df35c522f3032164b2e4bced9e692121bccef704e"
+  },
+  "results": [
+    {
+      "width": 320,
+      "root": 16,
+      "theme": "light",
+      "timerWidths": [
+        62.28125,
+        62.28125,
+        62.28125,
+        62.28125,
+        62.28125,
+        62.28125
+      ],
+      "viewport": 320,
+      "scrollWidth": 320,
+      "clippedControls": [],
+      "clippedText": [],
+      "articleSize": "16px",
+      "uiSize": "16px",
+      "exactSpecimenSize": "18px",
+      "feedback": "Настройки образца сохранены.",
+      "fontLoaded": true,
+      "glyphCount": 189,
+      "table": {
+        "width": 288,
+        "scroll": 288,
+        "focusable": true,
+        "label": "Табличные цифры, прокручиваемая таблица"
+      },
+      "pass": true
+    },
+    {
+      "width": 320,
+      "root": 16,
+      "theme": "dark",
+      "timerWidths": [
+        62.28125,
+        62.28125,
+        62.28125,
+        62.28125,
+        62.28125,
+        62.28125
+      ],
+      "viewport": 320,
+      "scrollWidth": 320,
+      "clippedControls": [],
+      "clippedText": [],
+      "articleSize": "16px",
+      "uiSize": "16px",
+      "exactSpecimenSize": "18px",
+      "feedback": "Настройки образца сохранены.",
+      "fontLoaded": true,
+      "glyphCount": 189,
+      "table": {
+        "width": 288,
+        "scroll": 288,
+        "focusable": true,
+        "label": "Табличные цифры, прокручиваемая таблица"
+      },
+      "pass": true
+    },
+    {
+      "width": 320,
+      "root": 32,
+      "theme": "light",
+      "timerWidths": [
+        120.234375,
+        120.234375,
+        120.234375,
+        120.234375,
+        120.234375,
+        120.234375
+      ],
+      "viewport": 320,
+      "scrollWidth": 320,
+      "clippedControls": [],
+      "clippedText": [],
+      "articleSize": "32px",
+      "uiSize": "32px",
+      "exactSpecimenSize": "18px",
+      "feedback": "Настройки образца сохранены.",
+      "fontLoaded": true,
+      "glyphCount": 189,
+      "table": {
+        "width": 288,
+        "scroll": 288,
+        "focusable": true,
+        "label": "Табличные цифры, прокручиваемая таблица"
+      },
+      "pass": true
+    },
+    {
+      "width": 320,
+      "root": 32,
+      "theme": "dark",
+      "timerWidths": [
+        120.234375,
+        120.234375,
+        120.234375,
+        120.234375,
+        120.234375,
+        120.234375
+      ],
+      "viewport": 320,
+      "scrollWidth": 320,
+      "clippedControls": [],
+      "clippedText": [],
+      "articleSize": "32px",
+      "uiSize": "32px",
+      "exactSpecimenSize": "18px",
+      "feedback": "Настройки образца сохранены.",
+      "fontLoaded": true,
+      "glyphCount": 189,
+      "table": {
+        "width": 288,
+        "scroll": 288,
+        "focusable": true,
+        "label": "Табличные цифры, прокручиваемая таблица"
+      },
+      "pass": true
+    },
+    {
+      "width": 375,
+      "root": 16,
+      "theme": "light",
+      "timerWidths": [
+        62.28125,
+        62.28125,
+        62.28125,
+        62.28125,
+        62.28125,
+        62.28125
+      ],
+      "viewport": 375,
+      "scrollWidth": 375,
+      "clippedControls": [],
+      "clippedText": [],
+      "articleSize": "16px",
+      "uiSize": "16px",
+      "exactSpecimenSize": "18px",
+      "feedback": "Настройки образца сохранены.",
+      "fontLoaded": true,
+      "glyphCount": 189,
+      "table": {
+        "width": 343,
+        "scroll": 343,
+        "focusable": true,
+        "label": "Табличные цифры, прокручиваемая таблица"
+      },
+      "pass": true
+    },
+    {
+      "width": 375,
+      "root": 16,
+      "theme": "dark",
+      "timerWidths": [
+        62.28125,
+        62.28125,
+        62.28125,
+        62.28125,
+        62.28125,
+        62.28125
+      ],
+      "viewport": 375,
+      "scrollWidth": 375,
+      "clippedControls": [],
+      "clippedText": [],
+      "articleSize": "16px",
+      "uiSize": "16px",
+      "exactSpecimenSize": "18px",
+      "feedback": "Настройки образца сохранены.",
+      "fontLoaded": true,
+      "glyphCount": 189,
+      "table": {
+        "width": 343,
+        "scroll": 343,
+        "focusable": true,
+        "label": "Табличные цифры, прокручиваемая таблица"
+      },
+      "pass": true
+    },
+    {
+      "width": 375,
+      "root": 32,
+      "theme": "light",
+      "timerWidths": [
+        120.234375,
+        120.234375,
+        120.234375,
+        120.234375,
+        120.234375,
+        120.234375
+      ],
+      "viewport": 375,
+      "scrollWidth": 375,
+      "clippedControls": [],
+      "clippedText": [],
+      "articleSize": "32px",
+      "uiSize": "32px",
+      "exactSpecimenSize": "18px",
+      "feedback": "Настройки образца сохранены.",
+      "fontLoaded": true,
+      "glyphCount": 189,
+      "table": {
+        "width": 343,
+        "scroll": 343,
+        "focusable": true,
+        "label": "Табличные цифры, прокручиваемая таблица"
+      },
+      "pass": true
+    },
+    {
+      "width": 375,
+      "root": 32,
+      "theme": "dark",
+      "timerWidths": [
+        120.234375,
+        120.234375,
+        120.234375,
+        120.234375,
+        120.234375,
+        120.234375
+      ],
+      "viewport": 375,
+      "scrollWidth": 375,
+      "clippedControls": [],
+      "clippedText": [],
+      "articleSize": "32px",
+      "uiSize": "32px",
+      "exactSpecimenSize": "18px",
+      "feedback": "Настройки образца сохранены.",
+      "fontLoaded": true,
+      "glyphCount": 189,
+      "table": {
+        "width": 343,
+        "scroll": 343,
+        "focusable": true,
+        "label": "Табличные цифры, прокручиваемая таблица"
+      },
+      "pass": true
+    },
+    {
+      "width": 768,
+      "root": 16,
+      "theme": "light",
+      "timerWidths": [
+        62.28125,
+        62.28125,
+        62.28125,
+        62.28125,
+        62.28125,
+        62.28125
+      ],
+      "viewport": 768,
+      "scrollWidth": 768,
+      "clippedControls": [],
+      "clippedText": [],
+      "articleSize": "16px",
+      "uiSize": "16px",
+      "exactSpecimenSize": "18px",
+      "feedback": "Настройки образца сохранены.",
+      "fontLoaded": true,
+      "glyphCount": 189,
+      "table": {
+        "width": 286,
+        "scroll": 286,
+        "focusable": true,
+        "label": "Табличные цифры, прокручиваемая таблица"
+      },
+      "pass": true
+    },
+    {
+      "width": 768,
+      "root": 16,
+      "theme": "dark",
+      "timerWidths": [
+        62.28125,
+        62.28125,
+        62.28125,
+        62.28125,
+        62.28125,
+        62.28125
+      ],
+      "viewport": 768,
+      "scrollWidth": 768,
+      "clippedControls": [],
+      "clippedText": [],
+      "articleSize": "16px",
+      "uiSize": "16px",
+      "exactSpecimenSize": "18px",
+      "feedback": "Настройки образца сохранены.",
+      "fontLoaded": true,
+      "glyphCount": 189,
+      "table": {
+        "width": 286,
+        "scroll": 286,
+        "focusable": true,
+        "label": "Табличные цифры, прокручиваемая таблица"
+      },
+      "pass": true
+    },
+    {
+      "width": 768,
+      "root": 32,
+      "theme": "light",
+      "timerWidths": [
+        120.234375,
+        120.234375,
+        120.234375,
+        120.234375,
+        120.234375,
+        120.234375
+      ],
+      "viewport": 768,
+      "scrollWidth": 768,
+      "clippedControls": [],
+      "clippedText": [],
+      "articleSize": "32px",
+      "uiSize": "32px",
+      "exactSpecimenSize": "18px",
+      "feedback": "Настройки образца сохранены.",
+      "fontLoaded": true,
+      "glyphCount": 189,
+      "table": {
+        "width": 245,
+        "scroll": 245,
+        "focusable": true,
+        "label": "Табличные цифры, прокручиваемая таблица"
+      },
+      "pass": true
+    },
+    {
+      "width": 768,
+      "root": 32,
+      "theme": "dark",
+      "timerWidths": [
+        120.234375,
+        120.234375,
+        120.234375,
+        120.234375,
+        120.234375,
+        120.234375
+      ],
+      "viewport": 768,
+      "scrollWidth": 768,
+      "clippedControls": [],
+      "clippedText": [],
+      "articleSize": "32px",
+      "uiSize": "32px",
+      "exactSpecimenSize": "18px",
+      "feedback": "Настройки образца сохранены.",
+      "fontLoaded": true,
+      "glyphCount": 189,
+      "table": {
+        "width": 245,
+        "scroll": 245,
+        "focusable": true,
+        "label": "Табличные цифры, прокручиваемая таблица"
+      },
+      "pass": true
+    },
+    {
+      "width": 1280,
+      "root": 16,
+      "theme": "light",
+      "timerWidths": [
+        62.28125,
+        62.28125,
+        62.28125,
+        62.28125,
+        62.28125,
+        62.28125
+      ],
+      "viewport": 1280,
+      "scrollWidth": 1280,
+      "clippedControls": [],
+      "clippedText": [],
+      "articleSize": "16px",
+      "uiSize": "16px",
+      "exactSpecimenSize": "18px",
+      "feedback": "Настройки образца сохранены.",
+      "fontLoaded": true,
+      "glyphCount": 189,
+      "table": {
+        "width": 456,
+        "scroll": 456,
+        "focusable": true,
+        "label": "Табличные цифры, прокручиваемая таблица"
+      },
+      "pass": true
+    },
+    {
+      "width": 1280,
+      "root": 16,
+      "theme": "dark",
+      "timerWidths": [
+        62.28125,
+        62.28125,
+        62.28125,
+        62.28125,
+        62.28125,
+        62.28125
+      ],
+      "viewport": 1280,
+      "scrollWidth": 1280,
+      "clippedControls": [],
+      "clippedText": [],
+      "articleSize": "16px",
+      "uiSize": "16px",
+      "exactSpecimenSize": "18px",
+      "feedback": "Настройки образца сохранены.",
+      "fontLoaded": true,
+      "glyphCount": 189,
+      "table": {
+        "width": 456,
+        "scroll": 456,
+        "focusable": true,
+        "label": "Табличные цифры, прокручиваемая таблица"
+      },
+      "pass": true
+    },
+    {
+      "width": 1280,
+      "root": 32,
+      "theme": "light",
+      "timerWidths": [
+        120.234375,
+        120.234375,
+        120.234375,
+        120.234375,
+        120.234375,
+        120.234375
+      ],
+      "viewport": 1280,
+      "scrollWidth": 1280,
+      "clippedControls": [],
+      "clippedText": [],
+      "articleSize": "32px",
+      "uiSize": "32px",
+      "exactSpecimenSize": "18px",
+      "feedback": "Настройки образца сохранены.",
+      "fontLoaded": true,
+      "glyphCount": 189,
+      "table": {
+        "width": 368,
+        "scroll": 368,
+        "focusable": true,
+        "label": "Табличные цифры, прокручиваемая таблица"
+      },
+      "pass": true
+    },
+    {
+      "width": 1280,
+      "root": 32,
+      "theme": "dark",
+      "timerWidths": [
+        120.234375,
+        120.234375,
+        120.234375,
+        120.234375,
+        120.234375,
+        120.234375
+      ],
+      "viewport": 1280,
+      "scrollWidth": 1280,
+      "clippedControls": [],
+      "clippedText": [],
+      "articleSize": "32px",
+      "uiSize": "32px",
+      "exactSpecimenSize": "18px",
+      "feedback": "Настройки образца сохранены.",
+      "fontLoaded": true,
+      "glyphCount": 189,
+      "table": {
+        "width": 368,
+        "scroll": 368,
+        "focusable": true,
+        "label": "Табличные цифры, прокручиваемая таблица"
+      },
+      "pass": true
+    }
+  ],
+  "passed": true
+}

@@ -1,0 +1,224 @@
+{
+  "role": "independent raster reviewer",
+  "font_sha256": "56cb3cbd30099ed97b0395e7eae28f9431e84ff9eede14cdfb4061f1c5873edc",
+  "independence": {
+    "prior_reports_read": false,
+    "peer_reports_read": false,
+    "font_or_source_modified": false,
+    "basis": "Fresh actual-font HarfBuzz/FreeType rendering and direct inspection of eight new proof images; only task instructions and applicable AGENTS were read.",
+    "coordination": "Received a fixture-overlap warning from root; no peer font findings or audit reports were consulted."
+  },
+  "tests": [
+    {
+      "wght": 100,
+      "opsz": 12,
+      "css_px": 12,
+      "scales": [
+        1,
+        2
+      ],
+      "renderer": "FreeType grayscale FT_LOAD_DEFAULT + HarfBuzz; 2x preview BOX downsample"
+    },
+    {
+      "wght": 100,
+      "opsz": 14,
+      "css_px": 14,
+      "scales": [
+        1,
+        2
+      ],
+      "renderer": "FreeType grayscale FT_LOAD_DEFAULT + HarfBuzz; 2x preview BOX downsample"
+    },
+    {
+      "wght": 100,
+      "opsz": 16,
+      "css_px": 16,
+      "scales": [
+        1,
+        2
+      ],
+      "renderer": "FreeType grayscale FT_LOAD_DEFAULT + HarfBuzz; 2x preview BOX downsample"
+    },
+    {
+      "wght": 100,
+      "opsz": 18,
+      "css_px": 18,
+      "scales": [
+        1,
+        2
+      ],
+      "renderer": "FreeType grayscale FT_LOAD_DEFAULT + HarfBuzz; 2x preview BOX downsample"
+    },
+    {
+      "wght": 400,
+      "opsz": 12,
+      "css_px": 12,
+      "scales": [
+        1,
+        2
+      ],
+      "renderer": "FreeType grayscale FT_LOAD_DEFAULT + HarfBuzz; 2x preview BOX downsample"
+    },
+    {
+      "wght": 400,
+      "opsz": 14,
+      "css_px": 14,
+      "scales": [
+        1,
+        2
+      ],
+      "renderer": "FreeType grayscale FT_LOAD_DEFAULT + HarfBuzz; 2x preview BOX downsample"
+    },
+    {
+      "wght": 400,
+      "opsz": 16,
+      "css_px": 16,
+      "scales": [
+        1,
+        2
+      ],
+      "renderer": "FreeType grayscale FT_LOAD_DEFAULT + HarfBuzz; 2x preview BOX downsample"
+    },
+    {
+      "wght": 400,
+      "opsz": 18,
+      "css_px": 18,
+      "scales": [
+        1,
+        2
+      ],
+      "renderer": "FreeType grayscale FT_LOAD_DEFAULT + HarfBuzz; 2x preview BOX downsample"
+    },
+    {
+      "wght": 500,
+      "opsz": 12,
+      "css_px": 12,
+      "scales": [
+        1,
+        2
+      ],
+      "renderer": "FreeType grayscale FT_LOAD_DEFAULT + HarfBuzz; 2x preview BOX downsample"
+    },
+    {
+      "wght": 500,
+      "opsz": 14,
+      "css_px": 14,
+      "scales": [
+        1,
+        2
+      ],
+      "renderer": "FreeType grayscale FT_LOAD_DEFAULT + HarfBuzz; 2x preview BOX downsample"
+    },
+    {
+      "wght": 500,
+      "opsz": 16,
+      "css_px": 16,
+      "scales": [
+        1,
+        2
+      ],
+      "renderer": "FreeType grayscale FT_LOAD_DEFAULT + HarfBuzz; 2x preview BOX downsample"
+    },
+    {
+      "wght": 500,
+      "opsz": 18,
+      "css_px": 18,
+      "scales": [
+        1,
+        2
+      ],
+      "renderer": "FreeType grayscale FT_LOAD_DEFAULT + HarfBuzz; 2x preview BOX downsample"
+    },
+    {
+      "wght": 900,
+      "opsz": 12,
+      "css_px": 12,
+      "scales": [
+        1,
+        2
+      ],
+      "renderer": "FreeType grayscale FT_LOAD_DEFAULT + HarfBuzz; 2x preview BOX downsample"
+    },
+    {
+      "wght": 900,
+      "opsz": 14,
+      "css_px": 14,
+      "scales": [
+        1,
+        2
+      ],
+      "renderer": "FreeType grayscale FT_LOAD_DEFAULT + HarfBuzz; 2x preview BOX downsample"
+    },
+    {
+      "wght": 900,
+      "opsz": 16,
+      "css_px": 16,
+      "scales": [
+        1,
+        2
+      ],
+      "renderer": "FreeType grayscale FT_LOAD_DEFAULT + HarfBuzz; 2x preview BOX downsample"
+    },
+    {
+      "wght": 900,
+      "opsz": 18,
+      "css_px": 18,
+      "scales": [
+        1,
+        2
+      ],
+      "renderer": "FreeType grayscale FT_LOAD_DEFAULT + HarfBuzz; 2x preview BOX downsample"
+    }
+  ],
+  "evidence": [
+    "build/matrix003/raster/weight-100.png",
+    "build/matrix003/raster/weight-400.png",
+    "build/matrix003/raster/weight-500.png",
+    "build/matrix003/raster/weight-900.png",
+    "build/matrix003/raster/dark-weight-100.png",
+    "build/matrix003/raster/dark-weight-400.png",
+    "build/matrix003/raster/dark-weight-500.png",
+    "build/matrix003/raster/dark-weight-900.png"
+  ],
+  "backgrounds": {
+    "light": "0 on 255",
+    "dark": "245 on 20; separately composited glyph masks"
+  },
+  "verdicts": {
+    "ui": "Conditional pass for 400/500 at 14–18px; 12px recognizable but less robust. Do not use 100 for essential small UI. 900 only brief emphasis. Platform validation outstanding.",
+    "headings": "Small headings at 16–18px 400/500/900 readable. Larger heading sizes not tested; Thin heading approval outside scope.",
+    "body": "Conditional pass for short RU/EN text at 16–18px 400/500. Thin and 900 unsuitable as default body in this matrix.",
+    "sustained_reading": "Not established: short isolated lines only; no extended reading or participant test."
+  },
+  "findings": [
+    {
+      "priority": "P1",
+      "condition": "wght100, 12–18px, native1x and synthetic2x, both backgrounds",
+      "observation": "Thin strokes and punctuation have very low apparent coverage; 12–14px text is substantially weaker than regular, and 2x does not restore regular-like robustness.",
+      "recommendation": "Restrict Thin to decorative text after size-specific evaluation; default essential UI/body to 400 or 500. This is a usage constraint, not proof of a malformed font.",
+      "acceptance_test": "Inspect RU/EN controls and punctuation at real 1x/2x on target platforms; all essential labels use a weight maintaining clear strokes under normal viewing."
+    },
+    {
+      "priority": "P2",
+      "condition": "wght900, 12–14px, both backgrounds",
+      "observation": "Dense Cyrillic combinations and English e/a counters become cramped. Text remains decipherable, but word silhouettes are markedly heavier and apertures less robust than at 400/500.",
+      "recommendation": "Use 900 for short emphasis rather than dense small text; prefer 400/500 for controls and paragraphs.",
+      "acceptance_test": "At 12/14px, verify counters in е/а/e/a and dense ш/щ/ы clusters stay visibly open on each target platform; use a lower weight where they do not."
+    },
+    {
+      "priority": "P2",
+      "condition": "400/500 at12px native1x, punctuation and isolated identifiers",
+      "observation": "Periods, comma tails and fine distinctions among Il1/O0 require more attention than 16–18px. No wholesale punctuation disappearance was seen in regular/medium.",
+      "recommendation": "Prefer 14px or larger for essential text and 16–18px for body; evaluate identifier-heavy UI separately.",
+      "acceptance_test": "Native display checks at12/14px must permit reliable distinction of comma/period, quotes, Il1 and O0 in task-realistic strings."
+    }
+  ],
+  "limits": [
+    "FreeType grayscale FT_LOAD_DEFAULT with HarfBuzz positioning; this is a synthetic renderer, not CoreText, browser, DirectWrite or hardware evidence.",
+    "2x is rendered at twice the pixel size while keeping opsz at CSS size, then BOX-downsampled for comparative display. Dark raw2x images are retained. These previews are not measurements of a physical Retina panel.",
+    "Only eight composite proof images were visually inspected; screenshot presentation can itself rescale images.",
+    "opsz matched numerically to pixel size by explicit design-coordinate setting; CSS optical-sizing behavior was not tested.",
+    "No long paragraphs, human reading-speed/comfort study, fallback, browser shaping, contrast accessibility certification or broad script coverage."
+  ],
+  "fixture_correction": "Fixture correction: initial sheets advanced 27px for 40px image strips and overwrote descenders. Root flagged the overlap; row spacing was corrected to40px, all eight sheets regenerated and re-inspected. Final findings use corrected proofs only. This was a harness defect, not a font defect."
+}

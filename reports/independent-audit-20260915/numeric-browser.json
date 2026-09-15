@@ -1,0 +1,48 @@
+{
+  "font_sha256": "5888eecc912f46f14b7807906d2ffc0a42d543a3695465b76a83b699373344b9",
+  "browser": "Codex in-app browser",
+  "fixture": "build/independent-audit-20260915/engineering/repro.html",
+  "fixture_sha256": "936fd1937328f0e70cd496cf970ed1b95e0377be6a6062904ace6970f622617a",
+  "loaded_face_count": 1,
+  "loaded_face_status": "loaded",
+  "font_synthesis": "none",
+  "rows": [
+    {
+      "css_size": 100,
+      "weight": 900,
+      "optical": "explicit128",
+      "tnum_width": 567.3828125,
+      "pnum_width": 679.0078125
+    },
+    {
+      "css_size": 18,
+      "weight": 900,
+      "optical": "auto",
+      "tnum_width": 108.1953125,
+      "pnum_width": 124.6484375
+    },
+    {
+      "css_size": 24,
+      "weight": 900,
+      "optical": "auto",
+      "tnum_width": 139.5703125,
+      "pnum_width": 165.4296875
+    },
+    {
+      "css_size": 32,
+      "weight": 900,
+      "optical": "auto",
+      "tnum_width": 185.625,
+      "pnum_width": 221.34375
+    },
+    {
+      "css_size": 48,
+      "weight": 725,
+      "optical": "auto",
+      "tnum_width": 277.5,
+      "pnum_width": 317.6484375
+    }
+  ],
+  "visual_confirmation": "Severe merging of tabular digits in explicit900/128; visibly crowded/merged sequences also in auto32px900 and48px725. Proportional comparison stays separated.",
+  "limitation": "Computed style exposes auto, not the actual optical coordinate selected by this browser; CSS sizes are not asserted to equal font opsz units."
+}

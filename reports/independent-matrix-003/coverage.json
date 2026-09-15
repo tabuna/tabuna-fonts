@@ -1,0 +1,10 @@
+{
+  "expected_count": 189,
+  "actual_count": 189,
+  "missing": [],
+  "extra": [],
+  "bullet_in_requested_set": false,
+  "bullet_in_font": false,
+  "font_sha256": "56cb3cbd30099ed97b0395e7eae28f9431e84ff9eede14cdfb4061f1c5873edc",
+  "arbitration": "U+2022 absence is outside the explicit 189-character contract; fallback policy is an integration requirement, not a missing contracted glyph."
+}

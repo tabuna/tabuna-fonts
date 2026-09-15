@@ -11,6 +11,7 @@ import fixed_ereversed_quadratics
 import fixed_copyright_quadratics
 import fixed_dollar_quadratics
 import open_double_bowls
+import tabular
 import argparse
 import json
 import os
@@ -108,7 +109,7 @@ import yo_dots
 ROOT=Path(__file__).resolve().parents[1]
 SOURCES=ROOT/'sources'
 DIST=ROOT/'dist'
-VERSION='0.0.1'
+VERSION='0.0.3'
 MARKS='\u0300\u0301\u0302\u0303\u0304\u0306\u0307\u0308\u030A\u030B\u030C\u0326\u0327\u0328'
 EXTRA='ȘșȚțҐґ€₽₴№−×÷±≠≤≥≈∞√‘’‚“”„‹›«»‐‑–—…•\u2002\u2003\u2009\u202F\u2007\u200B\u2060\uFEFF'
 CHARSET=sorted(set(chr(c) for c in list(range(0x20,0x7f))+list(range(0xA0,0x180))+list(range(0x400,0x460))) | set(MARKS+EXTRA))
@@ -125,7 +126,7 @@ class Source:
         self.f=Font();i=self.f.info
         i.familyName='Tabuna Sans';i.styleName=f'{WEIGHTS[weight]} Optical {optical}'
         i.unitsPerEm=1000;i.ascender=950;i.descender=-260;i.capHeight=710;i.xHeight=self.d.h
-        i.versionMajor=0;i.versionMinor=1
+        i.versionMajor=0;i.versionMinor=3
         i.openTypeNameVersion=f'Version {VERSION}'
         i.copyright='Copyright 2026 The Tabuna Sans Project Authors'
         i.openTypeNameDesigner='The Tabuna Sans Project Authors'
@@ -464,6 +465,8 @@ class Source:
 
 
 def generate():
+    import character
+    character_config=character.load()
     SOURCES.mkdir(exist_ok=True)
     ds=DesignSpaceDocument()
     for tag,n,mi,default,ma in [('wght','Weight',100,400,900),('opsz','Optical size',*optics.AXIS_RANGE)]:
@@ -471,7 +474,9 @@ def generate():
         ds.addAxis(axis)
     for optical in optics.MASTER_SIZES:
         for weight in (100,400,900):
-            f=Source(weight,optical).finish()
+            source=Source(weight,optical)
+            f=source.finish()
+            character.apply(f,source.d,character_config)
             scale_source(f)
             fixed_e_quadratics.apply(f)
             fixed_open_double_quadratics.apply(f)
@@ -482,6 +487,7 @@ def generate():
             fixed_ereversed_quadratics.apply(f)
             fixed_copyright_quadratics.apply(f)
             fixed_dollar_quadratics.apply(f)
+            tabular.apply(f)
             path=SOURCES/f'TabunaSans-{weight}-{optical}.ufo';f.save(path,overwrite=True)
             src=SourceDescriptor();src.path=str(path);src.name=f'w{weight}o{optical}'
             src.familyName=f.info.familyName;src.styleName=f.info.styleName
@@ -580,7 +586,7 @@ def compile_font():
     font['name'].setName('TabunaSans-Regular',6,3,1,0x409)
     font['name'].setName('Tabuna Sans',16,3,1,0x409)
     font['name'].setName('Regular',17,3,1,0x409)
-    font['name'].setName('0.900;TBNA;TabunaSans-Regular',3,3,1,0x409)
+    font['name'].setName(f'{VERSION};TBNA;TabunaSans-Regular',3,3,1,0x409)
     for glyph_name in font.getGlyphOrder():
         glyph=font['glyf'][glyph_name]
         if glyph.isComposite():

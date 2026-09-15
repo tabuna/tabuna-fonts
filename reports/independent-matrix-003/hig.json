@@ -1,0 +1,120 @@
+{
+  "role": "Independent Apple HIG and accessibility perspective; source audit",
+  "font_version": "0.0.3",
+  "font_sha256": "090801dbfa6086e63678a38df35c522f3032164b2e4bced9e692121bccef704e",
+  "font_sha256_by_file": {
+    "dist/TabunaSansVariable.woff2": "090801dbfa6086e63678a38df35c522f3032164b2e4bced9e692121bccef704e",
+    "dist/TabunaSansVariable.ttf": "56cb3cbd30099ed97b0395e7eae28f9431e84ff9eede14cdfb4061f1c5873edc"
+  },
+  "independence": {
+    "first_review_blind": true,
+    "prior_reports_or_other_agent_results_read": false,
+    "source_readonly": true,
+    "authority": "Analytical review, not Apple employee review, certification, or human study."
+  },
+  "scope": "Existing web demo viewed from Safari/macOS/iOS accessibility principles; no native Apple app supplied. Source inspection only.",
+  "references": {
+    "typography": "https://developer.apple.com/design/human-interface-guidelines/typography",
+    "accessibility": "https://developer.apple.com/design/human-interface-guidelines/accessibility",
+    "layout": "https://developer.apple.com/design/human-interface-guidelines/layout"
+  },
+  "tests": [
+    {
+      "id": "font-identity",
+      "method": "SHA-256 and dist/manifest.json read",
+      "result": "Manifest version 0.0.3; axes wght 100–900 and opsz 9–128; 189 characters. No binary shaping assertion made."
+    },
+    {
+      "id": "actual-font-scope",
+      "method": "index.html + dist/tabuna.css + demo.css",
+      "result": "Page chrome is system-ui; custom .tabuna used on hero, article, explicit UI sample, figures/table and weight specimens. Scoped buttons inherit custom font. This demonstrates a real but narrow UI sample."
+    },
+    {
+      "id": "role-defaults",
+      "method": "demo.js update() and sample-role handler",
+      "result": "UI preset 16px/500, body 18px/400, display 64px/400; auto optical sizing enabled. UI line-height 1.45; body 1.6. Static article 1rem/400, line-height 1.65; UI 1rem/1.45 with button weight500."
+    },
+    {
+      "id": "heading-defaults",
+      "method": "demo.css",
+      "result": "Hero weight450, line-height1.02, negative tracking and nowrap. Article heading weight500, clamp(2rem,3.4vw,3.5rem), line-height1.08; two intentional lines via br."
+    },
+    {
+      "id": "adaptation",
+      "method": "demo.css and index.html",
+      "result": "Viewport permits zoom; rem-based static article/UI; 620px reading columns collapse; navigation wraps; focus-visible outline, labeled native controls, status regions, light/dark palettes, contrast/forced-colors handling. Specimen JavaScript writes absolute px sizes."
+    },
+    {
+      "id": "hig-reference",
+      "method": "Read apple-hig SKILL.md, review-workflow.md, relevant foundations and page-index entries; open official Typography/Accessibility/Layout URLs",
+      "result": "Official pages resolved but web extraction returned JavaScript-required shells. General guidance routed by installed snapshot; no exact platform size requirements asserted."
+    }
+  ],
+  "verdicts": {
+    "ui": {
+      "status": "conditional",
+      "reason": "Suitable to continue limited 16px/500 interface trials. Actual checkbox/button sample uses Tabuna, but system-font page chrome does not validate broader UI deployment; adaptive native integration and runtime assistive-technology testing remain unverified."
+    },
+    "headings": {
+      "status": "conditional",
+      "reason": "Hierarchy and moderate default weights are reasonable. Large headline use remains provisional pending large-text reflow and rendered glyph/spacing review; hero nowrap is a concrete adaptation risk."
+    },
+    "body": {
+      "status": "conditional",
+      "reason": "1rem/400 static paragraphs and 18px/400 body preset with 1.6–1.65 leading provide a reasonable starting setup; source settings alone do not establish font legibility."
+    },
+    "sustained_reading": {
+      "status": "not_established",
+      "reason": "Only two short demonstration paragraphs; no long-form task, controlled reader evidence, low-vision evaluation, or fatigue measure. Cannot approve sustained reading from HIG-oriented source inspection."
+    }
+  },
+  "findings": [
+    {
+      "id": "HIG-003-01",
+      "priority": "medium",
+      "condition": "Specimen update() assigns target.style.fontSize = size + px. Raising browser default font size changes rem-based article/UI but leaves preset 16/18/64px specimen sizes fixed, absent page zoom or manual slider adjustment.",
+      "impact": "The role specimen and production-like article respond differently to user text preferences; optical sizing auto does not itself implement text scaling.",
+      "recommendation": "Keep a documented distinction between exact-pixel proof mode and scalable content mode; implement role samples with relative text scaling. For native iOS integration scale custom fonts through platform text styles/Dynamic Type.",
+      "acceptance_test": "At default browser font sizes 16px and 32px, verify scalable UI/body text increases and all labels/status/control text remains readable without overlap; separately test Safari page zoom. Native adoption must test all supported Dynamic Type sizes.",
+      "evidence": [
+        "demo.js update()",
+        "demo.css .article-sample and .ui-sample",
+        "https://developer.apple.com/design/human-interface-guidelines/typography",
+        "https://developer.apple.com/design/human-interface-guidelines/accessibility"
+      ]
+    },
+    {
+      "id": "HIG-003-02",
+      "priority": "medium",
+      "condition": "Hero h1 uses white-space:nowrap with a mobile minimum font-size of 2.8rem; headline cannot wrap as user text size grows.",
+      "impact": "Potential horizontal overflow at narrow widths and enlarged root text; source risk, not a reproduced runtime failure.",
+      "recommendation": "Allow an accessible wrap strategy or revise responsive headline sizing based on available width while preserving text enlargement.",
+      "acceptance_test": "At widths320/375/768px and enlarged text or 200% zoom, verify full Tabuna Sans title remains available without clipping or page-level horizontal scrolling. Record screenshots and scrollWidth/clientWidth.",
+      "evidence": [
+        "demo.css .hero h1 and max-width620px",
+        "https://developer.apple.com/design/human-interface-guidelines/layout",
+        "https://developer.apple.com/design/human-interface-guidelines/typography"
+      ]
+    },
+    {
+      "id": "HIG-003-03",
+      "priority": "medium",
+      "condition": "The demo presents an interface font and a 16–18px body starting recommendation, but supplies only a short article and one checkbox/button task.",
+      "impact": "These samples support experimentation, not a claim of broad Apple UI readiness or sustained-reading suitability.",
+      "recommendation": "Keep the visible in-development qualifier and describe target use as provisional; add long-form Russian/English reading and realistic dense UI validation before stronger claims.",
+      "acceptance_test": "Document tested device/browser, exact font hash, text-size/weight/opsz, scaling, low-vision/VoiceOver observations, and reader outcomes for long-form passages; do not equate HIG review with certification.",
+      "evidence": [
+        "index.html hero-note, caption, reading section",
+        "https://developer.apple.com/design/human-interface-guidelines/typography",
+        "https://developer.apple.com/design/human-interface-guidelines/accessibility"
+      ]
+    }
+  ],
+  "limitations": [
+    "No browser rendering, visual glyph evaluation, VoiceOver, keyboard traversal, zoom execution, native Dynamic Type test, or human readability study was performed in this bounded review.",
+    "No previous reports, matrices, research evaluations, or other agents’ results were read.",
+    "Official HIG live content was not extractable; general principles come from installed skill snapshot dated 2026-08-03.",
+    "FontTools was unavailable in default python3; no outline-width measurement was used as evidence.",
+    "Conditional verdicts concern the evidence and demo integration; they neither certify nor reject intrinsic glyph quality."
+  ]
+}

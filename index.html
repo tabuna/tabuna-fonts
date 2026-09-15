@@ -5,11 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light dark">
   <title>Tabuna Sans — собственный вариативный шрифт</title>
-  <link rel="preload" href="dist/TabunaSansVariable.woff2?v=59b13381af3b" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="dist/tabuna.css?v=59b13381af3b">
-  <link rel="stylesheet" href="demo.css">
-  <script src="sources/charset.js" defer></script>
-  <script src="demo.js" defer></script>
+  <link rel="preload" href="dist/TabunaSansVariable.woff2?v=090801dbfa60" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="dist/tabuna.css?v=a33d9672c1a9">
+  <link rel="stylesheet" href="demo.css?v=4d891a38c0b1">
+  <script src="sources/charset.js?v=fcbb41d90a9b" defer></script>
+  <script src="demo.js?v=c11d8e8f56a2" defer></script>
 </head>
 <body>
   <header class="masthead container">
@@ -23,13 +23,14 @@
       <h1 id="title" class="tabuna">Tabuna Sans<span class="hero-period">.</span></h1>
       <div class="hero-bottom">
         <p class="intro tabuna">Знакомое ощущение.<br>Собственный почерк.</p>
-        <div class="hero-note"><p>Компактная параметрическая гарнитура в разработке. 189 символов, латиница и русский алфавит. Плавная толщина и оптический размер.</p><a class="download" href="dist/TabunaSansVariable.woff2" download>Скачать WOFF2 <span aria-hidden="true">↗</span></a></div>
+        <div class="hero-note"><p>Компактная параметрическая гарнитура в разработке. 189 символов, латиница и русский алфавит. Плавная толщина и оптический размер.</p><a class="download" href="dist/TabunaSansVariable.woff2?v=090801dbfa60" download>Скачать WOFF2 <span aria-hidden="true">↗</span></a></div>
       </div>
       <dl class="facts"><div><dt>Толщина</dt><dd>100 — 900</dd></div><div><dt>Оптический размер</dt><dd>9 — 128 pt</dd></div><div><dt>Лицензия</dt><dd>Open Font License</dd></div><div><dt>Начертание</dt><dd>Прямое</dd></div></dl>
     </section>
     <section id="specimen" class="specimen" aria-labelledby="specimen-title">
       <div class="container">
-        <div class="section-title"><h2 id="specimen-title">01 / Живой образец</h2><span id="font-status" role="status">Загрузка шрифта…</span></div>
+        <div class="section-title"><h2 id="specimen-title">01 / Живой образец — точный размер</h2><span id="font-status" role="status">Загрузка шрифта…</span></div>
+        <label class="filter-label" for="sample-role">Назначение <select id="sample-role"><option value="display">Заголовок</option><option value="ui">Интерфейс</option><option value="body">Текст</option></select></label>
         <div class="controls">
           <label>Размер <output id="size-value" for="size">64 px</output><input id="size" type="range" min="12" max="96" step="1" value="64"></label>
           <label>Толщина <output id="weight-value" for="weight">400</output><input id="weight" type="range" min="100" max="900" step="1" value="400"></label>
@@ -40,16 +41,26 @@
         <textarea id="sample-text" class="tabuna" rows="3" spellcheck="false">Ясность в каждой букве.
 Designed to feel familiar.</textarea>
         <div id="comparison" hidden><p class="sample-label">Системный шрифт <span>На Apple — системная гарнитура Apple</span></p><div id="system-sample"></div></div>
-        <p class="caption">Сходство по характеру с системной типографикой Apple. Собственная модель в разработке; независимость всех старых контуров ещё проверяется.</p>
+        <p class="caption">Размер ползунка задан в CSS-пикселях. Масштабируемые примеры интерфейса и чтения находятся ниже. Для мелкого текста начните с веса 400–500; Thin и Black оставьте для крупных надписей и коротких акцентов.</p>
       </div>
     </section>
     <section class="reading container" aria-labelledby="reading-title">
-      <div class="section-title"><h2 id="reading-title">02 / В работе</h2><span>От короткой подписи до большой мысли</span></div>
+      <div class="section-title"><h2 id="reading-title">02 / В работе</h2><span>Масштабируется с настройками текста</span></div>
       <div class="reading-grid">
-        <article class="tabuna article-sample"><p class="overline">ПРОСТЫЕ ИДЕИ, ТОЧНЫЕ ФОРМЫ</p><h3>Хороший текст<br>начинается с ясности.</h3><p>Шрифт задаёт темп чтения. Он помогает заметить главное, различить похожие символы и спокойно перейти к следующей строке. В мелком тексте важны открытые формы, в заголовке — пропорции и ритм.</p><p>Хорошая типографика работает и в привычных деталях: названиях разделов, длинных абзацах, датах и числах. Её задача — сделать содержание понятным.</p><p class="small">16 px / Regular 400 / Optical size auto</p></article>
+        <article class="tabuna article-sample"><p class="overline">ПРОСТЫЕ ИДЕИ, ТОЧНЫЕ ФОРМЫ</p><h3>Хороший текст<br>начинается с ясности.</h3><p>Шрифт задаёт темп чтения. Он помогает заметить главное, различить похожие символы и спокойно перейти к следующей строке. В мелком тексте важны открытые формы, в заголовке — пропорции и ритм.</p><p>Хорошая типографика работает и в привычных деталях: названиях разделов, длинных абзацах, датах и числах. Её задача — сделать содержание понятным.</p><details class="extended-reading"><summary>Продолжить чтение · RU / EN</summary>
+<p>Утро в библиотеке начинается с простых действий. Ольга открывает окно, проверяет список заказов и раскладывает книги на широком столе. Вчера читатели попросили оставить три сборника рассказов и атлас старого города. До открытия остаётся полчаса: достаточно времени, чтобы найти нужные издания и проверить номера на корешках.</p>
+<p>На экране рядом стоят похожие названия. Одно относится к городской площади, другое — к небольшой станции за рекой. Ольга не торопится: сначала сверяет автора, потом год издания. Короткая подпись помогает отличить запись от соседней, а свободное место между строками позволяет вернуться к началу, не потеряв нужную книгу.</p>
+<p>Первый посетитель приходит за атласом. Он изучает маршрут прогулки и хочет понять, как менялись улицы вокруг набережной. Они вместе находят старую карту, сравнивают её с новой и отмечают два сохранившихся моста. Названия нескольких переулков изменились, но очертания кварталов остались знакомыми.</p>
+<p>К полудню зал наполняется. Кто-то читает длинную статью, кто-то ищет дату в справочнике. Сотрудники отвечают на вопросы и обновляют каталог. Хорошо устроенная запись не требует разгадывать обозначения: заголовок называет предмет, пояснение добавляет контекст, а числа занимают предсказуемое место.</p>
+<div lang="en"><p>A small workshop keeps its records in a shared catalogue. Each morning, Daniel checks the orders, compares the quantities, and writes down any changes. Most entries are short, but a few need a longer explanation. The layout gives each kind of information enough space without hiding the connection between a product and its details.</p>
+<p>Today a customer asks for a replacement handle. Two parts have similar names, so Daniel compares their dimensions before choosing one. He reads the description, checks the drawing, and looks at the order date. The sequence matters: a clear label helps him find the entry, while the paragraph explains whether the part will fit.</p>
+<p>Later, a colleague reviews the same record on a smaller screen. The lines wrap differently, but the information stays in the same order. She enlarges the text to read comfortably and continues from the last paragraph. A useful interface keeps this ordinary adjustment simple; the reader should not need to restore the layout before returning to the task.</p>
+<p>At the end of the day, they check the notes together. One figure needs correction and another entry needs a clearer description. They save the changes and leave the next morning's work in order. Careful records are built through small, repeatable decisions: checking a number, choosing a precise word, and keeping enough context for the next person.</p></div>
+</details><p class="small">1 rem / Regular 400 / Optical size auto</p></article>
         <div class="detail-samples">
+          <div class="tabuna ui-sample"><p>Настройки уведомлений</p><label class="check"><input type="checkbox" checked> Сообщать об изменениях</label><button type="button" id="ui-save">Сохранить настройки</button><p id="ui-feedback" role="status">Изменения сохраняются в этом образце.</p></div>
           <div class="tabuna metric-sample"><span>Баланс символов</span><p>Аа Бб Rr Gg</p><div class="distinction">Il1 · O0 · ДЛ · Йё</div></div>
-          <div class="tabuna table-sample"><table><caption>Табличные цифры</caption><thead><tr><th scope="col">Начертание</th><th scope="col">Значение</th></tr></thead><tbody><tr><td>Regular</td><td>12 480,00 ₽</td></tr><tr><td>Medium</td><td>98 765,43 ₽</td></tr><tr><td>Semibold</td><td>11 111,11 ₽</td></tr></tbody></table></div>
+          <div class="tabuna table-sample" role="region" aria-label="Табличные цифры, прокручиваемая таблица" tabindex="0"><table><caption>Табличные цифры</caption><thead><tr><th scope="col">Начертание</th><th scope="col">Значение</th></tr></thead><tbody><tr><td>Regular</td><td>12 480,00 ₽</td></tr><tr><td>Medium</td><td>98 765,43 ₽</td></tr><tr><td>Semibold</td><td>11 111,11 ₽</td></tr><tr style="font-weight:900"><td>Black</td><td>88 444,00 ₽</td></tr></tbody></table></div>
         </div>
       </div>
       <div class="weight-list tabuna" aria-label="Девять весов">
@@ -59,13 +70,13 @@ Designed to feel familiar.</textarea>
     <section id="glyphs" class="glyph-section container" aria-labelledby="glyph-title">
       <div class="section-title"><h2 id="glyph-title">03 / Набор символов</h2><span id="glyph-count">Латиница, кириллица, знаки</span></div>
       <label class="filter-label" for="glyph-filter">Показать <select id="glyph-filter"><option value="all">Весь набор</option><option value="basic">Все буквы</option><option value="latin">Латиница</option><option value="cyrillic">Кириллица</option><option value="signs">Цифры и знаки</option></select></label>
-      <label class="filter-label" for="glyph-weight">Толщина набора <output id="glyph-weight-value" for="glyph-weight">100</output><input id="glyph-weight" type="range" min="100" max="900" step="1" value="100"></label>
+      <label class="filter-label" for="glyph-weight">Толщина набора <output id="glyph-weight-value" for="glyph-weight">400</output><input id="glyph-weight" type="range" min="100" max="900" step="1" value="400"></label>
       <div id="glyph-grid" class="glyph-grid tabuna"></div>
       <noscript>АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ · ABCDEFGHIJKLMNOPQRSTUVWXYZ · 0123456789</noscript>
     </section>
     <section id="use" class="use-section container" aria-labelledby="use-title">
       <div class="section-title"><h2 id="use-title">04 / Подключение</h2><span>Один WOFF2 · Без зависимостей</span></div>
-      <div class="use-grid"><div><h3 class="tabuna">Готов к вашему тексту.</h3><p>Разместите файл рядом со стилями. Вес управляется обычным <code>font-weight</code>, оптический размер — автоматически.</p><div class="links"><a href="dist/TabunaSansVariable.woff2" download>WOFF2 ↗</a><a href="dist/TabunaSansVariable.ttf" download>TTF ↗</a><a href="OFL.txt">Лицензия ↗</a></div></div><pre><code>@font-face {
+      <div class="use-grid"><div><h3 class="tabuna">Попробуйте в своём интерфейсе.</h3><p>Разместите файл рядом со стилями. Вес управляется обычным <code>font-weight</code>, оптический размер — автоматически.</p><div class="links"><a href="dist/TabunaSansVariable.woff2?v=090801dbfa60" download>WOFF2 ↗</a><a href="dist/TabunaSansVariable.ttf" download>TTF ↗</a><a href="OFL.txt">Лицензия ↗</a></div></div><pre><code>@font-face {
   font-family: "Tabuna Sans";
   src: url("TabunaSansVariable.woff2")
        format("woff2");

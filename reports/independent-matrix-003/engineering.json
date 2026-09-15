@@ -1,0 +1,2293 @@
+{
+  "role": "Independent OpenType engineer (automated technical audit; not a human reader or Apple review)",
+  "font_sha256": {
+    "TabunaSansVariable.ttf": "56cb3cbd30099ed97b0395e7eae28f9431e84ff9eede14cdfb4061f1c5873edc",
+    "TabunaSansVariable.woff2": "090801dbfa6086e63678a38df35c522f3032164b2e4bced9e692121bccef704e"
+  },
+  "independence": {
+    "prior_reports_read": false,
+    "other_reviewers_findings_read": false,
+    "fresh_test_script": "scratchbuild/matrix003/engineering/audit.py",
+    "font_and_source_modified": false
+  },
+  "tests": {
+    "counts": {
+      "shapes": 31588,
+      "container_equivalence": 4050,
+      "default_pnum_equivalence": 450,
+      "tabular_digit_equal_width": 25,
+      "tabular_separator_sets": 225,
+      "glyph_bounds": 5450
+    },
+    "locations": [
+      {
+        "wght": 100,
+        "opsz": 9
+      },
+      {
+        "wght": 100,
+        "opsz": 14
+      },
+      {
+        "wght": 100,
+        "opsz": 32
+      },
+      {
+        "wght": 100,
+        "opsz": 72
+      },
+      {
+        "wght": 100,
+        "opsz": 128
+      },
+      {
+        "wght": 250,
+        "opsz": 9
+      },
+      {
+        "wght": 250,
+        "opsz": 14
+      },
+      {
+        "wght": 250,
+        "opsz": 32
+      },
+      {
+        "wght": 250,
+        "opsz": 72
+      },
+      {
+        "wght": 250,
+        "opsz": 128
+      },
+      {
+        "wght": 400,
+        "opsz": 9
+      },
+      {
+        "wght": 400,
+        "opsz": 14
+      },
+      {
+        "wght": 400,
+        "opsz": 32
+      },
+      {
+        "wght": 400,
+        "opsz": 72
+      },
+      {
+        "wght": 400,
+        "opsz": 128
+      },
+      {
+        "wght": 650,
+        "opsz": 9
+      },
+      {
+        "wght": 650,
+        "opsz": 14
+      },
+      {
+        "wght": 650,
+        "opsz": 32
+      },
+      {
+        "wght": 650,
+        "opsz": 72
+      },
+      {
+        "wght": 650,
+        "opsz": 128
+      },
+      {
+        "wght": 900,
+        "opsz": 9
+      },
+      {
+        "wght": 900,
+        "opsz": 14
+      },
+      {
+        "wght": 900,
+        "opsz": 32
+      },
+      {
+        "wght": 900,
+        "opsz": 72
+      },
+      {
+        "wght": 900,
+        "opsz": 128
+      }
+    ],
+    "feature_sets": [
+      {},
+      {
+        "calt": 0
+      },
+      {
+        "pnum": 1
+      },
+      {
+        "tnum": 1
+      },
+      {
+        "pnum": 1,
+        "tnum": 1
+      },
+      {
+        "tnum": 1,
+        "calt": 0
+      },
+      {
+        "tnum": [
+          [
+            0,
+            1,
+            1
+          ]
+        ]
+      },
+      {
+        "tnum": [
+          [
+            2,
+            3,
+            1
+          ]
+        ]
+      },
+      {
+        "tnum": 1,
+        "pnum": [
+          [
+            0,
+            1,
+            1
+          ]
+        ]
+      }
+    ],
+    "failures": [],
+    "evidence": [
+      {
+        "text": "1:2",
+        "features": {},
+        "result": [
+          [
+            "one",
+            0,
+            928,
+            0,
+            0
+          ],
+          [
+            "colon.case",
+            1,
+            596,
+            0,
+            0
+          ],
+          [
+            "two",
+            2,
+            1214,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "text": "1:2",
+        "features": {
+          "calt": 0
+        },
+        "result": [
+          [
+            "one",
+            0,
+            928,
+            0,
+            0
+          ],
+          [
+            "colon",
+            1,
+            596,
+            0,
+            0
+          ],
+          [
+            "two",
+            2,
+            1214,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "text": "1:2",
+        "features": {
+          "pnum": 1
+        },
+        "result": [
+          [
+            "one",
+            0,
+            928,
+            0,
+            0
+          ],
+          [
+            "colon.case",
+            1,
+            596,
+            0,
+            0
+          ],
+          [
+            "two",
+            2,
+            1214,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "text": "1:2",
+        "features": {
+          "tnum": 1
+        },
+        "result": [
+          [
+            "one.tnum",
+            0,
+            1286,
+            0,
+            0
+          ],
+          [
+            "colon.case",
+            1,
+            586,
+            0,
+            0
+          ],
+          [
+            "two.tnum",
+            2,
+            1286,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "text": "1:2",
+        "features": {
+          "pnum": 1,
+          "tnum": 1
+        },
+        "result": [
+          [
+            "one",
+            0,
+            928,
+            0,
+            0
+          ],
+          [
+            "colon.case",
+            1,
+            596,
+            0,
+            0
+          ],
+          [
+            "two",
+            2,
+            1214,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "text": "1:2",
+        "features": {
+          "tnum": 1,
+          "calt": 0
+        },
+        "result": [
+          [
+            "one.tnum",
+            0,
+            1286,
+            0,
+            0
+          ],
+          [
+            "colon",
+            1,
+            586,
+            0,
+            0
+          ],
+          [
+            "two.tnum",
+            2,
+            1286,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "text": "1:2",
+        "features": {
+          "tnum": [
+            [
+              0,
+              1,
+              1
+            ]
+          ]
+        },
+        "result": [
+          [
+            "one.tnum",
+            0,
+            1286,
+            0,
+            0
+          ],
+          [
+            "colon.case",
+            1,
+            596,
+            0,
+            0
+          ],
+          [
+            "two",
+            2,
+            1214,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "text": "1:2",
+        "features": {
+          "tnum": [
+            [
+              2,
+              3,
+              1
+            ]
+          ]
+        },
+        "result": [
+          [
+            "one",
+            0,
+            928,
+            0,
+            0
+          ],
+          [
+            "colon.case",
+            1,
+            586,
+            0,
+            0
+          ],
+          [
+            "two.tnum",
+            2,
+            1286,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "text": "1:2",
+        "features": {
+          "tnum": 1,
+          "pnum": [
+            [
+              0,
+              1,
+              1
+            ]
+          ]
+        },
+        "result": [
+          [
+            "one",
+            0,
+            928,
+            0,
+            0
+          ],
+          [
+            "colon.case",
+            1,
+            586,
+            0,
+            0
+          ],
+          [
+            "two.tnum",
+            2,
+            1286,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "text": "A:B",
+        "features": {},
+        "result": [
+          [
+            "A",
+            0,
+            1358,
+            0,
+            0
+          ],
+          [
+            "colon.case",
+            1,
+            586,
+            0,
+            0
+          ],
+          [
+            "B",
+            2,
+            1324,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "text": "A:B",
+        "features": {
+          "calt": 0
+        },
+        "result": [
+          [
+            "A",
+            0,
+            1358,
+            0,
+            0
+          ],
+          [
+            "colon",
+            1,
+            586,
+            0,
+            0
+          ],
+          [
+            "B",
+            2,
+            1324,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "text": "A:B",
+        "features": {
+          "pnum": 1
+        },
+        "result": [
+          [
+            "A",
+            0,
+            1358,
+            0,
+            0
+          ],
+          [
+            "colon.case",
+            1,
+            586,
+            0,
+            0
+          ],
+          [
+            "B",
+            2,
+            1324,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "text": "A:B",
+        "features": {
+          "tnum": 1
+        },
+        "result": [
+          [
+            "A",
+            0,
+            1358,
+            0,
+            0
+          ],
+          [
+            "colon.case",
+            1,
+            586,
+            0,
+            0
+          ],
+          [
+            "B",
+            2,
+            1324,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "text": "A:B",
+        "features": {
+          "pnum": 1,
+          "tnum": 1
+        },
+        "result": [
+          [
+            "A",
+            0,
+            1358,
+            0,
+            0
+          ],
+          [
+            "colon.case",
+            1,
+            586,
+            0,
+            0
+          ],
+          [
+            "B",
+            2,
+            1324,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "text": "A:B",
+        "features": {
+          "tnum": 1,
+          "calt": 0
+        },
+        "result": [
+          [
+            "A",
+            0,
+            1358,
+            0,
+            0
+          ],
+          [
+            "colon",
+            1,
+            586,
+            0,
+            0
+          ],
+          [
+            "B",
+            2,
+            1324,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "text": "A:B",
+        "features": {
+          "tnum": [
+            [
+              0,
+              1,
+              1
+            ]
+          ]
+        },
+        "result": [
+          [
+            "A",
+            0,
+            1358,
+            0,
+            0
+          ],
+          [
+            "colon.case",
+            1,
+            586,
+            0,
+            0
+          ],
+          [
+            "B",
+            2,
+            1324,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "text": "A:B",
+        "features": {
+          "tnum": [
+            [
+              2,
+              3,
+              1
+            ]
+          ]
+        },
+        "result": [
+          [
+            "A",
+            0,
+            1358,
+            0,
+            0
+          ],
+          [
+            "colon.case",
+            1,
+            586,
+            0,
+            0
+          ],
+          [
+            "B",
+            2,
+            1324,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "text": "A:B",
+        "features": {
+          "tnum": 1,
+          "pnum": [
+            [
+              0,
+              1,
+              1
+            ]
+          ]
+        },
+        "result": [
+          [
+            "A",
+            0,
+            1358,
+            0,
+            0
+          ],
+          [
+            "colon.case",
+            1,
+            586,
+            0,
+            0
+          ],
+          [
+            "B",
+            2,
+            1324,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "text": "a:b",
+        "features": {},
+        "result": [
+          [
+            "a",
+            0,
+            1108,
+            0,
+            0
+          ],
+          [
+            "colon",
+            1,
+            586,
+            0,
+            0
+          ],
+          [
+            "b",
+            2,
+            1236,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "text": "a:b",
+        "features": {
+          "calt": 0
+        },
+        "result": [
+          [
+            "a",
+            0,
+            1108,
+            0,
+            0
+          ],
+          [
+            "colon",
+            1,
+            586,
+            0,
+            0
+          ],
+          [
+            "b",
+            2,
+            1236,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "text": "a:b",
+        "features": {
+          "pnum": 1
+        },
+        "result": [
+          [
+            "a",
+            0,
+            1108,
+            0,
+            0
+          ],
+          [
+            "colon",
+            1,
+            586,
+            0,
+            0
+          ],
+          [
+            "b",
+            2,
+            1236,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "text": "a:b",
+        "features": {
+          "tnum": 1
+        },
+        "result": [
+          [
+            "a",
+            0,
+            1108,
+            0,
+            0
+          ],
+          [
+            "colon",
+            1,
+            586,
+            0,
+            0
+          ],
+          [
+            "b",
+            2,
+            1236,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "text": "a:b",
+        "features": {
+          "pnum": 1,
+          "tnum": 1
+        },
+        "result": [
+          [
+            "a",
+            0,
+            1108,
+            0,
+            0
+          ],
+          [
+            "colon",
+            1,
+            586,
+            0,
+            0
+          ],
+          [
+            "b",
+            2,
+            1236,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "text": "a:b",
+        "features": {
+          "tnum": 1,
+          "calt": 0
+        },
+        "result": [
+          [
+            "a",
+            0,
+            1108,
+            0,
+            0
+          ],
+          [
+            "colon",
+            1,
+            586,
+            0,
+            0
+          ],
+          [
+            "b",
+            2,
+            1236,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "text": "a:b",
+        "features": {
+          "tnum": [
+            [
+              0,
+              1,
+              1
+            ]
+          ]
+        },
+        "result": [
+          [
+            "a",
+            0,
+            1108,
+            0,
+            0
+          ],
+          [
+            "colon",
+            1,
+            586,
+            0,
+            0
+          ],
+          [
+            "b",
+            2,
+            1236,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "text": "a:b",
+        "features": {
+          "tnum": [
+            [
+              2,
+              3,
+              1
+            ]
+          ]
+        },
+        "result": [
+          [
+            "a",
+            0,
+            1108,
+            0,
+            0
+          ],
+          [
+            "colon",
+            1,
+            586,
+            0,
+            0
+          ],
+          [
+            "b",
+            2,
+            1236,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "text": "a:b",
+        "features": {
+          "tnum": 1,
+          "pnum": [
+            [
+              0,
+              1,
+              1
+            ]
+          ]
+        },
+        "result": [
+          [
+            "a",
+            0,
+            1108,
+            0,
+            0
+          ],
+          [
+            "colon",
+            1,
+            586,
+            0,
+            0
+          ],
+          [
+            "b",
+            2,
+            1236,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "text": "А:Б",
+        "features": {},
+        "result": [
+          [
+            "uni0410",
+            0,
+            1378,
+            0,
+            0
+          ],
+          [
+            "colon.case",
+            1,
+            586,
+            0,
+            0
+          ],
+          [
+            "uni0411",
+            2,
+            1279,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "text": "А:Б",
+        "features": {
+          "calt": 0
+        },
+        "result": [
+          [
+            "uni0410",
+            0,
+            1378,
+            0,
+            0
+          ],
+          [
+            "colon",
+            1,
+            586,
+            0,
+            0
+          ],
+          [
+            "uni0411",
+            2,
+            1279,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "text": "А:Б",
+        "features": {
+          "pnum": 1
+        },
+        "result": [
+          [
+            "uni0410",
+            0,
+            1378,
+            0,
+            0
+          ],
+          [
+            "colon.case",
+            1,
+            586,
+            0,
+            0
+          ],
+          [
+            "uni0411",
+            2,
+            1279,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "text": "А:Б",
+        "features": {
+          "tnum": 1
+        },
+        "result": [
+          [
+            "uni0410",
+            0,
+            1378,
+            0,
+            0
+          ],
+          [
+            "colon.case",
+            1,
+            586,
+            0,
+            0
+          ],
+          [
+            "uni0411",
+            2,
+            1279,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "text": "А:Б",
+        "features": {
+          "pnum": 1,
+          "tnum": 1
+        },
+        "result": [
+          [
+            "uni0410",
+            0,
+            1378,
+            0,
+            0
+          ],
+          [
+            "colon.case",
+            1,
+            586,
+            0,
+            0
+          ],
+          [
+            "uni0411",
+            2,
+            1279,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "text": "А:Б",
+        "features": {
+          "tnum": 1,
+          "calt": 0
+        },
+        "result": [
+          [
+            "uni0410",
+            0,
+            1378,
+            0,
+            0
+          ],
+          [
+            "colon",
+            1,
+            586,
+            0,
+            0
+          ],
+          [
+            "uni0411",
+            2,
+            1279,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "text": "А:Б",
+        "features": {
+          "tnum": [
+            [
+              0,
+              1,
+              1
+            ]
+          ]
+        },
+        "result": [
+          [
+            "uni0410",
+            0,
+            1378,
+            0,
+            0
+          ],
+          [
+            "colon.case",
+            1,
+            586,
+            0,
+            0
+          ],
+          [
+            "uni0411",
+            2,
+            1279,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "text": "А:Б",
+        "features": {
+          "tnum": [
+            [
+              2,
+              3,
+              1
+            ]
+          ]
+        },
+        "result": [
+          [
+            "uni0410",
+            0,
+            1378,
+            0,
+            0
+          ],
+          [
+            "colon.case",
+            1,
+            586,
+            0,
+            0
+          ],
+          [
+            "uni0411",
+            2,
+            1279,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "text": "А:Б",
+        "features": {
+          "tnum": 1,
+          "pnum": [
+            [
+              0,
+              1,
+              1
+            ]
+          ]
+        },
+        "result": [
+          [
+            "uni0410",
+            0,
+            1378,
+            0,
+            0
+          ],
+          [
+            "colon.case",
+            1,
+            586,
+            0,
+            0
+          ],
+          [
+            "uni0411",
+            2,
+            1279,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "text": "а:б",
+        "features": {},
+        "result": [
+          [
+            "uni0430",
+            0,
+            1128,
+            0,
+            0
+          ],
+          [
+            "colon",
+            1,
+            586,
+            0,
+            0
+          ],
+          [
+            "uni0431",
+            2,
+            1218,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "text": "а:б",
+        "features": {
+          "calt": 0
+        },
+        "result": [
+          [
+            "uni0430",
+            0,
+            1128,
+            0,
+            0
+          ],
+          [
+            "colon",
+            1,
+            586,
+            0,
+            0
+          ],
+          [
+            "uni0431",
+            2,
+            1218,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "text": "а:б",
+        "features": {
+          "pnum": 1
+        },
+        "result": [
+          [
+            "uni0430",
+            0,
+            1128,
+            0,
+            0
+          ],
+          [
+            "colon",
+            1,
+            586,
+            0,
+            0
+          ],
+          [
+            "uni0431",
+            2,
+            1218,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "text": "а:б",
+        "features": {
+          "tnum": 1
+        },
+        "result": [
+          [
+            "uni0430",
+            0,
+            1128,
+            0,
+            0
+          ],
+          [
+            "colon",
+            1,
+            586,
+            0,
+            0
+          ],
+          [
+            "uni0431",
+            2,
+            1218,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "text": "а:б",
+        "features": {
+          "pnum": 1,
+          "tnum": 1
+        },
+        "result": [
+          [
+            "uni0430",
+            0,
+            1128,
+            0,
+            0
+          ],
+          [
+            "colon",
+            1,
+            586,
+            0,
+            0
+          ],
+          [
+            "uni0431",
+            2,
+            1218,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "text": "а:б",
+        "features": {
+          "tnum": 1,
+          "calt": 0
+        },
+        "result": [
+          [
+            "uni0430",
+            0,
+            1128,
+            0,
+            0
+          ],
+          [
+            "colon",
+            1,
+            586,
+            0,
+            0
+          ],
+          [
+            "uni0431",
+            2,
+            1218,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "text": "а:б",
+        "features": {
+          "tnum": [
+            [
+              0,
+              1,
+              1
+            ]
+          ]
+        },
+        "result": [
+          [
+            "uni0430",
+            0,
+            1128,
+            0,
+            0
+          ],
+          [
+            "colon",
+            1,
+            586,
+            0,
+            0
+          ],
+          [
+            "uni0431",
+            2,
+            1218,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "text": "а:б",
+        "features": {
+          "tnum": [
+            [
+              2,
+              3,
+              1
+            ]
+          ]
+        },
+        "result": [
+          [
+            "uni0430",
+            0,
+            1128,
+            0,
+            0
+          ],
+          [
+            "colon",
+            1,
+            586,
+            0,
+            0
+          ],
+          [
+            "uni0431",
+            2,
+            1218,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "text": "а:б",
+        "features": {
+          "tnum": 1,
+          "pnum": [
+            [
+              0,
+              1,
+              1
+            ]
+          ]
+        },
+        "result": [
+          [
+            "uni0430",
+            0,
+            1128,
+            0,
+            0
+          ],
+          [
+            "colon",
+            1,
+            586,
+            0,
+            0
+          ],
+          [
+            "uni0431",
+            2,
+            1218,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "text": "1 : 2",
+        "features": {},
+        "result": [
+          [
+            "one",
+            0,
+            928,
+            0,
+            0
+          ],
+          [
+            "space",
+            1,
+            554,
+            0,
+            0
+          ],
+          [
+            "colon",
+            2,
+            586,
+            0,
+            0
+          ],
+          [
+            "space",
+            3,
+            554,
+            0,
+            0
+          ],
+          [
+            "two",
+            4,
+            1214,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "text": "1 : 2",
+        "features": {
+          "calt": 0
+        },
+        "result": [
+          [
+            "one",
+            0,
+            928,
+            0,
+            0
+          ],
+          [
+            "space",
+            1,
+            554,
+            0,
+            0
+          ],
+          [
+            "colon",
+            2,
+            586,
+            0,
+            0
+          ],
+          [
+            "space",
+            3,
+            554,
+            0,
+            0
+          ],
+          [
+            "two",
+            4,
+            1214,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "text": "1 : 2",
+        "features": {
+          "pnum": 1
+        },
+        "result": [
+          [
+            "one",
+            0,
+            928,
+            0,
+            0
+          ],
+          [
+            "space",
+            1,
+            554,
+            0,
+            0
+          ],
+          [
+            "colon",
+            2,
+            586,
+            0,
+            0
+          ],
+          [
+            "space",
+            3,
+            554,
+            0,
+            0
+          ],
+          [
+            "two",
+            4,
+            1214,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "text": "1 : 2",
+        "features": {
+          "tnum": 1
+        },
+        "result": [
+          [
+            "one.tnum",
+            0,
+            1286,
+            0,
+            0
+          ],
+          [
+            "space",
+            1,
+            554,
+            0,
+            0
+          ],
+          [
+            "colon",
+            2,
+            586,
+            0,
+            0
+          ],
+          [
+            "space",
+            3,
+            554,
+            0,
+            0
+          ],
+          [
+            "two.tnum",
+            4,
+            1286,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "text": "1 : 2",
+        "features": {
+          "pnum": 1,
+          "tnum": 1
+        },
+        "result": [
+          [
+            "one",
+            0,
+            928,
+            0,
+            0
+          ],
+          [
+            "space",
+            1,
+            554,
+            0,
+            0
+          ],
+          [
+            "colon",
+            2,
+            586,
+            0,
+            0
+          ],
+          [
+            "space",
+            3,
+            554,
+            0,
+            0
+          ],
+          [
+            "two",
+            4,
+            1214,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "text": "1 : 2",
+        "features": {
+          "tnum": 1,
+          "calt": 0
+        },
+        "result": [
+          [
+            "one.tnum",
+            0,
+            1286,
+            0,
+            0
+          ],
+          [
+            "space",
+            1,
+            554,
+            0,
+            0
+          ],
+          [
+            "colon",
+            2,
+            586,
+            0,
+            0
+          ],
+          [
+            "space",
+            3,
+            554,
+            0,
+            0
+          ],
+          [
+            "two.tnum",
+            4,
+            1286,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "text": "1 : 2",
+        "features": {
+          "tnum": [
+            [
+              0,
+              1,
+              1
+            ]
+          ]
+        },
+        "result": [
+          [
+            "one.tnum",
+            0,
+            1286,
+            0,
+            0
+          ],
+          [
+            "space",
+            1,
+            554,
+            0,
+            0
+          ],
+          [
+            "colon",
+            2,
+            586,
+            0,
+            0
+          ],
+          [
+            "space",
+            3,
+            554,
+            0,
+            0
+          ],
+          [
+            "two",
+            4,
+            1214,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "text": "1 : 2",
+        "features": {
+          "tnum": [
+            [
+              2,
+              3,
+              1
+            ]
+          ]
+        },
+        "result": [
+          [
+            "one",
+            0,
+            928,
+            0,
+            0
+          ],
+          [
+            "space",
+            1,
+            554,
+            0,
+            0
+          ],
+          [
+            "colon",
+            2,
+            586,
+            0,
+            0
+          ],
+          [
+            "space",
+            3,
+            554,
+            0,
+            0
+          ],
+          [
+            "two",
+            4,
+            1214,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "text": "1 : 2",
+        "features": {
+          "tnum": 1,
+          "pnum": [
+            [
+              0,
+              1,
+              1
+            ]
+          ]
+        },
+        "result": [
+          [
+            "one",
+            0,
+            928,
+            0,
+            0
+          ],
+          [
+            "space",
+            1,
+            554,
+            0,
+            0
+          ],
+          [
+            "colon",
+            2,
+            586,
+            0,
+            0
+          ],
+          [
+            "space",
+            3,
+            554,
+            0,
+            0
+          ],
+          [
+            "two.tnum",
+            4,
+            1286,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "text": "1.2",
+        "features": {},
+        "result": [
+          [
+            "one",
+            0,
+            878,
+            0,
+            0
+          ],
+          [
+            "period",
+            1,
+            546,
+            0,
+            0
+          ],
+          [
+            "two",
+            2,
+            1214,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "text": "1.2",
+        "features": {
+          "calt": 0
+        },
+        "result": [
+          [
+            "one",
+            0,
+            878,
+            0,
+            0
+          ],
+          [
+            "period",
+            1,
+            546,
+            0,
+            0
+          ],
+          [
+            "two",
+            2,
+            1214,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "text": "1.2",
+        "features": {
+          "pnum": 1
+        },
+        "result": [
+          [
+            "one",
+            0,
+            878,
+            0,
+            0
+          ],
+          [
+            "period",
+            1,
+            546,
+            0,
+            0
+          ],
+          [
+            "two",
+            2,
+            1214,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "text": "1.2",
+        "features": {
+          "tnum": 1
+        },
+        "result": [
+          [
+            "one.tnum",
+            0,
+            1286,
+            0,
+            0
+          ],
+          [
+            "period",
+            1,
+            586,
+            0,
+            0
+          ],
+          [
+            "two.tnum",
+            2,
+            1286,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "text": "1.2",
+        "features": {
+          "pnum": 1,
+          "tnum": 1
+        },
+        "result": [
+          [
+            "one",
+            0,
+            878,
+            0,
+            0
+          ],
+          [
+            "period",
+            1,
+            546,
+            0,
+            0
+          ],
+          [
+            "two",
+            2,
+            1214,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "text": "1.2",
+        "features": {
+          "tnum": 1,
+          "calt": 0
+        },
+        "result": [
+          [
+            "one.tnum",
+            0,
+            1286,
+            0,
+            0
+          ],
+          [
+            "period",
+            1,
+            586,
+            0,
+            0
+          ],
+          [
+            "two.tnum",
+            2,
+            1286,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "text": "1.2",
+        "features": {
+          "tnum": [
+            [
+              0,
+              1,
+              1
+            ]
+          ]
+        },
+        "result": [
+          [
+            "one.tnum",
+            0,
+            1286,
+            0,
+            0
+          ],
+          [
+            "period",
+            1,
+            546,
+            0,
+            0
+          ],
+          [
+            "two",
+            2,
+            1214,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "text": "1.2",
+        "features": {
+          "tnum": [
+            [
+              2,
+              3,
+              1
+            ]
+          ]
+        },
+        "result": [
+          [
+            "one",
+            0,
+            878,
+            0,
+            0
+          ],
+          [
+            "period",
+            1,
+            586,
+            0,
+            0
+          ],
+          [
+            "two.tnum",
+            2,
+            1286,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "text": "1.2",
+        "features": {
+          "tnum": 1,
+          "pnum": [
+            [
+              0,
+              1,
+              1
+            ]
+          ]
+        },
+        "result": [
+          [
+            "one",
+            0,
+            878,
+            0,
+            0
+          ],
+          [
+            "period",
+            1,
+            586,
+            0,
+            0
+          ],
+          [
+            "two.tnum",
+            2,
+            1286,
+            0,
+            0
+          ]
+        ]
+      }
+    ]
+  },
+  "verdicts": {
+    "ui": {
+      "status": "conditional_pass",
+      "reason": "Numeric metrics and contextual punctuation pass fresh automated coverage; use tnum alone for aligned numeric UI. Native rendering remains untested."
+    },
+    "headings": {
+      "status": "conditional_pass",
+      "reason": "Sampled weight/optical-size instances have finite bounds and consistent shaping; display appearance requires visual assessment."
+    },
+    "body": {
+      "status": "unproven",
+      "reason": "Technical feature checks pass, but this audit does not measure text spacing quality, legibility or reader performance."
+    },
+    "sustained_reading": {
+      "status": "unproven",
+      "reason": "No actual reader study, extended reading or fatigue assessment was performed."
+    }
+  },
+  "findings": [
+    {
+      "priority": "P3",
+      "concretecondition": "Explicitly activating both pnum=1 and tnum=1 produces proportional numerals, including at wght=400 opsz=14: one=928 and two=1214 rather than 1286 each. This is feature precedence, not an observed font defect.",
+      "recommendation": "In integration examples, present pnum and tnum as mutually exclusive choices; set pnum=0 when explicitly forcing tnum alongside inherited raw feature settings.",
+      "acceptance_test": "At wght=400 opsz=14, shape 0123456789 with tnum=1,pnum=0 and require every advance to equal 1286; verify CSS/application controls cannot accidentally request both for an aligned column."
+    }
+  ],
+  "limitations": [
+    "HarfBuzz and fontTools only; CoreText, browser engines and real users not evaluated.",
+    "Finite axis grid covers bounds and metrics, not outline self-intersections or perceptual quality.",
+    "Readability, fatigue and typographic beauty cannot be established by this technical audit."
+  ]
+}

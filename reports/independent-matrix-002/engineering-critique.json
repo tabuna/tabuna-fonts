@@ -1,0 +1,41 @@
+{
+  "role": "OpenType and variation engineering cross-critique",
+  "font_sha256": "3567058955eb20ebaf25ef5241a094b25d86dfd7be966f8032492dd3caa3e011",
+  "initial_reports_unchanged": true,
+  "reviewed": [
+    "data.json",
+    "engineering.json",
+    "assets/timer-arbitration.png",
+    "arbitration-probes.json"
+  ],
+  "independent_tests": {
+    "font_location_groups": 32,
+    "shaped_timer_runs": 128,
+    "equal_width_groups": 32,
+    "all_tnum_colons": "colon",
+    "default_400_14_timer_width": 8888
+  },
+  "counterclaim_verdict": "Data width-stability claim confirmed; it measures horizontal advances and does not refute vertical contextual-colon loss.",
+  "finding": {
+    "id": "ENG-001",
+    "priority": "P2",
+    "status": "confirmed",
+    "mandatory_fix": "Required before unconditional UI timer/contextual-number-punctuation approval; not a functional width-stability blocker. Conditional use may explicitly accept lower alignment.",
+    "acceptance_test": "Both formats, wght100/400/700/900 \u00d7 opsz9/14/28/128; default/pnum/tnum with calt enabled select colon.case in numeric colon contexts. Ten tabular advances equal with normal kerning; equal-format timers 00:00:00,11:11:11,88:88:88,12:34:56 equal width. Lowercase a:b stays colon, uppercase A:B stays colon.case; calt=0 suppresses substitution. Inspect native12/14/16/32/64px."
+  },
+  "coverage_critique": {
+    "target": "DATA-01",
+    "classification": "out-of-scope compatibility limitation",
+    "recommendation": "Document fixed189 repertoire and test application fallback/approved formatting. Do not mandate extra grouping spaces or currencies.",
+    "acceptance_test": "Keep intended189 cmap; in-scope strings no.notdef; explicit fallback or approved formatting for out-of-scope locales."
+  },
+  "limitations": [
+    "No font/source edits",
+    "No native renderer or reader study in this phase",
+    "Arbitration image inspected; width counterclaim independently recomputed"
+  ],
+  "evidence": [
+    "build/matrix002/engineering/cross_probe.py",
+    "build/matrix002/engineering/cross-probe.json"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "status": "pass",
+  "initial_reports": 10,
+  "first_report_files_locked": 20,
+  "cross_critiques": 3,
+  "frozen_files_unchanged": 7,
+  "evidence_files": 63,
+  "archive_bytes": 4351617,
+  "archive_entries_hash_verified": true,
+  "all_189_expected_codepoints_present": true,
+  "font_or_product_source_changed_by_audit": false,
+  "python": "3.14.3",
+  "limitations": "Report integrity check, not a new font quality/readability pass. Native device and human studies remain open."
+}

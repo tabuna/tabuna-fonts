@@ -1,0 +1,314 @@
+{
+  "font_version": "0.0.2",
+  "font_sha256": "3567058955eb20ebaf25ef5241a094b25d86dfd7be966f8032492dd3caa3e011",
+  "independent_reviewers": 10,
+  "initial_reports_hash_locked": true,
+  "cross_critiques": 3,
+  "audited_font_and_demo_unchanged": true,
+  "matrix": [
+    {
+      "id": "hig",
+      "role": "Apple HIG и доступность",
+      "initial": {
+        "ui": "conditional",
+        "headings": "conditional",
+        "body": "conditional",
+        "sustained_reading": "unverified"
+      },
+      "after_critique": {
+        "ui": "conditional",
+        "headings": "conditional",
+        "body": "conditional",
+        "sustained_reading": "unverified"
+      },
+      "report": "hig.md",
+      "report_sha256": "32035b6e5e9245c50292bf362a9e9789ebfbe06395f92427a5031f1e044c68f2"
+    },
+    {
+      "id": "type",
+      "role": "Конструкция шрифта",
+      "initial": {
+        "ui": "conditional",
+        "headings": "pass",
+        "body": "conditional",
+        "sustained_reading": "unverified"
+      },
+      "after_critique": {
+        "ui": "conditional",
+        "headings": "pass",
+        "body": "conditional",
+        "sustained_reading": "unverified"
+      },
+      "report": "type.md",
+      "report_sha256": "cf5c902def009121039ce2ec953b372c8fd7c68ada1fc4e9e13451c42a42589f"
+    },
+    {
+      "id": "engineering",
+      "role": "OpenType и интерполяция",
+      "initial": {
+        "ui": "conditional",
+        "headings": "pass",
+        "body": "conditional",
+        "sustained_reading": "unverified"
+      },
+      "after_critique": {
+        "ui": "conditional",
+        "headings": "pass",
+        "body": "conditional",
+        "sustained_reading": "unverified"
+      },
+      "report": "engineering.md",
+      "report_sha256": "8f1f9990fa259583c11e49ffffb36ed5e58934d30380a449ad90a6eaee502bc3"
+    },
+    {
+      "id": "cyrillic",
+      "role": "Кириллица и редактура",
+      "initial": {
+        "ui": "conditional",
+        "headings": "pass",
+        "body": "pass",
+        "sustained_reading": "unverified"
+      },
+      "after_critique": {
+        "ui": "conditional",
+        "headings": "pass",
+        "body": "pass",
+        "sustained_reading": "unverified"
+      },
+      "report": "cyrillic.md",
+      "report_sha256": "1964fa0d9f94881c98e0ae7530974c312688ac7879ba183b639b3d3af8e61f3c"
+    },
+    {
+      "id": "ui",
+      "role": "Продуктовый UI",
+      "initial": {
+        "ui": "conditional",
+        "headings": "pass",
+        "body": "conditional",
+        "sustained_reading": "unverified"
+      },
+      "after_critique": {
+        "ui": "conditional",
+        "headings": "pass",
+        "body": "conditional",
+        "sustained_reading": "unverified"
+      },
+      "report": "ui.md",
+      "report_sha256": "d9a39828b443a81f28c4210f0d6e1719b3674d41b806738db6df4062070584b3"
+    },
+    {
+      "id": "data",
+      "role": "Таблицы и числовые данные",
+      "initial": {
+        "ui": "conditional",
+        "headings": "pass",
+        "body": "conditional",
+        "sustained_reading": "unverified"
+      },
+      "after_critique": {
+        "ui": "conditional",
+        "headings": "conditional",
+        "body": "conditional",
+        "sustained_reading": "unverified"
+      },
+      "report": "data.md",
+      "report_sha256": "3a569d5d87f42c26ed3a200df975f84a0490df85f1d0cb5675a70c0956808f9a"
+    },
+    {
+      "id": "raster",
+      "role": "Экранная растеризация",
+      "initial": {
+        "ui": "conditional",
+        "headings": "conditional",
+        "body": "conditional",
+        "sustained_reading": "unverified"
+      },
+      "after_critique": {
+        "ui": "conditional",
+        "headings": "conditional",
+        "body": "conditional",
+        "sustained_reading": "unverified"
+      },
+      "report": "raster.md",
+      "report_sha256": "c97549284f065ac1a786bfa33d4d62689d2621b6b2b16fc678427de096135ac9"
+    },
+    {
+      "id": "reading",
+      "role": "Методология чтения",
+      "initial": {
+        "ui": "conditional",
+        "headings": "pass",
+        "body": "conditional",
+        "sustained_reading": "unverified"
+      },
+      "after_critique": {
+        "ui": "conditional",
+        "headings": "pass",
+        "body": "conditional",
+        "sustained_reading": "unverified"
+      },
+      "report": "reading.md",
+      "report_sha256": "e0e2f320da92734176f68118d3e3cb851b3b1bdfff5b33cf76bf85301d16bec2"
+    },
+    {
+      "id": "release",
+      "role": "Сборка и публикация",
+      "initial": {
+        "ui": "conditional",
+        "headings": "conditional",
+        "body": "conditional",
+        "sustained_reading": "unverified"
+      },
+      "after_critique": {
+        "ui": "conditional",
+        "headings": "conditional",
+        "body": "conditional",
+        "sustained_reading": "unverified"
+      },
+      "report": "release.md",
+      "report_sha256": "d76764503e6528b8219a4b446ffc27912d72f99de0c77ce9e58862512123bf64"
+    },
+    {
+      "id": "character",
+      "role": "Характер и узнаваемость",
+      "initial": {
+        "ui": "conditional",
+        "headings": "pass",
+        "body": "conditional",
+        "sustained_reading": "unverified"
+      },
+      "after_critique": {
+        "ui": "conditional",
+        "headings": "pass",
+        "body": "conditional",
+        "sustained_reading": "unverified"
+      },
+      "report": "character.md",
+      "report_sha256": "2f5821f9bf9a89ea2e44153ea7e18516fcdcb3bf187db2f26afdf054b644c744"
+    }
+  ],
+  "verdict": {
+    "ui": "conditional pilot; timer colon fix required for unqualified timer approval",
+    "headings": "visual passes in sampled conditions; numeric timers conditional",
+    "body": "conditional400-weight pilot",
+    "sustained_reading": "unverified"
+  },
+  "actions": [
+    {
+      "id": "M01",
+      "priority": "P2",
+      "mandatory": true,
+      "before": "unqualified UI/timer and numeric-heading approval",
+      "owner_role": "OpenType engineer",
+      "change": "Include tnum derivatives in contextual colon handling without breaking prose contexts or tabular advances.",
+      "acceptance": "TTF/WOFF2 timer contexts across masters and intermediate axes retain intended colon height under default/tnum/pnum; calt off remains deliberate; width invariance and numeral collision tests also pass.",
+      "basis": [
+        "engineering-critique.md",
+        "data-critique.md"
+      ],
+      "status": "open"
+    },
+    {
+      "id": "M02",
+      "priority": "P2",
+      "mandatory": true,
+      "before": "accepted authorial publication",
+      "owner_role": "Release engineer and design arbiter",
+      "change": "Revalidate D01–D06 and intentional deviation evidence against the final repaired binary; do not merely substitute hashes.",
+      "acceptance": "Current-hash evidence and design_status --require authorial succeed; all newly accepted audit blockers have verified closure.",
+      "basis": [
+        "release.md"
+      ],
+      "status": "open"
+    },
+    {
+      "id": "M03",
+      "priority": "P2",
+      "mandatory": true,
+      "before": "broad UI integration claim",
+      "owner_role": "Product UI designer and QA",
+      "change": "Add real form/dialog/dense-label and enlarged numeric-table checks; adapt columns or stack values when required.",
+      "acceptance": "RU/EN target screens at320px and200% text size retain readable amounts, reachable controls and no unintended clipping/overlap. Fixed-column stress failures are distinguished from font regressions.",
+      "basis": [
+        "ui.md",
+        "hig.md",
+        "integration.json"
+      ],
+      "status": "open"
+    },
+    {
+      "id": "M04",
+      "priority": "P2",
+      "mandatory": true,
+      "before": "high-reliability identifier use claim",
+      "owner_role": "Type designer and research lead",
+      "change": "Retain I bars and existing l foot; test I/l/1, O/0 and З/3 in randomized real identifiers before selecting stronger alternates.",
+      "acceptance": "Report actual transcription errors/time by confusing pair at14/16/18px and target rasterizers; compare incumbent and candidate. Do not infer a reading benefit from contour differences alone.",
+      "basis": [
+        "reading.md",
+        "type-critique.md",
+        "data.md"
+      ],
+      "status": "open"
+    },
+    {
+      "id": "M05",
+      "priority": "P2",
+      "mandatory": true,
+      "before": "proven distinctive line-level character claim",
+      "owner_role": "Type designer and arbiter",
+      "change": "Repeat blinded order-swapped RU/EN line comparisons rich in changed forms; preserve restrained direction until evidence favors stronger treatment.",
+      "acceptance": "Locked preferences and repeated identity discrimination on unseen strings; distinguish overall line character from isolated I recognition. No automatic mandate to exaggerate shapes.",
+      "basis": [
+        "reading.md",
+        "character.md",
+        "type-critique.md"
+      ],
+      "status": "open"
+    },
+    {
+      "id": "M06",
+      "priority": "P2",
+      "mandatory": true,
+      "before": "sustained-reading or cross-platform assurance",
+      "owner_role": "Research lead and platform QA",
+      "change": "Run the human pilot and actual target renderer/device/accessibility matrix.",
+      "acceptance": "Actual participant time/comprehension/error/fatigue observations and platform-specific1x/2x evidence; simulations and agent reviews clearly labeled.",
+      "basis": [
+        "reading.md",
+        "hig.md",
+        "raster.md"
+      ],
+      "status": "open"
+    },
+    {
+      "id": "M07",
+      "priority": "P3",
+      "mandatory": true,
+      "before": "publishing a complete working demo",
+      "owner_role": "Web maintainer",
+      "change": "Resolve missing REVIEW.md link and archive comparison dependency on ignored proofs.",
+      "acceptance": "Serve only distributed/tracked site files: advertised comparison route and links work or clearly present an intentional archive without unavailable interactive controls.",
+      "basis": [
+        "release.md"
+      ],
+      "status": "open"
+    },
+    {
+      "id": "M08",
+      "priority": "P2",
+      "mandatory": true,
+      "before": "arbitrary localized/user-content integration claim",
+      "owner_role": "Integration developer",
+      "change": "Keep189 characters; implement and verify the documented system fallback/NFC/NBSP policy for absent accents and grouping spaces.",
+      "acceptance": "Actual browser/native fallback renders required locale strings without replacement boxes or unstable grouping; no font-only coverage assertion for excluded codepoints.",
+      "basis": [
+        "data-critique.md",
+        "raster.md"
+      ],
+      "status": "open"
+    }
+  ],
+  "blind_result": "Both independent blind reviewers could not distinguish A/B character in supplied ordinary RU/EN lines; B capital-I terminals recognized in diagnostic rows. A=0.0.1 control; B=current0.0.2. Not evidence of outline identity or absence of all character.",
+  "method_limit": "Fresh-context agents from one model family, not ten humans, external designers, Apple staff or empirical reading research."
+}

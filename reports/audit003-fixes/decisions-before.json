@@ -1,0 +1,139 @@
+{
+  "schema_version": 1,
+  "direction": "Компактный интерфейсный гротеск с умеренной гуманистической пластикой и самостоятельной кириллицей",
+  "phase": "authorial",
+  "baseline_checkpoint": {
+    "path": "reports/releases/0.0.1-baseline.json",
+    "sha256": "1bd6d1e41ed9c6b03da7167c4d5ad64dfcc6c56d5946c338caab5a6e39119f59",
+    "font_sha256": "18f597e3a48133227d503eff9a297c9b9e62c646dd5cf7902dd8ed216369cf28"
+  },
+  "selected_intensity": "moderate",
+  "constraints": {
+    "characters": 189,
+    "wght": [
+      100,
+      900
+    ],
+    "opsz": [
+      9,
+      128
+    ],
+    "woff2_max_bytes": 102400,
+    "baseline_minimum_mask_iou": 0.95
+  },
+  "decisions": [
+    {
+      "id": "D01",
+      "title": "Направленное натяжение чаш",
+      "status": "accepted",
+      "change": "Family-specific upper-pole displacement and positive handle scaling; moderate intensity, reduced small/heavy amplitude and 22% thin upper-right round relief.",
+      "evidence": [
+        {
+          "path": "reports/authorial-final-verification.json",
+          "sha256": "6e91c2ce554f0272a56ee7b48025e74c19d4869e717996ef6bd110795b122b29",
+          "font_sha256": "5888eecc912f46f14b7807906d2ffc0a42d543a3695465b76a83b699373344b9"
+        }
+      ],
+      "verdict": {
+        "decision": "accept",
+        "reason": "Upper-left direction repeats in cocoa and основа. Thin o/O/0 retains a curved upper-right transition after relief; further amplification is unnecessary. Cyrillic а/Р/в are included in the shared bowl families and reviewed at both optical extremes.",
+        "arbiter": "root agent; not a human readability study"
+      }
+    },
+    {
+      "id": "D02",
+      "title": "Открытые формы и окончания",
+      "status": "accepted",
+      "change": "Shared c/с/e/е/ё/э openings and terminal adjustments; reduced heavy e crossbar thickness.",
+      "evidence": [
+        {
+          "path": "reports/authorial-final-verification.json",
+          "sha256": "6e91c2ce554f0272a56ee7b48025e74c19d4869e717996ef6bd110795b122b29",
+          "font_sha256": "5888eecc912f46f14b7807906d2ffc0a42d543a3695465b76a83b699373344b9"
+        }
+      ],
+      "verdict": {
+        "decision": "accept",
+        "reason": "c/с and e/е/э retain identifiable openings. Heavy e crossbar relief preserves separation from the lower terminal.",
+        "arbiter": "root agent; not a human readability study"
+      }
+    },
+    {
+      "id": "D03",
+      "title": "Различимые силуэты",
+      "status": "accepted",
+      "change": "Short I crossbars and smooth l lower exit, preserving advances; retain two-storey a, single-storey g and flagged 1.",
+      "evidence": [
+        {
+          "path": "reports/authorial-final-verification.json",
+          "sha256": "6e91c2ce554f0272a56ee7b48025e74c19d4869e717996ef6bd110795b122b29",
+          "font_sha256": "5888eecc912f46f14b7807906d2ffc0a42d543a3695465b76a83b699373344b9"
+        }
+      ],
+      "verdict": {
+        "decision": "accept",
+        "reason": "I has short bars, l has a lower exit, 1 has a flag. Two-storey a and single-storey g remain clear in the reviewed strings.",
+        "arbiter": "root agent; not a human readability study"
+      }
+    },
+    {
+      "id": "D04",
+      "title": "Самостоятельная кириллица",
+      "status": "accepted",
+      "change": "Short smooth Л/л exit and coordinated Д/д transition; lighten heavy Ж/ж, К/к, Я/я joins; preserve upright п/т.",
+      "evidence": [
+        {
+          "path": "reports/authorial-final-verification.json",
+          "sha256": "6e91c2ce554f0272a56ee7b48025e74c19d4869e717996ef6bd110795b122b29",
+          "font_sha256": "5888eecc912f46f14b7807906d2ffc0a42d543a3695465b76a83b699373344b9"
+        }
+      ],
+      "verdict": {
+        "decision": "accept",
+        "reason": "Л/л has a restrained left exit coherent with Д/д. п/т remain upright; heavy Ж/К/Я retain their familiar skeleton without decorative additions.",
+        "arbiter": "root agent; not a human readability study"
+      }
+    },
+    {
+      "id": "D05",
+      "title": "Непрерывность и оптическая компенсация",
+      "status": "accepted",
+      "change": "Continuous weight/optical attenuation on shared master topology, with positive handle scaling and thin round relief.",
+      "evidence": [
+        {
+          "path": "reports/authorial-final-verification.json",
+          "sha256": "6e91c2ce554f0272a56ee7b48025e74c19d4869e717996ef6bd110795b122b29",
+          "font_sha256": "5888eecc912f46f14b7807906d2ffc0a42d543a3695465b76a83b699373344b9"
+        }
+      ],
+      "verdict": {
+        "decision": "accept",
+        "reason": "Intermediate-axis geometry, continuous advance data, fixed-corpus layout and independent build checks pass; all 189 characters and both axes remain present.",
+        "arbiter": "root agent; not a human readability study"
+      }
+    },
+    {
+      "id": "D06",
+      "title": "Компактность и полный набор",
+      "status": "accepted",
+      "change": "Retained 189 characters and both variation axes, unchanged advances and layout tables, compact WOFF2 export.",
+      "evidence": [
+        {
+          "path": "reports/authorial-final-verification.json",
+          "sha256": "6e91c2ce554f0272a56ee7b48025e74c19d4869e717996ef6bd110795b122b29",
+          "font_sha256": "5888eecc912f46f14b7807906d2ffc0a42d543a3695465b76a83b699373344b9"
+        }
+      ],
+      "verdict": {
+        "decision": "accept",
+        "reason": "Intermediate-axis geometry, continuous advance data, fixed-corpus layout and independent build checks pass; all 189 characters and both axes remain present.",
+        "arbiter": "root agent; not a human readability study"
+      }
+    }
+  ],
+  "authorial_deviations": {
+    "path": "reports/authorial-deviations.json",
+    "sha256": "d51197bda91bce83ad3d417028560b57417c0c23401b8df91036f46692063f08",
+    "font_sha256": "5888eecc912f46f14b7807906d2ffc0a42d543a3695465b76a83b699373344b9"
+  }
+}

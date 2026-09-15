@@ -1,0 +1,9 @@
+{
+  "role": "Root integration verifier, separate from ten independent reviewers",
+  "font_sha256": "56cb3cbd30099ed97b0395e7eae28f9431e84ff9eede14cdfb4061f1c5873edc",
+  "locations": 24,
+  "partial_feature_context_checks": 11760,
+  "failures": [],
+  "passed": true,
+  "scope": "Partial tnum/pnum ranges preserve baseline contextual punctuation and format parity; baseline capitalization policy not judged here."
+}

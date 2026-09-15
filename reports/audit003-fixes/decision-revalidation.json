@@ -1,0 +1,44 @@
+{
+  "font_sha256": "56cb3cbd30099ed97b0395e7eae28f9431e84ff9eede14cdfb4061f1c5873edc",
+  "status": "passed_for_design_preservation",
+  "rebuild_ttf_byte_identical": true,
+  "rebuild_woff2_byte_identical": true,
+  "accepted_scope": [
+    "D02",
+    "D03",
+    "D04",
+    "D05",
+    "D06"
+  ],
+  "pending": [
+    "D01"
+  ],
+  "evidence": [
+    {
+      "path": "reports/audit003-fixes/design-preservation.json",
+      "sha256": "a60c763791d4b573839bc35a4505fa0df45246b4b75d66a066cfd2783952ea19"
+    },
+    {
+      "path": "reports/audit003-fixes/rebuilt-verification.json",
+      "sha256": "f9b5c207c9110a02874cc378c5181e81e8593daa97e5adfe37895dd15dbcde65"
+    },
+    {
+      "path": "reports/independent-matrix-003/type.json",
+      "sha256": "e08d74ce9ccce3f7dc9e5331409245b63c15f0519fbae8d93ff7009e5a2f6209"
+    },
+    {
+      "path": "reports/independent-matrix-003/cyrillic.json",
+      "sha256": "aff553f25ab64dc3fe93df1cbcaf8a5a9c6d797f25f9da43125446618269f752"
+    },
+    {
+      "path": "reports/digit-verification.json",
+      "sha256": "28d902435ddb400aed690d4719a66ea36be3f096b3c44a5b81b1593c1edf4ecc"
+    },
+    {
+      "path": "reports/timer-verification.json",
+      "sha256": "4b70dc7511dc2806141d67d7d0754a1cf89dbdee20e85ce836ebe4ba2bda43d6"
+    }
+  ],
+  "human_reading_study": false,
+  "reason": "Exact binary rebuild, 208 unchanged non-tabular glyphs including continuous gvar data, scoped numeral/GSUB fixes, current independent visual reviews and fresh format verification. Repeated character in lines remains provisional after matrix003."
+}

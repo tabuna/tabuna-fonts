@@ -1,0 +1,224 @@
+{
+  "version": "0.0.3",
+  "font_sha256": "56cb3cbd30099ed97b0395e7eae28f9431e84ff9eede14cdfb4061f1c5873edc",
+  "method": "10 fresh-context agent roles, one model family, no human participants or Apple endorsement; locked initials before discussion",
+  "reviewers": [
+    {
+      "id": "engineering",
+      "source": "engineering.json",
+      "raw_verdicts": {
+        "ui": {
+          "status": "conditional_pass",
+          "reason": "Numeric metrics and contextual punctuation pass fresh automated coverage; use tnum alone for aligned numeric UI. Native rendering remains untested."
+        },
+        "headings": {
+          "status": "conditional_pass",
+          "reason": "Sampled weight/optical-size instances have finite bounds and consistent shaping; display appearance requires visual assessment."
+        },
+        "body": {
+          "status": "unproven",
+          "reason": "Technical feature checks pass, but this audit does not measure text spacing quality, legibility or reader performance."
+        },
+        "sustained_reading": {
+          "status": "unproven",
+          "reason": "No actual reader study, extended reading or fatigue assessment was performed."
+        }
+      }
+    },
+    {
+      "id": "type",
+      "source": "type.json",
+      "raw_verdicts": {
+        "ui": {
+          "status": "conditional_pass",
+          "reason": "400 at 14 px has legible labels, punctuation and Russian/English rhythm. 100 is visibly faint at this raster size and 900 is dense; neither extreme should be the default. Alphanumeric identifiers need extra care for O/0."
+        },
+        "headings": {
+          "status": "pass",
+          "reason": "At 40 px all three weights have coherent RU/EN proportions and clear word silhouettes; no obvious collisions or closed counters in these samples."
+        },
+        "body": {
+          "status": "conditional_pass",
+          "reason": "400 at 18 px is convincing in the short RU/EN samples; counters and word spacing remain clear. Weight 100 is delicate and 900 emphatic, appropriate stylistic extremes rather than demonstrated drawing defects."
+        },
+        "sustained_reading": {
+          "status": "unproven",
+          "reason": "The regular short paragraphs look promising, but a few lines of visual review cannot establish comfort over sustained reading."
+        }
+      }
+    },
+    {
+      "id": "hig",
+      "source": "hig.json",
+      "raw_verdicts": {
+        "ui": {
+          "status": "conditional",
+          "reason": "Suitable to continue limited 16px/500 interface trials. Actual checkbox/button sample uses Tabuna, but system-font page chrome does not validate broader UI deployment; adaptive native integration and runtime assistive-technology testing remain unverified."
+        },
+        "headings": {
+          "status": "conditional",
+          "reason": "Hierarchy and moderate default weights are reasonable. Large headline use remains provisional pending large-text reflow and rendered glyph/spacing review; hero nowrap is a concrete adaptation risk."
+        },
+        "body": {
+          "status": "conditional",
+          "reason": "1rem/400 static paragraphs and 18px/400 body preset with 1.6–1.65 leading provide a reasonable starting setup; source settings alone do not establish font legibility."
+        },
+        "sustained_reading": {
+          "status": "not_established",
+          "reason": "Only two short demonstration paragraphs; no long-form task, controlled reader evidence, low-vision evaluation, or fatigue measure. Cannot approve sustained reading from HIG-oriented source inspection."
+        }
+      }
+    },
+    {
+      "id": "cyrillic",
+      "source": "cyrillic.json",
+      "raw_verdicts": {
+        "ui": {
+          "status": "conditional_pass",
+          "reason": "Regular 400 Russian labels at 12–20 px remain legible with matched opsz. Thin 100 at 12–16 px has very low stroke coverage; heavy 900 is usable for short emphasis, not a default text weight."
+        },
+        "headings": {
+          "status": "pass",
+          "reason": "At 24–96 px the tested Cyrillic constructions and diacritics remain recognizable at 100, 400 and 900; no visible broken joins or counter collapse in the inspected samples."
+        },
+        "body": {
+          "status": "conditional_pass",
+          "reason": "Russian paragraphs at 14 and 18 px / weight 400 are readable and have coherent texture. This is a short visual inspection, not a reading study."
+        },
+        "sustained_reading": {
+          "status": "not_established",
+          "reason": "Four-line paragraphs do not establish long-session readability or fatigue; no human reading test was performed."
+        }
+      }
+    },
+    {
+      "id": "data",
+      "source": "data.json",
+      "raw_verdicts": {
+        "ui": {
+          "status": "pass_with_conditions",
+          "reason": "Numeric UI at weight 400–700, opsz 9–14 is clear; tnum stabilizes timers and right-aligned fixed-precision numbers. Do not use weight 100 at 16px for critical values."
+        },
+        "headings": {
+          "status": "pass_with_conditions",
+          "reason": "32px numeric samples are legible across sampled axes; thin 100/128 has low emphasis and must suit contrast and size."
+        },
+        "body": {
+          "status": "limited_pass",
+          "reason": "Inline currency and decimals at 16px, usual axes are legible. This review does not assess full prose."
+        },
+        "sustained_reading": {
+          "status": "not_assessed",
+          "reason": "Numeric samples cannot establish long-form reading comfort."
+        }
+      }
+    },
+    {
+      "id": "reading",
+      "source": "reading.json",
+      "raw_verdicts": {
+        "ui": {
+          "status": "provisional_pass",
+          "reason": "Independent 16px labels, controls, dates and currency are readable with no obvious broken spacing; blind UI pairs show no robust difference."
+        },
+        "headings": {
+          "status": "provisional_pass",
+          "reason": "36px/500 Russian and English headings have coherent rhythm and open counters; no robust blind preference at 48px/500."
+        },
+        "body": {
+          "status": "provisional_pass",
+          "reason": "Five-line English and Russian paragraphs at 16px/400 remain visually even and easily parsed at inspected scale."
+        },
+        "sustained_reading": {
+          "status": "unproven",
+          "reason": "An agent inspection of short passages cannot measure fatigue, reading speed, comprehension or long-duration comfort."
+        }
+      }
+    },
+    {
+      "id": "ui",
+      "source": "ui.json",
+      "raw_verdicts": {
+        "ui": "Conditional pass: legible short controls at 16px/500; enlarged narrow layout fails.",
+        "headings": "Pass at normal desktop/mobile sizes: clear hierarchy and open forms; enlarged hero fails reflow.",
+        "body": "Pass for the two supplied short Russian paragraphs at 16px/1.65 and body preset 18px/1.6.",
+        "sustained_reading": "Not established: supplied article is too short for fatigue or long-form evaluation.",
+        "tables": "Pass at ordinary tested size: 14.4px figures align, four weight rows remain readable.",
+        "release": "Suitable for continued prototype use; resolve enlarged narrow layout before treating demo as robust accessible integration."
+      }
+    },
+    {
+      "id": "raster",
+      "source": "raster.json",
+      "raw_verdicts": {
+        "ui": "Conditional pass for 400/500 at 14–18px; 12px recognizable but less robust. Do not use 100 for essential small UI. 900 only brief emphasis. Platform validation outstanding.",
+        "headings": "Small headings at 16–18px 400/500/900 readable. Larger heading sizes not tested; Thin heading approval outside scope.",
+        "body": "Conditional pass for short RU/EN text at 16–18px 400/500. Thin and 900 unsuitable as default body in this matrix.",
+        "sustained_reading": "Not established: short isolated lines only; no extended reading or participant test."
+      }
+    },
+    {
+      "id": "character",
+      "source": "character.json",
+      "raw_verdicts": {
+        "ui": "conditional; labels visually usable, Il1 distinction needs intended-size checks",
+        "headings": "provisional visual pass for sampled lines; no comparative character winner",
+        "body": "conditional; short lines only",
+        "sustained_reading": "not established"
+      }
+    },
+    {
+      "id": "release",
+      "source": "release.json",
+      "raw_verdicts": {}
+    }
+  ],
+  "arbitration": {
+    "ui": "conditional_pilot",
+    "headings": "conditional_pilot",
+    "body": "conditional_short_text_pilot",
+    "sustained_reading": "not_established",
+    "authorial_release": "blocked_by_existing_gate",
+    "timer_context": "passes_sampled_independent_checks",
+    "demo_enlarged_reflow": "confirmed_failure",
+    "contracted_coverage": "189_of_189",
+    "blind_line_advantage": "not_demonstrated",
+    "blind_I_differentiation": "narrow_preference_for_current_version"
+  },
+  "actions": [
+    {
+      "id": "A01",
+      "status": "open"
+    },
+    {
+      "id": "A02",
+      "status": "open"
+    },
+    {
+      "id": "A03",
+      "status": "font_mechanics_pass_integration_guidance_pending"
+    },
+    {
+      "id": "A04",
+      "status": "open"
+    },
+    {
+      "id": "A05",
+      "status": "open"
+    },
+    {
+      "id": "A06",
+      "status": "open"
+    },
+    {
+      "id": "A07",
+      "status": "open"
+    }
+  ],
+  "full_acceptance_criteria": "MATRIX.md",
+  "critiques": [
+    "character-critique.json",
+    "accessibility-critique.json",
+    "engineering-critique.json"
+  ]
+}

@@ -1,0 +1,132 @@
+{
+  "role": "independent reading/typographic visual assessor",
+  "font_sha256": "56cb3cbd30099ed97b0395e7eae28f9431e84ff9eede14cdfb4061f1c5873edc",
+  "independence": {
+    "blind_first": true,
+    "key_read": false,
+    "other_reports_read": false,
+    "font_source_modified": false,
+    "note": "Viewed blind.png before locating font or rendering independent proof. X/Y identities remain unknown."
+  },
+  "tests": [
+    {
+      "name": "Blind alternating-order comparison",
+      "evidence": "build/matrix003/blind.png",
+      "method": "Actual image inspection of all 10 pairs at supplied scale."
+    },
+    {
+      "name": "Independent current-distribution reading proof",
+      "evidence": "scratchbuild/matrix003/reading/proof.png",
+      "method": "Pillow/FreeType render of actual dist/TabunaSansVariable.ttf; 16px/400 opsz16 Russian and English UI/body, 36px/500 opsz36 headings, 24px/400 opsz24 diagnostics. Actual image inspected."
+    }
+  ],
+  "blind_assessment": {
+    "pairs": [
+      {
+        "pair": 1,
+        "preference": "indistinguishable",
+        "confidence": "low",
+        "reason": "No robust reading advantage visible between rows at the supplied viewing scale."
+      },
+      {
+        "pair": 2,
+        "preference": "indistinguishable",
+        "confidence": "low",
+        "reason": "No robust reading advantage visible between rows at the supplied viewing scale."
+      },
+      {
+        "pair": 3,
+        "preference": "indistinguishable",
+        "confidence": "low",
+        "reason": "No robust reading advantage visible between rows at the supplied viewing scale."
+      },
+      {
+        "pair": 4,
+        "preference": "indistinguishable",
+        "confidence": "low",
+        "reason": "No robust reading advantage visible between rows at the supplied viewing scale."
+      },
+      {
+        "pair": 5,
+        "preference": "indistinguishable",
+        "confidence": "low",
+        "reason": "No robust reading advantage visible between rows at the supplied viewing scale."
+      },
+      {
+        "pair": 6,
+        "preference": "indistinguishable",
+        "confidence": "low",
+        "reason": "No robust reading advantage visible between rows at the supplied viewing scale."
+      },
+      {
+        "pair": 7,
+        "preference": "indistinguishable",
+        "confidence": "low",
+        "reason": "No robust reading advantage visible between rows at the supplied viewing scale."
+      },
+      {
+        "pair": 8,
+        "preference": "indistinguishable",
+        "confidence": "low",
+        "reason": "No robust reading advantage visible between rows at the supplied viewing scale."
+      },
+      {
+        "pair": 9,
+        "preference": "X",
+        "confidence": "moderate",
+        "reason": "Capital I has visible horizontal terminals, making the I/l/1 diagnostic group more differentiated."
+      },
+      {
+        "pair": 10,
+        "preference": "X",
+        "confidence": "moderate",
+        "reason": "Capital I has visible horizontal terminals, making the I/l/1 diagnostic group more differentiated."
+      }
+    ],
+    "repeat_consistency": {
+      "pairs_1_5": "Consistent: both indistinguishable.",
+      "pairs_2_6": "Consistent: both indistinguishable."
+    },
+    "interpretation": "No consistent superiority in prose/UI/headings demonstrated. X preferred only for capital-I differentiation in two diagnostic extremes; not a general reading preference."
+  },
+  "verdicts": {
+    "ui": {
+      "status": "provisional_pass",
+      "reason": "Independent 16px labels, controls, dates and currency are readable with no obvious broken spacing; blind UI pairs show no robust difference."
+    },
+    "headings": {
+      "status": "provisional_pass",
+      "reason": "36px/500 Russian and English headings have coherent rhythm and open counters; no robust blind preference at 48px/500."
+    },
+    "body": {
+      "status": "provisional_pass",
+      "reason": "Five-line English and Russian paragraphs at 16px/400 remain visually even and easily parsed at inspected scale."
+    },
+    "sustained_reading": {
+      "status": "unproven",
+      "reason": "An agent inspection of short passages cannot measure fatigue, reading speed, comprehension or long-duration comfort."
+    }
+  },
+  "findings": [
+    {
+      "priority": "P2",
+      "specific": "Blind diagnostic pairs 9 and 10: X capital I has horizontal terminals while Y presents a plainer vertical construction, reducing I/l distinction.",
+      "recommendation": "Preserve or evaluate differentiated capital-I treatment for identifiers and mixed alphanumeric UI; do not extrapolate this diagnostic preference to prose.",
+      "acceptance_test": "Compare I/l/1 strings at 12–16px across 400/500/700 and optical sizes 9/14/16, with randomized identity transcription by human participants."
+    },
+    {
+      "priority": "P2",
+      "specific": "Sustained-reading claim lacks direct evidence beyond short rendered paragraphs.",
+      "recommendation": "Keep long-form suitability provisional until a human reading evaluation.",
+      "acceptance_test": "Counterbalanced 10–15 minute Russian and English reading sessions with comprehension, error, preference and discomfort measures, against a specified reference at matched apparent size."
+    }
+  ],
+  "limits": [
+    "Agent visual assessment, not human reading study.",
+    "Single supplied raster and one Pillow rasterizer; no browser/OS/device coverage.",
+    "Body/UI independent render uses opsz16, whereas blind UI uses opsz14.",
+    "No 12px small UI, dark mode, low contrast or actual interactive application tested.",
+    "Font version was described by parent as 0.0.3; exact artifact is identified by SHA-256.",
+    "X/Y identities deliberately not decoded."
+  ]
+}

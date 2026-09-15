@@ -1,0 +1,71 @@
+{
+  "role": "release engineering cross-critic",
+  "font_sha256": "56cb3cbd30099ed97b0395e7eae28f9431e84ff9eede14cdfb4061f1c5873edc",
+  "independence": {
+    "phase": "Cross-critique after independent report finalized; initial release.md/json unchanged.",
+    "peer_inputs": [
+      "engineering.md",
+      "data.md",
+      "feature-ranges.json"
+    ],
+    "historical_input": "reports/timer-fix/README.md"
+  },
+  "conclusions": {
+    "timer_closure": "Supported for exact 0.0.3 artifact and tested shaping scope. Fresh full regression rerun agrees with independent engineering/data observations.",
+    "simultaneous_features": "Observed proportional precedence when tnum and pnum are both enabled is an application integration condition, not an observed font defect. Explicitly select mutually exclusive numeral modes. No universal precedence claim across all shaping engines is made.",
+    "release_status": "No failed binary assertion in this bounded audit; authorial gate remains blocked on design-decision/deviation evidence. Neither fact overrides the other.",
+    "reading": "Numeric shaping and scoped FreeType data proof do not establish general body or sustained-reading suitability."
+  },
+  "tests": [
+    {
+      "command": ".venv/bin/python scripts/check_timers.py --out scratchbuild/matrix003/release/timer-rerun.json",
+      "result": {
+        "font_sha256": "56cb3cbd30099ed97b0395e7eae28f9431e84ff9eede14cdfb4061f1c5873edc",
+        "files": {
+          "dist/TabunaSansVariable.ttf": "56cb3cbd30099ed97b0395e7eae28f9431e84ff9eede14cdfb4061f1c5873edc",
+          "dist/TabunaSansVariable.woff2": "090801dbfa6086e63678a38df35c522f3032164b2e4bced9e692121bccef704e"
+        },
+        "axis_locations": 117,
+        "context_checks": 220896,
+        "format_comparisons": 110448,
+        "equal_width_timer_groups": 234,
+        "failure_count": 0,
+        "failures": [],
+        "passed": true
+      }
+    },
+    {
+      "name": "Direct current-TTF HarfBuzz conflict check at wght400 opsz14",
+      "result": "tnum and tnum+pnum=0 produce ten 1286-unit advances; pnum and tnum+pnum produce [1268,928,1214,1262,1296,1244,1282,1114,1286,1282]."
+    },
+    {
+      "name": "Independent partial feature ranges",
+      "result": "Reviewed root evidence: 24 locations,11760 checks,zero failures; did not independently rerun root harness."
+    }
+  ],
+  "findings": [
+    {
+      "priority": "P3",
+      "condition": "Raw caller settings enable both pnum and tnum, defeating intended fixed-width numerals on tested HarfBuzz path.",
+      "recommendation": "Keep as integration guidance, not font bug or timer reopening. Select tabular-nums for changing values and avoid conflicting raw proportional feature inheritance.",
+      "acceptance_test": "At intended application axis settings, all ten digits have equal advances and a timer cycle has invariant total width under explicit tnum=1,pnum=0; check the actual application renderer."
+    },
+    {
+      "priority": "P1",
+      "condition": "Authorial release gate has pending D01\u2013D06 and unverified deviations despite no technical/audit failures.",
+      "recommendation": "Maintain pilot qualification; describe this as release-evidence incompleteness, not binary breakage.",
+      "acceptance_test": "Exact-artifact design_status --require authorial exits0 after valid hashed decisions/deviations are supplied."
+    }
+  ],
+  "gates": [
+    "Retain full timer regression in build-web; require 117 axis locations,220896 context checks,zero failures and current font hashes.",
+    "Retain current release gate timer/numeric checks and exact-hash authorial decision evidence.",
+    "Before product-wide deployment, separately inspect native/browser numeric rendering, fallback, real timer cycles and equal-precision right-aligned prices."
+  ],
+  "limits": [
+    "Fresh timer rerun is HarfBuzz shaping, not a new browser or CoreText raster review.",
+    "Full timer script covers discrete axis grid; no continuous-axis guarantee.",
+    "Historical pre-fix failure counts and historical raster screenshots were not independently reproduced in this cross-critique.",
+    "Peer data proof is scoped numeric evidence; no participant study or Apple endorsement."
+  ]
+}

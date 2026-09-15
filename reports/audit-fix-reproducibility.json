@@ -1,0 +1,16 @@
+{
+  "method": "Two complete source-generation and compilation runs in the same environment",
+  "files": {
+    "TabunaSansVariable.ttf": {
+      "sha256": "3567058955eb20ebaf25ef5241a094b25d86dfd7be966f8032492dd3caa3e011",
+      "bytes": 311352,
+      "identical": true
+    },
+    "TabunaSansVariable.woff2": {
+      "sha256": "d07839f04ebdbfb89fed1c4f9d5d2609197db1071251bd5cf8ab0db5f626b207",
+      "bytes": 93128,
+      "identical": true
+    }
+  },
+  "passed": true
+}

@@ -1,0 +1,17 @@
+{
+  "revealed_after_all_initial_reports_locked": true,
+  "key": {
+    "A": {
+      "path": "build/releases/0.0.1/assets/TabunaSansVariable.ttf",
+      "sha256": "18f597e3a48133227d503eff9a297c9b9e62c646dd5cf7902dd8ed216369cf28"
+    },
+    "B": {
+      "path": "dist/TabunaSansVariable.ttf",
+      "sha256": "3567058955eb20ebaf25ef5241a094b25d86dfd7be966f8032492dd3caa3e011"
+    }
+  },
+  "limitations": [
+    "Fixed A-before-B order; two model reviewers, not human participants",
+    "No line-level identity recognition accuracy experiment; observations only"
+  ]
+}

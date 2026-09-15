@@ -1,0 +1,5321 @@
+{
+  "font_sha256": "30400e1401d38076e3722fde3b0715790090518224ebb5145bc84ba7c0ffc39f",
+  "characters": "Il\u041b\u043b\u0414\u0434\u0416\u0436\u041a\u043a\u042f\u044foO\u043e\u041e0cC\u0441\u0421e\u0435\u0451\u044d\u042dbdpq\u0431\u0440\u0444\u0424B\u041283\u0417\u0437agGDQRP\u0411\u042c\u044c\u042b\u044b\u042e\u044e",
+  "weights": [
+    100,
+    150,
+    250,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900
+  ],
+  "optical_sizes": [
+    9,
+    14,
+    16,
+    20,
+    28,
+    64,
+    128
+  ],
+  "checked": 3402,
+  "failures": [
+    {
+      "character": "\u0414",
+      "weight": 100,
+      "optical": 9,
+      "crossings": 2
+    },
+    {
+      "character": "\u0434",
+      "weight": 100,
+      "optical": 9,
+      "crossings": 2
+    },
+    {
+      "character": "\u0416",
+      "weight": 100,
+      "optical": 9,
+      "crossings": 10
+    },
+    {
+      "character": "\u0436",
+      "weight": 100,
+      "optical": 9,
+      "crossings": 10
+    },
+    {
+      "character": "\u041a",
+      "weight": 100,
+      "optical": 9,
+      "crossings": 6
+    },
+    {
+      "character": "\u043a",
+      "weight": 100,
+      "optical": 9,
+      "crossings": 4
+    },
+    {
+      "character": "\u044d",
+      "weight": 100,
+      "optical": 9,
+      "crossings": 2
+    },
+    {
+      "character": "\u042d",
+      "weight": 100,
+      "optical": 9,
+      "crossings": 2
+    },
+    {
+      "character": "\u0444",
+      "weight": 100,
+      "optical": 9,
+      "crossings": 8
+    },
+    {
+      "character": "\u0424",
+      "weight": 100,
+      "optical": 9,
+      "crossings": 8
+    },
+    {
+      "character": "Q",
+      "weight": 100,
+      "optical": 9,
+      "crossings": 4
+    },
+    {
+      "character": "R",
+      "weight": 100,
+      "optical": 9,
+      "crossings": 2
+    },
+    {
+      "character": "\u042e",
+      "weight": 100,
+      "optical": 9,
+      "crossings": 4
+    },
+    {
+      "character": "\u044e",
+      "weight": 100,
+      "optical": 9,
+      "crossings": 4
+    },
+    {
+      "character": "\u0414",
+      "weight": 100,
+      "optical": 14,
+      "crossings": 2
+    },
+    {
+      "character": "\u0434",
+      "weight": 100,
+      "optical": 14,
+      "crossings": 2
+    },
+    {
+      "character": "\u0416",
+      "weight": 100,
+      "optical": 14,
+      "crossings": 10
+    },
+    {
+      "character": "\u0436",
+      "weight": 100,
+      "optical": 14,
+      "crossings": 10
+    },
+    {
+      "character": "\u041a",
+      "weight": 100,
+      "optical": 14,
+      "crossings": 6
+    },
+    {
+      "character": "\u043a",
+      "weight": 100,
+      "optical": 14,
+      "crossings": 4
+    },
+    {
+      "character": "\u044d",
+      "weight": 100,
+      "optical": 14,
+      "crossings": 2
+    },
+    {
+      "character": "\u042d",
+      "weight": 100,
+      "optical": 14,
+      "crossings": 2
+    },
+    {
+      "character": "\u0444",
+      "weight": 100,
+      "optical": 14,
+      "crossings": 8
+    },
+    {
+      "character": "\u0424",
+      "weight": 100,
+      "optical": 14,
+      "crossings": 8
+    },
+    {
+      "character": "Q",
+      "weight": 100,
+      "optical": 14,
+      "crossings": 4
+    },
+    {
+      "character": "R",
+      "weight": 100,
+      "optical": 14,
+      "crossings": 2
+    },
+    {
+      "character": "\u042e",
+      "weight": 100,
+      "optical": 14,
+      "crossings": 4
+    },
+    {
+      "character": "\u044e",
+      "weight": 100,
+      "optical": 14,
+      "crossings": 4
+    },
+    {
+      "character": "\u0414",
+      "weight": 100,
+      "optical": 16,
+      "crossings": 2
+    },
+    {
+      "character": "\u0434",
+      "weight": 100,
+      "optical": 16,
+      "crossings": 2
+    },
+    {
+      "character": "\u0416",
+      "weight": 100,
+      "optical": 16,
+      "crossings": 10
+    },
+    {
+      "character": "\u0436",
+      "weight": 100,
+      "optical": 16,
+      "crossings": 10
+    },
+    {
+      "character": "\u041a",
+      "weight": 100,
+      "optical": 16,
+      "crossings": 6
+    },
+    {
+      "character": "\u043a",
+      "weight": 100,
+      "optical": 16,
+      "crossings": 4
+    },
+    {
+      "character": "\u044d",
+      "weight": 100,
+      "optical": 16,
+      "crossings": 2
+    },
+    {
+      "character": "\u042d",
+      "weight": 100,
+      "optical": 16,
+      "crossings": 2
+    },
+    {
+      "character": "\u0444",
+      "weight": 100,
+      "optical": 16,
+      "crossings": 8
+    },
+    {
+      "character": "\u0424",
+      "weight": 100,
+      "optical": 16,
+      "crossings": 8
+    },
+    {
+      "character": "Q",
+      "weight": 100,
+      "optical": 16,
+      "crossings": 4
+    },
+    {
+      "character": "R",
+      "weight": 100,
+      "optical": 16,
+      "crossings": 2
+    },
+    {
+      "character": "\u042e",
+      "weight": 100,
+      "optical": 16,
+      "crossings": 4
+    },
+    {
+      "character": "\u044e",
+      "weight": 100,
+      "optical": 16,
+      "crossings": 4
+    },
+    {
+      "character": "\u0414",
+      "weight": 100,
+      "optical": 20,
+      "crossings": 2
+    },
+    {
+      "character": "\u0434",
+      "weight": 100,
+      "optical": 20,
+      "crossings": 2
+    },
+    {
+      "character": "\u0416",
+      "weight": 100,
+      "optical": 20,
+      "crossings": 10
+    },
+    {
+      "character": "\u0436",
+      "weight": 100,
+      "optical": 20,
+      "crossings": 10
+    },
+    {
+      "character": "\u041a",
+      "weight": 100,
+      "optical": 20,
+      "crossings": 6
+    },
+    {
+      "character": "\u043a",
+      "weight": 100,
+      "optical": 20,
+      "crossings": 6
+    },
+    {
+      "character": "\u044d",
+      "weight": 100,
+      "optical": 20,
+      "crossings": 2
+    },
+    {
+      "character": "\u042d",
+      "weight": 100,
+      "optical": 20,
+      "crossings": 2
+    },
+    {
+      "character": "\u0444",
+      "weight": 100,
+      "optical": 20,
+      "crossings": 8
+    },
+    {
+      "character": "\u0424",
+      "weight": 100,
+      "optical": 20,
+      "crossings": 8
+    },
+    {
+      "character": "Q",
+      "weight": 100,
+      "optical": 20,
+      "crossings": 4
+    },
+    {
+      "character": "R",
+      "weight": 100,
+      "optical": 20,
+      "crossings": 2
+    },
+    {
+      "character": "\u042e",
+      "weight": 100,
+      "optical": 20,
+      "crossings": 4
+    },
+    {
+      "character": "\u044e",
+      "weight": 100,
+      "optical": 20,
+      "crossings": 4
+    },
+    {
+      "character": "\u0414",
+      "weight": 100,
+      "optical": 28,
+      "crossings": 2
+    },
+    {
+      "character": "\u0434",
+      "weight": 100,
+      "optical": 28,
+      "crossings": 2
+    },
+    {
+      "character": "\u0416",
+      "weight": 100,
+      "optical": 28,
+      "crossings": 10
+    },
+    {
+      "character": "\u0436",
+      "weight": 100,
+      "optical": 28,
+      "crossings": 10
+    },
+    {
+      "character": "\u041a",
+      "weight": 100,
+      "optical": 28,
+      "crossings": 6
+    },
+    {
+      "character": "\u043a",
+      "weight": 100,
+      "optical": 28,
+      "crossings": 4
+    },
+    {
+      "character": "\u044d",
+      "weight": 100,
+      "optical": 28,
+      "crossings": 2
+    },
+    {
+      "character": "\u042d",
+      "weight": 100,
+      "optical": 28,
+      "crossings": 2
+    },
+    {
+      "character": "\u0444",
+      "weight": 100,
+      "optical": 28,
+      "crossings": 8
+    },
+    {
+      "character": "\u0424",
+      "weight": 100,
+      "optical": 28,
+      "crossings": 8
+    },
+    {
+      "character": "Q",
+      "weight": 100,
+      "optical": 28,
+      "crossings": 4
+    },
+    {
+      "character": "R",
+      "weight": 100,
+      "optical": 28,
+      "crossings": 2
+    },
+    {
+      "character": "\u042e",
+      "weight": 100,
+      "optical": 28,
+      "crossings": 4
+    },
+    {
+      "character": "\u044e",
+      "weight": 100,
+      "optical": 28,
+      "crossings": 4
+    },
+    {
+      "character": "\u0414",
+      "weight": 100,
+      "optical": 64,
+      "crossings": 2
+    },
+    {
+      "character": "\u0434",
+      "weight": 100,
+      "optical": 64,
+      "crossings": 2
+    },
+    {
+      "character": "\u0416",
+      "weight": 100,
+      "optical": 64,
+      "crossings": 10
+    },
+    {
+      "character": "\u0436",
+      "weight": 100,
+      "optical": 64,
+      "crossings": 10
+    },
+    {
+      "character": "\u041a",
+      "weight": 100,
+      "optical": 64,
+      "crossings": 6
+    },
+    {
+      "character": "\u043a",
+      "weight": 100,
+      "optical": 64,
+      "crossings": 4
+    },
+    {
+      "character": "\u044d",
+      "weight": 100,
+      "optical": 64,
+      "crossings": 2
+    },
+    {
+      "character": "\u042d",
+      "weight": 100,
+      "optical": 64,
+      "crossings": 2
+    },
+    {
+      "character": "\u0444",
+      "weight": 100,
+      "optical": 64,
+      "crossings": 8
+    },
+    {
+      "character": "\u0424",
+      "weight": 100,
+      "optical": 64,
+      "crossings": 8
+    },
+    {
+      "character": "Q",
+      "weight": 100,
+      "optical": 64,
+      "crossings": 4
+    },
+    {
+      "character": "R",
+      "weight": 100,
+      "optical": 64,
+      "crossings": 2
+    },
+    {
+      "character": "\u042e",
+      "weight": 100,
+      "optical": 64,
+      "crossings": 4
+    },
+    {
+      "character": "\u044e",
+      "weight": 100,
+      "optical": 64,
+      "crossings": 4
+    },
+    {
+      "character": "\u0414",
+      "weight": 100,
+      "optical": 128,
+      "crossings": 2
+    },
+    {
+      "character": "\u0434",
+      "weight": 100,
+      "optical": 128,
+      "crossings": 2
+    },
+    {
+      "character": "\u0416",
+      "weight": 100,
+      "optical": 128,
+      "crossings": 10
+    },
+    {
+      "character": "\u0436",
+      "weight": 100,
+      "optical": 128,
+      "crossings": 10
+    },
+    {
+      "character": "\u041a",
+      "weight": 100,
+      "optical": 128,
+      "crossings": 6
+    },
+    {
+      "character": "\u043a",
+      "weight": 100,
+      "optical": 128,
+      "crossings": 4
+    },
+    {
+      "character": "\u044d",
+      "weight": 100,
+      "optical": 128,
+      "crossings": 2
+    },
+    {
+      "character": "\u042d",
+      "weight": 100,
+      "optical": 128,
+      "crossings": 2
+    },
+    {
+      "character": "\u0444",
+      "weight": 100,
+      "optical": 128,
+      "crossings": 8
+    },
+    {
+      "character": "\u0424",
+      "weight": 100,
+      "optical": 128,
+      "crossings": 8
+    },
+    {
+      "character": "Q",
+      "weight": 100,
+      "optical": 128,
+      "crossings": 4
+    },
+    {
+      "character": "R",
+      "weight": 100,
+      "optical": 128,
+      "crossings": 2
+    },
+    {
+      "character": "\u042e",
+      "weight": 100,
+      "optical": 128,
+      "crossings": 4
+    },
+    {
+      "character": "\u044e",
+      "weight": 100,
+      "optical": 128,
+      "crossings": 4
+    },
+    {
+      "character": "\u0414",
+      "weight": 150,
+      "optical": 9,
+      "crossings": 2
+    },
+    {
+      "character": "\u0434",
+      "weight": 150,
+      "optical": 9,
+      "crossings": 2
+    },
+    {
+      "character": "\u0416",
+      "weight": 150,
+      "optical": 9,
+      "crossings": 10
+    },
+    {
+      "character": "\u0436",
+      "weight": 150,
+      "optical": 9,
+      "crossings": 10
+    },
+    {
+      "character": "\u041a",
+      "weight": 150,
+      "optical": 9,
+      "crossings": 6
+    },
+    {
+      "character": "\u043a",
+      "weight": 150,
+      "optical": 9,
+      "crossings": 6
+    },
+    {
+      "character": "\u044d",
+      "weight": 150,
+      "optical": 9,
+      "crossings": 2
+    },
+    {
+      "character": "\u042d",
+      "weight": 150,
+      "optical": 9,
+      "crossings": 2
+    },
+    {
+      "character": "\u0444",
+      "weight": 150,
+      "optical": 9,
+      "crossings": 8
+    },
+    {
+      "character": "\u0424",
+      "weight": 150,
+      "optical": 9,
+      "crossings": 8
+    },
+    {
+      "character": "Q",
+      "weight": 150,
+      "optical": 9,
+      "crossings": 4
+    },
+    {
+      "character": "R",
+      "weight": 150,
+      "optical": 9,
+      "crossings": 2
+    },
+    {
+      "character": "\u042e",
+      "weight": 150,
+      "optical": 9,
+      "crossings": 4
+    },
+    {
+      "character": "\u044e",
+      "weight": 150,
+      "optical": 9,
+      "crossings": 4
+    },
+    {
+      "character": "\u0414",
+      "weight": 150,
+      "optical": 14,
+      "crossings": 2
+    },
+    {
+      "character": "\u0434",
+      "weight": 150,
+      "optical": 14,
+      "crossings": 2
+    },
+    {
+      "character": "\u0416",
+      "weight": 150,
+      "optical": 14,
+      "crossings": 10
+    },
+    {
+      "character": "\u0436",
+      "weight": 150,
+      "optical": 14,
+      "crossings": 10
+    },
+    {
+      "character": "\u041a",
+      "weight": 150,
+      "optical": 14,
+      "crossings": 6
+    },
+    {
+      "character": "\u043a",
+      "weight": 150,
+      "optical": 14,
+      "crossings": 6
+    },
+    {
+      "character": "\u044d",
+      "weight": 150,
+      "optical": 14,
+      "crossings": 2
+    },
+    {
+      "character": "\u042d",
+      "weight": 150,
+      "optical": 14,
+      "crossings": 2
+    },
+    {
+      "character": "\u0444",
+      "weight": 150,
+      "optical": 14,
+      "crossings": 8
+    },
+    {
+      "character": "\u0424",
+      "weight": 150,
+      "optical": 14,
+      "crossings": 8
+    },
+    {
+      "character": "Q",
+      "weight": 150,
+      "optical": 14,
+      "crossings": 4
+    },
+    {
+      "character": "R",
+      "weight": 150,
+      "optical": 14,
+      "crossings": 2
+    },
+    {
+      "character": "\u042e",
+      "weight": 150,
+      "optical": 14,
+      "crossings": 4
+    },
+    {
+      "character": "\u044e",
+      "weight": 150,
+      "optical": 14,
+      "crossings": 4
+    },
+    {
+      "character": "\u0414",
+      "weight": 150,
+      "optical": 16,
+      "crossings": 2
+    },
+    {
+      "character": "\u0434",
+      "weight": 150,
+      "optical": 16,
+      "crossings": 2
+    },
+    {
+      "character": "\u0416",
+      "weight": 150,
+      "optical": 16,
+      "crossings": 10
+    },
+    {
+      "character": "\u0436",
+      "weight": 150,
+      "optical": 16,
+      "crossings": 10
+    },
+    {
+      "character": "\u041a",
+      "weight": 150,
+      "optical": 16,
+      "crossings": 6
+    },
+    {
+      "character": "\u043a",
+      "weight": 150,
+      "optical": 16,
+      "crossings": 6
+    },
+    {
+      "character": "\u044d",
+      "weight": 150,
+      "optical": 16,
+      "crossings": 2
+    },
+    {
+      "character": "\u042d",
+      "weight": 150,
+      "optical": 16,
+      "crossings": 2
+    },
+    {
+      "character": "\u0444",
+      "weight": 150,
+      "optical": 16,
+      "crossings": 8
+    },
+    {
+      "character": "\u0424",
+      "weight": 150,
+      "optical": 16,
+      "crossings": 8
+    },
+    {
+      "character": "Q",
+      "weight": 150,
+      "optical": 16,
+      "crossings": 4
+    },
+    {
+      "character": "R",
+      "weight": 150,
+      "optical": 16,
+      "crossings": 2
+    },
+    {
+      "character": "\u042e",
+      "weight": 150,
+      "optical": 16,
+      "crossings": 4
+    },
+    {
+      "character": "\u044e",
+      "weight": 150,
+      "optical": 16,
+      "crossings": 4
+    },
+    {
+      "character": "\u0414",
+      "weight": 150,
+      "optical": 20,
+      "crossings": 2
+    },
+    {
+      "character": "\u0434",
+      "weight": 150,
+      "optical": 20,
+      "crossings": 2
+    },
+    {
+      "character": "\u0416",
+      "weight": 150,
+      "optical": 20,
+      "crossings": 10
+    },
+    {
+      "character": "\u0436",
+      "weight": 150,
+      "optical": 20,
+      "crossings": 10
+    },
+    {
+      "character": "\u041a",
+      "weight": 150,
+      "optical": 20,
+      "crossings": 6
+    },
+    {
+      "character": "\u043a",
+      "weight": 150,
+      "optical": 20,
+      "crossings": 6
+    },
+    {
+      "character": "\u044d",
+      "weight": 150,
+      "optical": 20,
+      "crossings": 2
+    },
+    {
+      "character": "\u042d",
+      "weight": 150,
+      "optical": 20,
+      "crossings": 2
+    },
+    {
+      "character": "\u0444",
+      "weight": 150,
+      "optical": 20,
+      "crossings": 8
+    },
+    {
+      "character": "\u0424",
+      "weight": 150,
+      "optical": 20,
+      "crossings": 8
+    },
+    {
+      "character": "Q",
+      "weight": 150,
+      "optical": 20,
+      "crossings": 4
+    },
+    {
+      "character": "R",
+      "weight": 150,
+      "optical": 20,
+      "crossings": 2
+    },
+    {
+      "character": "\u042e",
+      "weight": 150,
+      "optical": 20,
+      "crossings": 4
+    },
+    {
+      "character": "\u044e",
+      "weight": 150,
+      "optical": 20,
+      "crossings": 4
+    },
+    {
+      "character": "\u0414",
+      "weight": 150,
+      "optical": 28,
+      "crossings": 2
+    },
+    {
+      "character": "\u0434",
+      "weight": 150,
+      "optical": 28,
+      "crossings": 2
+    },
+    {
+      "character": "\u0416",
+      "weight": 150,
+      "optical": 28,
+      "crossings": 10
+    },
+    {
+      "character": "\u0436",
+      "weight": 150,
+      "optical": 28,
+      "crossings": 10
+    },
+    {
+      "character": "\u041a",
+      "weight": 150,
+      "optical": 28,
+      "crossings": 6
+    },
+    {
+      "character": "\u043a",
+      "weight": 150,
+      "optical": 28,
+      "crossings": 8
+    },
+    {
+      "character": "\u044d",
+      "weight": 150,
+      "optical": 28,
+      "crossings": 2
+    },
+    {
+      "character": "\u042d",
+      "weight": 150,
+      "optical": 28,
+      "crossings": 2
+    },
+    {
+      "character": "\u0444",
+      "weight": 150,
+      "optical": 28,
+      "crossings": 8
+    },
+    {
+      "character": "\u0424",
+      "weight": 150,
+      "optical": 28,
+      "crossings": 8
+    },
+    {
+      "character": "Q",
+      "weight": 150,
+      "optical": 28,
+      "crossings": 4
+    },
+    {
+      "character": "R",
+      "weight": 150,
+      "optical": 28,
+      "crossings": 2
+    },
+    {
+      "character": "\u042e",
+      "weight": 150,
+      "optical": 28,
+      "crossings": 4
+    },
+    {
+      "character": "\u044e",
+      "weight": 150,
+      "optical": 28,
+      "crossings": 4
+    },
+    {
+      "character": "\u0414",
+      "weight": 150,
+      "optical": 64,
+      "crossings": 2
+    },
+    {
+      "character": "\u0434",
+      "weight": 150,
+      "optical": 64,
+      "crossings": 2
+    },
+    {
+      "character": "\u0416",
+      "weight": 150,
+      "optical": 64,
+      "crossings": 10
+    },
+    {
+      "character": "\u0436",
+      "weight": 150,
+      "optical": 64,
+      "crossings": 10
+    },
+    {
+      "character": "\u041a",
+      "weight": 150,
+      "optical": 64,
+      "crossings": 6
+    },
+    {
+      "character": "\u043a",
+      "weight": 150,
+      "optical": 64,
+      "crossings": 8
+    },
+    {
+      "character": "\u044d",
+      "weight": 150,
+      "optical": 64,
+      "crossings": 2
+    },
+    {
+      "character": "\u042d",
+      "weight": 150,
+      "optical": 64,
+      "crossings": 2
+    },
+    {
+      "character": "\u0444",
+      "weight": 150,
+      "optical": 64,
+      "crossings": 8
+    },
+    {
+      "character": "\u0424",
+      "weight": 150,
+      "optical": 64,
+      "crossings": 8
+    },
+    {
+      "character": "Q",
+      "weight": 150,
+      "optical": 64,
+      "crossings": 4
+    },
+    {
+      "character": "R",
+      "weight": 150,
+      "optical": 64,
+      "crossings": 2
+    },
+    {
+      "character": "\u042e",
+      "weight": 150,
+      "optical": 64,
+      "crossings": 4
+    },
+    {
+      "character": "\u044e",
+      "weight": 150,
+      "optical": 64,
+      "crossings": 4
+    },
+    {
+      "character": "\u0414",
+      "weight": 150,
+      "optical": 128,
+      "crossings": 2
+    },
+    {
+      "character": "\u0434",
+      "weight": 150,
+      "optical": 128,
+      "crossings": 2
+    },
+    {
+      "character": "\u0416",
+      "weight": 150,
+      "optical": 128,
+      "crossings": 10
+    },
+    {
+      "character": "\u0436",
+      "weight": 150,
+      "optical": 128,
+      "crossings": 10
+    },
+    {
+      "character": "\u041a",
+      "weight": 150,
+      "optical": 128,
+      "crossings": 6
+    },
+    {
+      "character": "\u043a",
+      "weight": 150,
+      "optical": 128,
+      "crossings": 8
+    },
+    {
+      "character": "\u044d",
+      "weight": 150,
+      "optical": 128,
+      "crossings": 2
+    },
+    {
+      "character": "\u042d",
+      "weight": 150,
+      "optical": 128,
+      "crossings": 2
+    },
+    {
+      "character": "\u0444",
+      "weight": 150,
+      "optical": 128,
+      "crossings": 8
+    },
+    {
+      "character": "\u0424",
+      "weight": 150,
+      "optical": 128,
+      "crossings": 8
+    },
+    {
+      "character": "Q",
+      "weight": 150,
+      "optical": 128,
+      "crossings": 4
+    },
+    {
+      "character": "R",
+      "weight": 150,
+      "optical": 128,
+      "crossings": 2
+    },
+    {
+      "character": "\u042e",
+      "weight": 150,
+      "optical": 128,
+      "crossings": 4
+    },
+    {
+      "character": "\u044e",
+      "weight": 150,
+      "optical": 128,
+      "crossings": 4
+    },
+    {
+      "character": "\u0414",
+      "weight": 250,
+      "optical": 9,
+      "crossings": 2
+    },
+    {
+      "character": "\u0434",
+      "weight": 250,
+      "optical": 9,
+      "crossings": 2
+    },
+    {
+      "character": "\u0416",
+      "weight": 250,
+      "optical": 9,
+      "crossings": 10
+    },
+    {
+      "character": "\u0436",
+      "weight": 250,
+      "optical": 9,
+      "crossings": 10
+    },
+    {
+      "character": "\u041a",
+      "weight": 250,
+      "optical": 9,
+      "crossings": 6
+    },
+    {
+      "character": "\u043a",
+      "weight": 250,
+      "optical": 9,
+      "crossings": 6
+    },
+    {
+      "character": "\u044d",
+      "weight": 250,
+      "optical": 9,
+      "crossings": 2
+    },
+    {
+      "character": "\u042d",
+      "weight": 250,
+      "optical": 9,
+      "crossings": 2
+    },
+    {
+      "character": "\u0444",
+      "weight": 250,
+      "optical": 9,
+      "crossings": 8
+    },
+    {
+      "character": "\u0424",
+      "weight": 250,
+      "optical": 9,
+      "crossings": 8
+    },
+    {
+      "character": "Q",
+      "weight": 250,
+      "optical": 9,
+      "crossings": 4
+    },
+    {
+      "character": "R",
+      "weight": 250,
+      "optical": 9,
+      "crossings": 2
+    },
+    {
+      "character": "\u042e",
+      "weight": 250,
+      "optical": 9,
+      "crossings": 4
+    },
+    {
+      "character": "\u044e",
+      "weight": 250,
+      "optical": 9,
+      "crossings": 4
+    },
+    {
+      "character": "\u0414",
+      "weight": 250,
+      "optical": 14,
+      "crossings": 2
+    },
+    {
+      "character": "\u0434",
+      "weight": 250,
+      "optical": 14,
+      "crossings": 2
+    },
+    {
+      "character": "\u0416",
+      "weight": 250,
+      "optical": 14,
+      "crossings": 10
+    },
+    {
+      "character": "\u0436",
+      "weight": 250,
+      "optical": 14,
+      "crossings": 10
+    },
+    {
+      "character": "\u041a",
+      "weight": 250,
+      "optical": 14,
+      "crossings": 6
+    },
+    {
+      "character": "\u043a",
+      "weight": 250,
+      "optical": 14,
+      "crossings": 6
+    },
+    {
+      "character": "\u044d",
+      "weight": 250,
+      "optical": 14,
+      "crossings": 2
+    },
+    {
+      "character": "\u042d",
+      "weight": 250,
+      "optical": 14,
+      "crossings": 2
+    },
+    {
+      "character": "\u0444",
+      "weight": 250,
+      "optical": 14,
+      "crossings": 8
+    },
+    {
+      "character": "\u0424",
+      "weight": 250,
+      "optical": 14,
+      "crossings": 8
+    },
+    {
+      "character": "Q",
+      "weight": 250,
+      "optical": 14,
+      "crossings": 4
+    },
+    {
+      "character": "R",
+      "weight": 250,
+      "optical": 14,
+      "crossings": 2
+    },
+    {
+      "character": "\u042e",
+      "weight": 250,
+      "optical": 14,
+      "crossings": 4
+    },
+    {
+      "character": "\u044e",
+      "weight": 250,
+      "optical": 14,
+      "crossings": 4
+    },
+    {
+      "character": "\u0414",
+      "weight": 250,
+      "optical": 16,
+      "crossings": 2
+    },
+    {
+      "character": "\u0434",
+      "weight": 250,
+      "optical": 16,
+      "crossings": 2
+    },
+    {
+      "character": "\u0416",
+      "weight": 250,
+      "optical": 16,
+      "crossings": 10
+    },
+    {
+      "character": "\u0436",
+      "weight": 250,
+      "optical": 16,
+      "crossings": 10
+    },
+    {
+      "character": "\u041a",
+      "weight": 250,
+      "optical": 16,
+      "crossings": 6
+    },
+    {
+      "character": "\u043a",
+      "weight": 250,
+      "optical": 16,
+      "crossings": 6
+    },
+    {
+      "character": "\u044d",
+      "weight": 250,
+      "optical": 16,
+      "crossings": 2
+    },
+    {
+      "character": "\u042d",
+      "weight": 250,
+      "optical": 16,
+      "crossings": 2
+    },
+    {
+      "character": "\u0444",
+      "weight": 250,
+      "optical": 16,
+      "crossings": 8
+    },
+    {
+      "character": "\u0424",
+      "weight": 250,
+      "optical": 16,
+      "crossings": 8
+    },
+    {
+      "character": "Q",
+      "weight": 250,
+      "optical": 16,
+      "crossings": 4
+    },
+    {
+      "character": "R",
+      "weight": 250,
+      "optical": 16,
+      "crossings": 2
+    },
+    {
+      "character": "\u042e",
+      "weight": 250,
+      "optical": 16,
+      "crossings": 4
+    },
+    {
+      "character": "\u044e",
+      "weight": 250,
+      "optical": 16,
+      "crossings": 4
+    },
+    {
+      "character": "\u0414",
+      "weight": 250,
+      "optical": 20,
+      "crossings": 2
+    },
+    {
+      "character": "\u0434",
+      "weight": 250,
+      "optical": 20,
+      "crossings": 2
+    },
+    {
+      "character": "\u0416",
+      "weight": 250,
+      "optical": 20,
+      "crossings": 10
+    },
+    {
+      "character": "\u0436",
+      "weight": 250,
+      "optical": 20,
+      "crossings": 10
+    },
+    {
+      "character": "\u041a",
+      "weight": 250,
+      "optical": 20,
+      "crossings": 6
+    },
+    {
+      "character": "\u043a",
+      "weight": 250,
+      "optical": 20,
+      "crossings": 6
+    },
+    {
+      "character": "\u044d",
+      "weight": 250,
+      "optical": 20,
+      "crossings": 2
+    },
+    {
+      "character": "\u042d",
+      "weight": 250,
+      "optical": 20,
+      "crossings": 2
+    },
+    {
+      "character": "\u0444",
+      "weight": 250,
+      "optical": 20,
+      "crossings": 8
+    },
+    {
+      "character": "\u0424",
+      "weight": 250,
+      "optical": 20,
+      "crossings": 8
+    },
+    {
+      "character": "Q",
+      "weight": 250,
+      "optical": 20,
+      "crossings": 4
+    },
+    {
+      "character": "R",
+      "weight": 250,
+      "optical": 20,
+      "crossings": 2
+    },
+    {
+      "character": "\u042e",
+      "weight": 250,
+      "optical": 20,
+      "crossings": 4
+    },
+    {
+      "character": "\u044e",
+      "weight": 250,
+      "optical": 20,
+      "crossings": 4
+    },
+    {
+      "character": "\u0414",
+      "weight": 250,
+      "optical": 28,
+      "crossings": 2
+    },
+    {
+      "character": "\u0434",
+      "weight": 250,
+      "optical": 28,
+      "crossings": 2
+    },
+    {
+      "character": "\u0416",
+      "weight": 250,
+      "optical": 28,
+      "crossings": 10
+    },
+    {
+      "character": "\u0436",
+      "weight": 250,
+      "optical": 28,
+      "crossings": 10
+    },
+    {
+      "character": "\u041a",
+      "weight": 250,
+      "optical": 28,
+      "crossings": 6
+    },
+    {
+      "character": "\u043a",
+      "weight": 250,
+      "optical": 28,
+      "crossings": 8
+    },
+    {
+      "character": "\u044d",
+      "weight": 250,
+      "optical": 28,
+      "crossings": 2
+    },
+    {
+      "character": "\u042d",
+      "weight": 250,
+      "optical": 28,
+      "crossings": 2
+    },
+    {
+      "character": "\u0444",
+      "weight": 250,
+      "optical": 28,
+      "crossings": 8
+    },
+    {
+      "character": "\u0424",
+      "weight": 250,
+      "optical": 28,
+      "crossings": 8
+    },
+    {
+      "character": "Q",
+      "weight": 250,
+      "optical": 28,
+      "crossings": 4
+    },
+    {
+      "character": "R",
+      "weight": 250,
+      "optical": 28,
+      "crossings": 2
+    },
+    {
+      "character": "\u042e",
+      "weight": 250,
+      "optical": 28,
+      "crossings": 4
+    },
+    {
+      "character": "\u044e",
+      "weight": 250,
+      "optical": 28,
+      "crossings": 4
+    },
+    {
+      "character": "\u0414",
+      "weight": 250,
+      "optical": 64,
+      "crossings": 2
+    },
+    {
+      "character": "\u0434",
+      "weight": 250,
+      "optical": 64,
+      "crossings": 2
+    },
+    {
+      "character": "\u0416",
+      "weight": 250,
+      "optical": 64,
+      "crossings": 10
+    },
+    {
+      "character": "\u0436",
+      "weight": 250,
+      "optical": 64,
+      "crossings": 10
+    },
+    {
+      "character": "\u041a",
+      "weight": 250,
+      "optical": 64,
+      "crossings": 6
+    },
+    {
+      "character": "\u043a",
+      "weight": 250,
+      "optical": 64,
+      "crossings": 8
+    },
+    {
+      "character": "\u044d",
+      "weight": 250,
+      "optical": 64,
+      "crossings": 2
+    },
+    {
+      "character": "\u042d",
+      "weight": 250,
+      "optical": 64,
+      "crossings": 2
+    },
+    {
+      "character": "\u0444",
+      "weight": 250,
+      "optical": 64,
+      "crossings": 8
+    },
+    {
+      "character": "\u0424",
+      "weight": 250,
+      "optical": 64,
+      "crossings": 8
+    },
+    {
+      "character": "Q",
+      "weight": 250,
+      "optical": 64,
+      "crossings": 4
+    },
+    {
+      "character": "R",
+      "weight": 250,
+      "optical": 64,
+      "crossings": 2
+    },
+    {
+      "character": "\u042e",
+      "weight": 250,
+      "optical": 64,
+      "crossings": 4
+    },
+    {
+      "character": "\u044e",
+      "weight": 250,
+      "optical": 64,
+      "crossings": 4
+    },
+    {
+      "character": "\u0414",
+      "weight": 250,
+      "optical": 128,
+      "crossings": 2
+    },
+    {
+      "character": "\u0434",
+      "weight": 250,
+      "optical": 128,
+      "crossings": 2
+    },
+    {
+      "character": "\u0416",
+      "weight": 250,
+      "optical": 128,
+      "crossings": 10
+    },
+    {
+      "character": "\u0436",
+      "weight": 250,
+      "optical": 128,
+      "crossings": 10
+    },
+    {
+      "character": "\u041a",
+      "weight": 250,
+      "optical": 128,
+      "crossings": 6
+    },
+    {
+      "character": "\u043a",
+      "weight": 250,
+      "optical": 128,
+      "crossings": 8
+    },
+    {
+      "character": "\u044d",
+      "weight": 250,
+      "optical": 128,
+      "crossings": 2
+    },
+    {
+      "character": "\u042d",
+      "weight": 250,
+      "optical": 128,
+      "crossings": 2
+    },
+    {
+      "character": "\u0444",
+      "weight": 250,
+      "optical": 128,
+      "crossings": 8
+    },
+    {
+      "character": "\u0424",
+      "weight": 250,
+      "optical": 128,
+      "crossings": 8
+    },
+    {
+      "character": "Q",
+      "weight": 250,
+      "optical": 128,
+      "crossings": 4
+    },
+    {
+      "character": "R",
+      "weight": 250,
+      "optical": 128,
+      "crossings": 2
+    },
+    {
+      "character": "\u042e",
+      "weight": 250,
+      "optical": 128,
+      "crossings": 4
+    },
+    {
+      "character": "\u044e",
+      "weight": 250,
+      "optical": 128,
+      "crossings": 4
+    },
+    {
+      "character": "\u0414",
+      "weight": 400,
+      "optical": 9,
+      "crossings": 2
+    },
+    {
+      "character": "\u0434",
+      "weight": 400,
+      "optical": 9,
+      "crossings": 2
+    },
+    {
+      "character": "\u0416",
+      "weight": 400,
+      "optical": 9,
+      "crossings": 10
+    },
+    {
+      "character": "\u0436",
+      "weight": 400,
+      "optical": 9,
+      "crossings": 8
+    },
+    {
+      "character": "\u041a",
+      "weight": 400,
+      "optical": 9,
+      "crossings": 8
+    },
+    {
+      "character": "\u043a",
+      "weight": 400,
+      "optical": 9,
+      "crossings": 8
+    },
+    {
+      "character": "\u044d",
+      "weight": 400,
+      "optical": 9,
+      "crossings": 2
+    },
+    {
+      "character": "\u042d",
+      "weight": 400,
+      "optical": 9,
+      "crossings": 2
+    },
+    {
+      "character": "\u0444",
+      "weight": 400,
+      "optical": 9,
+      "crossings": 8
+    },
+    {
+      "character": "\u0424",
+      "weight": 400,
+      "optical": 9,
+      "crossings": 8
+    },
+    {
+      "character": "Q",
+      "weight": 400,
+      "optical": 9,
+      "crossings": 4
+    },
+    {
+      "character": "R",
+      "weight": 400,
+      "optical": 9,
+      "crossings": 2
+    },
+    {
+      "character": "\u042e",
+      "weight": 400,
+      "optical": 9,
+      "crossings": 4
+    },
+    {
+      "character": "\u044e",
+      "weight": 400,
+      "optical": 9,
+      "crossings": 4
+    },
+    {
+      "character": "\u0414",
+      "weight": 400,
+      "optical": 14,
+      "crossings": 2
+    },
+    {
+      "character": "\u0434",
+      "weight": 400,
+      "optical": 14,
+      "crossings": 2
+    },
+    {
+      "character": "\u0416",
+      "weight": 400,
+      "optical": 14,
+      "crossings": 10
+    },
+    {
+      "character": "\u0436",
+      "weight": 400,
+      "optical": 14,
+      "crossings": 8
+    },
+    {
+      "character": "\u041a",
+      "weight": 400,
+      "optical": 14,
+      "crossings": 8
+    },
+    {
+      "character": "\u043a",
+      "weight": 400,
+      "optical": 14,
+      "crossings": 8
+    },
+    {
+      "character": "\u044d",
+      "weight": 400,
+      "optical": 14,
+      "crossings": 2
+    },
+    {
+      "character": "\u042d",
+      "weight": 400,
+      "optical": 14,
+      "crossings": 2
+    },
+    {
+      "character": "\u0444",
+      "weight": 400,
+      "optical": 14,
+      "crossings": 8
+    },
+    {
+      "character": "\u0424",
+      "weight": 400,
+      "optical": 14,
+      "crossings": 8
+    },
+    {
+      "character": "Q",
+      "weight": 400,
+      "optical": 14,
+      "crossings": 4
+    },
+    {
+      "character": "R",
+      "weight": 400,
+      "optical": 14,
+      "crossings": 2
+    },
+    {
+      "character": "\u042e",
+      "weight": 400,
+      "optical": 14,
+      "crossings": 4
+    },
+    {
+      "character": "\u044e",
+      "weight": 400,
+      "optical": 14,
+      "crossings": 4
+    },
+    {
+      "character": "\u0414",
+      "weight": 400,
+      "optical": 16,
+      "crossings": 2
+    },
+    {
+      "character": "\u0434",
+      "weight": 400,
+      "optical": 16,
+      "crossings": 2
+    },
+    {
+      "character": "\u0416",
+      "weight": 400,
+      "optical": 16,
+      "crossings": 10
+    },
+    {
+      "character": "\u0436",
+      "weight": 400,
+      "optical": 16,
+      "crossings": 10
+    },
+    {
+      "character": "\u041a",
+      "weight": 400,
+      "optical": 16,
+      "crossings": 8
+    },
+    {
+      "character": "\u043a",
+      "weight": 400,
+      "optical": 16,
+      "crossings": 8
+    },
+    {
+      "character": "\u044d",
+      "weight": 400,
+      "optical": 16,
+      "crossings": 2
+    },
+    {
+      "character": "\u042d",
+      "weight": 400,
+      "optical": 16,
+      "crossings": 2
+    },
+    {
+      "character": "\u0444",
+      "weight": 400,
+      "optical": 16,
+      "crossings": 8
+    },
+    {
+      "character": "\u0424",
+      "weight": 400,
+      "optical": 16,
+      "crossings": 8
+    },
+    {
+      "character": "Q",
+      "weight": 400,
+      "optical": 16,
+      "crossings": 4
+    },
+    {
+      "character": "R",
+      "weight": 400,
+      "optical": 16,
+      "crossings": 2
+    },
+    {
+      "character": "\u042e",
+      "weight": 400,
+      "optical": 16,
+      "crossings": 4
+    },
+    {
+      "character": "\u044e",
+      "weight": 400,
+      "optical": 16,
+      "crossings": 4
+    },
+    {
+      "character": "\u0414",
+      "weight": 400,
+      "optical": 20,
+      "crossings": 2
+    },
+    {
+      "character": "\u0434",
+      "weight": 400,
+      "optical": 20,
+      "crossings": 2
+    },
+    {
+      "character": "\u0416",
+      "weight": 400,
+      "optical": 20,
+      "crossings": 10
+    },
+    {
+      "character": "\u0436",
+      "weight": 400,
+      "optical": 20,
+      "crossings": 10
+    },
+    {
+      "character": "\u041a",
+      "weight": 400,
+      "optical": 20,
+      "crossings": 8
+    },
+    {
+      "character": "\u043a",
+      "weight": 400,
+      "optical": 20,
+      "crossings": 6
+    },
+    {
+      "character": "\u044d",
+      "weight": 400,
+      "optical": 20,
+      "crossings": 2
+    },
+    {
+      "character": "\u042d",
+      "weight": 400,
+      "optical": 20,
+      "crossings": 2
+    },
+    {
+      "character": "\u0444",
+      "weight": 400,
+      "optical": 20,
+      "crossings": 8
+    },
+    {
+      "character": "\u0424",
+      "weight": 400,
+      "optical": 20,
+      "crossings": 8
+    },
+    {
+      "character": "Q",
+      "weight": 400,
+      "optical": 20,
+      "crossings": 4
+    },
+    {
+      "character": "R",
+      "weight": 400,
+      "optical": 20,
+      "crossings": 2
+    },
+    {
+      "character": "\u042e",
+      "weight": 400,
+      "optical": 20,
+      "crossings": 4
+    },
+    {
+      "character": "\u044e",
+      "weight": 400,
+      "optical": 20,
+      "crossings": 4
+    },
+    {
+      "character": "\u0414",
+      "weight": 400,
+      "optical": 28,
+      "crossings": 2
+    },
+    {
+      "character": "\u0434",
+      "weight": 400,
+      "optical": 28,
+      "crossings": 2
+    },
+    {
+      "character": "\u0416",
+      "weight": 400,
+      "optical": 28,
+      "crossings": 10
+    },
+    {
+      "character": "\u0436",
+      "weight": 400,
+      "optical": 28,
+      "crossings": 10
+    },
+    {
+      "character": "\u041a",
+      "weight": 400,
+      "optical": 28,
+      "crossings": 8
+    },
+    {
+      "character": "\u043a",
+      "weight": 400,
+      "optical": 28,
+      "crossings": 6
+    },
+    {
+      "character": "\u044d",
+      "weight": 400,
+      "optical": 28,
+      "crossings": 2
+    },
+    {
+      "character": "\u042d",
+      "weight": 400,
+      "optical": 28,
+      "crossings": 2
+    },
+    {
+      "character": "\u0444",
+      "weight": 400,
+      "optical": 28,
+      "crossings": 8
+    },
+    {
+      "character": "\u0424",
+      "weight": 400,
+      "optical": 28,
+      "crossings": 8
+    },
+    {
+      "character": "Q",
+      "weight": 400,
+      "optical": 28,
+      "crossings": 4
+    },
+    {
+      "character": "R",
+      "weight": 400,
+      "optical": 28,
+      "crossings": 2
+    },
+    {
+      "character": "\u042e",
+      "weight": 400,
+      "optical": 28,
+      "crossings": 4
+    },
+    {
+      "character": "\u044e",
+      "weight": 400,
+      "optical": 28,
+      "crossings": 4
+    },
+    {
+      "character": "\u0414",
+      "weight": 400,
+      "optical": 64,
+      "crossings": 2
+    },
+    {
+      "character": "\u0434",
+      "weight": 400,
+      "optical": 64,
+      "crossings": 2
+    },
+    {
+      "character": "\u0416",
+      "weight": 400,
+      "optical": 64,
+      "crossings": 10
+    },
+    {
+      "character": "\u0436",
+      "weight": 400,
+      "optical": 64,
+      "crossings": 10
+    },
+    {
+      "character": "\u041a",
+      "weight": 400,
+      "optical": 64,
+      "crossings": 8
+    },
+    {
+      "character": "\u043a",
+      "weight": 400,
+      "optical": 64,
+      "crossings": 6
+    },
+    {
+      "character": "\u044d",
+      "weight": 400,
+      "optical": 64,
+      "crossings": 2
+    },
+    {
+      "character": "\u042d",
+      "weight": 400,
+      "optical": 64,
+      "crossings": 2
+    },
+    {
+      "character": "\u0444",
+      "weight": 400,
+      "optical": 64,
+      "crossings": 8
+    },
+    {
+      "character": "\u0424",
+      "weight": 400,
+      "optical": 64,
+      "crossings": 8
+    },
+    {
+      "character": "Q",
+      "weight": 400,
+      "optical": 64,
+      "crossings": 4
+    },
+    {
+      "character": "R",
+      "weight": 400,
+      "optical": 64,
+      "crossings": 2
+    },
+    {
+      "character": "\u042e",
+      "weight": 400,
+      "optical": 64,
+      "crossings": 4
+    },
+    {
+      "character": "\u044e",
+      "weight": 400,
+      "optical": 64,
+      "crossings": 4
+    },
+    {
+      "character": "\u0414",
+      "weight": 400,
+      "optical": 128,
+      "crossings": 2
+    },
+    {
+      "character": "\u0434",
+      "weight": 400,
+      "optical": 128,
+      "crossings": 2
+    },
+    {
+      "character": "\u0416",
+      "weight": 400,
+      "optical": 128,
+      "crossings": 10
+    },
+    {
+      "character": "\u0436",
+      "weight": 400,
+      "optical": 128,
+      "crossings": 10
+    },
+    {
+      "character": "\u041a",
+      "weight": 400,
+      "optical": 128,
+      "crossings": 8
+    },
+    {
+      "character": "\u043a",
+      "weight": 400,
+      "optical": 128,
+      "crossings": 6
+    },
+    {
+      "character": "\u044d",
+      "weight": 400,
+      "optical": 128,
+      "crossings": 2
+    },
+    {
+      "character": "\u042d",
+      "weight": 400,
+      "optical": 128,
+      "crossings": 2
+    },
+    {
+      "character": "\u0444",
+      "weight": 400,
+      "optical": 128,
+      "crossings": 8
+    },
+    {
+      "character": "\u0424",
+      "weight": 400,
+      "optical": 128,
+      "crossings": 8
+    },
+    {
+      "character": "Q",
+      "weight": 400,
+      "optical": 128,
+      "crossings": 4
+    },
+    {
+      "character": "R",
+      "weight": 400,
+      "optical": 128,
+      "crossings": 2
+    },
+    {
+      "character": "\u042e",
+      "weight": 400,
+      "optical": 128,
+      "crossings": 4
+    },
+    {
+      "character": "\u044e",
+      "weight": 400,
+      "optical": 128,
+      "crossings": 4
+    },
+    {
+      "character": "\u0414",
+      "weight": 500,
+      "optical": 9,
+      "crossings": 2
+    },
+    {
+      "character": "\u0434",
+      "weight": 500,
+      "optical": 9,
+      "crossings": 2
+    },
+    {
+      "character": "\u0416",
+      "weight": 500,
+      "optical": 9,
+      "crossings": 10
+    },
+    {
+      "character": "\u0436",
+      "weight": 500,
+      "optical": 9,
+      "crossings": 10
+    },
+    {
+      "character": "\u041a",
+      "weight": 500,
+      "optical": 9,
+      "crossings": 8
+    },
+    {
+      "character": "\u043a",
+      "weight": 500,
+      "optical": 9,
+      "crossings": 8
+    },
+    {
+      "character": "\u044d",
+      "weight": 500,
+      "optical": 9,
+      "crossings": 2
+    },
+    {
+      "character": "\u042d",
+      "weight": 500,
+      "optical": 9,
+      "crossings": 2
+    },
+    {
+      "character": "\u0444",
+      "weight": 500,
+      "optical": 9,
+      "crossings": 8
+    },
+    {
+      "character": "\u0424",
+      "weight": 500,
+      "optical": 9,
+      "crossings": 8
+    },
+    {
+      "character": "Q",
+      "weight": 500,
+      "optical": 9,
+      "crossings": 4
+    },
+    {
+      "character": "R",
+      "weight": 500,
+      "optical": 9,
+      "crossings": 2
+    },
+    {
+      "character": "\u042e",
+      "weight": 500,
+      "optical": 9,
+      "crossings": 4
+    },
+    {
+      "character": "\u044e",
+      "weight": 500,
+      "optical": 9,
+      "crossings": 4
+    },
+    {
+      "character": "\u0414",
+      "weight": 500,
+      "optical": 14,
+      "crossings": 2
+    },
+    {
+      "character": "\u0434",
+      "weight": 500,
+      "optical": 14,
+      "crossings": 2
+    },
+    {
+      "character": "\u0416",
+      "weight": 500,
+      "optical": 14,
+      "crossings": 10
+    },
+    {
+      "character": "\u0436",
+      "weight": 500,
+      "optical": 14,
+      "crossings": 10
+    },
+    {
+      "character": "\u041a",
+      "weight": 500,
+      "optical": 14,
+      "crossings": 8
+    },
+    {
+      "character": "\u043a",
+      "weight": 500,
+      "optical": 14,
+      "crossings": 8
+    },
+    {
+      "character": "\u044d",
+      "weight": 500,
+      "optical": 14,
+      "crossings": 2
+    },
+    {
+      "character": "\u042d",
+      "weight": 500,
+      "optical": 14,
+      "crossings": 2
+    },
+    {
+      "character": "\u0444",
+      "weight": 500,
+      "optical": 14,
+      "crossings": 8
+    },
+    {
+      "character": "\u0424",
+      "weight": 500,
+      "optical": 14,
+      "crossings": 8
+    },
+    {
+      "character": "Q",
+      "weight": 500,
+      "optical": 14,
+      "crossings": 4
+    },
+    {
+      "character": "R",
+      "weight": 500,
+      "optical": 14,
+      "crossings": 2
+    },
+    {
+      "character": "\u042e",
+      "weight": 500,
+      "optical": 14,
+      "crossings": 4
+    },
+    {
+      "character": "\u044e",
+      "weight": 500,
+      "optical": 14,
+      "crossings": 4
+    },
+    {
+      "character": "\u0414",
+      "weight": 500,
+      "optical": 16,
+      "crossings": 2
+    },
+    {
+      "character": "\u0434",
+      "weight": 500,
+      "optical": 16,
+      "crossings": 2
+    },
+    {
+      "character": "\u0416",
+      "weight": 500,
+      "optical": 16,
+      "crossings": 10
+    },
+    {
+      "character": "\u0436",
+      "weight": 500,
+      "optical": 16,
+      "crossings": 10
+    },
+    {
+      "character": "\u041a",
+      "weight": 500,
+      "optical": 16,
+      "crossings": 8
+    },
+    {
+      "character": "\u043a",
+      "weight": 500,
+      "optical": 16,
+      "crossings": 8
+    },
+    {
+      "character": "\u044d",
+      "weight": 500,
+      "optical": 16,
+      "crossings": 2
+    },
+    {
+      "character": "\u042d",
+      "weight": 500,
+      "optical": 16,
+      "crossings": 2
+    },
+    {
+      "character": "\u0444",
+      "weight": 500,
+      "optical": 16,
+      "crossings": 8
+    },
+    {
+      "character": "\u0424",
+      "weight": 500,
+      "optical": 16,
+      "crossings": 8
+    },
+    {
+      "character": "Q",
+      "weight": 500,
+      "optical": 16,
+      "crossings": 4
+    },
+    {
+      "character": "R",
+      "weight": 500,
+      "optical": 16,
+      "crossings": 2
+    },
+    {
+      "character": "\u042e",
+      "weight": 500,
+      "optical": 16,
+      "crossings": 4
+    },
+    {
+      "character": "\u044e",
+      "weight": 500,
+      "optical": 16,
+      "crossings": 4
+    },
+    {
+      "character": "\u0414",
+      "weight": 500,
+      "optical": 20,
+      "crossings": 2
+    },
+    {
+      "character": "\u0434",
+      "weight": 500,
+      "optical": 20,
+      "crossings": 2
+    },
+    {
+      "character": "\u0416",
+      "weight": 500,
+      "optical": 20,
+      "crossings": 10
+    },
+    {
+      "character": "\u0436",
+      "weight": 500,
+      "optical": 20,
+      "crossings": 10
+    },
+    {
+      "character": "\u041a",
+      "weight": 500,
+      "optical": 20,
+      "crossings": 8
+    },
+    {
+      "character": "\u043a",
+      "weight": 500,
+      "optical": 20,
+      "crossings": 8
+    },
+    {
+      "character": "\u044d",
+      "weight": 500,
+      "optical": 20,
+      "crossings": 2
+    },
+    {
+      "character": "\u042d",
+      "weight": 500,
+      "optical": 20,
+      "crossings": 2
+    },
+    {
+      "character": "\u0444",
+      "weight": 500,
+      "optical": 20,
+      "crossings": 8
+    },
+    {
+      "character": "\u0424",
+      "weight": 500,
+      "optical": 20,
+      "crossings": 8
+    },
+    {
+      "character": "Q",
+      "weight": 500,
+      "optical": 20,
+      "crossings": 4
+    },
+    {
+      "character": "R",
+      "weight": 500,
+      "optical": 20,
+      "crossings": 2
+    },
+    {
+      "character": "\u042e",
+      "weight": 500,
+      "optical": 20,
+      "crossings": 4
+    },
+    {
+      "character": "\u044e",
+      "weight": 500,
+      "optical": 20,
+      "crossings": 4
+    },
+    {
+      "character": "\u0414",
+      "weight": 500,
+      "optical": 28,
+      "crossings": 2
+    },
+    {
+      "character": "\u0434",
+      "weight": 500,
+      "optical": 28,
+      "crossings": 2
+    },
+    {
+      "character": "\u0416",
+      "weight": 500,
+      "optical": 28,
+      "crossings": 10
+    },
+    {
+      "character": "\u0436",
+      "weight": 500,
+      "optical": 28,
+      "crossings": 10
+    },
+    {
+      "character": "\u041a",
+      "weight": 500,
+      "optical": 28,
+      "crossings": 8
+    },
+    {
+      "character": "\u043a",
+      "weight": 500,
+      "optical": 28,
+      "crossings": 8
+    },
+    {
+      "character": "\u044d",
+      "weight": 500,
+      "optical": 28,
+      "crossings": 2
+    },
+    {
+      "character": "\u042d",
+      "weight": 500,
+      "optical": 28,
+      "crossings": 2
+    },
+    {
+      "character": "\u0444",
+      "weight": 500,
+      "optical": 28,
+      "crossings": 8
+    },
+    {
+      "character": "\u0424",
+      "weight": 500,
+      "optical": 28,
+      "crossings": 8
+    },
+    {
+      "character": "Q",
+      "weight": 500,
+      "optical": 28,
+      "crossings": 4
+    },
+    {
+      "character": "R",
+      "weight": 500,
+      "optical": 28,
+      "crossings": 2
+    },
+    {
+      "character": "\u042e",
+      "weight": 500,
+      "optical": 28,
+      "crossings": 4
+    },
+    {
+      "character": "\u044e",
+      "weight": 500,
+      "optical": 28,
+      "crossings": 4
+    },
+    {
+      "character": "\u0414",
+      "weight": 500,
+      "optical": 64,
+      "crossings": 2
+    },
+    {
+      "character": "\u0434",
+      "weight": 500,
+      "optical": 64,
+      "crossings": 2
+    },
+    {
+      "character": "\u0416",
+      "weight": 500,
+      "optical": 64,
+      "crossings": 10
+    },
+    {
+      "character": "\u0436",
+      "weight": 500,
+      "optical": 64,
+      "crossings": 10
+    },
+    {
+      "character": "\u041a",
+      "weight": 500,
+      "optical": 64,
+      "crossings": 8
+    },
+    {
+      "character": "\u043a",
+      "weight": 500,
+      "optical": 64,
+      "crossings": 8
+    },
+    {
+      "character": "\u044d",
+      "weight": 500,
+      "optical": 64,
+      "crossings": 2
+    },
+    {
+      "character": "\u042d",
+      "weight": 500,
+      "optical": 64,
+      "crossings": 2
+    },
+    {
+      "character": "\u0444",
+      "weight": 500,
+      "optical": 64,
+      "crossings": 8
+    },
+    {
+      "character": "\u0424",
+      "weight": 500,
+      "optical": 64,
+      "crossings": 8
+    },
+    {
+      "character": "Q",
+      "weight": 500,
+      "optical": 64,
+      "crossings": 4
+    },
+    {
+      "character": "R",
+      "weight": 500,
+      "optical": 64,
+      "crossings": 2
+    },
+    {
+      "character": "\u042e",
+      "weight": 500,
+      "optical": 64,
+      "crossings": 4
+    },
+    {
+      "character": "\u044e",
+      "weight": 500,
+      "optical": 64,
+      "crossings": 4
+    },
+    {
+      "character": "\u0414",
+      "weight": 500,
+      "optical": 128,
+      "crossings": 2
+    },
+    {
+      "character": "\u0434",
+      "weight": 500,
+      "optical": 128,
+      "crossings": 2
+    },
+    {
+      "character": "\u0416",
+      "weight": 500,
+      "optical": 128,
+      "crossings": 10
+    },
+    {
+      "character": "\u0436",
+      "weight": 500,
+      "optical": 128,
+      "crossings": 10
+    },
+    {
+      "character": "\u041a",
+      "weight": 500,
+      "optical": 128,
+      "crossings": 8
+    },
+    {
+      "character": "\u043a",
+      "weight": 500,
+      "optical": 128,
+      "crossings": 8
+    },
+    {
+      "character": "\u044d",
+      "weight": 500,
+      "optical": 128,
+      "crossings": 2
+    },
+    {
+      "character": "\u042d",
+      "weight": 500,
+      "optical": 128,
+      "crossings": 2
+    },
+    {
+      "character": "\u0444",
+      "weight": 500,
+      "optical": 128,
+      "crossings": 8
+    },
+    {
+      "character": "\u0424",
+      "weight": 500,
+      "optical": 128,
+      "crossings": 8
+    },
+    {
+      "character": "Q",
+      "weight": 500,
+      "optical": 128,
+      "crossings": 4
+    },
+    {
+      "character": "R",
+      "weight": 500,
+      "optical": 128,
+      "crossings": 2
+    },
+    {
+      "character": "\u042e",
+      "weight": 500,
+      "optical": 128,
+      "crossings": 4
+    },
+    {
+      "character": "\u044e",
+      "weight": 500,
+      "optical": 128,
+      "crossings": 4
+    },
+    {
+      "character": "\u0414",
+      "weight": 600,
+      "optical": 9,
+      "crossings": 2
+    },
+    {
+      "character": "\u0434",
+      "weight": 600,
+      "optical": 9,
+      "crossings": 2
+    },
+    {
+      "character": "\u0416",
+      "weight": 600,
+      "optical": 9,
+      "crossings": 10
+    },
+    {
+      "character": "\u0436",
+      "weight": 600,
+      "optical": 9,
+      "crossings": 10
+    },
+    {
+      "character": "\u041a",
+      "weight": 600,
+      "optical": 9,
+      "crossings": 8
+    },
+    {
+      "character": "\u043a",
+      "weight": 600,
+      "optical": 9,
+      "crossings": 8
+    },
+    {
+      "character": "\u044d",
+      "weight": 600,
+      "optical": 9,
+      "crossings": 2
+    },
+    {
+      "character": "\u042d",
+      "weight": 600,
+      "optical": 9,
+      "crossings": 2
+    },
+    {
+      "character": "\u0444",
+      "weight": 600,
+      "optical": 9,
+      "crossings": 8
+    },
+    {
+      "character": "\u0424",
+      "weight": 600,
+      "optical": 9,
+      "crossings": 8
+    },
+    {
+      "character": "Q",
+      "weight": 600,
+      "optical": 9,
+      "crossings": 4
+    },
+    {
+      "character": "R",
+      "weight": 600,
+      "optical": 9,
+      "crossings": 2
+    },
+    {
+      "character": "\u042e",
+      "weight": 600,
+      "optical": 9,
+      "crossings": 4
+    },
+    {
+      "character": "\u044e",
+      "weight": 600,
+      "optical": 9,
+      "crossings": 4
+    },
+    {
+      "character": "\u0414",
+      "weight": 600,
+      "optical": 14,
+      "crossings": 2
+    },
+    {
+      "character": "\u0434",
+      "weight": 600,
+      "optical": 14,
+      "crossings": 2
+    },
+    {
+      "character": "\u0416",
+      "weight": 600,
+      "optical": 14,
+      "crossings": 10
+    },
+    {
+      "character": "\u0436",
+      "weight": 600,
+      "optical": 14,
+      "crossings": 10
+    },
+    {
+      "character": "\u041a",
+      "weight": 600,
+      "optical": 14,
+      "crossings": 8
+    },
+    {
+      "character": "\u043a",
+      "weight": 600,
+      "optical": 14,
+      "crossings": 8
+    },
+    {
+      "character": "\u044d",
+      "weight": 600,
+      "optical": 14,
+      "crossings": 2
+    },
+    {
+      "character": "\u042d",
+      "weight": 600,
+      "optical": 14,
+      "crossings": 2
+    },
+    {
+      "character": "\u0444",
+      "weight": 600,
+      "optical": 14,
+      "crossings": 8
+    },
+    {
+      "character": "\u0424",
+      "weight": 600,
+      "optical": 14,
+      "crossings": 8
+    },
+    {
+      "character": "Q",
+      "weight": 600,
+      "optical": 14,
+      "crossings": 4
+    },
+    {
+      "character": "R",
+      "weight": 600,
+      "optical": 14,
+      "crossings": 2
+    },
+    {
+      "character": "\u042e",
+      "weight": 600,
+      "optical": 14,
+      "crossings": 4
+    },
+    {
+      "character": "\u044e",
+      "weight": 600,
+      "optical": 14,
+      "crossings": 4
+    },
+    {
+      "character": "\u0414",
+      "weight": 600,
+      "optical": 16,
+      "crossings": 2
+    },
+    {
+      "character": "\u0434",
+      "weight": 600,
+      "optical": 16,
+      "crossings": 2
+    },
+    {
+      "character": "\u0416",
+      "weight": 600,
+      "optical": 16,
+      "crossings": 10
+    },
+    {
+      "character": "\u0436",
+      "weight": 600,
+      "optical": 16,
+      "crossings": 10
+    },
+    {
+      "character": "\u041a",
+      "weight": 600,
+      "optical": 16,
+      "crossings": 8
+    },
+    {
+      "character": "\u043a",
+      "weight": 600,
+      "optical": 16,
+      "crossings": 8
+    },
+    {
+      "character": "\u044d",
+      "weight": 600,
+      "optical": 16,
+      "crossings": 2
+    },
+    {
+      "character": "\u042d",
+      "weight": 600,
+      "optical": 16,
+      "crossings": 2
+    },
+    {
+      "character": "\u0444",
+      "weight": 600,
+      "optical": 16,
+      "crossings": 8
+    },
+    {
+      "character": "\u0424",
+      "weight": 600,
+      "optical": 16,
+      "crossings": 8
+    },
+    {
+      "character": "Q",
+      "weight": 600,
+      "optical": 16,
+      "crossings": 4
+    },
+    {
+      "character": "R",
+      "weight": 600,
+      "optical": 16,
+      "crossings": 2
+    },
+    {
+      "character": "\u042e",
+      "weight": 600,
+      "optical": 16,
+      "crossings": 4
+    },
+    {
+      "character": "\u044e",
+      "weight": 600,
+      "optical": 16,
+      "crossings": 4
+    },
+    {
+      "character": "\u0414",
+      "weight": 600,
+      "optical": 20,
+      "crossings": 2
+    },
+    {
+      "character": "\u0434",
+      "weight": 600,
+      "optical": 20,
+      "crossings": 2
+    },
+    {
+      "character": "\u0416",
+      "weight": 600,
+      "optical": 20,
+      "crossings": 10
+    },
+    {
+      "character": "\u0436",
+      "weight": 600,
+      "optical": 20,
+      "crossings": 10
+    },
+    {
+      "character": "\u041a",
+      "weight": 600,
+      "optical": 20,
+      "crossings": 8
+    },
+    {
+      "character": "\u043a",
+      "weight": 600,
+      "optical": 20,
+      "crossings": 8
+    },
+    {
+      "character": "\u044d",
+      "weight": 600,
+      "optical": 20,
+      "crossings": 2
+    },
+    {
+      "character": "\u042d",
+      "weight": 600,
+      "optical": 20,
+      "crossings": 2
+    },
+    {
+      "character": "\u0444",
+      "weight": 600,
+      "optical": 20,
+      "crossings": 8
+    },
+    {
+      "character": "\u0424",
+      "weight": 600,
+      "optical": 20,
+      "crossings": 8
+    },
+    {
+      "character": "Q",
+      "weight": 600,
+      "optical": 20,
+      "crossings": 4
+    },
+    {
+      "character": "R",
+      "weight": 600,
+      "optical": 20,
+      "crossings": 2
+    },
+    {
+      "character": "\u042e",
+      "weight": 600,
+      "optical": 20,
+      "crossings": 4
+    },
+    {
+      "character": "\u044e",
+      "weight": 600,
+      "optical": 20,
+      "crossings": 4
+    },
+    {
+      "character": "\u0414",
+      "weight": 600,
+      "optical": 28,
+      "crossings": 2
+    },
+    {
+      "character": "\u0434",
+      "weight": 600,
+      "optical": 28,
+      "crossings": 2
+    },
+    {
+      "character": "\u0416",
+      "weight": 600,
+      "optical": 28,
+      "crossings": 10
+    },
+    {
+      "character": "\u0436",
+      "weight": 600,
+      "optical": 28,
+      "crossings": 10
+    },
+    {
+      "character": "\u041a",
+      "weight": 600,
+      "optical": 28,
+      "crossings": 8
+    },
+    {
+      "character": "\u043a",
+      "weight": 600,
+      "optical": 28,
+      "crossings": 8
+    },
+    {
+      "character": "\u044d",
+      "weight": 600,
+      "optical": 28,
+      "crossings": 2
+    },
+    {
+      "character": "\u042d",
+      "weight": 600,
+      "optical": 28,
+      "crossings": 2
+    },
+    {
+      "character": "\u0444",
+      "weight": 600,
+      "optical": 28,
+      "crossings": 8
+    },
+    {
+      "character": "\u0424",
+      "weight": 600,
+      "optical": 28,
+      "crossings": 8
+    },
+    {
+      "character": "Q",
+      "weight": 600,
+      "optical": 28,
+      "crossings": 4
+    },
+    {
+      "character": "R",
+      "weight": 600,
+      "optical": 28,
+      "crossings": 2
+    },
+    {
+      "character": "\u042e",
+      "weight": 600,
+      "optical": 28,
+      "crossings": 4
+    },
+    {
+      "character": "\u044e",
+      "weight": 600,
+      "optical": 28,
+      "crossings": 4
+    },
+    {
+      "character": "\u0414",
+      "weight": 600,
+      "optical": 64,
+      "crossings": 2
+    },
+    {
+      "character": "\u0434",
+      "weight": 600,
+      "optical": 64,
+      "crossings": 2
+    },
+    {
+      "character": "\u0416",
+      "weight": 600,
+      "optical": 64,
+      "crossings": 10
+    },
+    {
+      "character": "\u0436",
+      "weight": 600,
+      "optical": 64,
+      "crossings": 10
+    },
+    {
+      "character": "\u041a",
+      "weight": 600,
+      "optical": 64,
+      "crossings": 8
+    },
+    {
+      "character": "\u043a",
+      "weight": 600,
+      "optical": 64,
+      "crossings": 8
+    },
+    {
+      "character": "\u044d",
+      "weight": 600,
+      "optical": 64,
+      "crossings": 2
+    },
+    {
+      "character": "\u042d",
+      "weight": 600,
+      "optical": 64,
+      "crossings": 2
+    },
+    {
+      "character": "\u0444",
+      "weight": 600,
+      "optical": 64,
+      "crossings": 8
+    },
+    {
+      "character": "\u0424",
+      "weight": 600,
+      "optical": 64,
+      "crossings": 8
+    },
+    {
+      "character": "Q",
+      "weight": 600,
+      "optical": 64,
+      "crossings": 4
+    },
+    {
+      "character": "R",
+      "weight": 600,
+      "optical": 64,
+      "crossings": 2
+    },
+    {
+      "character": "\u042e",
+      "weight": 600,
+      "optical": 64,
+      "crossings": 4
+    },
+    {
+      "character": "\u044e",
+      "weight": 600,
+      "optical": 64,
+      "crossings": 4
+    },
+    {
+      "character": "\u0414",
+      "weight": 600,
+      "optical": 128,
+      "crossings": 2
+    },
+    {
+      "character": "\u0434",
+      "weight": 600,
+      "optical": 128,
+      "crossings": 2
+    },
+    {
+      "character": "\u0416",
+      "weight": 600,
+      "optical": 128,
+      "crossings": 10
+    },
+    {
+      "character": "\u0436",
+      "weight": 600,
+      "optical": 128,
+      "crossings": 10
+    },
+    {
+      "character": "\u041a",
+      "weight": 600,
+      "optical": 128,
+      "crossings": 8
+    },
+    {
+      "character": "\u043a",
+      "weight": 600,
+      "optical": 128,
+      "crossings": 8
+    },
+    {
+      "character": "\u044d",
+      "weight": 600,
+      "optical": 128,
+      "crossings": 2
+    },
+    {
+      "character": "\u042d",
+      "weight": 600,
+      "optical": 128,
+      "crossings": 2
+    },
+    {
+      "character": "\u0444",
+      "weight": 600,
+      "optical": 128,
+      "crossings": 8
+    },
+    {
+      "character": "\u0424",
+      "weight": 600,
+      "optical": 128,
+      "crossings": 8
+    },
+    {
+      "character": "Q",
+      "weight": 600,
+      "optical": 128,
+      "crossings": 4
+    },
+    {
+      "character": "R",
+      "weight": 600,
+      "optical": 128,
+      "crossings": 2
+    },
+    {
+      "character": "\u042e",
+      "weight": 600,
+      "optical": 128,
+      "crossings": 4
+    },
+    {
+      "character": "\u044e",
+      "weight": 600,
+      "optical": 128,
+      "crossings": 4
+    },
+    {
+      "character": "\u0414",
+      "weight": 700,
+      "optical": 9,
+      "crossings": 2
+    },
+    {
+      "character": "\u0434",
+      "weight": 700,
+      "optical": 9,
+      "crossings": 2
+    },
+    {
+      "character": "\u0416",
+      "weight": 700,
+      "optical": 9,
+      "crossings": 10
+    },
+    {
+      "character": "\u0436",
+      "weight": 700,
+      "optical": 9,
+      "crossings": 10
+    },
+    {
+      "character": "\u041a",
+      "weight": 700,
+      "optical": 9,
+      "crossings": 10
+    },
+    {
+      "character": "\u043a",
+      "weight": 700,
+      "optical": 9,
+      "crossings": 8
+    },
+    {
+      "character": "\u044d",
+      "weight": 700,
+      "optical": 9,
+      "crossings": 2
+    },
+    {
+      "character": "\u042d",
+      "weight": 700,
+      "optical": 9,
+      "crossings": 2
+    },
+    {
+      "character": "\u0444",
+      "weight": 700,
+      "optical": 9,
+      "crossings": 8
+    },
+    {
+      "character": "\u0424",
+      "weight": 700,
+      "optical": 9,
+      "crossings": 8
+    },
+    {
+      "character": "Q",
+      "weight": 700,
+      "optical": 9,
+      "crossings": 4
+    },
+    {
+      "character": "R",
+      "weight": 700,
+      "optical": 9,
+      "crossings": 2
+    },
+    {
+      "character": "\u042e",
+      "weight": 700,
+      "optical": 9,
+      "crossings": 4
+    },
+    {
+      "character": "\u044e",
+      "weight": 700,
+      "optical": 9,
+      "crossings": 4
+    },
+    {
+      "character": "\u0414",
+      "weight": 700,
+      "optical": 14,
+      "crossings": 2
+    },
+    {
+      "character": "\u0434",
+      "weight": 700,
+      "optical": 14,
+      "crossings": 2
+    },
+    {
+      "character": "\u0416",
+      "weight": 700,
+      "optical": 14,
+      "crossings": 10
+    },
+    {
+      "character": "\u0436",
+      "weight": 700,
+      "optical": 14,
+      "crossings": 10
+    },
+    {
+      "character": "\u041a",
+      "weight": 700,
+      "optical": 14,
+      "crossings": 10
+    },
+    {
+      "character": "\u043a",
+      "weight": 700,
+      "optical": 14,
+      "crossings": 8
+    },
+    {
+      "character": "\u044d",
+      "weight": 700,
+      "optical": 14,
+      "crossings": 2
+    },
+    {
+      "character": "\u042d",
+      "weight": 700,
+      "optical": 14,
+      "crossings": 2
+    },
+    {
+      "character": "\u0444",
+      "weight": 700,
+      "optical": 14,
+      "crossings": 8
+    },
+    {
+      "character": "\u0424",
+      "weight": 700,
+      "optical": 14,
+      "crossings": 8
+    },
+    {
+      "character": "Q",
+      "weight": 700,
+      "optical": 14,
+      "crossings": 4
+    },
+    {
+      "character": "R",
+      "weight": 700,
+      "optical": 14,
+      "crossings": 2
+    },
+    {
+      "character": "\u042e",
+      "weight": 700,
+      "optical": 14,
+      "crossings": 4
+    },
+    {
+      "character": "\u044e",
+      "weight": 700,
+      "optical": 14,
+      "crossings": 4
+    },
+    {
+      "character": "\u0414",
+      "weight": 700,
+      "optical": 16,
+      "crossings": 2
+    },
+    {
+      "character": "\u0434",
+      "weight": 700,
+      "optical": 16,
+      "crossings": 2
+    },
+    {
+      "character": "\u0416",
+      "weight": 700,
+      "optical": 16,
+      "crossings": 10
+    },
+    {
+      "character": "\u0436",
+      "weight": 700,
+      "optical": 16,
+      "crossings": 10
+    },
+    {
+      "character": "\u041a",
+      "weight": 700,
+      "optical": 16,
+      "crossings": 10
+    },
+    {
+      "character": "\u043a",
+      "weight": 700,
+      "optical": 16,
+      "crossings": 8
+    },
+    {
+      "character": "\u044d",
+      "weight": 700,
+      "optical": 16,
+      "crossings": 2
+    },
+    {
+      "character": "\u042d",
+      "weight": 700,
+      "optical": 16,
+      "crossings": 2
+    },
+    {
+      "character": "\u0444",
+      "weight": 700,
+      "optical": 16,
+      "crossings": 8
+    },
+    {
+      "character": "\u0424",
+      "weight": 700,
+      "optical": 16,
+      "crossings": 8
+    },
+    {
+      "character": "Q",
+      "weight": 700,
+      "optical": 16,
+      "crossings": 4
+    },
+    {
+      "character": "R",
+      "weight": 700,
+      "optical": 16,
+      "crossings": 2
+    },
+    {
+      "character": "\u042e",
+      "weight": 700,
+      "optical": 16,
+      "crossings": 4
+    },
+    {
+      "character": "\u044e",
+      "weight": 700,
+      "optical": 16,
+      "crossings": 4
+    },
+    {
+      "character": "\u0414",
+      "weight": 700,
+      "optical": 20,
+      "crossings": 2
+    },
+    {
+      "character": "\u0434",
+      "weight": 700,
+      "optical": 20,
+      "crossings": 2
+    },
+    {
+      "character": "\u0416",
+      "weight": 700,
+      "optical": 20,
+      "crossings": 10
+    },
+    {
+      "character": "\u0436",
+      "weight": 700,
+      "optical": 20,
+      "crossings": 10
+    },
+    {
+      "character": "\u041a",
+      "weight": 700,
+      "optical": 20,
+      "crossings": 10
+    },
+    {
+      "character": "\u043a",
+      "weight": 700,
+      "optical": 20,
+      "crossings": 8
+    },
+    {
+      "character": "\u044d",
+      "weight": 700,
+      "optical": 20,
+      "crossings": 2
+    },
+    {
+      "character": "\u042d",
+      "weight": 700,
+      "optical": 20,
+      "crossings": 2
+    },
+    {
+      "character": "\u0444",
+      "weight": 700,
+      "optical": 20,
+      "crossings": 8
+    },
+    {
+      "character": "\u0424",
+      "weight": 700,
+      "optical": 20,
+      "crossings": 8
+    },
+    {
+      "character": "Q",
+      "weight": 700,
+      "optical": 20,
+      "crossings": 4
+    },
+    {
+      "character": "R",
+      "weight": 700,
+      "optical": 20,
+      "crossings": 2
+    },
+    {
+      "character": "\u042e",
+      "weight": 700,
+      "optical": 20,
+      "crossings": 4
+    },
+    {
+      "character": "\u044e",
+      "weight": 700,
+      "optical": 20,
+      "crossings": 4
+    },
+    {
+      "character": "\u0414",
+      "weight": 700,
+      "optical": 28,
+      "crossings": 2
+    },
+    {
+      "character": "\u0434",
+      "weight": 700,
+      "optical": 28,
+      "crossings": 2
+    },
+    {
+      "character": "\u0416",
+      "weight": 700,
+      "optical": 28,
+      "crossings": 10
+    },
+    {
+      "character": "\u0436",
+      "weight": 700,
+      "optical": 28,
+      "crossings": 10
+    },
+    {
+      "character": "\u041a",
+      "weight": 700,
+      "optical": 28,
+      "crossings": 10
+    },
+    {
+      "character": "\u043a",
+      "weight": 700,
+      "optical": 28,
+      "crossings": 10
+    },
+    {
+      "character": "\u044d",
+      "weight": 700,
+      "optical": 28,
+      "crossings": 2
+    },
+    {
+      "character": "\u042d",
+      "weight": 700,
+      "optical": 28,
+      "crossings": 2
+    },
+    {
+      "character": "\u0444",
+      "weight": 700,
+      "optical": 28,
+      "crossings": 8
+    },
+    {
+      "character": "\u0424",
+      "weight": 700,
+      "optical": 28,
+      "crossings": 8
+    },
+    {
+      "character": "Q",
+      "weight": 700,
+      "optical": 28,
+      "crossings": 4
+    },
+    {
+      "character": "R",
+      "weight": 700,
+      "optical": 28,
+      "crossings": 2
+    },
+    {
+      "character": "\u042e",
+      "weight": 700,
+      "optical": 28,
+      "crossings": 4
+    },
+    {
+      "character": "\u044e",
+      "weight": 700,
+      "optical": 28,
+      "crossings": 4
+    },
+    {
+      "character": "\u0414",
+      "weight": 700,
+      "optical": 64,
+      "crossings": 2
+    },
+    {
+      "character": "\u0434",
+      "weight": 700,
+      "optical": 64,
+      "crossings": 2
+    },
+    {
+      "character": "\u0416",
+      "weight": 700,
+      "optical": 64,
+      "crossings": 10
+    },
+    {
+      "character": "\u0436",
+      "weight": 700,
+      "optical": 64,
+      "crossings": 10
+    },
+    {
+      "character": "\u041a",
+      "weight": 700,
+      "optical": 64,
+      "crossings": 10
+    },
+    {
+      "character": "\u043a",
+      "weight": 700,
+      "optical": 64,
+      "crossings": 10
+    },
+    {
+      "character": "\u044d",
+      "weight": 700,
+      "optical": 64,
+      "crossings": 2
+    },
+    {
+      "character": "\u042d",
+      "weight": 700,
+      "optical": 64,
+      "crossings": 2
+    },
+    {
+      "character": "\u0444",
+      "weight": 700,
+      "optical": 64,
+      "crossings": 8
+    },
+    {
+      "character": "\u0424",
+      "weight": 700,
+      "optical": 64,
+      "crossings": 8
+    },
+    {
+      "character": "Q",
+      "weight": 700,
+      "optical": 64,
+      "crossings": 4
+    },
+    {
+      "character": "R",
+      "weight": 700,
+      "optical": 64,
+      "crossings": 2
+    },
+    {
+      "character": "\u042e",
+      "weight": 700,
+      "optical": 64,
+      "crossings": 4
+    },
+    {
+      "character": "\u044e",
+      "weight": 700,
+      "optical": 64,
+      "crossings": 4
+    },
+    {
+      "character": "\u0414",
+      "weight": 700,
+      "optical": 128,
+      "crossings": 2
+    },
+    {
+      "character": "\u0434",
+      "weight": 700,
+      "optical": 128,
+      "crossings": 2
+    },
+    {
+      "character": "\u0416",
+      "weight": 700,
+      "optical": 128,
+      "crossings": 10
+    },
+    {
+      "character": "\u0436",
+      "weight": 700,
+      "optical": 128,
+      "crossings": 10
+    },
+    {
+      "character": "\u041a",
+      "weight": 700,
+      "optical": 128,
+      "crossings": 10
+    },
+    {
+      "character": "\u043a",
+      "weight": 700,
+      "optical": 128,
+      "crossings": 10
+    },
+    {
+      "character": "\u044d",
+      "weight": 700,
+      "optical": 128,
+      "crossings": 2
+    },
+    {
+      "character": "\u042d",
+      "weight": 700,
+      "optical": 128,
+      "crossings": 2
+    },
+    {
+      "character": "\u0444",
+      "weight": 700,
+      "optical": 128,
+      "crossings": 8
+    },
+    {
+      "character": "\u0424",
+      "weight": 700,
+      "optical": 128,
+      "crossings": 8
+    },
+    {
+      "character": "Q",
+      "weight": 700,
+      "optical": 128,
+      "crossings": 4
+    },
+    {
+      "character": "R",
+      "weight": 700,
+      "optical": 128,
+      "crossings": 2
+    },
+    {
+      "character": "\u042e",
+      "weight": 700,
+      "optical": 128,
+      "crossings": 4
+    },
+    {
+      "character": "\u044e",
+      "weight": 700,
+      "optical": 128,
+      "crossings": 4
+    },
+    {
+      "character": "\u0414",
+      "weight": 800,
+      "optical": 9,
+      "crossings": 2
+    },
+    {
+      "character": "\u0434",
+      "weight": 800,
+      "optical": 9,
+      "crossings": 2
+    },
+    {
+      "character": "\u0416",
+      "weight": 800,
+      "optical": 9,
+      "crossings": 10
+    },
+    {
+      "character": "\u0436",
+      "weight": 800,
+      "optical": 9,
+      "crossings": 10
+    },
+    {
+      "character": "\u041a",
+      "weight": 800,
+      "optical": 9,
+      "crossings": 10
+    },
+    {
+      "character": "\u043a",
+      "weight": 800,
+      "optical": 9,
+      "crossings": 8
+    },
+    {
+      "character": "\u044d",
+      "weight": 800,
+      "optical": 9,
+      "crossings": 2
+    },
+    {
+      "character": "\u042d",
+      "weight": 800,
+      "optical": 9,
+      "crossings": 2
+    },
+    {
+      "character": "\u0444",
+      "weight": 800,
+      "optical": 9,
+      "crossings": 8
+    },
+    {
+      "character": "\u0424",
+      "weight": 800,
+      "optical": 9,
+      "crossings": 8
+    },
+    {
+      "character": "Q",
+      "weight": 800,
+      "optical": 9,
+      "crossings": 4
+    },
+    {
+      "character": "R",
+      "weight": 800,
+      "optical": 9,
+      "crossings": 2
+    },
+    {
+      "character": "\u042e",
+      "weight": 800,
+      "optical": 9,
+      "crossings": 4
+    },
+    {
+      "character": "\u044e",
+      "weight": 800,
+      "optical": 9,
+      "crossings": 4
+    },
+    {
+      "character": "\u0414",
+      "weight": 800,
+      "optical": 14,
+      "crossings": 2
+    },
+    {
+      "character": "\u0434",
+      "weight": 800,
+      "optical": 14,
+      "crossings": 2
+    },
+    {
+      "character": "\u0416",
+      "weight": 800,
+      "optical": 14,
+      "crossings": 10
+    },
+    {
+      "character": "\u0436",
+      "weight": 800,
+      "optical": 14,
+      "crossings": 10
+    },
+    {
+      "character": "\u041a",
+      "weight": 800,
+      "optical": 14,
+      "crossings": 10
+    },
+    {
+      "character": "\u043a",
+      "weight": 800,
+      "optical": 14,
+      "crossings": 8
+    },
+    {
+      "character": "\u044d",
+      "weight": 800,
+      "optical": 14,
+      "crossings": 2
+    },
+    {
+      "character": "\u042d",
+      "weight": 800,
+      "optical": 14,
+      "crossings": 2
+    },
+    {
+      "character": "\u0444",
+      "weight": 800,
+      "optical": 14,
+      "crossings": 8
+    },
+    {
+      "character": "\u0424",
+      "weight": 800,
+      "optical": 14,
+      "crossings": 8
+    },
+    {
+      "character": "Q",
+      "weight": 800,
+      "optical": 14,
+      "crossings": 4
+    },
+    {
+      "character": "R",
+      "weight": 800,
+      "optical": 14,
+      "crossings": 2
+    },
+    {
+      "character": "\u042e",
+      "weight": 800,
+      "optical": 14,
+      "crossings": 4
+    },
+    {
+      "character": "\u044e",
+      "weight": 800,
+      "optical": 14,
+      "crossings": 4
+    },
+    {
+      "character": "\u0414",
+      "weight": 800,
+      "optical": 16,
+      "crossings": 2
+    },
+    {
+      "character": "\u0434",
+      "weight": 800,
+      "optical": 16,
+      "crossings": 2
+    },
+    {
+      "character": "\u0416",
+      "weight": 800,
+      "optical": 16,
+      "crossings": 10
+    },
+    {
+      "character": "\u0436",
+      "weight": 800,
+      "optical": 16,
+      "crossings": 10
+    },
+    {
+      "character": "\u041a",
+      "weight": 800,
+      "optical": 16,
+      "crossings": 10
+    },
+    {
+      "character": "\u043a",
+      "weight": 800,
+      "optical": 16,
+      "crossings": 8
+    },
+    {
+      "character": "\u044d",
+      "weight": 800,
+      "optical": 16,
+      "crossings": 2
+    },
+    {
+      "character": "\u042d",
+      "weight": 800,
+      "optical": 16,
+      "crossings": 2
+    },
+    {
+      "character": "\u0444",
+      "weight": 800,
+      "optical": 16,
+      "crossings": 8
+    },
+    {
+      "character": "\u0424",
+      "weight": 800,
+      "optical": 16,
+      "crossings": 8
+    },
+    {
+      "character": "Q",
+      "weight": 800,
+      "optical": 16,
+      "crossings": 4
+    },
+    {
+      "character": "R",
+      "weight": 800,
+      "optical": 16,
+      "crossings": 2
+    },
+    {
+      "character": "\u042e",
+      "weight": 800,
+      "optical": 16,
+      "crossings": 4
+    },
+    {
+      "character": "\u044e",
+      "weight": 800,
+      "optical": 16,
+      "crossings": 4
+    },
+    {
+      "character": "\u0414",
+      "weight": 800,
+      "optical": 20,
+      "crossings": 2
+    },
+    {
+      "character": "\u0434",
+      "weight": 800,
+      "optical": 20,
+      "crossings": 2
+    },
+    {
+      "character": "\u0416",
+      "weight": 800,
+      "optical": 20,
+      "crossings": 10
+    },
+    {
+      "character": "\u0436",
+      "weight": 800,
+      "optical": 20,
+      "crossings": 10
+    },
+    {
+      "character": "\u041a",
+      "weight": 800,
+      "optical": 20,
+      "crossings": 10
+    },
+    {
+      "character": "\u043a",
+      "weight": 800,
+      "optical": 20,
+      "crossings": 8
+    },
+    {
+      "character": "\u044d",
+      "weight": 800,
+      "optical": 20,
+      "crossings": 2
+    },
+    {
+      "character": "\u042d",
+      "weight": 800,
+      "optical": 20,
+      "crossings": 2
+    },
+    {
+      "character": "\u0444",
+      "weight": 800,
+      "optical": 20,
+      "crossings": 8
+    },
+    {
+      "character": "\u0424",
+      "weight": 800,
+      "optical": 20,
+      "crossings": 8
+    },
+    {
+      "character": "Q",
+      "weight": 800,
+      "optical": 20,
+      "crossings": 4
+    },
+    {
+      "character": "R",
+      "weight": 800,
+      "optical": 20,
+      "crossings": 2
+    },
+    {
+      "character": "\u042e",
+      "weight": 800,
+      "optical": 20,
+      "crossings": 4
+    },
+    {
+      "character": "\u044e",
+      "weight": 800,
+      "optical": 20,
+      "crossings": 4
+    },
+    {
+      "character": "\u0414",
+      "weight": 800,
+      "optical": 28,
+      "crossings": 2
+    },
+    {
+      "character": "\u0434",
+      "weight": 800,
+      "optical": 28,
+      "crossings": 2
+    },
+    {
+      "character": "\u0416",
+      "weight": 800,
+      "optical": 28,
+      "crossings": 10
+    },
+    {
+      "character": "\u0436",
+      "weight": 800,
+      "optical": 28,
+      "crossings": 10
+    },
+    {
+      "character": "\u041a",
+      "weight": 800,
+      "optical": 28,
+      "crossings": 10
+    },
+    {
+      "character": "\u043a",
+      "weight": 800,
+      "optical": 28,
+      "crossings": 10
+    },
+    {
+      "character": "\u044d",
+      "weight": 800,
+      "optical": 28,
+      "crossings": 2
+    },
+    {
+      "character": "\u042d",
+      "weight": 800,
+      "optical": 28,
+      "crossings": 2
+    },
+    {
+      "character": "\u0444",
+      "weight": 800,
+      "optical": 28,
+      "crossings": 8
+    },
+    {
+      "character": "\u0424",
+      "weight": 800,
+      "optical": 28,
+      "crossings": 8
+    },
+    {
+      "character": "Q",
+      "weight": 800,
+      "optical": 28,
+      "crossings": 4
+    },
+    {
+      "character": "R",
+      "weight": 800,
+      "optical": 28,
+      "crossings": 2
+    },
+    {
+      "character": "\u042e",
+      "weight": 800,
+      "optical": 28,
+      "crossings": 4
+    },
+    {
+      "character": "\u044e",
+      "weight": 800,
+      "optical": 28,
+      "crossings": 4
+    },
+    {
+      "character": "\u0414",
+      "weight": 800,
+      "optical": 64,
+      "crossings": 2
+    },
+    {
+      "character": "\u0434",
+      "weight": 800,
+      "optical": 64,
+      "crossings": 2
+    },
+    {
+      "character": "\u0416",
+      "weight": 800,
+      "optical": 64,
+      "crossings": 10
+    },
+    {
+      "character": "\u0436",
+      "weight": 800,
+      "optical": 64,
+      "crossings": 10
+    },
+    {
+      "character": "\u041a",
+      "weight": 800,
+      "optical": 64,
+      "crossings": 10
+    },
+    {
+      "character": "\u043a",
+      "weight": 800,
+      "optical": 64,
+      "crossings": 10
+    },
+    {
+      "character": "\u044d",
+      "weight": 800,
+      "optical": 64,
+      "crossings": 2
+    },
+    {
+      "character": "\u042d",
+      "weight": 800,
+      "optical": 64,
+      "crossings": 2
+    },
+    {
+      "character": "\u0444",
+      "weight": 800,
+      "optical": 64,
+      "crossings": 8
+    },
+    {
+      "character": "\u0424",
+      "weight": 800,
+      "optical": 64,
+      "crossings": 8
+    },
+    {
+      "character": "Q",
+      "weight": 800,
+      "optical": 64,
+      "crossings": 4
+    },
+    {
+      "character": "R",
+      "weight": 800,
+      "optical": 64,
+      "crossings": 2
+    },
+    {
+      "character": "\u042e",
+      "weight": 800,
+      "optical": 64,
+      "crossings": 4
+    },
+    {
+      "character": "\u044e",
+      "weight": 800,
+      "optical": 64,
+      "crossings": 4
+    },
+    {
+      "character": "\u0414",
+      "weight": 800,
+      "optical": 128,
+      "crossings": 2
+    },
+    {
+      "character": "\u0434",
+      "weight": 800,
+      "optical": 128,
+      "crossings": 2
+    },
+    {
+      "character": "\u0416",
+      "weight": 800,
+      "optical": 128,
+      "crossings": 10
+    },
+    {
+      "character": "\u0436",
+      "weight": 800,
+      "optical": 128,
+      "crossings": 10
+    },
+    {
+      "character": "\u041a",
+      "weight": 800,
+      "optical": 128,
+      "crossings": 10
+    },
+    {
+      "character": "\u043a",
+      "weight": 800,
+      "optical": 128,
+      "crossings": 10
+    },
+    {
+      "character": "\u044d",
+      "weight": 800,
+      "optical": 128,
+      "crossings": 2
+    },
+    {
+      "character": "\u042d",
+      "weight": 800,
+      "optical": 128,
+      "crossings": 2
+    },
+    {
+      "character": "\u0444",
+      "weight": 800,
+      "optical": 128,
+      "crossings": 8
+    },
+    {
+      "character": "\u0424",
+      "weight": 800,
+      "optical": 128,
+      "crossings": 8
+    },
+    {
+      "character": "Q",
+      "weight": 800,
+      "optical": 128,
+      "crossings": 4
+    },
+    {
+      "character": "R",
+      "weight": 800,
+      "optical": 128,
+      "crossings": 2
+    },
+    {
+      "character": "\u042e",
+      "weight": 800,
+      "optical": 128,
+      "crossings": 4
+    },
+    {
+      "character": "\u044e",
+      "weight": 800,
+      "optical": 128,
+      "crossings": 4
+    },
+    {
+      "character": "\u0414",
+      "weight": 900,
+      "optical": 9,
+      "crossings": 2
+    },
+    {
+      "character": "\u0434",
+      "weight": 900,
+      "optical": 9,
+      "crossings": 2
+    },
+    {
+      "character": "\u0416",
+      "weight": 900,
+      "optical": 9,
+      "crossings": 10
+    },
+    {
+      "character": "\u0436",
+      "weight": 900,
+      "optical": 9,
+      "crossings": 10
+    },
+    {
+      "character": "\u041a",
+      "weight": 900,
+      "optical": 9,
+      "crossings": 10
+    },
+    {
+      "character": "\u043a",
+      "weight": 900,
+      "optical": 9,
+      "crossings": 6
+    },
+    {
+      "character": "\u044d",
+      "weight": 900,
+      "optical": 9,
+      "crossings": 2
+    },
+    {
+      "character": "\u042d",
+      "weight": 900,
+      "optical": 9,
+      "crossings": 2
+    },
+    {
+      "character": "\u0444",
+      "weight": 900,
+      "optical": 9,
+      "crossings": 8
+    },
+    {
+      "character": "\u0424",
+      "weight": 900,
+      "optical": 9,
+      "crossings": 8
+    },
+    {
+      "character": "Q",
+      "weight": 900,
+      "optical": 9,
+      "crossings": 4
+    },
+    {
+      "character": "R",
+      "weight": 900,
+      "optical": 9,
+      "crossings": 2
+    },
+    {
+      "character": "\u042e",
+      "weight": 900,
+      "optical": 9,
+      "crossings": 4
+    },
+    {
+      "character": "\u044e",
+      "weight": 900,
+      "optical": 9,
+      "crossings": 4
+    },
+    {
+      "character": "\u0414",
+      "weight": 900,
+      "optical": 14,
+      "crossings": 2
+    },
+    {
+      "character": "\u0434",
+      "weight": 900,
+      "optical": 14,
+      "crossings": 2
+    },
+    {
+      "character": "\u0416",
+      "weight": 900,
+      "optical": 14,
+      "crossings": 10
+    },
+    {
+      "character": "\u0436",
+      "weight": 900,
+      "optical": 14,
+      "crossings": 10
+    },
+    {
+      "character": "\u041a",
+      "weight": 900,
+      "optical": 14,
+      "crossings": 10
+    },
+    {
+      "character": "\u043a",
+      "weight": 900,
+      "optical": 14,
+      "crossings": 6
+    },
+    {
+      "character": "\u044d",
+      "weight": 900,
+      "optical": 14,
+      "crossings": 2
+    },
+    {
+      "character": "\u042d",
+      "weight": 900,
+      "optical": 14,
+      "crossings": 2
+    },
+    {
+      "character": "\u0444",
+      "weight": 900,
+      "optical": 14,
+      "crossings": 8
+    },
+    {
+      "character": "\u0424",
+      "weight": 900,
+      "optical": 14,
+      "crossings": 8
+    },
+    {
+      "character": "Q",
+      "weight": 900,
+      "optical": 14,
+      "crossings": 4
+    },
+    {
+      "character": "R",
+      "weight": 900,
+      "optical": 14,
+      "crossings": 2
+    },
+    {
+      "character": "\u042e",
+      "weight": 900,
+      "optical": 14,
+      "crossings": 4
+    },
+    {
+      "character": "\u044e",
+      "weight": 900,
+      "optical": 14,
+      "crossings": 4
+    },
+    {
+      "character": "\u0414",
+      "weight": 900,
+      "optical": 16,
+      "crossings": 2
+    },
+    {
+      "character": "\u0434",
+      "weight": 900,
+      "optical": 16,
+      "crossings": 2
+    },
+    {
+      "character": "\u0416",
+      "weight": 900,
+      "optical": 16,
+      "crossings": 10
+    },
+    {
+      "character": "\u0436",
+      "weight": 900,
+      "optical": 16,
+      "crossings": 10
+    },
+    {
+      "character": "\u041a",
+      "weight": 900,
+      "optical": 16,
+      "crossings": 10
+    },
+    {
+      "character": "\u043a",
+      "weight": 900,
+      "optical": 16,
+      "crossings": 6
+    },
+    {
+      "character": "\u044d",
+      "weight": 900,
+      "optical": 16,
+      "crossings": 2
+    },
+    {
+      "character": "\u042d",
+      "weight": 900,
+      "optical": 16,
+      "crossings": 2
+    },
+    {
+      "character": "\u0444",
+      "weight": 900,
+      "optical": 16,
+      "crossings": 8
+    },
+    {
+      "character": "\u0424",
+      "weight": 900,
+      "optical": 16,
+      "crossings": 8
+    },
+    {
+      "character": "Q",
+      "weight": 900,
+      "optical": 16,
+      "crossings": 4
+    },
+    {
+      "character": "R",
+      "weight": 900,
+      "optical": 16,
+      "crossings": 2
+    },
+    {
+      "character": "\u042e",
+      "weight": 900,
+      "optical": 16,
+      "crossings": 4
+    },
+    {
+      "character": "\u044e",
+      "weight": 900,
+      "optical": 16,
+      "crossings": 4
+    },
+    {
+      "character": "\u0414",
+      "weight": 900,
+      "optical": 20,
+      "crossings": 2
+    },
+    {
+      "character": "\u0434",
+      "weight": 900,
+      "optical": 20,
+      "crossings": 2
+    },
+    {
+      "character": "\u0416",
+      "weight": 900,
+      "optical": 20,
+      "crossings": 10
+    },
+    {
+      "character": "\u0436",
+      "weight": 900,
+      "optical": 20,
+      "crossings": 10
+    },
+    {
+      "character": "\u041a",
+      "weight": 900,
+      "optical": 20,
+      "crossings": 10
+    },
+    {
+      "character": "\u043a",
+      "weight": 900,
+      "optical": 20,
+      "crossings": 8
+    },
+    {
+      "character": "\u044d",
+      "weight": 900,
+      "optical": 20,
+      "crossings": 2
+    },
+    {
+      "character": "\u042d",
+      "weight": 900,
+      "optical": 20,
+      "crossings": 2
+    },
+    {
+      "character": "\u0444",
+      "weight": 900,
+      "optical": 20,
+      "crossings": 8
+    },
+    {
+      "character": "\u0424",
+      "weight": 900,
+      "optical": 20,
+      "crossings": 8
+    },
+    {
+      "character": "Q",
+      "weight": 900,
+      "optical": 20,
+      "crossings": 4
+    },
+    {
+      "character": "R",
+      "weight": 900,
+      "optical": 20,
+      "crossings": 2
+    },
+    {
+      "character": "\u042e",
+      "weight": 900,
+      "optical": 20,
+      "crossings": 4
+    },
+    {
+      "character": "\u044e",
+      "weight": 900,
+      "optical": 20,
+      "crossings": 4
+    },
+    {
+      "character": "\u0414",
+      "weight": 900,
+      "optical": 28,
+      "crossings": 2
+    },
+    {
+      "character": "\u0434",
+      "weight": 900,
+      "optical": 28,
+      "crossings": 2
+    },
+    {
+      "character": "\u0416",
+      "weight": 900,
+      "optical": 28,
+      "crossings": 10
+    },
+    {
+      "character": "\u0436",
+      "weight": 900,
+      "optical": 28,
+      "crossings": 10
+    },
+    {
+      "character": "\u041a",
+      "weight": 900,
+      "optical": 28,
+      "crossings": 8
+    },
+    {
+      "character": "\u043a",
+      "weight": 900,
+      "optical": 28,
+      "crossings": 8
+    },
+    {
+      "character": "\u044d",
+      "weight": 900,
+      "optical": 28,
+      "crossings": 2
+    },
+    {
+      "character": "\u042d",
+      "weight": 900,
+      "optical": 28,
+      "crossings": 2
+    },
+    {
+      "character": "\u0444",
+      "weight": 900,
+      "optical": 28,
+      "crossings": 8
+    },
+    {
+      "character": "\u0424",
+      "weight": 900,
+      "optical": 28,
+      "crossings": 8
+    },
+    {
+      "character": "Q",
+      "weight": 900,
+      "optical": 28,
+      "crossings": 4
+    },
+    {
+      "character": "R",
+      "weight": 900,
+      "optical": 28,
+      "crossings": 2
+    },
+    {
+      "character": "\u042e",
+      "weight": 900,
+      "optical": 28,
+      "crossings": 4
+    },
+    {
+      "character": "\u044e",
+      "weight": 900,
+      "optical": 28,
+      "crossings": 4
+    },
+    {
+      "character": "\u0414",
+      "weight": 900,
+      "optical": 64,
+      "crossings": 2
+    },
+    {
+      "character": "\u0434",
+      "weight": 900,
+      "optical": 64,
+      "crossings": 2
+    },
+    {
+      "character": "\u0416",
+      "weight": 900,
+      "optical": 64,
+      "crossings": 10
+    },
+    {
+      "character": "\u0436",
+      "weight": 900,
+      "optical": 64,
+      "crossings": 10
+    },
+    {
+      "character": "\u041a",
+      "weight": 900,
+      "optical": 64,
+      "crossings": 8
+    },
+    {
+      "character": "\u043a",
+      "weight": 900,
+      "optical": 64,
+      "crossings": 8
+    },
+    {
+      "character": "\u044d",
+      "weight": 900,
+      "optical": 64,
+      "crossings": 2
+    },
+    {
+      "character": "\u042d",
+      "weight": 900,
+      "optical": 64,
+      "crossings": 2
+    },
+    {
+      "character": "\u0444",
+      "weight": 900,
+      "optical": 64,
+      "crossings": 8
+    },
+    {
+      "character": "\u0424",
+      "weight": 900,
+      "optical": 64,
+      "crossings": 8
+    },
+    {
+      "character": "Q",
+      "weight": 900,
+      "optical": 64,
+      "crossings": 4
+    },
+    {
+      "character": "R",
+      "weight": 900,
+      "optical": 64,
+      "crossings": 2
+    },
+    {
+      "character": "\u042e",
+      "weight": 900,
+      "optical": 64,
+      "crossings": 4
+    },
+    {
+      "character": "\u044e",
+      "weight": 900,
+      "optical": 64,
+      "crossings": 4
+    },
+    {
+      "character": "\u0414",
+      "weight": 900,
+      "optical": 128,
+      "crossings": 2
+    },
+    {
+      "character": "\u0434",
+      "weight": 900,
+      "optical": 128,
+      "crossings": 2
+    },
+    {
+      "character": "\u0416",
+      "weight": 900,
+      "optical": 128,
+      "crossings": 10
+    },
+    {
+      "character": "\u0436",
+      "weight": 900,
+      "optical": 128,
+      "crossings": 10
+    },
+    {
+      "character": "\u041a",
+      "weight": 900,
+      "optical": 128,
+      "crossings": 8
+    },
+    {
+      "character": "\u043a",
+      "weight": 900,
+      "optical": 128,
+      "crossings": 8
+    },
+    {
+      "character": "\u044d",
+      "weight": 900,
+      "optical": 128,
+      "crossings": 2
+    },
+    {
+      "character": "\u042d",
+      "weight": 900,
+      "optical": 128,
+      "crossings": 2
+    },
+    {
+      "character": "\u0444",
+      "weight": 900,
+      "optical": 128,
+      "crossings": 8
+    },
+    {
+      "character": "\u0424",
+      "weight": 900,
+      "optical": 128,
+      "crossings": 8
+    },
+    {
+      "character": "Q",
+      "weight": 900,
+      "optical": 128,
+      "crossings": 4
+    },
+    {
+      "character": "R",
+      "weight": 900,
+      "optical": 128,
+      "crossings": 2
+    },
+    {
+      "character": "\u042e",
+      "weight": 900,
+      "optical": 128,
+      "crossings": 4
+    },
+    {
+      "character": "\u044e",
+      "weight": 900,
+      "optical": 128,
+      "crossings": 4
+    }
+  ],
+  "between_contours_checked": true,
+  "method": "Pairwise proper intersections of sampled compiled contours; not an exact analytic proof"
+}

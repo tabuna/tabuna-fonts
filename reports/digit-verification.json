@@ -1,0 +1,11 @@
+{
+  "font_sha256": "56cb3cbd30099ed97b0395e7eae28f9431e84ff9eede14cdfb4061f1c5873edc",
+  "cases": {
+    "tnum": 15300,
+    "pnum": 15300
+  },
+  "locations": 153,
+  "min_tabular_gap_font_units": 131.50634765625,
+  "failures": [],
+  "passed": true
+}

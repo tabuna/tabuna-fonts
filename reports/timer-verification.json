@@ -1,0 +1,14 @@
+{
+  "font_sha256": "56cb3cbd30099ed97b0395e7eae28f9431e84ff9eede14cdfb4061f1c5873edc",
+  "files": {
+    "dist/TabunaSansVariable.ttf": "56cb3cbd30099ed97b0395e7eae28f9431e84ff9eede14cdfb4061f1c5873edc",
+    "dist/TabunaSansVariable.woff2": "090801dbfa6086e63678a38df35c522f3032164b2e4bced9e692121bccef704e"
+  },
+  "axis_locations": 117,
+  "context_checks": 220896,
+  "format_comparisons": 110448,
+  "equal_width_timer_groups": 234,
+  "failure_count": 0,
+  "failures": [],
+  "passed": true
+}

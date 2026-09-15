@@ -1,0 +1,73 @@
+{
+  "passed": true,
+  "font_sha256": "56cb3cbd30099ed97b0395e7eae28f9431e84ff9eede14cdfb4061f1c5873edc",
+  "files": {
+    "build/character-prototypes/selected-v5/dist/TabunaSansVariable.ttf": "5888eecc912f46f14b7807906d2ffc0a42d543a3695465b76a83b699373344b9",
+    "build/timer-fix/before.ttf": "3567058955eb20ebaf25ef5241a094b25d86dfd7be966f8032492dd3caa3e011",
+    "dist/TabunaSansVariable.ttf": "56cb3cbd30099ed97b0395e7eae28f9431e84ff9eede14cdfb4061f1c5873edc"
+  },
+  "tabular_fix_scope": {
+    "before_sha256": "5888eecc912f46f14b7807906d2ffc0a42d543a3695465b76a83b699373344b9",
+    "font_sha256": "3567058955eb20ebaf25ef5241a094b25d86dfd7be966f8032492dd3caa3e011",
+    "passed": true,
+    "changed_glyphs": {
+      "glyf": [
+        "eight.tnum",
+        "five.tnum",
+        "four.tnum",
+        "nine.tnum",
+        "one.tnum",
+        "seven.tnum",
+        "six.tnum",
+        "three.tnum",
+        "two.tnum",
+        "zero.tnum"
+      ],
+      "gvar": [
+        "eight.tnum",
+        "five.tnum",
+        "four.tnum",
+        "nine.tnum",
+        "one.tnum",
+        "seven.tnum",
+        "six.tnum",
+        "three.tnum",
+        "two.tnum",
+        "zero.tnum"
+      ],
+      "hmtx": [
+        "eight.tnum",
+        "five.tnum",
+        "four.tnum",
+        "nine.tnum",
+        "one.tnum",
+        "seven.tnum",
+        "six.tnum",
+        "three.tnum",
+        "two.tnum",
+        "zero.tnum"
+      ]
+    },
+    "changed_tables": [
+      "head",
+      "hmtx",
+      "glyf",
+      "name",
+      "gvar"
+    ],
+    "proportional_glyphs_and_advances_unchanged": true,
+    "continuous_variation_data_unchanged_outside_tabular_digits": true,
+    "version": "Version 0.0.2",
+    "unique_id": "0.0.2;TBNA;TabunaSans-Regular",
+    "head_revision": 0.0019989013671875
+  },
+  "timer_changed_tables": [
+    "head",
+    "name",
+    "GSUB"
+  ],
+  "timer_context_coverage_additions": 40,
+  "unchanged_non_tabular_glyphs": 208,
+  "continuous_gvar_data_equal_outside_tabular_digits": true,
+  "limits": "Revalidates preservation of existing design/variation evidence. It is not a new human reading or recognition study."
+}

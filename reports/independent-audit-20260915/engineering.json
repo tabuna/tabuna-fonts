@@ -1,0 +1,123 @@
+{
+  "audit": "independent-engineering-20260915",
+  "font_sha256": "5888eecc912f46f14b7807906d2ffc0a42d543a3695465b76a83b699373344b9",
+  "woff2_sha256": "9c5c23886f3cac3acca41e9db66bdde9a69e5145453e1a84e24605bc31b43e59",
+  "control": {
+    "path": "build/independent-audit-20260915/engineering/control-v0.0.1.ttf",
+    "sha256": "18f597e3a48133227d503eff9a297c9b9e62c646dd5cf7902dd8ed216369cf28",
+    "size": 300800,
+    "names": {
+      "1": "Tabuna Sans",
+      "2": "Regular",
+      "3": "0.900;TBNA;TabunaSans-Regular",
+      "4": "Tabuna Sans Regular",
+      "5": "Version 0.0.1",
+      "6": "TabunaSans-Regular",
+      "16": "Tabuna Sans",
+      "17": "Regular",
+      "25": null
+    },
+    "revision": 0.001007080078125,
+    "cmap_count": 189,
+    "axes": [
+      {
+        "axisTag": "wght",
+        "minValue": 100.0,
+        "defaultValue": 400.0,
+        "maxValue": 900.0
+      },
+      {
+        "axisTag": "opsz",
+        "minValue": 9.0,
+        "defaultValue": 14.0,
+        "maxValue": 128.0
+      }
+    ]
+  },
+  "method": "Direct inspection and new HarfBuzz/fontTools/pathops/FreeType probes; no previous pass report or design verdict used as proof. Font and generator not changed.",
+  "findings": [
+    {
+      "id": "ENG-01",
+      "priority": "P1",
+      "classification": "font defect",
+      "title": "Tabular digits collide at heavy optical instances despite equal advances",
+      "confidence": "high",
+      "observed": "217 filled-outline intersections among 4800 digit-pair/location cases with tnum; identical pnum grid has zero. At wght900/opsz128, 00 advances1162 each and filled intersection area39403.88 units². At900/24,00 area20571.62. First sampled lower case725/24,44 area601.87. 900/18 has8 collisions, some below a pixel at UI raster sizes. Rendering confirms strongly fused 900/128 numbers; all tnum advances nevertheless pass equality.",
+      "affected_cases": "Heavy counters, large totals, numeric headings, tabular prices; wght725 at sampled opsz24+ and wght900 at sampled opsz18+. Not a claim that every weight/size or every pair fails.",
+      "recommendation": "Recompute tnum phantom-point advances and component placement from final digit outlines at every master; preserve sufficient digit-pair ink clearance through interpolation. Do not mask in CSS tracking. Until repaired avoid heavy tabular instances; use tested lower weights or proportional figures where alignment is unnecessary.",
+      "acceptance_test": "Assert equal tnum advances AND zero filled-outline intersections for all100 digit pairs at masters and intermediate wght/opsz, including725/24,900/18,900/24,900/128. Raster-test minimum gap and numeric strings in target browser engines at18/24/32/48px with auto opsz; check decimals, separators and signs.",
+      "evidence": [
+        "build/independent-audit-20260915/engineering/digit_collisions.py",
+        "build/independent-audit-20260915/engineering/digit-collisions.json",
+        "build/independent-audit-20260915/engineering/digit-collisions-pnum.json",
+        "build/independent-audit-20260915/engineering/digit-proof.png",
+        "build/independent-audit-20260915/engineering/repro.html"
+      ]
+    },
+    {
+      "id": "ENG-02",
+      "priority": "P2",
+      "classification": "release/integration defect",
+      "title": "Web cache URLs still identify the tagged control, not current WOFF2",
+      "confidence": "high",
+      "observed": "dist/tabuna.css line3 and index.html lines8–9 use59b13381af3b, also present in v0.0.1 CSS. Current WOFF2 hash prefix is9c5c23886f3c. scripts/build-web.sh defines URL suffix as WOFF2 SHA256[:12], but docs main build runs scripts/build.py.",
+      "affected_cases": "Returning browser users/deployments reusing cached control at unchanged URL. Actual stale delivery depends on HTTP cache policy; not asserted observed.",
+      "recommendation": "Make one documented build command produce synchronized TTF/WOFF2/CSS/preload and check cache token in release validation.",
+      "acceptance_test": "Assert CSS font URL and HTML preload token equal actual WOFF2 SHA prefix; simulate old cached asset and deploy new build, confirming new bytes load."
+    },
+    {
+      "id": "ENG-03",
+      "priority": "P2",
+      "classification": "release metadata defect",
+      "title": "Changed font is indistinguishable from control0.0.1 in installation metadata",
+      "confidence": "high",
+      "observed": "Current TTF5888eecc912f46f14b7807906d2ffc0a42d543a3695465b76a83b699373344b9 differs from local v0.0.1-tag TTF18f597e3a48133227d503eff9a297c9b9e62c646dd5cf7902dd8ed216369cf28. Name IDs1,2,3,4,5,6,16,17 and head.fontRevision are identical. Both name5 Version0.0.1; name3 0.900;TBNA;TabunaSans-Regular; manifest0.0.1.",
+      "affected_cases": "Desktop replacement, font menus/caches, user bug reports and reproducibility. Same-family replacement is expected, but version and unique ID cannot identify build.",
+      "recommendation": "Assign a coherent new version and unique build identity before distributing; synchronize name3/name5/head/manifest and publish immutable hashes.",
+      "acceptance_test": "Current release differs from control by version/unique ID as well as bytes; clean install/update smoke test in supported native app.",
+      "limitation": "Comparison uses local git tagv0.0.1 (commit1dd23282...), not independently downloaded remote release-asset bytes."
+    },
+    {
+      "id": "ENG-04",
+      "priority": "P2",
+      "classification": "product integration scope / documented coverage limit",
+      "title": "189-character EN/RU subset needs explicit fallback policy for real content",
+      "confidence": "high",
+      "observed": "Missing José/Müller accents, Ukrainian їєіґ, Belarusianў, combining acute, bullet•, nonbreaking hyphen, arrows and√≈∑∫. Russian за́мок produces.notdef for acute in direct HarfBuzz. Decomposed Й/Ё compose successfully in HarfBuzz even though marks absent in cmap; U+202F/U+2009 are synthesized spaces by HarfBuzz.",
+      "affected_cases": "Names, user input, pasted editorial text, educational stress marks and math text. Existing README correctly discloses limited Latin/Cyrillic; this is not evidence that promised189 glyphs are missing.",
+      "recommendation": "Keep current font scoped to controlled EN/RU content; test fallback for user text and editorial symbols or expand repertoire according to product needs. Provide italic policy because only upright exists.",
+      "acceptance_test": "Browser/native corpus with accented names, decomposed Russian, acute stress, bullets, thin spaces, hyphens and math shows no tofu, broken cluster positioning, baseline discontinuity or clipping. Validate intended emphasis with synthetic italic disabled/enabled per product policy."
+    }
+  ],
+  "positive_checks": {
+    "cmap": 189,
+    "axes": "wght100–900 default400;opsz9–128 default14",
+    "ttf_vs_decoded_woff2_shaping_comparisons": 1680,
+    "ttf_vs_decoded_woff2_mismatches": 0,
+    "locations": 48,
+    "tnum_equal_advance_locations": 48,
+    "pnum_digit_collision_cases": 0,
+    "mapped_glyphs_outside_default_hhea_in_sampled_locations": 0,
+    "features": "kern changes Latin/Cyrillic probe; liga produces ffi/ffl/ff/fi/fl glyphs; calt present; pnum/tnum toggles working. Feature presence/equality not typographic-quality proof."
+  },
+  "suitability": {
+    "ui": "Conditional for controlled EN/RU labels with regular/moderate weights; block unrestricted heavy tnum deployment until ENG-01 fixed. Test actual browser/native fallback and auto sizing.",
+    "headings": "Conditional, with strongest reservation for heavy numeric headings; proportional pair sample has no collisions. No aesthetic verdict inferred.",
+    "body": "Technically usable for constrained EN/RU upright text with tested fallback/emphasis and paragraph settings; engineering tests do not establish comfortable reading.",
+    "long_screen_reading": "Not approved by this engineering audit: no sustained reader test, cross-engine long-form proof or fallback/emphasis validation. This is missing evidence, not a measured failure of reading comprehension."
+  },
+  "limits": [
+    "No clean rebuild or installation performed; would mutate font deliverables.",
+    "No browser auto-opsz mapping, WebKit/Chromium rendering, or Windows native rendering independently executed here. Repro includes auto18/24/32/48px rows for follow-up.",
+    "Raster proof is HarfBuzz positioned glyphs rendered by FreeType; not a browser screenshot.",
+    "No Apple involvement, human readability study or accessibility certification claimed."
+  ],
+  "reproduction": [
+    ".venv/bin/python build/independent-audit-20260915/engineering/check.py",
+    ".venv/bin/python build/independent-audit-20260915/engineering/digit_collisions.py",
+    ".venv/bin/python build/independent-audit-20260915/engineering/digit_collisions.py pnum",
+    ".venv/bin/python build/independent-audit-20260915/engineering/render_digits.py",
+    "Serve repository root; open /build/independent-audit-20260915/engineering/repro.html"
+  ],
+  "evidence": "build/independent-audit-20260915/engineering/evidence.json"
+}

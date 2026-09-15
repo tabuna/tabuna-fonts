@@ -1,0 +1,61 @@
+{
+  "role": "Independent brand/type-character reviewer (AI visual assessment)",
+  "font_sha256": "3567058955eb20ebaf25ef5241a094b25d86dfd7be966f8032492dd3caa3e011",
+  "font_sha256_expected": "3567058955eb20ebaf25ef5241a094b25d86dfd7be966f8032492dd3caa3e011",
+  "tests": [
+    {
+      "test": "Blind inspection of build/matrix002/blind-pairs.png",
+      "method": "Viewed full provided raster without reading identities, reports, or font source; compared RU UI 18px/400/14, RU and EN body 22px/400/18, RU and EN headings 48px/500/48, isolated diagnostic forms 54px at weights 100 and 900 / optical 64."
+    },
+    {
+      "test": "Current TTF fingerprint",
+      "result": "3567058955eb20ebaf25ef5241a094b25d86dfd7be966f8032492dd3caa3e011"
+    }
+  ],
+  "blind_assessment": {
+    "preference": "indistinguishable in real RU/EN lines",
+    "locked_before_identity_reveal": true,
+    "identity_revealed": false,
+    "confidence": "high for the absence of an obvious line-level difference in this sheet; moderate for visual positioning",
+    "condition": "At the supplied raster size and the shown weight/optical-size combinations. This does not establish that outlines or rendering are identical.",
+    "real_line_observation": "The paired RU UI line, RU and EN body sentences, and RU and EN headings preserve effectively the same visible width, rhythm, color, openness, and word silhouettes. I cannot identify a repeatable character change across those lines.",
+    "diagnostic_observation": "B visibly gives capital I horizontal bars in the isolated Il1 sequences at the extreme weights. That is a useful identification cue, but it does not recur as a perceptible character change in the supplied real lines.",
+    "brief_fit": "Both look compact, clean, open in the regular text samples, and restrained rather than strongly expressive. The Cyrillic Л/л and Д/д have recognizable local forms. A moderately humanist reading is plausible from the softened rhythm, but the sheet alone does not establish a distinctive or self-contained Cyrillic voice."
+  },
+  "verdicts": {
+    "ui": "conditional",
+    "headings": "pass",
+    "body": "conditional",
+    "sustained_reading": "unverified"
+  },
+  "verdict_scope": "Shared visual verdicts for A and B on this sheet. Current-font SHA identifies the requested artifact but does not decode A/B. Headings pass means the shown headings are coherent and readable; it does not certify distinctive branding.",
+  "findings": [
+    {
+      "specific": "The repeated RU/EN lines do not reveal a stable A/B change in brand character.",
+      "recommendation": "Do not claim a proven line-level personality improvement from this matrix.",
+      "acceptance_test": "Use randomized, order-swapped unfamiliar RU/EN sentences with multiple occurrences of changed forms; collect preference and repeat identification across repeats before making a distinctiveness claim."
+    },
+    {
+      "specific": "The serifed capital I in B is visible at both diagnostic extremes; surrounding line rhythm looks unchanged.",
+      "recommendation": "Evaluate it as an identification feature rather than evidence of a new overall voice.",
+      "acceptance_test": "Render real mixed-language names, identifiers, and UI labels containing I/l/1 at actual UI sizes and verify each character can be identified."
+    },
+    {
+      "specific": "Both heading pairs have steady spacing and compatible Latin/Cyrillic color. The Cyrillic lower-case and cap shapes look native enough in the supplied words, but coverage is sparse.",
+      "recommendation": "Retain the restrained heading direction; broaden Cyrillic proofing before describing the design as self-contained.",
+      "acceptance_test": "Inspect paragraph and heading specimens with representative Cyrillic combinations, punctuation, numerals, and mixed scripts at regular and bold weights."
+    },
+    {
+      "specific": "The specimen contains no paragraphs or sustained reading evidence.",
+      "recommendation": "Keep body and sustained-reading claims provisional.",
+      "acceptance_test": "Review multi-paragraph RU/EN text at intended body sizes and line lengths, then run actual reader testing if claiming reading comfort."
+    }
+  ],
+  "limits": [
+    "No human participant results; no designer impersonation.",
+    "No A/B identity key or earlier/current reports read.",
+    "Only the supplied raster was visually assessed; no source fonts edited.",
+    "No paragraph reading, timing, print, low-resolution-device, or cross-platform tests.",
+    "No claim that the fonts are technically identical or that one letter establishes overall character."
+  ]
+}

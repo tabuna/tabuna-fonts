@@ -1,0 +1,12 @@
+{
+  "before_font_sha256": "3567058955eb20ebaf25ef5241a094b25d86dfd7be966f8032492dd3caa3e011",
+  "font_sha256": "56cb3cbd30099ed97b0395e7eae28f9431e84ff9eede14cdfb4061f1c5873edc",
+  "changed_tables": [
+    "head",
+    "name",
+    "GSUB"
+  ],
+  "geometry_metrics_variations_unchanged": true,
+  "gsub_change": "Only40 additions: ten tabular digit aliases in each of four before/after contextual-colon coverage lists. Removing exactly these additions reproduces prior GSUB XML.",
+  "passed": true
+}

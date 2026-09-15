@@ -1,0 +1,10 @@
+{
+  "preference": "indistinguishable in real RU/EN lines",
+  "locked_before_identity_reveal": true,
+  "identity_revealed": false,
+  "confidence": "high for the absence of an obvious line-level difference in this sheet; moderate for visual positioning",
+  "condition": "At the supplied raster size and the shown weight/optical-size combinations. This does not establish that outlines or rendering are identical.",
+  "real_line_observation": "The paired RU UI line, RU and EN body sentences, and RU and EN headings preserve effectively the same visible width, rhythm, color, openness, and word silhouettes. I cannot identify a repeatable character change across those lines.",
+  "diagnostic_observation": "B visibly gives capital I horizontal bars in the isolated Il1 sequences at the extreme weights. That is a useful identification cue, but it does not recur as a perceptible character change in the supplied real lines.",
+  "brief_fit": "Both look compact, clean, open in the regular text samples, and restrained rather than strongly expressive. The Cyrillic Л/л and Д/д have recognizable local forms. A moderately humanist reading is plausible from the softened rhythm, but the sheet alone does not establish a distinctive or self-contained Cyrillic voice."
+}

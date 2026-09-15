@@ -1,0 +1,20 @@
+{
+  "method": "Native Safari, actual Tab then Right twice in isolated table fixture using unchanged product table markup/CSS.",
+  "fixture": "build/audit003-fixes/keyboard.html",
+  "fixture_sha256": "d97197b7e784c01ed2dfdb45203b03e7230a6460909d4cc899a1e0359cb1ffe6",
+  "initial": {
+    "client_width": 272,
+    "scroll_width": 354,
+    "scroll_left": 0,
+    "font_loaded": true
+  },
+  "after_tab_right_right": {
+    "focused_id": "numeric-table",
+    "scroll_left": 82,
+    "client_width": 272,
+    "scroll_width": 354
+  },
+  "passed": true,
+  "scope": "Keyboard focus reaches the scrollable table and arrow keys expose its full right edge. Reverse scroll was not separately established in captured state. Not a screen-reader audit.",
+  "test_tab_closed": true
+}

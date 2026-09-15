@@ -1,0 +1,53 @@
+# Independent Cyrillic review — 0.0.2
+
+SHA-256: `3567058955eb20ebaf25ef5241a094b25d86dfd7be966f8032492dd3caa3e011`. No prior/current reviewer reports read; font and source unchanged. Actual rendered PNGs were inspected.
+
+- **ui: conditional** — Regular at14–20 px is readable with visible Cyrillic distinctions and diacritics. Do not interpret this as approval for weight100 at9–14 px or weight900 at9 px; these extremes compromise clarity.
+- **headings: pass** — At32–64 px all tested weights show coherent, recognizable Russian shapes. 90 px optical endpoint specimens show no obvious broken joins, collisions, or anomalous Cyrillic skeleton.
+- **body: pass** — Weight400 paragraphs at14–18 px have legible forms, balanced running texture, and adequate word separation in the tested grayscale renderer.
+- **sustained_reading: unverified** — A short static paragraph cannot establish fatigue, reading speed, or comprehension over extended use; no reader study or long-session evaluation was conducted.
+
+## Method and evidence
+
+- Russian pangram, representative sentence, UI labels, editorial numerals/punctuation at wght 100/400/900; sizes and matched opsz 9,12,14,16,20,32,64. Evidence: `build/matrix002/cyrillic/proof-100.png`, `build/matrix002/cyrillic/proof-400.png`, `build/matrix002/cyrillic/proof-900.png`.
+- ДЛлдбвжкяЁй, нпилшщц, ЗЭзэ at 90 px, wght 100/400/900, opsz 9 and 128. Evidence: `build/matrix002/cyrillic/characteristics.png`.
+- Russian paragraph at wght400, matched opsz and size 14/16/18 px, line-height1.5. Evidence: `build/matrix002/cyrillic/body.png`.
+
+## Findings
+
+### CYR-01 — usage_constraint (medium)
+
+Condition: Weight100 at9–14 px; black-on-white grayscale raster.
+
+Evidence: proof-100.png lower three size groups show very pale stems and weak diacritics compared with regular.
+
+Recommendation: Keep 100 for larger display text; use regular weight for small UI and body. No font-outline correction is warranted from this condition alone.
+
+Acceptance: At intended UI size/rendering platform, verify normal-weight labels and diacritics at100% scale; do not require thin display weight to meet body-text goals.
+
+### CYR-02 — usage_constraint (low)
+
+Condition: Weight900 at9–12 px.
+
+Evidence: proof-900.png bottom groups show small counters and dense rhythm, especially в/б/я and multi-stem letters. Larger groups retain recognition.
+
+Recommendation: Reserve extreme black for short emphasis/headings. Validate small bold UI at its actual size before selecting900.
+
+Acceptance: Review target labels containing въ/бв/я/ж/шщ in the target native renderer at minimum intended size and reject any unreadable label.
+
+### CYR-03 — stylistic_choice (info)
+
+Condition: All tested weights; characteristic ДЛлд and жкя.
+
+Evidence: characteristics.png shows flat-top Д/Л/л/д with a curved left entry; ж/к use direct diagonal joins. Ё dots and й breve are separate and recognizable at display sizes.
+
+Recommendation: Retain these coherent sans-serif constructions unless the design brief explicitly requires different Cyrillic forms. Their geometry is not itself a linguistic or type-quality defect.
+
+Acceptance: Continue using the characteristic-string proof after revisions; require recognizable distinctions and consistent construction, not a prescribed triangular form.
+
+## Limits
+
+- FreeType grayscale rasterization and HarfBuzz shaping only; no CoreText, DirectWrite, browser, print, dark-mode, or high-DPI validation.
+- No claim of native-speaker panel review; this is an independent visual/editorial audit.
+- 189 cmap entries and axes verified; complete Cyrillic language coverage, combining-mark behavior, all weight intermediates and kerning pairs were outside this bounded review.
+- No genuine outline-shape defect was established in the tested Cyrillic forms. Short specimen passing does not imply every string or platform passes.

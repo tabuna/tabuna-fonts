@@ -1,0 +1,144 @@
+{
+  "role": "Independent accessibility/UI typography reviewer; not Apple staff or a named human",
+  "date": "2026-09-15",
+  "font_sha256": {
+    "TabunaSansVariable.ttf": "5888eecc912f46f14b7807906d2ffc0a42d543a3695465b76a83b699373344b9",
+    "TabunaSansVariable.woff2": "9c5c23886f3cac3acca41e9db66bdde9a69e5145453e1a84e24605bc31b43e59"
+  },
+  "independence": "No prior design verdicts or audit reports consulted. README treated as product claims; current CSS, HTML, JS and font binary inspected. No font/source edits.",
+  "scope": "macOS/web RU/EN; synthetic FreeType 1x/2x light/dark screening. No real-device browser, CoreText, VoiceOver, zoom/reflow or human reading test.",
+  "font_facts": {
+    "axes": {
+      "wght": [
+        100,
+        400,
+        900
+      ],
+      "opsz": [
+        9,
+        14,
+        128
+      ]
+    },
+    "upm": 2048,
+    "cmap_count": 189,
+    "declared_xheight": 1073,
+    "declared_capheight": 1443,
+    "hhea": [
+      2109,
+      -614,
+      0
+    ],
+    "combining_0300_036f": []
+  },
+  "contrast_ratios": {
+    "light-text": 15.06,
+    "light-muted": 5.57,
+    "light-muted-surface": 5.14,
+    "dark-text": 14.73,
+    "dark-muted": 8.28,
+    "dark-muted-surface": 7.07
+  },
+  "verdict": "Conditional candidate for Regular/Medium UI and short body text; promising display hierarchy. Not enough evidence for broad accessible-font or sustained-reading certification. No blanket HIG certification.",
+  "positive_evidence": [
+    "Fresh 14–18 px Regular specimens have visible diacritics and readable short RU/EN strings in both high-contrast themes.",
+    "I/l/1 use distinguishable constructions; O/0 have different widths.",
+    "24–48 px 500–650 headings sustain clear size/weight hierarchy in the short specimens.",
+    "All six audited demo text/background pairs exceed 4.5:1 nominal sRGB contrast; this is not an all-page accessibility pass.",
+    "CSS uses font-display:swap, system fallback and optical-sizing:auto; HTML has real text, headings, input labels and a status role."
+  ],
+  "findings": [
+    {
+      "id": "A11Y-01",
+      "priority": "high",
+      "confidence": "high for specimen; medium for real-device impact",
+      "classification": "conditional deployment risk, not a malformed font",
+      "issue": "Thin is too fragile for small functional text",
+      "condition": "12 px, wght 100, opsz 9, 1x and 2x FreeType; light #20221f/#f8f8f4 and dark #f0f2e9/#1c1f1b",
+      "evidence": "Fresh specimens show much fainter Thin strokes and diacritics than 400/500 under identical colors. Demo permits 12 px and wght 100; README lists the entire 100–900 range without role limits. Thin availability itself is valid.",
+      "impact": "Reduced visibility for small labels, especially low vision and weaker displays.",
+      "recommendation": "Use 400–600 as the initial functional UI range. Reserve 100–300 for large display experiments with independent reading checks. Do not market all weights as interchangeable for small UI.",
+      "basis": "Explicit Apple guidance generally discourages light weights and advises larger sizes for thin custom fonts. Exact Tabuna ranges are reviewer inference.",
+      "sources": [
+        "https://developer.apple.com/design/human-interface-guidelines/typography"
+      ],
+      "acceptance_test": "On macOS Safari and Chrome at native 1x/2x, compare 12/14/16 px, 400/500/600, automatic opsz in both themes. Recruit readers including low vision; record character/label errors against system-ui. Keep Thin out of essential-label defaults."
+    },
+    {
+      "id": "A11Y-02",
+      "priority": "medium",
+      "confidence": "high code evidence; untested runtime consequence",
+      "classification": "demo and integration coverage",
+      "issue": "Small-text specimen inherits display tracking and tight leading",
+      "condition": "Demo #sample-text and #system-sample at 12–18 px, wght 400, automatic opsz, either theme: letter-spacing -0.018em and line-height 1.17 remain fixed as size changes.",
+      "evidence": "demo.css rule and demo.js update() set font size, weight and opsz but do not change tracking/leading. Reading article separately uses 1rem/1.65 and normal inherited tracking.",
+      "impact": "The live small-size sample does not represent a neutral body/UI baseline; tight multi-line specimen can bias readability comparisons.",
+      "recommendation": "Offer text/UI/display presets; begin body comparisons with normal tracking and roughly 1.5–1.65 line-height, then evaluate rhythm. These are test defaults, not universal accessibility minimums.",
+      "basis": "Apple requires contextual legibility. WCAG text-spacing values describe supported user overrides, not required author defaults.",
+      "sources": [
+        "https://developer.apple.com/design/human-interface-guidelines/typography",
+        "https://www.w3.org/WAI/WCAG22/Understanding/text-spacing.html"
+      ],
+      "acceptance_test": "Compare same RU/EN passages with normal tracking versus -0.018em at 12/14/16/18 px. Apply simultaneously 1.5 line-height, 2em paragraph spacing, 0.12em tracking and 0.16em word spacing; no content/function loss. Test user overrides in a real browser."
+    },
+    {
+      "id": "A11Y-03",
+      "priority": "medium",
+      "confidence": "high about evidence gap",
+      "classification": "release acceptance gap; not a proven conformance failure",
+      "issue": "The font package cannot establish text enlargement or native accessibility behavior",
+      "condition": "All sizes/weights/opsz and themes in downstream web/native integrations; demo hero uses nowrap, specimen JS uses pixel sizes and a height cap with scrolling.",
+      "evidence": "dist/tabuna.css supplies @font-face, fallback stack and optical-sizing only. README offers CSS but no native scalable text example. No native integration was supplied for this independent review.",
+      "impact": "Font users could mistake variable axes or TTF installation for support of accessibility settings.",
+      "recommendation": "Document application responsibility: web zoom and spacing/reflow tests; platform-appropriate adjustable text and emphasis. For future iOS apps use scalable custom font APIs and preserve Bold Text behavior. Do not transfer an iOS size table to macOS.",
+      "basis": "Explicit Apple custom-font accessibility guidance. Dynamic Type platform list does not include macOS in the inspected typography text. WCAG resize-text applies to web content, not a font binary.",
+      "sources": [
+        "https://developer.apple.com/design/human-interface-guidelines/typography",
+        "https://www.w3.org/WAI/WCAG22/Understanding/resize-text.html",
+        "https://developer.apple.com/documentation/uikit/scaling-fonts-automatically"
+      ],
+      "acceptance_test": "In web deployment verify 200% text enlargement without loss; inspect 320 CSS px reflow and user-spacing overrides. In target native app test available text-size and emphasis settings. For iOS additionally test every supported Dynamic Type accessibility category. Retain hierarchy and complete labels."
+    },
+    {
+      "id": "A11Y-04",
+      "priority": "medium",
+      "confidence": "medium",
+      "classification": "task-specific legibility risk",
+      "issue": "Distinct I/l/1 does not establish all-code legibility",
+      "condition": "12–16 px wght 400/500 opsz 9–12, both themes, 1x/2x; tokens containing O/0, Cyrillic З/digit 3 and Latin rn/m.",
+      "evidence": "Fresh specimens show identifiable I bars, l silhouette and 1 flag; O and 0 differ in width. З and 3 remain visually close. No timed transcription, randomized string test or low-vision participant test was conducted.",
+      "impact": "People reading IDs, recovery codes and mixed alphanumeric data have less context than prose readers.",
+      "recommendation": "Run randomized token transcription before using the font for critical codes. Keep a user-selectable or role-specific alternative if error rates are worse than system-ui. Do not alter normal Cyrillic homographs merely to make a global distinction claim.",
+      "basis": "Reviewer inference from contextual legibility; Apple specifies legibility, not particular glyph constructions.",
+      "sources": [
+        "https://developer.apple.com/design/human-interface-guidelines/typography"
+      ],
+      "acceptance_test": "Blind randomized RU/EN task: Il1, O0, З3, В8, Б6, rn/m, cl/d embedded in tokens at 12/14/16 px and 400/500. Compare error rate and time to system-ui at equal CSS size and at matched apparent size. Pre-register acceptable non-inferiority margins."
+    },
+    {
+      "id": "A11Y-05",
+      "priority": "medium",
+      "confidence": "high about untested scope",
+      "classification": "claim limitation",
+      "issue": "Short clean samples do not validate sustained body reading",
+      "condition": "Proposed body use 16–18 px, wght 400, text opsz/auto, 1.5–1.65 leading; headings 24–48 px 500–650; light/dark.",
+      "evidence": "Current page provides two short RU paragraphs; independent raster sheet includes short RU/EN labels, not sustained reading. cmap has 189 codepoints and no U+0300–036F combining marks, so accented/stressed or borrowed words may require fallback. No true italic is provided.",
+      "impact": "Long reading comfort, mixed-font fallback rhythm, emphatic text, and language pronunciation cannot be inferred from contour checks.",
+      "recommendation": "Describe body suitability as provisional. Test multi-page RU/EN text, real emphasis and fallback combinations, and allow text size/spacing/font choices. Keep text selectable with correct language/semantics for assistive readers.",
+      "basis": "Reviewer evidence limit; accessibility belongs to the whole reading experience. A font has no inherent VoiceOver certification.",
+      "sources": [
+        "https://developer.apple.com/design/human-interface-guidelines/typography",
+        "https://developer.apple.com/design/human-interface-guidelines/accessibility"
+      ],
+      "acceptance_test": "Run 15–20 minute randomized crossover reading sessions with RU and EN readers; record comprehension, speed, discomfort and preferences. Include stress marks, decomposed/precomposed sequences, foreign names and fallback. Check VoiceOver reading order/language in the final app, not in PNGs."
+    }
+  ],
+  "source_integrity": "Official Apple pages were JS-only when opened. Current search-indexed official Apple typography and scaling-fonts text retrieved on 2026-09-15, with indexed crawl age up to two months. Bundled HIG references used as routing notes. WCAG pages opened directly. No numeric Apple minimum-size table claimed.",
+  "proofs": [
+    "build/independent-audit-20260915/accessibility/specimen-dark-2x.png",
+    "build/independent-audit-20260915/accessibility/specimen-light-1x.png",
+    "build/independent-audit-20260915/accessibility/specimen-light-2x.png",
+    "build/independent-audit-20260915/accessibility/specimen-dark-1x.png"
+  ],
+  "next_decision": "Approve only a bounded pilot: UI 14–16px/400–600, body 16–18px/400, headings 24px+/500–650, auto opsz and normal tracking as starting test presets; these are reviewer-selected starting points, not Apple mandates or proven universal safe thresholds."
+}

@@ -10,7 +10,8 @@ from parameters import at_location
 def construction(p):
     foot=p['foot']; outer,inner=p['stem_outer'],p['stem_inner']
     line=lambda edge,y:(edge[0]*y+edge[1],y)
-    low=(0,foot['cut_bottom']);high=(0,foot['cut_top'])
+    cut_x=foot.get('cut_x',0)
+    low=(cut_x,foot['cut_bottom']);high=(cut_x,foot['cut_top'])
     inside=(foot['inside_x'],foot['inside_y']);outside=(foot['outside_x'],0)
     up_bend=(foot['up_x'],foot['up_y']);down_bend=(foot['down_x'],foot['down_y'])
     up_join=line(outer,foot['up_join']);down_join=line(inner,foot['down_join'])

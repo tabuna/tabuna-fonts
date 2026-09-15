@@ -26,9 +26,15 @@ def position(font,design,name):
 
 def features(name):
     data=load();groups=data.get('contextGroups',{'latin':{'left':data['leftContext'],'right':data['rightContext']}})
+    # Numeral substitutions run before calt. Keep both forms in each
+    # context class so tnum/pnum do not change punctuation alignment.
+    def members(characters):
+        return ' '.join(glyph for ch in characters
+                        for glyph in ([name(ch), name(ch)+'.tnum']
+                                      if ch in '0123456789' else [name(ch)]))
     definitions=[];rules=[]
     for key,group in groups.items():
-        left=' '.join(name(c) for c in group['left']);right=' '.join(name(c) for c in group['right'])
+        left=members(group['left']);right=members(group['right'])
         definitions.extend([f"@ColonBefore_{key} = [{left}];",f"@ColonAfter_{key} = [{right}];"])
         rules.append(f"  sub @ColonBefore_{key} colon' @ColonAfter_{key} by colon.case;")
     return '\n'.join(definitions+['feature calt {']+rules+['} calt;',''])

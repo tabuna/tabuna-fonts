@@ -1,0 +1,28 @@
+{
+  "status": "selected-for-final-validation",
+  "selected_intensity": "moderate",
+  "anonymous_label": "B",
+  "font_sha256": "1cb9ead422f7a7668736091acdeafb74d6d26481812706d43160f7010ad7721e",
+  "arbiter": "root agent",
+  "reason": "The upper-left shoulder repeats in ordinary RU/EN words without I/l; the weak variant is insufficient and the strong variant becomes angular. Moderate retains compact rhythm and open heavy e.",
+  "independent_reviews": [
+    {
+      "role": "art direction",
+      "choice": "B",
+      "required_refinement": "Soften thin upper-right transitions in o/O/0 while retaining upper-left direction."
+    },
+    {
+      "role": "optical critique",
+      "choice": "B",
+      "constraint": "Do not amplify the upper-left shoulder further or strengthen the heavy styles."
+    }
+  ],
+  "human_readability_study": false,
+  "remaining": [
+    "Thin upper-right optical refinement",
+    "Whole-repertoire geometry and variation checks",
+    "Native small-text and interface specimens",
+    "Full 3402-case audit with intentional deviations separated",
+    "Final D01-D06 evidence and verdicts"
+  ]
+}

@@ -1,13 +1,13 @@
 {
   "schema_version": 1,
   "direction": "Компактный интерфейсный гротеск с умеренной гуманистической пластикой и самостоятельной кириллицей",
-  "phase": "baseline",
+  "phase": "authorial",
   "baseline_checkpoint": {
     "path": "reports/releases/0.0.1-baseline.json",
     "sha256": "1bd6d1e41ed9c6b03da7167c4d5ad64dfcc6c56d5946c338caab5a6e39119f59",
     "font_sha256": "18f597e3a48133227d503eff9a297c9b9e62c646dd5cf7902dd8ed216369cf28"
   },
-  "selected_intensity": null,
+  "selected_intensity": "moderate",
   "constraints": {
     "characters": 189,
     "wght": [
@@ -26,49 +26,114 @@
       "id": "D01",
       "title": "Направленное натяжение чаш",
       "status": "pending",
-      "change": null,
-      "evidence": [],
-      "verdict": null
+      "change": "Family-specific upper-pole displacement and positive handle scaling; moderate intensity, reduced small/heavy amplitude and 22% thin upper-right round relief.",
+      "evidence": [
+        {
+          "path": "reports/audit003-fixes/decision-revalidation.json",
+          "sha256": "55d311c235e1565c1106f5221392a05ab76bc03ddf1734041cbd0ef4a3c4ad72",
+          "font_sha256": "56cb3cbd30099ed97b0395e7eae28f9431e84ff9eede14cdfb4061f1c5873edc"
+        }
+      ],
+      "verdict": {
+        "decision": "pending",
+        "reason": "Current curves are preserved, but matrix003 did not establish repeated character in running text. Fresh subtle/moderate/strong prototypes are available; a line-level selection/review is pending.",
+        "arbiter": "root agent; no human recognition claim"
+      }
     },
     {
       "id": "D02",
       "title": "Открытые формы и окончания",
-      "status": "pending",
-      "change": null,
-      "evidence": [],
-      "verdict": null
+      "status": "accepted",
+      "change": "Shared c/с/e/е/ё/э openings and terminal adjustments; reduced heavy e crossbar thickness.",
+      "evidence": [
+        {
+          "path": "reports/audit003-fixes/decision-revalidation.json",
+          "sha256": "55d311c235e1565c1106f5221392a05ab76bc03ddf1734041cbd0ef4a3c4ad72",
+          "font_sha256": "56cb3cbd30099ed97b0395e7eae28f9431e84ff9eede14cdfb4061f1c5873edc"
+        }
+      ],
+      "verdict": {
+        "decision": "accept",
+        "reason": "c/с and e/е/э retain identifiable openings. Heavy e crossbar relief preserves separation from the lower terminal. Revalidated on 0.0.3 through exact continuous-data preservation, current independent samples, and byte-identical rebuild; this does not establish prolonged reading comfort.",
+        "arbiter": "root agent; not a human readability study"
+      }
     },
     {
       "id": "D03",
       "title": "Различимые силуэты",
-      "status": "pending",
-      "change": null,
-      "evidence": [],
-      "verdict": null
+      "status": "accepted",
+      "change": "Short I crossbars and smooth l lower exit, preserving advances; retain two-storey a, single-storey g and flagged 1.",
+      "evidence": [
+        {
+          "path": "reports/audit003-fixes/decision-revalidation.json",
+          "sha256": "55d311c235e1565c1106f5221392a05ab76bc03ddf1734041cbd0ef4a3c4ad72",
+          "font_sha256": "56cb3cbd30099ed97b0395e7eae28f9431e84ff9eede14cdfb4061f1c5873edc"
+        }
+      ],
+      "verdict": {
+        "decision": "accept",
+        "reason": "I has short bars, l has a lower exit, 1 has a flag. Two-storey a and single-storey g remain clear in the reviewed strings. Revalidated on 0.0.3 through exact continuous-data preservation, current independent samples, and byte-identical rebuild; this does not establish prolonged reading comfort.",
+        "arbiter": "root agent; not a human readability study"
+      }
     },
     {
       "id": "D04",
       "title": "Самостоятельная кириллица",
-      "status": "pending",
-      "change": null,
-      "evidence": [],
-      "verdict": null
+      "status": "accepted",
+      "change": "Short smooth Л/л exit and coordinated Д/д transition; lighten heavy Ж/ж, К/к, Я/я joins; preserve upright п/т.",
+      "evidence": [
+        {
+          "path": "reports/audit003-fixes/decision-revalidation.json",
+          "sha256": "55d311c235e1565c1106f5221392a05ab76bc03ddf1734041cbd0ef4a3c4ad72",
+          "font_sha256": "56cb3cbd30099ed97b0395e7eae28f9431e84ff9eede14cdfb4061f1c5873edc"
+        }
+      ],
+      "verdict": {
+        "decision": "accept",
+        "reason": "Л/л has a restrained left exit coherent with Д/д. п/т remain upright; heavy Ж/К/Я retain their familiar skeleton without decorative additions. Revalidated on 0.0.3 through exact continuous-data preservation, current independent samples, and byte-identical rebuild; this does not establish prolonged reading comfort.",
+        "arbiter": "root agent; not a human readability study"
+      }
     },
     {
       "id": "D05",
       "title": "Непрерывность и оптическая компенсация",
-      "status": "pending",
-      "change": null,
-      "evidence": [],
-      "verdict": null
+      "status": "accepted",
+      "change": "Continuous weight/optical attenuation on shared master topology, with positive handle scaling and thin round relief.",
+      "evidence": [
+        {
+          "path": "reports/audit003-fixes/decision-revalidation.json",
+          "sha256": "55d311c235e1565c1106f5221392a05ab76bc03ddf1734041cbd0ef4a3c4ad72",
+          "font_sha256": "56cb3cbd30099ed97b0395e7eae28f9431e84ff9eede14cdfb4061f1c5873edc"
+        }
+      ],
+      "verdict": {
+        "decision": "accept",
+        "reason": "Intermediate-axis geometry, continuous advance data, fixed-corpus layout and independent build checks pass; all 189 characters and both axes remain present. Revalidated on 0.0.3 through exact continuous-data preservation, current independent samples, and byte-identical rebuild; this does not establish prolonged reading comfort.",
+        "arbiter": "root agent; not a human readability study"
+      }
     },
     {
       "id": "D06",
       "title": "Компактность и полный набор",
-      "status": "pending",
-      "change": null,
-      "evidence": [],
-      "verdict": null
+      "status": "accepted",
+      "change": "Retain 189 characters, wght100–900, opsz9–128 and compact exports. Proportional advances preserved; tabular digit widths deliberately corrected and contextual timers verified.",
+      "evidence": [
+        {
+          "path": "reports/audit003-fixes/decision-revalidation.json",
+          "sha256": "55d311c235e1565c1106f5221392a05ab76bc03ddf1734041cbd0ef4a3c4ad72",
+          "font_sha256": "56cb3cbd30099ed97b0395e7eae28f9431e84ff9eede14cdfb4061f1c5873edc"
+        }
+      ],
+      "verdict": {
+        "decision": "accept",
+        "reason": "189 contracted characters and both axes verified in an independent identical rebuild. WOFF2 is 93320 bytes; numeric and timer checks pass. Tabular digit metrics intentionally differ from the earlier authorial artifact.",
+        "arbiter": "root agent; not a human readability study"
+      }
     }
-  ]
+  ],
+  "authorial_deviations": {
+    "path": "reports/audit003-fixes/authorial-deviations.json",
+    "sha256": "2750cd10ba55864c705dfab399c9a8fb5856a722c518396eaf51cc5084fa43d6",
+    "font_sha256": "56cb3cbd30099ed97b0395e7eae28f9431e84ff9eede14cdfb4061f1c5873edc"
+  }
 }

@@ -1,0 +1,42 @@
+{
+  "engineering": {
+    "md": "515fb032b90b8db2270e5980c191605e4fd35faaef9ef271bbed7f5046889fe5",
+    "json": "11a4118220facb3f95935b7cff940c85401aca23e8e86d2a9918a3c772468f42"
+  },
+  "type": {
+    "md": "606fe69a07b902b60d0785aef9d163fd4c26e679364990598a996799dfba9888",
+    "json": "e08d74ce9ccce3f7dc9e5331409245b63c15f0519fbae8d93ff7009e5a2f6209"
+  },
+  "hig": {
+    "md": "2b0f421de392afbdd959831015a26df5c367efa63b4fbf9c661bc8e02648c3b0",
+    "json": "6013854e1a7413c06c438ac7229924f3c1d8fcdd8912e8ce2a837955227935be"
+  },
+  "cyrillic": {
+    "md": "a7cf348727b4e805640f08226ff2571c043f0a4b68c7587229c71416a47bfba0",
+    "json": "aff553f25ab64dc3fe93df1cbcaf8a5a9c6d797f25f9da43125446618269f752"
+  },
+  "data": {
+    "md": "1023a97f8474aebea91f6fb1cb645456536108a1f18add57336ab2e4e20ce8bd",
+    "json": "8b8ef125a85dcbdecf815ed1e044f199d0e516fb1e18389a6156f832ab1b8bf5"
+  },
+  "reading": {
+    "md": "8bc318f307b14629d2f4953cdaa3e42ab59dca12ec78c4d5735b89a0f9b66bb1",
+    "json": "fe22742465c1b926842ba884100593c7c3bdc788435e59e0354d63e29b5d967f"
+  },
+  "character": {
+    "md": "f4f9671d0a41f4beee8e9e3364fb3f84e067085851d351f0e906244f712dd4f1",
+    "json": "fe5960ba7f55ed04ab95b4fe57ee2c28db5889aa31454429d6bab456e742848e"
+  },
+  "ui": {
+    "md": "03f4213b0309fec9f9b45060a2ca2197c458db34babc2133bf07b50a2cc30432",
+    "json": "2194c5c684e45aff206d8d42fc661de3cf5480b4b03de24f2e719edb284f8400"
+  },
+  "raster": {
+    "md": "644e037dcc367d02e66cb30b7b4915c6027be5382b74955005c8a7977a756c45",
+    "json": "cada5c465afdc6610c3b3e39a73eb2f4cab08d8220fa735f84dcc0ecbdf347ca"
+  },
+  "release": {
+    "md": "97da577b0260f8320ea1e842ce94b70289c90d218c51aabdd002ba43ab8e95d7",
+    "json": "e0ba4a92099116709ac4ccbcf186c7ec5c854896b59aaabdb410f9a045b6525a"
+  }
+}

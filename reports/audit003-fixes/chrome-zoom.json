@@ -1,0 +1,40 @@
+{
+  "method": "Native Google Chrome in a separate temporary window through CUA; browser toolbar explicitly confirmed200%. Same instrumented page as Safari.",
+  "fixture_sha256": "47927cf497fa230b350c44df706fd8563336bce8028be8b00dc2e521c3335e4f",
+  "observations": [
+    {
+      "zoom_percent": 100,
+      "viewport": 1438,
+      "document": 1438,
+      "dpr": 2,
+      "font_loaded": true
+    },
+    {
+      "zoom_percent": 200,
+      "viewport": 719,
+      "document": 719,
+      "dpr": 4,
+      "font_loaded": true
+    },
+    {
+      "zoom_percent": 200,
+      "viewport": 325,
+      "document": 325,
+      "dpr": 4,
+      "table_client": 294,
+      "table_scroll": 294,
+      "font_loaded": true
+    },
+    {
+      "zoom_percent": 100,
+      "viewport": 651,
+      "document": 651,
+      "dpr": 2,
+      "font_loaded": true
+    }
+  ],
+  "passed": true,
+  "zoom_restored": true,
+  "temporary_window_closed": true,
+  "limits": "One macOS display/browser, not mobile OS text preferences or participant testing. Screenshot inspected in tool session."
+}

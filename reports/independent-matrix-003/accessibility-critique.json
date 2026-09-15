@@ -1,0 +1,47 @@
+{
+  "role": "Raster reviewer cross-critique of accessibility and UI claims",
+  "phase": "Discussion after independent raster report was completed and hash-locked",
+  "font_sha256": "56cb3cbd30099ed97b0395e7eae28f9431e84ff9eede14cdfb4061f1c5873edc",
+  "inputs": [
+    "reports/independent-matrix-003/hig.md",
+    "reports/independent-matrix-003/ui.md",
+    "reports/independent-matrix-003/enlargement.json"
+  ],
+  "independence": "This cross-critique is intentionally informed by the listed peer/root reports. Original raster.md and raster.json were not changed. No new browser or physical-device tests were performed.",
+  "judgments": [
+    {
+      "topic": "Narrow enlarged reflow",
+      "assessment": "Confirmed integration defect under the tested CSS-root enlargement simulation. UI and root agree on document width517px at viewport320px, versus320px normally. HIG source-risk wording is accurate for its original evidence but can now be updated in synthesis to reproduced under this condition.",
+      "severity": "P1 for shipping the demo as robust accessible integration; not P1 against the font binary or a reason to redraw glyphs.",
+      "required_action": "Fix hero wrapping and control/grid intrinsic sizing. Accommodate enlarged numeric tables with accessible localized overflow or responsive structure if their two-dimensional task requires it; avoid page-wide overflow.",
+      "acceptance_criteria": "At320px and root32px, document scrollWidth<=clientWidth+1, title and controls fully available, no overlap/clipping. Check normal320px and desktop afterward. Separately test real browser zoom and target text preferences before claiming those modes pass."
+    },
+    {
+      "topic": "Absolute-pixel live specimen",
+      "assessment": "Intentional exact-size proofs are legitimate and necessary for font inspection. Fixed px alone does not establish an accessibility failure when labeled and adjustable and when a separate reading sample scales. These reports correctly recommend distinguishing modes; synthesis should not treat all px sizes as prohibited.",
+      "severity": "P2 clarification/preview improvement, conditional on whether a role preview is presented as production-like scalable content; not a demonstrated font defect.",
+      "required_action": "Label exact-pixel proof mode and preserve its measurement accuracy. Provide or clearly identify a scalable reading/UI preview; do not silently scale the exact-pixel specimen while retaining a false px label.",
+      "acceptance_criteria": "A user can distinguish the measured pixel specimen from scalable content. At doubled root size the designated scalable preview enlarges without losing text/actions, and the exact-pixel specimen continues matching its displayed numeric size."
+    },
+    {
+      "topic": "Thin100 at12–18px",
+      "assessment": "Independent raster evidence supports a usage restriction: low coverage and weak punctuation in these small sizes on light/dark synthetic renders. It does not prove malformed outlines or require changing the100 master. No actual browser Thin trial was supplied by these inputs.",
+      "severity": "P1 only if Thin is selected for essential small UI/body; otherwise document as a usage limit, with no mandatory font redraw.",
+      "required_action": "Default essential small text to400/500 and reserve100 for size-specific display experiments. Validate a proposed Thin use on target renderers before relaxing that restriction.",
+      "acceptance_criteria": "Essential labels and body use the tested robust weights; any exception has native-size target-platform proof of distinguishable strokes/punctuation in light and dark contexts. Existing font design can satisfy this without outline edits."
+    },
+    {
+      "topic": "Body and sustained-reading claims",
+      "assessment": "UI short-body pass and HIG conditional body verdict concern different evidence levels and are compatible. Neither short paragraphs nor synthetic isolated lines establish prolonged comfort, comprehension, or fatigue. Lack of evidence is not evidence of font failure.",
+      "severity": "P2 validation/claim-scope gap before strong long-form or broad accessibility-readiness claims; not a release-blocking defect for a clearly provisional font.",
+      "required_action": "Retain provisional scope, add realistic extended RU/EN reading fixtures and dense controls, then conduct the needed reader/platform evaluation before stronger claims.",
+      "acceptance_criteria": "Release language names tested roles/platforms and does not promise sustained readability from these checks. Stronger future claims are backed by documented task and reader outcomes, not screenshots alone."
+    }
+  ],
+  "limits": [
+    "Cross-critique evaluates reported evidence; no fresh runtime reproduction.",
+    "Root font-size doubling is distinct from browser page zoom and Apple Dynamic Type.",
+    "WOFF2 browser evidence and TTF synthetic evidence are separately identified; this review does not establish binary equivalence.",
+    "No formal WCAG conformance or Apple endorsement inferred."
+  ]
+}

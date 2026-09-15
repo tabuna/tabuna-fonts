@@ -1,0 +1,89 @@
+{
+  "role": "numeric_ui_data",
+  "font_sha256": {
+    "ttf": "56cb3cbd30099ed97b0395e7eae28f9431e84ff9eede14cdfb4061f1c5873edc",
+    "woff2": "090801dbfa6086e63678a38df35c522f3032164b2e4bced9e692121bccef704e"
+  },
+  "independence": {
+    "prior_reports_read": false,
+    "other_reviewers_findings_read": false,
+    "source_or_font_modified": false,
+    "method": "Independent HarfBuzz shape metrics, fontTools table comparison, actual FreeType raster proofs inspected with view_image. Fixed 189-codepoint scope accepted."
+  },
+  "tests": {
+    "axis_locations": 9,
+    "feature_conditions": 54,
+    "digit_advance_observations": 540,
+    "numeric_sample_shapes": 1080,
+    "visual_sample_runs": 108,
+    "visual_sizes_px": [
+      16,
+      32
+    ],
+    "tnum_timer_width_checks": 18,
+    "tnum_timer_width_pass": true,
+    "right_aligned_two_decimal_suffix_checks": 18,
+    "right_aligned_two_decimal_suffix_pass": true,
+    "tnum_digit_width_failures": 0,
+    "calt_colon_substitution_conditions": 27,
+    "woff2_matching_tables": [
+      "cmap",
+      "GSUB",
+      "GPOS",
+      "hmtx",
+      "glyf",
+      "gvar",
+      "fvar"
+    ],
+    "evidence": [
+      "scratchbuild/matrix003/data/metrics.json",
+      "scratchbuild/matrix003/data/proof.png",
+      "scratchbuild/matrix003/data/review.py"
+    ]
+  },
+  "verdicts": {
+    "ui": {
+      "status": "pass_with_conditions",
+      "reason": "Numeric UI at weight 400–700, opsz 9–14 is clear; tnum stabilizes timers and right-aligned fixed-precision numbers. Do not use weight 100 at 16px for critical values."
+    },
+    "headings": {
+      "status": "pass_with_conditions",
+      "reason": "32px numeric samples are legible across sampled axes; thin 100/128 has low emphasis and must suit contrast and size."
+    },
+    "body": {
+      "status": "limited_pass",
+      "reason": "Inline currency and decimals at 16px, usual axes are legible. This review does not assess full prose."
+    },
+    "sustained_reading": {
+      "status": "not_assessed",
+      "reason": "Numeric samples cannot establish long-form reading comfort."
+    }
+  },
+  "findings": [
+    {
+      "priority": "P2",
+      "condition": "Live numeric widgets using default/pnum rather than tnum: default digits are proportional at all nine sampled locations. At 100/9, digit 1 advances 434 versus 0 639 normalized units.",
+      "recommendation": "Use font-variant-numeric: tabular-nums for timers, counters and numeric tables, and right-align equal-precision amounts. This is integration guidance, not a font defect.",
+      "acceptance_test": "At fixed axes, cycle the six tested HH:MM:SS values and confirm invariant text width; right-align 1.11,12.34,123.45,1234.56 and confirm equal decimal x positions."
+    },
+    {
+      "priority": "P2",
+      "condition": "Weight 100 at 16px, especially opsz128, renders low-contrast hairline numerals and fine punctuation in the inspected proof.",
+      "recommendation": "Keep critical numeric UI near weight400–700 and optical sizes9–14; reserve the thin display extreme for larger decorative values.",
+      "acceptance_test": "Review timers/currency at actual 1x and 2x device rendering with intended contrast; distinguish all digits and decimal/colon marks without zoom."
+    }
+  ],
+  "positive_findings": [
+    "All 18 tnum conditions have equal digit advances and stable timer widths.",
+    "calt substitutes raised numeric colon without changing advance; at400/14 its top is604 and bottom101 versus text colon500/-4 (1000-unit normalized).",
+    "Decimal periods stay at baseline; currency marks and mathematical minus are present and distinguishable in examined specimens.",
+    "WOFF2 relevant outlines, metrics and layout tables match TTF."
+  ],
+  "limits": [
+    "Bounded expert screening, not a reader study.",
+    "No browser/OS hinting or live UI integration assessment.",
+    "No claim that tnum aligns decimals with unequal fractional precision, currency prefix width or absent right alignment.",
+    "All rendered rows use calt on; calt off was checked in metrics.",
+    "Visual proof contains numeral samples, not sustained prose."
+  ]
+}

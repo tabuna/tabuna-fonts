@@ -1,0 +1,117 @@
+{
+  "role": "OpenType and variation engineering",
+  "font_sha256": "3567058955eb20ebaf25ef5241a094b25d86dfd7be966f8032492dd3caa3e011",
+  "woff2_sha256": "d07839f04ebdbfb89fed1c4f9d5d2609197db1071251bd5cf8ab0db5f626b207",
+  "scope": "189 Unicode mappings; wght100–900, opsz9–128",
+  "tests": [
+    {
+      "name": "axis/coverage inventory",
+      "count": 2,
+      "status": "pass",
+      "evidence": {
+        "cmap": 189,
+        "glyphs": 218,
+        "axes": [
+          [
+            "wght",
+            100.0,
+            400.0,
+            900.0
+          ],
+          [
+            "opsz",
+            9.0,
+            14.0,
+            128.0
+          ]
+        ]
+      }
+    },
+    {
+      "name": "outline interpolation",
+      "count": 21582,
+      "locations": 99,
+      "status": "pass",
+      "evidence": "All 218 glyphs drawn with BoundsPen at 9 weights × 11 optical sizes; no exceptions/nonfinite bounds/unexpected empty glyphs."
+    },
+    {
+      "name": "encoded line-metric containment",
+      "count": 18711,
+      "status": "pass",
+      "evidence": "Zero encoded outlines exceed hhea/Typo ascent2109 descent-614. 372 exceedances belong exclusively to unencoded fractional construction components scaled by parent composites, so they are not encoded clipping defects. MVAR only changes stro/xhgt; line metrics invariant."
+    },
+    {
+      "name": "tabular numerals",
+      "count": 990,
+      "locations": 99,
+      "status": "pass",
+      "evidence": "All ten tnum advances equal at every location with kern disabled; pnum produces varied widths. At default tabular advance1286."
+    },
+    {
+      "name": "FreeType grayscale rasterization",
+      "count": 5292,
+      "status": "pass",
+      "evidence": "189 codepoints × weights100/400/700/900 × pixel sizes9/11/14/18/32/72/128 with matching opsz: zero load errors or unexpectedly empty rasters."
+    },
+    {
+      "name": "shaping probes",
+      "count": 18,
+      "status": "conditional",
+      "evidence": "9 strings with default versus kern/liga/calt disabled. Latin and Cyrillic kerning, five f ligatures and canonical Russian decomposition work. Out-of-scope e+acute, é, ï yield .notdef as expected for scope."
+    },
+    {
+      "name": "tnum/calt interaction",
+      "count": 32,
+      "status": "fail",
+      "evidence": "16 locations × tnum off/on. All 16 tnum-on cases lose colon.case."
+    },
+    {
+      "name": "WOFF2 decoded table equivalence",
+      "count": 18,
+      "status": "pass",
+      "evidence": "All 18 compared tables byte-identical after WOFF2 decoding; head/loca excluded for checksum/storage representation and GlyphOrder is pseudo-table."
+    }
+  ],
+  "verdicts": {
+    "ui": {
+      "status": "conditional",
+      "reason": "All encoded glyphs rasterize at tested UI sizes, but tnum breaks contextual timer-colon alignment. Restrict text to scoped coverage and visually verify target platform."
+    },
+    "headings": {
+      "status": "pass",
+      "reason": "Engineering pass within 189-codepoint scope: extremes and interior axes draw, Latin/Cyrillic kerning and ligatures function, no encoded line-metric overrun. Does not certify visual taste."
+    },
+    "body": {
+      "status": "conditional",
+      "reason": "In-scope shaping and rasterization work, including decomposed Russian Ё/Й normalization. Accented Latin and general combining marks are outside coverage; platform/readability validation remains."
+    },
+    "sustained_reading": {
+      "status": "unverified",
+      "reason": "No timed reader study or long-form visual evaluation was performed; successful rendering cannot establish fatigue or reading speed."
+    }
+  },
+  "findings": [
+    {
+      "id": "ENG-001",
+      "priority": "P2",
+      "title": "tnum disables contextual timer-colon elevation",
+      "evidence": "At wght400/opsz14, 12:34 shapes to colon.case with default features, but colon with tnum=1. Colon bounds y=-10..1024 versus colon.case y=205..1239: 215-unit drop (1.47px at 14px). Reproduced at all 16 tested weight/opsz combinations. GSUB tnum lookup precedes calt and context does not match tabular alternates.",
+      "concrete_recommendation": "Include all digit .tnum glyphs in numeric calt backtrack/lookahead coverage, or otherwise ensure both numeral modes choose colon.case between digits.",
+      "acceptance_test": "Shape 12:34, 00:00, 99:59 with tnum on/off at weights100/400/700/900 and opsz9/14/28/128; both modes must choose colon.case while lowercase a:b retains colon; tabular digits must remain equal width."
+    }
+  ],
+  "limitations": [
+    "Independent engineering inspection; no prior reports or other reviewers read before this report. No font/source modifications.",
+    "Finite axis grid does not prove absence of every contour crossing or intermediate visual defect.",
+    "FreeType rendering success is not a visual quality score; no CoreText, DirectWrite, Safari/Chrome installation, OTS sanitizer, or sustained-reading experiment performed.",
+    "Coverage intentionally limited to 189 codepoints. General accented Latin, combining marks, italic/oblique and broader multilingual support not promised or verified.",
+    "No actual human, Apple employee or Apple affiliation claimed.",
+    "Full static instancing sweep was abandoned as too expensive; direct variable glyph-set evaluation used instead. hhea/Typo containment is valid because MVAR has only stro/xhgt."
+  ],
+  "evidence_files": [
+    "build/matrix002/engineering/probe.py",
+    "build/matrix002/engineering/probe.json",
+    "build/matrix002/engineering/raster.json",
+    "build/matrix002/engineering/colon.json"
+  ]
+}

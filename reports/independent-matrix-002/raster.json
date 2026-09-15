@@ -1,0 +1,77 @@
+{
+  "role": "independent raster/screen reviewer",
+  "font": "dist/TabunaSansVariable.ttf",
+  "font_sha256": "3567058955eb20ebaf25ef5241a094b25d86dfd7be966f8032492dd3caa3e011",
+  "tests": {
+    "matrix_configurations_rendered": 32,
+    "sizes_css_px": [
+      12,
+      14,
+      16,
+      18
+    ],
+    "weights": [
+      100,
+      400,
+      500,
+      900
+    ],
+    "opsz": "matched to CSS size at both raster scales",
+    "raster_scales": [
+      1,
+      2
+    ],
+    "lines_per_configuration": 6,
+    "total_rendered_lines": 192,
+    "matrix_overviews_inspected": 7,
+    "individual_native_resolution_proofs_inspected": 14,
+    "cmap_probes": 5
+  },
+  "verdicts": {
+    "ui": {
+      "verdict": "conditional",
+      "reason": "Core RU/EN UI samples are readable at 12–18 px at 400/500 in this rasterizer. Thin 100 is too pale for routine small UI; 900 has dense small counters and should be reserved for emphasis."
+    },
+    "headings": {
+      "verdict": "conditional",
+      "reason": "18 px heading-sized labels at 400/500/900 survive. Larger display sizes were outside this review; Thin needs contrast and size appropriate to its intended role."
+    },
+    "body": {
+      "verdict": "conditional",
+      "reason": "Short RU/EN body strings at 14–18 px 400/500 show no visible broken strokes, mark collisions, or filled counters. 12 px is less comfortable and 100/900 are not recommended body defaults."
+    },
+    "sustained_reading": {
+      "verdict": "unverified",
+      "reason": "Short raster strings cannot establish sustained reading performance, comfort, line-length effects, or fatigue."
+    }
+  },
+  "findings": [
+    {
+      "priority": "P2",
+      "title": "Thin loses practical contrast at small 1x sizes",
+      "concrete_evidence": "proof-12-100-1x.png and proof-14-100-1x.png: EN/RU stems and dots are markedly pale relative to 400; contours remain recognizable. The 2x 12 px render gives more stable edges. This is an expected Thin limitation, not evidence of malformed outlines.",
+      "recommendation": "Use 400/500 for routine 12–14 px UI and body; document Thin as display/emphasis rather than small reading text.",
+      "acceptance_test": "Compare the same strings at native 1x/2x in target OS/browser engines and confirm normal UI defaults use 400 or higher."
+    },
+    {
+      "priority": "P2",
+      "title": "Supplementary accented Latin probes lack coverage",
+      "concrete_evidence": "Final probe line ends in three identical oval missing-glyph forms for é ï Å at every weight. getBestCmap confirms all three absent; ё and й are mapped. This is a coverage failure, not raster mark positioning.",
+      "recommendation": "If accented Latin names or international text are promised, add these glyphs and decomposition/mark support; otherwise explicitly limit repertoire.",
+      "acceptance_test": "HarfBuzz shaping of é ï Å must return nonzero intended glyphs and visual accents at 12–18 px in supported engines."
+    }
+  ],
+  "positive_evidence": [
+    "400/500 core RU/EN strokes survive; counters remain identifiable in sampled native crops.",
+    "At 900 12 px counters in а/е/в/8 are small, but no definite fully closed counter was established.",
+    "Russian ё dots and й breve remain above their bases and do not visibly collide in tested lines."
+  ],
+  "limits": [
+    "FreeType grayscale + HarfBuzz via existing scripts/render.py; not actual hardware, CoreText, DirectWrite, or browser screenshots.",
+    "1x renders at CSS ppem; 2x renders at twice ppem with identical CSS opsz. 2x images are backing-store pixel proofs, not a measured Retina viewing study.",
+    "Large overview images were resized by image viewer; pixel-level judgments relied on 14 individual crops.",
+    "Short black-on-white strings only; no dark mode, LCD subpixel rendering, low contrast, fractional CSS sizing, multiline clipping, or sustained reading study.",
+    "Accented Latin probes are supplementary to basic RU/EN scope.",
+    "No previous or current report/review consulted; font/source unchanged."
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "completed": true,
+  "independent_roles": 10,
+  "initial_reports": 20,
+  "cross_critique_reports": 6,
+  "all_initial_locks_match": true,
+  "font_and_demo_unchanged": true,
+  "matrix_links_exist": true,
+  "archive_files_verified": 96,
+  "artifact_sha256": "2ad3dab04c310cb19af73bb1e685e94dccd086ff7beb6f0842fdcb2777b89a11",
+  "scope": "Independent agent opinion matrix and adjudicated recommendations completed; no claim that open corrective actions or human study have been performed."
+}

@@ -1,0 +1,58 @@
+{
+  "reviewer": "Independent reading/integration arbiter",
+  "font_sha256": "5888eecc912f46f14b7807906d2ffc0a42d543a3695465b76a83b699373344b9",
+  "browser": "Codex in-app browser",
+  "fixture_sha256": "0522dbd35a649cf562143d463007463174dcdc2392ba7fd62f19544cd4000cee",
+  "fixture": "build/independent-audit-20260915/root/index.html",
+  "samples": {
+    "A": "Tabuna Sans current WOFF2",
+    "B": "system-ui"
+  },
+  "results": {
+    "cases": 64,
+    "font_loaded": true,
+    "overflows": 0,
+    "clipped_ranges": 0,
+    "widths": [
+      288,
+      520
+    ],
+    "body_sizes": [
+      16,
+      18
+    ],
+    "text_scale": [
+      1,
+      2
+    ],
+    "spacing": [
+      "authored",
+      "line-height 1.5; paragraph spacing 2em; letter spacing .12em; word spacing .16em"
+    ],
+    "themes": [
+      "light",
+      "dark"
+    ]
+  },
+  "manual_responsive_check": {
+    "viewport_width": 320,
+    "document_width": 320,
+    "body_font_size": 34,
+    "theme": "dark",
+    "spacing_override": true,
+    "observation": "No horizontal overflow; enlarged headings wrap within words in this deliberately narrow fixture."
+  },
+  "visual_assessment": "Default 17px/1.55 regular RU/EN body has a calm and readable short-sample texture in this renderer; no objective speed/fatigue advantage over system-ui established.",
+  "limitations": [
+    "Synthetic responsive fixture, not the production specimen page.",
+    "CSS text-size scaling is not a native browser zoom test.",
+    "No Safari/Windows/Android/native Dynamic Type/VoiceOver test.",
+    "No human sustained-reading evidence.",
+    "No numeric OpenType feature coverage in this reading fixture."
+  ],
+  "sources": [
+    "https://www.w3.org/WAI/WCAG22/Understanding/text-spacing.html",
+    "https://www.w3.org/WAI/WCAG22/Understanding/resize-text.html",
+    "https://www.w3.org/WAI/WCAG22/Understanding/reflow.html"
+  ]
+}

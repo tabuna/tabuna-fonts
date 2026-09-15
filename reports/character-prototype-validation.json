@@ -1,0 +1,13 @@
+{
+  "font_sha256": "5888eecc912f46f14b7807906d2ffc0a42d543a3695465b76a83b699373344b9",
+  "stage": "accepted_authorial_model",
+  "author_release_ready": true,
+  "pending": [],
+  "evidence": [
+    {
+      "path": "reports/authorial-final-verification.json",
+      "sha256": "6e91c2ce554f0272a56ee7b48025e74c19d4869e717996ef6bd110795b122b29",
+      "font_sha256": "5888eecc912f46f14b7807906d2ffc0a42d543a3695465b76a83b699373344b9"
+    }
+  ]
+}

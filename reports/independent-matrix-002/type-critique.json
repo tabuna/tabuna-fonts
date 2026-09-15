@@ -1,0 +1,24 @@
+{
+  "role": "Type reviewer cross-critique; independent initial report retained unchanged",
+  "font_sha256": "3567058955eb20ebaf25ef5241a094b25d86dfd7be966f8032492dd3caa3e011",
+  "read_after_initial": ["reading.json", "character.json", "arbitration-probes.json"],
+  "independent_check": {
+    "method": "Instantiated current compiled TTF at wght400/opsz14 with fontTools and recorded lowercase l outline; separately rendered Il1 lilt at16/48/220px with Pillow FreeType and visually inspected via view_image.",
+    "units_per_em": 2048,
+    "stem_right": 346,
+    "foot_right": 434,
+    "extension_fu": 88,
+    "extension_at_16px": 0.6875,
+    "evidence": "build/matrix002/type/l-verification.png"
+  },
+  "correction": "Retract initial T01 statement that lowercase l is a plain stem as a factual construction claim. The glyph has a rounded lower turn and right-projecting foot; this is unambiguous in the compiled outline and220px proof. At16px the extension is less than one pixel and visually modest. Limited perceptual prominence is a different claim from absent geometry; no measured confusion rate was established.",
+  "arbitration": {
+    "capital_I": "Retain the current bar terminals. Both blind reviewers identify this cue; its diagnostic visibility does not establish a wider line-level personality change.",
+    "stronger_character_mandatory_now": false,
+    "reason": "The goal is moderate humanist repeatable style. Existing short l foot, softened joins, familiar a/g choices and compatible RU/EN color can support restrained character. Indistinguishable ordinary A/B lines only limit claims of perceptible improvement in those samples; they do not prove failure against a moderate-character brief or justify mandatory broad reconstruction.",
+    "recommendation": "Keep current constructions for the immediate artifact. Treat stronger l-foot or terminal-family variants as controlled experiments, with repeatable relationships across weights and scripts. Reject immediate global tracking changes or broad glyph redesign solely to make the blind pair look different.",
+    "acceptance_test": "Compare current versus one bounded l-foot/terminal variant in randomized order-swapped unfamiliar RU/EN labels and sentences containing repeated changed forms, at14/16/18px and36/48px, weights100/400/900 with matched opsz. Check outlines for coherent repeated rules and native-size proofs for collisions/counter damage. In a human pilot separately collect I/l/1 transcription errors and repeated style recognition/preference; require a repeatable benefit without new reading or spacing regressions before adopting the variant. Predefine the decision threshold before collecting participant results."
+  },
+  "verdict_changes": "No overall verdict changes: UI conditional, headings visual pass, body conditional, sustained reading unverified. UI condition now cites potentially weak small-size differentiation, not absent l geometry.",
+  "limitations": ["AI visual assessment, not human participant testing.", "Cross-critique is no longer blinded or independent of other reports.", "No font or original report edits performed."]
+}

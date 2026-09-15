@@ -1,0 +1,42 @@
+{
+  "font_unchanged": true,
+  "A01": {
+    "state": "fixed_and_verified_in_chrome_and_safari",
+    "checks": 16,
+    "remaining": "Broader physical-device and mobile OS text preference validation belongs to remaining platform study; tested desktop reflow criteria passed.",
+    "native_evidence": [
+      "safari-zoom.json",
+      "keyboard-scroll.json",
+      "chrome-zoom.json"
+    ]
+  },
+  "A02": {
+    "state": "guidance_updated",
+    "remaining": "Physical display validation"
+  },
+  "A03": {
+    "state": "fixed_and_checked",
+    "checks": "6 timer strings x16 browser conditions, invariant text widths; exclusive feature guidance added"
+  },
+  "A04": {
+    "state": "scope_documented_protocol_ready",
+    "remaining": "Human identifier recognition and target-app treatment"
+  },
+  "A05": {
+    "state": "three_current_variants_built_and_rendered",
+    "remaining": "Running-line selection/recognition evidence; user preference requested"
+  },
+  "A06": {
+    "state": "expanded_sample_and_protocol_ready",
+    "remaining": "Actual participants and sustained reading results"
+  },
+  "A07": {
+    "state": "D02-D06_revalidated",
+    "remaining": "D01 pending; authorial gate remains closed"
+  },
+  "goal_complete": false,
+  "woff2_sha256": "090801dbfa6086e63678a38df35c522f3032164b2e4bced9e692121bccef704e",
+  "font_sha256": "56cb3cbd30099ed97b0395e7eae28f9431e84ff9eede14cdfb4061f1c5873edc",
+  "autonomous_fix_work": "completed_for_confirmed_defects",
+  "remaining_acceptance_requires": "Actual participant results and additional physical target devices. D01 line-character assessment remains unestablished; no new human evidence exists."
+}

@@ -1,0 +1,97 @@
+{
+  "role": "independent data-interface typography reviewer",
+  "font_sha256": {
+    "dist/TabunaSansVariable.ttf": "3567058955eb20ebaf25ef5241a094b25d86dfd7be966f8032492dd3caa3e011",
+    "dist/TabunaSansVariable.woff2": "d07839f04ebdbfb89fed1c4f9d5d2609197db1071251bd5cf8ab0db5f626b207"
+  },
+  "tests": {
+    "total_automated": 960,
+    "passed": 960,
+    "failed": 0,
+    "shaping_parity_and_no_missing": 900,
+    "tnum_digit_equality": 20,
+    "tnum_timer_and_amount_stability": 40,
+    "axis_samples": 20,
+    "sample_strings": 15,
+    "feature_modes": [
+      "default",
+      "tnum",
+      "pnum"
+    ],
+    "visual_panels_inspected": 2,
+    "visual_conditions": 28,
+    "additional_coverage_checks": 15
+  },
+  "verdicts": {
+    "ui": {
+      "status": "conditional",
+      "reasons": [
+        "Tabular timers and fixed-format decimal amounts pass across the sampled axis grid; use explicit tnum, suitable weights, and resolve locale-space/identifier requirements."
+      ]
+    },
+    "headings": {
+      "status": "pass",
+      "reasons": [
+        "Sampled numeric/currency headings at 28–32 raster pixels are coherent across the tested weights; scoped to these data headings."
+      ]
+    },
+    "body": {
+      "status": "conditional",
+      "reasons": [
+        "Short labels and numeric content are readable in the 400–500 native samples; locale coverage and alphanumeric ambiguity remain conditional."
+      ]
+    },
+    "sustained_reading": {
+      "status": "unverified",
+      "reasons": [
+        "No long-form reading task or user study performed; a numerical proof does not validate sustained reading."
+      ]
+    }
+  },
+  "findings": [
+    {
+      "id": "DATA-01",
+      "priority": "P2",
+      "title": "Locale grouping-space coverage is incomplete",
+      "evidence": "Actual TTF cmap contains U+00A0 but lacks U+202F narrow no-break space and U+2009 thin space. Numeric locale strings using these characters require fallback; the tested ordinary U+0020 grouping works.",
+      "recommendation": "Add U+202F and U+2009 with deliberate numeric grouping advances, or explicitly document and test fallback behavior for supported locales.",
+      "acceptance_test": "Shape 1\\u202f234,56 € and 1\\u2009234.56 with actual TTF and WOFF2; require no .notdef and verify stable grouping under tnum at wght 100/400/900 and opsz 9/14/128."
+    },
+    {
+      "id": "DATA-02",
+      "priority": "P2",
+      "title": "Alphanumeric zero remains close to capital O",
+      "evidence": "Inspected native 12/14/16px O0 samples show similar unmarked oval forms, particularly at 12px; GSUB feature tags are calt/liga/pnum/tnum with no zero feature. This is a visual ambiguity observation, not a measured reading-error rate.",
+      "recommendation": "For identifiers, provide a distinguishable zero alternate or avoid relying on O/0 discrimination. Keep the ordinary zero for financial amounts if desired.",
+      "acceptance_test": "Review randomized O/0 identifiers at 12/14/16px on target rasterizers and validate a distinguishable optional zero with actual shaping."
+    },
+    {
+      "id": "DATA-03",
+      "priority": "P3",
+      "title": "Small data typography needs a weight policy",
+      "evidence": "Native 12/14/16px proof shows wght 100 markedly faint; 900/opsz 128 is markedly dense at these small sizes. wght 400–500/opsz 9–14 gives visibly more even numeric and currency reading in these samples.",
+      "recommendation": "Use 400–500 with text optical sizes for dense dashboards; reserve extremes for intentional display treatment.",
+      "acceptance_test": "Inspect realistic data tables at 12/14/16px and target DPRs, including hover/disabled states, before adopting weight extremes."
+    }
+  ],
+  "positive_evidence": [
+    "TTF and WOFF2 decoded with fontTools have identical HarfBuzz glyph IDs, advances, and offsets for all 900 sampled shaping cases.",
+    "tnum gives equal ten-digit advances at all 20 weight/opsz combinations; full timer and decimal amount widths remain stable.",
+    "At wght 400/opsz 14 pnum digit advances are [1268,928,1214,1262,1296,1244,1282,1144,1286,1282] font units.",
+    "Default timer widths 00:00:00 / 11:11:11 / 88:88:88 are 8780 / 6740 / 8888 units: explicit tnum is necessary and works.",
+    "Punctuation contexts a:a, 1:1, a,a, 1,1, a.a, 1.1, a a, 1 1, a/a, 1/1 were compared under default/tnum/pnum. tnum does not change the tested prose punctuation or space widths. Numeric comma/period kerning is removed with tnum, preserving alignment."
+  ],
+  "artifacts": [
+    "build/matrix002/data/numeric-proof.png",
+    "build/matrix002/data/native-numeric.png",
+    "build/matrix002/data/measurements.json",
+    "build/matrix002/data/review.py"
+  ],
+  "limits": [
+    "No prior/current reviewer reports were consulted. No font/source changes made.",
+    "WOFF2 tested after decoding with fontTools, not browser network loading; no CoreText or DirectWrite validation.",
+    "FreeType grayscale rendering at native 12/14/16px plus 28–32px representative numerical proof; no user reading-error study.",
+    "Coverage probe also found ₹ ₩ ₴ ₸ ₿ and ≈ absent; relevance depends on intended product languages and markets.",
+    "No continuous variable-axis sweep or full glyph-outline/collision audit."
+  ]
+}

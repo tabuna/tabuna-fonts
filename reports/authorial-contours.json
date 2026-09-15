@@ -1,0 +1,29 @@
+{
+  "status": "passed",
+  "font_sha256": "30400e1401d38076e3722fde3b0715790090518224ebb5145bc84ba7c0ffc39f",
+  "baseline_font_sha256": "18f597e3a48133227d503eff9a297c9b9e62c646dd5cf7902dd8ed216369cf28",
+  "changed_characters": 54,
+  "sampled_locations": 63,
+  "cases": 3402,
+  "new_or_changed_crossing_cases": 0,
+  "existing_component_overlap_cases": 882,
+  "method": "Compared every proper intersection count against baseline, including between contours. Existing intersections are retained source constructions. Sampling is not an analytic proof.",
+  "evidence": [
+    {
+      "path": "reports/authorial/all-crossings.json",
+      "sha256": "4cec8482b0838a0b0e8ad7c0ff02c5e833c554df04ac345c860be041d06da3cc"
+    },
+    {
+      "path": "reports/authorial/all-baseline-crossings.json",
+      "sha256": "eb1562641d5842ad8caed7fa10fb7bd1bf4f0243b063605d9b07e7b10331cdff"
+    },
+    {
+      "path": "reports/authorial/contour-crossings.json",
+      "sha256": "d6e800331e9f697fad17c27c0c7365a7940a785ba917ffce107add34816da761"
+    },
+    {
+      "path": "reports/authorial/remaining-crossings.json",
+      "sha256": "3a37a47dd9390e4aa1098183624d96ba672fb271f0083f639e2bf42a086c01fc"
+    }
+  ]
+}

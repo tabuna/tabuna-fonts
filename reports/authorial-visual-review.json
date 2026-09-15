@@ -1,0 +1,51 @@
+{
+  "font_sha256": "30400e1401d38076e3722fde3b0715790090518224ebb5145bc84ba7c0ffc39f",
+  "reviewer": "root agent acting as design arbiter",
+  "human_readability_study": false,
+  "scope": "Visual review of complete native 189-character sheets at 64 pt, weights 100/400/900; FreeType RU/EN strings in light/dark themes and enlarged thin construction specimen. Does not replace intermediate-axis checks.",
+  "verdicts": {
+    "D01": {
+      "decision": "accept_visual",
+      "reason": "Upper-left direction repeats in cocoa and основа. Thin o/O/0 retains a curved upper-right transition after relief; further amplification is unnecessary."
+    },
+    "D02": {
+      "decision": "accept_visual",
+      "reason": "c/с and e/е/э retain identifiable openings. Heavy e crossbar relief preserves separation from the lower terminal."
+    },
+    "D03": {
+      "decision": "accept_visual",
+      "reason": "I has short bars, l has a lower exit, 1 has a flag. Two-storey a and single-storey g remain clear in the reviewed strings."
+    },
+    "D04": {
+      "decision": "accept_visual",
+      "reason": "Л/л has a restrained left exit coherent with Д/д. п/т remain upright; heavy Ж/К/Я retain their familiar skeleton without decorative additions."
+    }
+  },
+  "evidence": [
+    {
+      "path": "reports/authorial/thin-Refined v4.png",
+      "sha256": "938ff4d47ae0ae0c72a9b53be6c3c54703e95d692ba9e478b567a6f3778ba4cf"
+    },
+    {
+      "path": "reports/authorial/comparison-light.png",
+      "sha256": "612238d4be5d583cd63431a94a4be4c49f1d571b47fd71fae8a974780edad897"
+    },
+    {
+      "path": "reports/authorial/comparison-dark.png",
+      "sha256": "25d1841e58ae0b90ff95f6ed7f3d1469ad24f8f959aff7b56080a661b5875ed5"
+    },
+    {
+      "path": "reports/authorial/charset-native-100.png",
+      "sha256": "d2568e7340a89a2e04277f5f26ff7e19617388288920201f5db3b46f05de0738"
+    },
+    {
+      "path": "reports/authorial/charset-native-400.png",
+      "sha256": "16a3db03650d40c289c78ca6bdb0704e340e65e298a158dbda6b799250954575"
+    },
+    {
+      "path": "reports/authorial/charset-native-900.png",
+      "sha256": "ac08080894a35dcab9bb6ff09cb29f9bdb3bf6398b18723837370ba0a4927b30"
+    }
+  ],
+  "remaining": "Final geometry/variation verdict and release evidence audit."
+}

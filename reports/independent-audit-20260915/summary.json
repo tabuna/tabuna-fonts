@@ -1,0 +1,128 @@
+{
+  "audit_date": "2026-09-15",
+  "font_ttf_sha256": "5888eecc912f46f14b7807906d2ffc0a42d543a3695465b76a83b699373344b9",
+  "font_woff2_sha256": "9c5c23886f3cac3acca41e9db66bdde9a69e5145453e1a84e24605bc31b43e59",
+  "real_human_participants": 0,
+  "real_apple_participation": false,
+  "roles": [
+    {
+      "role": "Typography",
+      "report": "reports/independent-audit-20260915/type.md",
+      "sha256": "059a5540b1b3c5ee3e88b9cb5468ec92ae327f0fac692ee73e7acd274ebd3815"
+    },
+    {
+      "role": "OpenType engineering",
+      "report": "reports/independent-audit-20260915/engineering.md",
+      "sha256": "d98a1d961110894b537801ffad008da7a5c2dcc4385f6b34226aeb6676b729f8"
+    },
+    {
+      "role": "Apple-informed accessibility",
+      "report": "reports/independent-audit-20260915/accessibility.md",
+      "sha256": "1ca2dd32dce7ee0aa7616ee22ff598ad92363f77e7057728d79696278e126676"
+    },
+    {
+      "role": "Browser reading integration",
+      "report": "reports/independent-audit-20260915/reading-integration.json",
+      "sha256": "010c473f987973ba7e0598e3aca250b496132c7e1a1caa9a55912fb8e3efca61"
+    },
+    {
+      "role": "Reading research methods",
+      "report": "reports/independent-audit-20260915/reading-method.md",
+      "sha256": "713bc136dd05b0a801461f464877ddabcadc4bb15fcb6e8abebf98932d0c57cf"
+    },
+    {
+      "role": "Cyrillic editorial",
+      "report": "reports/independent-audit-20260915/cyrillic-editor.md",
+      "sha256": "c243756f264cdf4007cea8f1556b7e05d9f3693845464d56d017de2fd715655b"
+    },
+    {
+      "role": "Desktop UI design",
+      "report": "reports/independent-audit-20260915/ui-designer.md",
+      "sha256": "adccd480b11c7c73d322f1b551b98f901909a8f9825ec2e92754f28c88d79feb"
+    },
+    {
+      "role": "Release engineering",
+      "report": "reports/independent-audit-20260915/release-review.md",
+      "sha256": "a1737b8aa11f55d479788580be8f08e43d0bd8934d8f93635e93b341a18f6eef"
+    },
+    {
+      "role": "Raster QA",
+      "report": "reports/independent-audit-20260915/raster-review.md",
+      "sha256": "cd8f33f182ed7642f4a2ea5907e704ac1522c025d1332feb547eeb4bd570e67d"
+    },
+    {
+      "role": "Data UI design",
+      "report": "reports/independent-audit-20260915/data-designer.md",
+      "sha256": "e025e27591099d2adb043a88f8270463f6ad417e3d1d3e330ebd33e7a2b87875"
+    }
+  ],
+  "publication_recommendation": "hold",
+  "blocking_findings": [
+    "IA-01"
+  ],
+  "required_before_publication": [
+    "IA-02",
+    "IA-03"
+  ],
+  "usage_profiles": {
+    "ui": "conditional pilot,400–500",
+    "letter_headings": "bounded visual pass,500–700",
+    "numeric_headings": "heavy tnum blocked",
+    "body": "conditional pilot,400",
+    "sustained_reading": "unvalidated"
+  },
+  "findings": [
+    {
+      "id": "IA-01",
+      "status": "open",
+      "requirement": "Correct tabular digit intersections and validate all pairs across axes"
+    },
+    {
+      "id": "IA-02",
+      "status": "open",
+      "requirement": "Differentiate release version/revision/unique identifiers"
+    },
+    {
+      "id": "IA-03",
+      "status": "open",
+      "requirement": "Refresh CSS/font/preload cache identity as one release chain"
+    },
+    {
+      "id": "IA-04",
+      "status": "open",
+      "requirement": "Provide tested UI/body/display presets"
+    },
+    {
+      "id": "IA-05",
+      "status": "open",
+      "requirement": "Verify fallback, Unicode normalization and Russian amount wrapping"
+    },
+    {
+      "id": "IA-06",
+      "status": "open",
+      "requirement": "Validate real target renderer/device/accessibility matrix"
+    },
+    {
+      "id": "IA-07",
+      "status": "open",
+      "requirement": "Run preregistered human reading pilot before sustained-reading claims"
+    }
+  ],
+  "evidence_scope": {
+    "tnum_pair_locations": 4800,
+    "positive_tnum_intersections": 217,
+    "positive_pnum_intersections": 0,
+    "format_shaping_comparisons": 1680,
+    "reading_fixture_conditions": 64,
+    "reading_fixture_failures": 0
+  },
+  "summary_report": {
+    "path": "reports/independent-audit-20260915/AUDIT.md",
+    "sha256": "08e64effbb6543a4be511cd0c2d11d490fe7a05a60ca58adb24138325b8877e0"
+  },
+  "limitations": [
+    "Agent role review, not human participant evidence.",
+    "No blanket HIG or WCAG certification.",
+    "Font geometry was frozen; corrective implementation is not part of this audit."
+  ]
+}

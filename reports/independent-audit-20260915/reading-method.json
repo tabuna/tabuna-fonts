@@ -1,0 +1,78 @@
+{
+  "role": "independent reviewer 5: sustained screen-reading methods",
+  "date": "2026-09-15",
+  "independent": true,
+  "prior_verdicts_read": false,
+  "human_participants_observed": 0,
+  "rendered": false,
+  "conclusion": "Sustained reading remains empirically unvalidated; rendering/reflow checks are not reading outcomes.",
+  "sha256": {
+    "ttf": "5888eecc912f46f14b7807906d2ffc0a42d543a3695465b76a83b699373344b9",
+    "woff2": "9c5c23886f3cac3acca41e9db66bdde9a69e5145453e1a84e24605bc31b43e59"
+  },
+  "findings": [
+    {
+      "id": "RM1",
+      "priority": "P1 conditional on a sustained-reading release claim",
+      "confidence": "high",
+      "finding": "No human evidence establishes sustained-reading suitability; current fixture explicitly disclaims it. README promises UI, headings, short labels and numerical data, not validated sustained reading.",
+      "acceptance_test": "Keep sustained-reading status unvalidated until a preregistered human comparison is completed; publish observations and limits, not universal superiority."
+    },
+    {
+      "id": "RM2",
+      "priority": "P2",
+      "confidence": "high",
+      "finding": "A is always Tabuna and B always system-ui; identical short bilingual content appears side by side. This is useful visual inspection but cannot produce an unbiased reading-time or comprehension comparison.",
+      "acceptance_test": "Use sequential anonymous conditions, counterbalanced order and matched distinct passages; conceal assignment from scorer and wait for fonts before timed exposure."
+    },
+    {
+      "id": "RM3",
+      "priority": "P2",
+      "confidence": "high",
+      "finding": "The 1x/2x fixture factor doubles CSS font size; it does not establish performance on actual 1x/2x displays, older readers, corrected vision or low vision.",
+      "acceptance_test": "Record physical display density, OS scaling, browser zoom and devicePixelRatio separately; include age/vision variation in a pilot, with descriptive subgroup outcomes only."
+    },
+    {
+      "id": "RM4",
+      "priority": "P3",
+      "confidence": "high",
+      "finding": "Fixture font_sha256 labels the TTF hash even though the browser loads WOFF2. The served WOFF2 matches dist WOFF2, but provenance should identify both explicitly.",
+      "acceptance_test": "Store source_ttf_sha256 and served_woff2_sha256 separately with OS/browser/resolved system font and trial configuration."
+    }
+  ],
+  "pilot": {
+    "target_participants": 16,
+    "languages": [
+      "RU",
+      "EN"
+    ],
+    "conditions": [
+      "Tabuna 1x display",
+      "system-ui 1x display",
+      "Tabuna 2x display",
+      "system-ui 2x display"
+    ],
+    "sessions_per_participant": 2,
+    "blocks_per_session": 4,
+    "counterbalanced_orders": [
+      "ABDC",
+      "BCAD",
+      "CDBA",
+      "DACB"
+    ],
+    "primary_measures": [
+      "reading time",
+      "comprehension",
+      "scored transcription/proofreading errors",
+      "pre/post fatigue"
+    ],
+    "proposed_gates_are": "Product decisions to preregister, not established norms or statistical non-inferiority",
+    "protocol_file": "reading-method.md"
+  },
+  "limitations": [
+    "Source review only",
+    "No human outcomes",
+    "No universal readability or accessibility claims",
+    "Pilot sample size not a power calculation"
+  ]
+}

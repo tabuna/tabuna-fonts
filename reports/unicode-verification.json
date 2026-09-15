@@ -1,0 +1,62 @@
+{
+  "cases": [
+    {
+      "weight": 100,
+      "opsz": 9,
+      "nfc": "ЁёЙй",
+      "nfd": "ЁёЙй",
+      "equal": true
+    },
+    {
+      "weight": 100,
+      "opsz": 9,
+      "nfc": "12 480,00 ₽",
+      "nfd": "12 480,00 ₽",
+      "equal": true
+    },
+    {
+      "weight": 400,
+      "opsz": 14,
+      "nfc": "ЁёЙй",
+      "nfd": "ЁёЙй",
+      "equal": true
+    },
+    {
+      "weight": 400,
+      "opsz": 14,
+      "nfc": "12 480,00 ₽",
+      "nfd": "12 480,00 ₽",
+      "equal": true
+    },
+    {
+      "weight": 550,
+      "opsz": 24,
+      "nfc": "ЁёЙй",
+      "nfd": "ЁёЙй",
+      "equal": true
+    },
+    {
+      "weight": 550,
+      "opsz": 24,
+      "nfc": "12 480,00 ₽",
+      "nfd": "12 480,00 ₽",
+      "equal": true
+    },
+    {
+      "weight": 900,
+      "opsz": 128,
+      "nfc": "ЁёЙй",
+      "nfd": "ЁёЙй",
+      "equal": true
+    },
+    {
+      "weight": 900,
+      "opsz": 128,
+      "nfc": "12 480,00 ₽",
+      "nfd": "12 480,00 ₽",
+      "equal": true
+    }
+  ],
+  "passed": true,
+  "fallback_policy": "Absent bullet, per-mille and emoji use system fallback; no font-only coverage claim."
+}

@@ -1,0 +1,47 @@
+{
+  "before": "build/character-prototypes/selected-v4/dist/TabunaSansVariable.ttf",
+  "after": "dist/TabunaSansVariable.ttf",
+  "before_sha256": "30400e1401d38076e3722fde3b0715790090518224ebb5145bc84ba7c0ffc39f",
+  "after_sha256": "5888eecc912f46f14b7807906d2ffc0a42d543a3695465b76a83b699373344b9",
+  "directly_changed_glyphs": [
+    "uni0420",
+    "uni0430",
+    "uni0432"
+  ],
+  "including_components": [
+    "uni0420",
+    "uni0430",
+    "uni0432"
+  ],
+  "coverage": 189,
+  "glyphs": 218,
+  "added_unencoded_half_scale_components": [],
+  "verified_gsub_variant_relations": {},
+  "appended_unit_scale_helpers": [],
+  "verified_colon_layout_extension": null,
+  "identical_tables": [
+    "OS/2",
+    "hmtx",
+    "cmap",
+    "prep",
+    "name",
+    "post",
+    "gasp",
+    "GDEF",
+    "GPOS",
+    "GSUB",
+    "MVAR",
+    "STAT",
+    "avar",
+    "fvar"
+  ],
+  "default_and_variable_metrics_equal": true,
+  "default_advances_and_variable_phantom_deltas_equal": true,
+  "intentional_advance_changes": {},
+  "intentional_variable_metric_changes": [],
+  "intentional_ink_bearing_changes": {},
+  "verified_derived_maxp_changes": {},
+  "verified_derived_hhea_changes": {},
+  "verified_derived_average_width": null,
+  "proof": "Default drawing commands and all gvar support/delta data equal outside allowed glyphs; applies to the whole continuous designspace"
+}

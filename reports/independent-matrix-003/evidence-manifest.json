@@ -1,0 +1,322 @@
+{
+  "archive": "evidence.zip",
+  "sha256": "c36ba3f9427cf4bdbda6bf0da5ead5e15bde78eebd7ee920dbc3580475e6369f",
+  "files": [
+    {
+      "path": "build/matrix003/blind.png",
+      "bytes": 152133,
+      "sha256": "587e20b530643b38e4f8eed92f407265933da80ec94f4a69b610bec73dfb3db5"
+    },
+    {
+      "path": "build/matrix003/blind.py",
+      "bytes": 2760,
+      "sha256": "862d67012c9e9830d9f94c2cfbf1e5c63461759a6dc98db0aaa550bcde05195a"
+    },
+    {
+      "path": "build/matrix003/enlargement.html",
+      "bytes": 10274,
+      "sha256": "9096bddb41445337d51f33973bc0c4ef882402247df33a554094800833fb8241"
+    },
+    {
+      "path": "build/matrix003/feature_ranges.py",
+      "bytes": 2210,
+      "sha256": "07ce108369b2635cf6058cae802c9718571201ae5823421fdefd80a865a6edcb"
+    },
+    {
+      "path": "build/matrix003/finalize.py",
+      "bytes": 3437,
+      "sha256": "05bcc3c1b20b9dc4712cc1b39e38438aa423a05c7cbf0558299759db0d6a8bce"
+    },
+    {
+      "path": "build/matrix003/key.json",
+      "bytes": 302,
+      "sha256": "b4b9e213d139a84b84e9bdf8e4a52121732629e768fb396ae5fd95e648cb9d27"
+    },
+    {
+      "path": "build/matrix003/raster/critique.py",
+      "bytes": 5604,
+      "sha256": "04b09269359abda58a8530468a75f05f04e69c22cd5446274b6c2240173c25d2"
+    },
+    {
+      "path": "build/matrix003/raster/dark-100-12-raw2x.png",
+      "bytes": 13975,
+      "sha256": "8299842b8b80678af11cc6c1186dd0aaa2e265e5fdc913eb3e6248a0166ab180"
+    },
+    {
+      "path": "build/matrix003/raster/dark-100-14-raw2x.png",
+      "bytes": 16334,
+      "sha256": "25dbf88b12de7b760f8ac17be598cb047ac13d007c6aff4f3cd8f4fac8d9fe29"
+    },
+    {
+      "path": "build/matrix003/raster/dark-100-16-raw2x.png",
+      "bytes": 18960,
+      "sha256": "48256fc8d6168e7f5721d759599b425c2c6b75c51e414d7a34ac2296ba75dcb5"
+    },
+    {
+      "path": "build/matrix003/raster/dark-100-18-raw2x.png",
+      "bytes": 21573,
+      "sha256": "f4eba07d0dcb39b3abc0f5b720cb596eeb293450376d6c727423d19a14c7d817"
+    },
+    {
+      "path": "build/matrix003/raster/dark-400-12-raw2x.png",
+      "bytes": 16099,
+      "sha256": "71cfca42af3aec4ba3ab110fd31c7a4c876a9834b30851bf72a225d1e65a6c36"
+    },
+    {
+      "path": "build/matrix003/raster/dark-400-14-raw2x.png",
+      "bytes": 19014,
+      "sha256": "cd62703fe32fdb20d4d38cdc5120d4137d238af204e9ad9833bec647b2be79ac"
+    },
+    {
+      "path": "build/matrix003/raster/dark-400-16-raw2x.png",
+      "bytes": 21670,
+      "sha256": "ab8a4aca3bb5d0a7eae4919b4c23435212f6c8cd73efbb11d8e43ea559f9d2cc"
+    },
+    {
+      "path": "build/matrix003/raster/dark-400-18-raw2x.png",
+      "bytes": 24461,
+      "sha256": "dbb3e2c1c1986759e2373cf70bc031543456399aac446dc96f3026d9c448804a"
+    },
+    {
+      "path": "build/matrix003/raster/dark-500-12-raw2x.png",
+      "bytes": 16586,
+      "sha256": "ecb9a7914da5c6b9aed72db81f423bb81d61d9c65c7a908b8ecc4941415d2c76"
+    },
+    {
+      "path": "build/matrix003/raster/dark-500-14-raw2x.png",
+      "bytes": 19362,
+      "sha256": "0d00b5fee4fa1e424ccb2aff012c3b5be7124f4c42a269a20b249a4daa892153"
+    },
+    {
+      "path": "build/matrix003/raster/dark-500-16-raw2x.png",
+      "bytes": 22166,
+      "sha256": "30d038f47d723942ce31cadcfe9a72d06d72b400b21498960981bc772a8fc4e1"
+    },
+    {
+      "path": "build/matrix003/raster/dark-500-18-raw2x.png",
+      "bytes": 25078,
+      "sha256": "8c2a8397cbb7c4ea6319c6e1b8d18d01b27f31f7a02261511043caee6c23b15c"
+    },
+    {
+      "path": "build/matrix003/raster/dark-900-12-raw2x.png",
+      "bytes": 17494,
+      "sha256": "171bb5678c5b5a246ab0b50c171611dbe756228cd5a788a37e7339bb284d89ee"
+    },
+    {
+      "path": "build/matrix003/raster/dark-900-14-raw2x.png",
+      "bytes": 20328,
+      "sha256": "b42bd629a9e15f679c7d74a7bd0d20309b17b5fe1af676b1c9ea9657d449072a"
+    },
+    {
+      "path": "build/matrix003/raster/dark-900-16-raw2x.png",
+      "bytes": 23135,
+      "sha256": "4bcb77f6d4e17890043ad03f21b6aa04b0a49ad38abaa9ac7ee8af2388bf6dc3"
+    },
+    {
+      "path": "build/matrix003/raster/dark-900-18-raw2x.png",
+      "bytes": 25556,
+      "sha256": "d42c2802bb8ca459e8d1aeb56e1be33b6a7844e58a30b0961fdc777c521179a5"
+    },
+    {
+      "path": "build/matrix003/raster/dark-weight-100.png",
+      "bytes": 68188,
+      "sha256": "9c358416d345784ca510a2877c0313a70e4a8db6ec98343164665dd576bb8b84"
+    },
+    {
+      "path": "build/matrix003/raster/dark-weight-400.png",
+      "bytes": 77093,
+      "sha256": "016d5633176c816de3abcafe82f66910b9b02b15a70232f40c0f52f52f36337f"
+    },
+    {
+      "path": "build/matrix003/raster/dark-weight-500.png",
+      "bytes": 79767,
+      "sha256": "e5000510370f6eaf44c49fd04c4f8096a1b5f502544168d91b2fd5c44bb92254"
+    },
+    {
+      "path": "build/matrix003/raster/dark-weight-900.png",
+      "bytes": 86197,
+      "sha256": "098c21c3258057e8ee7dda400f1992db41e275340bc23666a2621d08882f0c32"
+    },
+    {
+      "path": "build/matrix003/raster/meta.json",
+      "bytes": 3480,
+      "sha256": "9ce9fcb70e44bd6b9e4261ce998a9184075bdef6ac9df7dd59a519afc33cb426"
+    },
+    {
+      "path": "build/matrix003/raster/render.py",
+      "bytes": 3092,
+      "sha256": "a5fa509c492a8041cc930932d94b84044d7105d5dde8fb2bb36725c83f238670"
+    },
+    {
+      "path": "build/matrix003/raster/report.py",
+      "bytes": 5308,
+      "sha256": "8a2665d751e687c43b940d855b5aa9610e0fcf815bdbd90a96c3163fd0e09ab1"
+    },
+    {
+      "path": "build/matrix003/raster/weight-100.png",
+      "bytes": 68268,
+      "sha256": "6f214ab516be094c213b46e03f163cd1a11ac434a462a542b4576bfc12d995e6"
+    },
+    {
+      "path": "build/matrix003/raster/weight-400.png",
+      "bytes": 75880,
+      "sha256": "88bc9c6ab465ae56d0a286e61a135aa69a0d8e428a55618908a424baabcd5b2f"
+    },
+    {
+      "path": "build/matrix003/raster/weight-500.png",
+      "bytes": 77350,
+      "sha256": "3e4654fe645d86549f758aaee9df97364b0a5920efbaaf3a735617e6ddf92471"
+    },
+    {
+      "path": "build/matrix003/raster/weight-900.png",
+      "bytes": 81986,
+      "sha256": "2284200875f89bb898247b9c184abfa4d079c63bf1c0abc3484985ffef7595ba"
+    },
+    {
+      "path": "build/matrix003/ui/check.cjs",
+      "bytes": 2025,
+      "sha256": "a5cf6de79cf11140a8a59da4263eb829b3cb2a6dd0cc4c0f49a61708a78df8a5"
+    },
+    {
+      "path": "build/matrix003/ui/desktop-reading.png",
+      "bytes": 92137,
+      "sha256": "131a99cb08e1558ec84df1004c0de0e16af6f54307243220691f006ea13e8a99"
+    },
+    {
+      "path": "build/matrix003/ui/desktop.png",
+      "bytes": 554294,
+      "sha256": "3441b189cb90b403c878e4d59d362e0c5599a433a29bac8a24bdee7c00ac7452"
+    },
+    {
+      "path": "build/matrix003/ui/evidence.json",
+      "bytes": 7344,
+      "sha256": "ce8604d2a7a6bd46194313bfddab1d20f27476dfd80d1a9965aa547fe7b2eac7"
+    },
+    {
+      "path": "build/matrix003/ui/mobile-enlarged-reading.png",
+      "bytes": 172074,
+      "sha256": "109313352803c40a00fe2b113cea3c4310e7b9e9553bd65a88e936dd34c436f2"
+    },
+    {
+      "path": "build/matrix003/ui/mobile-enlarged.png",
+      "bytes": 1169026,
+      "sha256": "460a68c5bab57958656aa608f276147d03a2d1829935a49aabf27be76c0d7452"
+    },
+    {
+      "path": "build/matrix003/ui/mobile-reading.png",
+      "bytes": 82989,
+      "sha256": "e064df1f88c671b1ce8a1d0a78e4347b2c41fe9f913ae30613679d8b2461821b"
+    },
+    {
+      "path": "build/matrix003/ui/mobile.png",
+      "bytes": 508936,
+      "sha256": "4a1166966913da86d2d77e323e9e4ae141dbde7d819e22fff4c71b59f286e136"
+    },
+    {
+      "path": "scratchbuild/matrix003/cyrillic/evidence.json",
+      "bytes": 10007,
+      "sha256": "af1f0670e6f6c423d14c60c46aa97acb764fb75dca435bbdd2d2e2d1215c13f0"
+    },
+    {
+      "path": "scratchbuild/matrix003/cyrillic/render.py",
+      "bytes": 2846,
+      "sha256": "8472ef2b46575f5f0e0ba598771b7e916953c160e899560d248483bba81ead7f"
+    },
+    {
+      "path": "scratchbuild/matrix003/cyrillic/ru-100.png",
+      "bytes": 89446,
+      "sha256": "b6b823ce093b6ed4606e4880b4fae90ea631f5f094f778f3fd0c9851744d6bfc"
+    },
+    {
+      "path": "scratchbuild/matrix003/cyrillic/ru-400.png",
+      "bytes": 98209,
+      "sha256": "26edc78e7d5c4bf1e65b004403e54a2ffd4ef896b6236bc38cd039991fcf566c"
+    },
+    {
+      "path": "scratchbuild/matrix003/cyrillic/ru-900.png",
+      "bytes": 101873,
+      "sha256": "16774830110aacb22ee34845291b9dc2cc0298720ea83a66db39798e798623dd"
+    },
+    {
+      "path": "scratchbuild/matrix003/cyrillic/write_report.py",
+      "bytes": 4977,
+      "sha256": "fe3e0bc704acbb5b83f8bb6a8bf234aac4a4511f81b838f671a4ee37ee6c763a"
+    },
+    {
+      "path": "scratchbuild/matrix003/data/finish.py",
+      "bytes": 6565,
+      "sha256": "c5021a9105f3ac669c770b4439899fbee5842366a4a720c46d57c543e35f460f"
+    },
+    {
+      "path": "scratchbuild/matrix003/data/metrics.json",
+      "bytes": 438386,
+      "sha256": "20c41639ed4cb035b9e6f632f85ba2f1de661e09528dd6919172adb11b3c7405"
+    },
+    {
+      "path": "scratchbuild/matrix003/data/proof.png",
+      "bytes": 406650,
+      "sha256": "377d27be54f356e78b8598658bcd0f8824068197a0c59ce18554a9d6f4db5294"
+    },
+    {
+      "path": "scratchbuild/matrix003/data/review.py",
+      "bytes": 3495,
+      "sha256": "1760a46abe443fa79b2f01c5935741203896d003108c154dfaf516058fa528cb"
+    },
+    {
+      "path": "scratchbuild/matrix003/engineering/audit.py",
+      "bytes": 3869,
+      "sha256": "c06a419f6506668f2fb6e4830e292d3c3dbe84e6fd94e5284b4f02de1cb2028a"
+    },
+    {
+      "path": "scratchbuild/matrix003/hig/source-evidence.json",
+      "bytes": 485,
+      "sha256": "b3d73d5c460093e28f66ed497b89a38d06d19d0408a3d744f5e8850cb4328e23"
+    },
+    {
+      "path": "scratchbuild/matrix003/reading/proof.png",
+      "bytes": 78691,
+      "sha256": "65108ef2bcfd076254c3427bce8afd5048675e1cec949a5888bbe09d85a2ffd8"
+    },
+    {
+      "path": "scratchbuild/matrix003/release/artifact-inspection.json",
+      "bytes": 3086,
+      "sha256": "e4830d6d2b9bc8642e4d9683b8dfece7faa53965a27d5d5bd66a6719b3cabefc"
+    },
+    {
+      "path": "scratchbuild/matrix003/release/timer-rerun.json",
+      "bytes": 491,
+      "sha256": "4b70dc7511dc2806141d67d7d0754a1cf89dbdee20e85ce836ebe4ba2bda43d6"
+    },
+    {
+      "path": "scratchbuild/matrix003/type/render-meta.json",
+      "bytes": 609,
+      "sha256": "82d70788d978deb8c8f101c6113db097d1206eaa942212a8c2c18571e86f6899"
+    },
+    {
+      "path": "scratchbuild/matrix003/type/render.py",
+      "bytes": 2463,
+      "sha256": "08e301c794753542a1007573e47d0f01be153f3b33df1671672ce97308898c6e"
+    },
+    {
+      "path": "scratchbuild/matrix003/type/weight-100.png",
+      "bytes": 69529,
+      "sha256": "b41d40469273970ee7034ece2c7d7c43b501354f8593d808b2b2c20d76c0dca5"
+    },
+    {
+      "path": "scratchbuild/matrix003/type/weight-400.png",
+      "bytes": 76295,
+      "sha256": "bedc576c2388d0abc5ef064041d9f557c13b8ebe59b33a3db14d5fe014cfdff4"
+    },
+    {
+      "path": "scratchbuild/matrix003/type/weight-900.png",
+      "bytes": 77186,
+      "sha256": "d8a6795ebdfe0ccdffce221d7c1a6e764de3f9781c5847214c33103b1f7cba00"
+    },
+    {
+      "path": "scratchbuild/matrix003/type/write_report.py",
+      "bytes": 4627,
+      "sha256": "f5f090b579da0ae39234ad0bd664fde2e29aa66ea42acb2163db710344593a99"
+    }
+  ],
+  "excludes": "Font binaries, instance font copies, large build sources. Restore fixtures at their recorded repo-relative paths."
+}

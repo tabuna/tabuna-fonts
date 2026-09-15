@@ -1,0 +1,56 @@
+{
+  "role": "independent data-interface cross-critique",
+  "initial_reports_preserved": true,
+  "reviewed": [
+    "reports/independent-matrix-002/engineering.json",
+    "reports/independent-matrix-002/assets/timer-arbitration.png",
+    "README.md lines 32–70"
+  ],
+  "accepted_actions": [
+    {
+      "priority": "P2",
+      "id": "ENG-001",
+      "decision": "accept",
+      "action": "Make numeric contextual colon selection recognize tabular digit alternates.",
+      "independent_evidence": "Re-shaped 12:34, 00:00, 99:59 at wght400/opsz14 in current TTF. Default chooses colon.case (y=205..1239); tnum chooses colon (y=-10..1024). Exactly 215 units downward shift, 1.47px at 14px. a:b retains colon in both modes. Arbitration image inspected and shift is visible.",
+      "acceptance_test": "On actual TTF and WOFF2, shape 12:34, 00:00, 99:59 with tnum on/off across representative extremes and interior axis locations. Both numeric modes should choose colon.case; a:b retains colon; equal tnum digit advances and fixed-format timer widths remain unchanged."
+    },
+    {
+      "priority": "P3",
+      "id": "DATA-01-REVISED",
+      "decision": "accept fallback integration validation; reclassify from font defect",
+      "action": "Keep the declared 189-codepoint scope. Validate locale strings against the README system-fallback policy; use U+00A0 in authored currency strings as documented.",
+      "acceptance_test": "In the intended browser with actual WOFF2 loaded and CSS font-family: Tabuna Sans, system-ui, sans-serif, render 1\\u202f234,56 €, 1\\u2009234.56, and documented 12\\u00a0480,00\\u00a0₽. Confirm no tofu, verify computed/rasterized fallback where applicable, check U+202F nonbreaking behavior in a narrow container, and check repeated fixed-format values keep grouping and decimal alignment under tabular-nums. Repeat on target systems; font-only HarfBuzz .notdef for out-of-scope characters is expected and cannot certify fallback.",
+      "status": "proposed test, not executed in this critique"
+    }
+  ],
+  "rejected_actions": [
+    {
+      "id": "DATA-01 original glyph expansion",
+      "decision": "reject as required action",
+      "reason": "Adding U+202F/U+2009 is outside fixed 189-codepoint scope and is not an authorized design requirement. My original alternative to add glyphs was too broad in this scope."
+    },
+    {
+      "id": "DATA-01 original no-.notdef acceptance test",
+      "decision": "reject for out-of-scope font-only shaping",
+      "reason": "The initial acceptance criterion required no .notdef in single-font shaping, which cannot be met under current deliberate scope. It must be replaced by actual system-fallback integration validation."
+    }
+  ],
+  "reconciliation": {
+    "numeric_width_pass": "Retained. Initial 960 passes measured format parity, missing glyphs within selected in-scope samples, equal digit advances, and full-string widths. These are compatible with vertical misalignment.",
+    "vertical_alignment": "Not covered by the timer-width pass. Initial contexts actually recorded colon glyph ID 43 default versus 42 tnum; I did not flag the vertical change. The initial report therefore missed this defect and must not be interpreted as a complete timer visual pass.",
+    "ui_verdict": "conditional, now expressly conditional on ENG-001 contextual-colon correction for timer usage.",
+    "headings_verdict": "conditional for timer-containing headings; original sampled numeric-heading pass was too broad because it included timers without comparing tnum off/on.",
+    "body_verdict": "conditional unchanged; out-of-scope coverage is an integration limitation, not a font defect.",
+    "sustained_reading": "unverified unchanged"
+  },
+  "retained_observations": [
+    "DATA-02 O/0 visual similarity remains an identifier-use limitation; an optional zero alternate is a future design choice, not a mandatory scope change.",
+    "DATA-03 small-size weight advice agrees with README 400–500 starting policy; no additional font engineering action required."
+  ],
+  "limits": [
+    "Independent reproduction here is at one axis location; engineering report supplies wider-grid reproduction.",
+    "System fallback browser verification was specified but not performed.",
+    "Initial data.md/json intentionally left unchanged. No font/source edits."
+  ]
+}

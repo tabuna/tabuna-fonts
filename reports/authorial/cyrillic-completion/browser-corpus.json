@@ -1,0 +1,24 @@
+{
+  "status": "passed",
+  "font_sha256": "5888eecc912f46f14b7807906d2ffc0a42d543a3695465b76a83b699373344b9",
+  "baseline_font_sha256": "18f597e3a48133227d503eff9a297c9b9e62c646dd5cf7902dd8ed216369cf28",
+  "corpus_sha256": "08198a8072f83425ed97069dd5f2f8db528518c584b99785ffed13cd57e44b6a",
+  "cases": 2520,
+  "loadedFaces": [
+    {
+      "family": "Control",
+      "status": "loaded",
+      "weight": "100 900"
+    },
+    {
+      "family": "Authored",
+      "status": "loaded",
+      "weight": "100 900"
+    }
+  ],
+  "method": "Browser DOM Range line wrapping and layout extents; outline clipping is checked separately with HarfBuzz.",
+  "failures": [],
+  "human_readability_study": false,
+  "url": "http://127.0.0.1:4173/build/character-prototypes/selected-v5/specimen.html",
+  "specimen_sha256": "3c32cb86d701da0a2723fa12163f4c044e4a8b8141d503990f97887ceba4e4b1"
+}

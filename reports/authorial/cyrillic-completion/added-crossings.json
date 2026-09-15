@@ -1,0 +1,28 @@
+{
+  "font_sha256": "5888eecc912f46f14b7807906d2ffc0a42d543a3695465b76a83b699373344b9",
+  "characters": "\u0430\u0420\u0432",
+  "weights": [
+    100,
+    150,
+    250,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900
+  ],
+  "optical_sizes": [
+    9,
+    14,
+    16,
+    20,
+    28,
+    64,
+    128
+  ],
+  "checked": 189,
+  "failures": [],
+  "between_contours_checked": true,
+  "method": "Pairwise proper intersections of sampled compiled contours; not an exact analytic proof"
+}

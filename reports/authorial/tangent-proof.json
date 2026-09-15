@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "master_locations": 15,
+  "tangent_comparisons": 10470,
+  "maximum_direction_cross_error": 8.846601568414479e-15,
+  "moved_upper_poles": 1013,
+  "scope": "Strong upper-pole and handle operation on original cubic families; not a proof of baseline smoothness or compiled quadratic curvature."
+}

@@ -1,0 +1,27 @@
+{
+  "role": "independent character/recognition visual reviewer",
+  "matrix": "003",
+  "independence": {"blind_image_inspected_first": true, "key_read": false, "other_reviews_read": false, "source_or_design_docs_read": false, "font_source_modified": false, "human_study": false},
+  "evidence": ["Direct view_image inspection of build/matrix003/blind.png", "SHA-256 verification of dist/TabunaSansVariable.ttf"],
+  "ttf_sha256": "56cb3cbd30099ed97b0395e7eae28f9431e84ff9eede14cdfb4061f1c5873edc",
+  "blind_observations": [
+    {"pair": 1, "preference": "indistinguishable", "reason": "Same apparent width, spacing rhythm, sentence color."},
+    {"pair": 2, "preference": "indistinguishable", "reason": "Coherent compact Cyrillic; no reliable recurring-form difference."},
+    {"pair": 3, "preference": "indistinguishable", "reason": "Repeated a/r/e and round forms produce the same apparent rhythm."},
+    {"pair": 4, "preference": "indistinguishable", "reason": "Repeated Cyrillic о/л/д coherent in both."},
+    {"pair": 5, "preference": "indistinguishable", "reason": "Consistent with pair 1."},
+    {"pair": 6, "preference": "indistinguishable", "reason": "Consistent with pair 2."},
+    {"pair": 7, "preference": "indistinguishable", "reason": "Even Cyrillic heading rhythm; no visible advantage."},
+    {"pair": 8, "preference": "indistinguishable", "reason": "Same general character across long Latin heading."},
+    {"pair": 9, "preference": "X", "confidence": "moderate", "reason": "Capital I horizontal terminals separate it from lowercase l and numeral 1; local distinction."},
+    {"pair": 10, "preference": "X", "confidence": "moderate", "reason": "Capital I terminals again aid separation; no running-text identity evidence."}
+  ],
+  "repeat_consistency": {"pairs_1_5": "consistent indistinguishable", "pairs_2_6": "consistent indistinguishable", "pairs_9_10": "consistent X preference across different weights, not identical repeats"},
+  "verdicts": {"ui": "conditional; labels visually usable, Il1 distinction needs intended-size checks", "headings": "provisional visual pass for sampled lines; no comparative character winner", "body": "conditional; short lines only", "sustained_reading": "not established"},
+  "findings": [
+    {"condition": "Il1 at 48px weights 100 and 900", "finding": "X improves visible capital I distinction", "recommendation": "Preserve/test X distinction for identifiers", "acceptance_test": "Target-display 12/14/16/18px mixed identifiers; spacing/clipping review and blinded human transcription errors"},
+    {"condition": "Paired running text at 16/24/48px", "finding": "Recurring character advantage not demonstrated", "recommendation": "Do not claim superior family recognition from present evidence", "acceptance_test": "Blinded repeated/shuffled paragraphs per script excluding isolated diagnostic letters; predeclare human preference/identification criterion"},
+    {"condition": "Sampled Cyrillic sentences and glyphs", "finding": "Visually coherent independent Cyrillic construction with narrow coverage", "recommendation": "Expand native-script word-shape review", "acceptance_test": "Native-reader review of Russian paragraphs and UI strings with dense л/д/п/и/ш/щ and б/в/ь/ъ sequences at intended sizes"}
+  ],
+  "limitations": ["One static raster", "No identity key decoding; X/Y not assigned to verified font", "No outline/table audit", "No human recognition or reading evidence", "No paragraphs, mobile, dark mode, or full coverage", "Indistinguishable does not mean identical outlines"]
+}

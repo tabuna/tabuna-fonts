@@ -1,0 +1,16 @@
+{
+ "role":"Root integration verifier and arbiter; not counted among the ten fresh reviewers",
+ "font_sha256":"3567058955eb20ebaf25ef5241a094b25d86dfd7be966f8032492dd3caa3e011",
+ "fixture":"build/matrix002/integration.html",
+ "browser":"macOS Codex in-app browser",
+ "cases":48,
+ "dimensions":{"width":[280,640],"size":[14,18,28,36],"weight":[400,500,900],"theme":["light","dark"]},
+ "loaded_faces":1,
+ "button_overflow_cases":0,
+ "equal_amount_widths_all_cases":true,
+ "amount_cell_overflow_cases":["280/28/900/light","280/28/900/dark","280/36/400/light","280/36/400/dark","280/36/500/light","280/36/500/dark","280/36/900/light","280/36/900/dark"],
+ "container_overflow_cases":["280/36/400/light","280/36/400/dark","280/36/500/light","280/36/500/dark","280/36/900/light","280/36/900/dark"],
+ "interpretation":"Fixed 50/50 table columns cannot accommodate enlarged nonbreaking currency amounts. This is a deliberately constrained integration stress fixture, not proof of a malformed font or a regression in the product demo. Consumer layouts need reflow/column sizing at enlarged text. At14/18px all48-subset applicable width/weight/theme cases fit.",
+ "visual_observation":"14px regular light/dark RU/EN and fallback bullets/per-mille/emoji are visible; NFC/NFD strings look equivalent. No claim of exact fallback font attribution or human reading accuracy.",
+ "recommendation":"Test amounts at200% text size in real tables, then allocate sufficient numeric-column width or stack label/value rows. Never solve by shrinking accessible text or removing NBSP indiscriminately."
+}

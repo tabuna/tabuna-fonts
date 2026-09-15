@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "characters": 189,
+  "glyphs": 218,
+  "axes": {
+    "wght": [
+      100.0,
+      900.0
+    ],
+    "opsz": [
+      9.0,
+      128.0
+    ]
+  },
+  "glyph_location_comparisons": 5232,
+  "shaping_comparisons": 48,
+  "ttf_woff2_equal_geometry": true,
+  "full_source_sha256": "15a378b8622e2d4d32e95f220e8a73f144418449db2c15f99104b8040bc3e248",
+  "font_sha256": "5888eecc912f46f14b7807906d2ffc0a42d543a3695465b76a83b699373344b9",
+  "scope": "Compaction preserves the authored model; does not prove complete provenance or SFNS equality."
+}

@@ -1,5 +1,6 @@
 """Check sampled compiled contours for proper crossings at varied locations."""
 import argparse
+import hashlib
 import json
 from pathlib import Path
 import numpy as np
@@ -41,7 +42,11 @@ def main():
                 if count:
                     failures.append({'character':character, 'weight':weight,
                                      'optical':optical, 'crossings':count})
-    report = {'checked':checked, 'failures':failures,
+    report = {'font_sha256':hashlib.sha256(args.font.read_bytes()).hexdigest(),
+              'characters':args.characters,
+              'weights':[100,150,250,400,500,600,700,800,900],
+              'optical_sizes':[9,14,16,20,28,64,128],
+              'checked':checked, 'failures':failures,
               'between_contours_checked':not args.within_contours,
               'method':'Pairwise proper intersections of sampled compiled contours; not an exact analytic proof'}
     args.out.parent.mkdir(parents=True, exist_ok=True)

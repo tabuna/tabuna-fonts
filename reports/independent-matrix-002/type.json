@@ -1,0 +1,159 @@
+{
+  "role": "Independent type designer perspective: humanist UI sans construction review; not impersonation or attributed expert opinion",
+  "font": "dist/TabunaSansVariable.ttf",
+  "version": "0.0.2",
+  "font_sha256": "3567058955eb20ebaf25ef5241a094b25d86dfd7be966f8032492dd3caa3e011",
+  "independence": "No previous audit, report, or other reviewer output read before writing this report. Font and source unchanged.",
+  "tests": [
+    {
+      "test": "metadata",
+      "result": "189 cmap entries; wght100–900 default400; opsz9–128 default14"
+    },
+    {
+      "test": "Pillow FreeType BASIC visual proof",
+      "weights": [
+        100,
+        400,
+        900
+      ],
+      "sizes_px": [
+        12,
+        14,
+        16,
+        20,
+        36,
+        64,
+        72
+      ],
+      "optical_sizes": "matched size through64; constructions72px atopsz14",
+      "scripts": [
+        "RU",
+        "EN"
+      ],
+      "result": "Generated and visually inspected via view_image."
+    },
+    {
+      "test": "HarfBuzz+FreeType optical extreme proof",
+      "weights": [
+        100,
+        400,
+        900
+      ],
+      "sizes_px": [
+        14,
+        48
+      ],
+      "optical_sizes": [
+        9,
+        128
+      ],
+      "result": "Generated and visually inspected; confirms visible spacing response across optical endpoints."
+    },
+    {
+      "test": "paragraph texture",
+      "weight": 400,
+      "sizes_px": [
+        14,
+        16,
+        20
+      ],
+      "result": "Two five-line RU/EN passages visually inspected; no reading-speed or user study performed."
+    }
+  ],
+  "verdicts": {
+    "ui": {
+      "verdict": "conditional",
+      "reasons": [
+        "Regular at14–20px is visually serviceable for ordinary RU/EN labels.",
+        "Identifier differentiation and small thin/heavy text need usage restrictions and target-device verification."
+      ]
+    },
+    "headings": {
+      "verdict": "pass",
+      "reasons": [
+        "Inspected36–72px samples have coherent shapes at100,400,900, including Cyrillic.",
+        "Pass is visual construction judgment for this sample, not universal kerning or glyph coverage certification."
+      ]
+    },
+    "body": {
+      "verdict": "conditional",
+      "reasons": [
+        "Regular16–20px paragraphs show stable texture in both scripts.",
+        "14px is serviceable in these proofs but platform validation remains; 100/900 are not approved as paragraph defaults."
+      ]
+    },
+    "sustained_reading": {
+      "verdict": "unverified",
+      "reasons": [
+        "Short static proof inspection cannot establish fatigue, comprehension, or sustained reading performance."
+      ]
+    }
+  },
+  "findings": [
+    {
+      "id": "T01",
+      "severity": "medium",
+      "glyphs": "l I 1 O 0",
+      "condition": "UI identifiers, wght100/400/900, 12–16px; verified construction at 48/72px",
+      "observation": "Capital I has short bars and 1 an angled flag, but lowercase l is a plain stem; O/0 distinction relies chiefly on proportion. At small sizes the diagnostic group needs context, especially in thin weight. This is a limited differentiation vocabulary, not proof that ordinary prose is unreadable.",
+      "evidence": [
+        "build/matrix002/type/constructions.png",
+        "build/matrix002/type/proof-400.png",
+        "build/matrix002/type/hb-optical-extremes.png"
+      ],
+      "attribution": "construction with size-dependent raster amplification",
+      "recommendation": "Consider optional hooked l and slashed/dotted zero for identifier-heavy UI; preserve current prose defaults until comparison.",
+      "acceptance_test": "Blind transcription of randomized I/l/1 and O/0 codes at 12/14/16px, several rasterizers, compare current vs alternate; report error counts before choosing a change."
+    },
+    {
+      "id": "T02",
+      "severity": "medium",
+      "glyphs": "a e s c; RU/EN entire text",
+      "condition": "wght100 at 12–16px, correctly matched opsz12–16",
+      "observation": "Thin strokes render pale and weak beside regular even on black-on-white. Shapes remain coherent at 36–72px. Thin is unsuitable as the default small essential text in this proof.",
+      "evidence": [
+        "build/matrix002/type/proof-100.png",
+        "build/matrix002/type/constructions.png"
+      ],
+      "attribution": "intended thin construction interacting with grayscale rasterization; no isolated broken contour demonstrated",
+      "recommendation": "Keep 100 for sufficiently large display text; select regular for body and essential UI. Do not thicken every master on this evidence.",
+      "acceptance_test": "At target-device native size, thin labels must meet the same measured transcription accuracy as regular before approving essential small-text usage."
+    },
+    {
+      "id": "T03",
+      "severity": "medium",
+      "glyphs": "e a g; в е ы ь; word spaces",
+      "condition": "wght900 12–16px, strongest when opsz128 is forced at 14px",
+      "observation": "Heavy small text has compact counters and a dense texture. At opsz128, spaces and sidebearings visibly contract; RU/EN words in the 14px line approach a continuous dark band. At opsz9 these lines have substantially clearer separation. Large heavy headings remain clear.",
+      "evidence": [
+        "build/matrix002/type/proof-900.png",
+        "build/matrix002/type/hb-optical-extremes.png"
+      ],
+      "attribution": "weight and optical-size construction, not a shaping failure; opsz128 at14px is intentionally a mismatch stress test",
+      "recommendation": "Use matched/automatic optical sizing and avoid heavy for paragraphs. Verify low-opsz counter openness before changing the heavy master.",
+      "acceptance_test": "Render 900 at 12/14/16px with opsz9/14/16 on CoreText and FreeType; retain discernible counters and word boundaries; compare only matched opsz for product approval."
+    },
+    {
+      "id": "T04",
+      "severity": "low",
+      "glyphs": "д л м н п и ш щ; a g r n m",
+      "condition": "wght400, 14–20px paragraphs and 72px construction proof",
+      "observation": "Latin double-storey a and single-storey g are familiar; Cyrillic has conventional upright constructions and broadly comparable color. Rectilinear Cyrillic runs produce more repeated verticals than Latin, but no individual malformed letter or strong cross-script size mismatch was evident. Overall character reads closer to a neutral grotesque than a strongly calligraphic humanist sans.",
+      "evidence": [
+        "build/matrix002/type/reading.png",
+        "build/matrix002/type/constructions.png"
+      ],
+      "attribution": "design character; not a defect by itself",
+      "recommendation": "Preserve script coherence; if stronger humanist character is a goal, trial localized terminal/shoulder and l differentiation rather than changing Cyrillic to unfamiliar forms.",
+      "acceptance_test": "Compare mixed-script paragraphs and ш/щ/и/п runs at16px and headings at48px; changes should improve identification without a new script-color imbalance."
+    }
+  ],
+  "limitations": [
+    "AI visual inspection, not human reading study or an actual named type designer review.",
+    "Pillow lacks RAQM; base proof uses BASIC layout. Separate HarfBuzz+FreeType proof checks shaped examples, not the entire corpus.",
+    "Only 3 weight instances and sampled optical sizes, not interpolation sweep.",
+    "No browser/CoreText/DirectWrite or high-DPI comparison.",
+    "64px long lines clip at right canvas edge; judgments restricted to visible segments; full shorter48px headings are provided in hb-optical-extremes.png.",
+    "No exhaustive189-character, kerning-pair, contour topology, or accessibility certification."
+  ]
+}
